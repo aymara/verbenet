@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="run-51.3.2">
+     <MEMBERS>
+          <MEMBER name="boiter"/>
+          <MEMBER name="boitiller"/>
+          <MEMBER name="caboter"/>
+          <MEMBER name="pédaler"/>
+          <MEMBER name="caracoler"/>
+          <MEMBER name="chanceler"/>
+          <MEMBER name="chevaucher"/>
+          <MEMBER name="claudiquer"/>
+          <MEMBER name="dandiner se"/>
+          <MEMBER name="déambuler"/>
+          <MEMBER name="dépêcher se"/>
+          <MEMBER name="accourir"/>
+          <MEMBER name="affluer"/>
+          <MEMBER name="aller"/>
+          <MEMBER name="balader se"/>
+          <MEMBER name="bondir"/>
+          <MEMBER name="cavaler"/>
+          <MEMBER name="chasser"/>
+          <MEMBER name="cheminer"/>
+          <MEMBER name="circuler"/>
+          <MEMBER name="clopiner"/>
+          <MEMBER name="courir"/>
+          <MEMBER name="débouler"/>
+          <MEMBER name="défiler"/>
+          <MEMBER name="déplacer se"/>
+          <MEMBER name="élancer s'"/>
+          <MEMBER name="engouffrer s'"/>
+          <MEMBER name="filer"/>
+          <MEMBER name="foncer"/>
+          <MEMBER name="fuir"/>
+          <MEMBER name="galoper"/>
+          <MEMBER name="glisser"/>
+          <MEMBER name="glisser se"/>
+          <MEMBER name="grimper"/>
+          <MEMBER name="louvoyer"/>
+          <MEMBER name="marcher"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="nager"/>
+          <MEMBER name="naviguer"/>
+          <MEMBER name="onduler"/>
+          <MEMBER name="passer"/>
+          <MEMBER name="planer"/>
+          <MEMBER name="précipiter se"/>
+          <MEMBER name="présenter se"/>
+          <MEMBER name="presser se"/>
+          <MEMBER name="ramper"/>
+          <MEMBER name="réfugier se"/>
+          <MEMBER name="remonter"/>
+          <MEMBER name="retourner"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="ruer se"/>
+          <MEMBER name="sauter"/>
+          <MEMBER name="sautiller"/>
+          <MEMBER name="slalomer"/>
+          <MEMBER name="tituber"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="tracer"/>
+          <MEMBER name="traîner se"/>
+          <MEMBER name="trotter"/>
+          <MEMBER name="trottiner"/>
+          <MEMBER name="virer"/>
+          <MEMBER name="gambader"/>
+          <MEMBER name="voguer"/>
+          <MEMBER name="voler"/>
+          <MEMBER name="voleter"/>
+          <MEMBER name="voltiger"/>
+          <MEMBER name="voyager"/>
+          <MEMBER name="zigzaguer"/>
+          <MEMBER name="hâter se"/>
+          <MEMBER name="varapper"/>
+          <MEMBER name="danser"/>
+          <MEMBER name="gambiller"/>
+          <MEMBER name="gravir"/>
+          <MEMBER name="guincher"/>
+          <MEMBER name="jogger"/>
+          <MEMBER name="lancer se"/>
+          <MEMBER name="luger"/>
+          <MEMBER name="parader"/>
+          <MEMBER name="parcourir"/>
+          <MEMBER name="promener se"/>
+          <MEMBER name="randonner"/>
+          <MEMBER name="trémousser se"/>
+          <MEMBER name="vaciller"/>
+          <MEMBER name="vagabonder"/>
+          <MEMBER name="virevolter"/>
+          <MEMBER name="pagayer"/>
+          <MEMBER name="patiner"/>
+          <MEMBER name="pirouetter"/>
+          <MEMBER name="ramer"/>
+          <MEMBER name="skier"/>
+          <MEMBER name="valser"/>
+          <MEMBER name="carapater se"/>
+          <MEMBER name="cavaler se"/>
+          <MEMBER name="couler"/>
+          <MEMBER name="déployer se"/>
+          <MEMBER name="dériver"/>
+          <MEMBER name="détaler"/>
+          <MEMBER name="enfuir s'"/>
+          <MEMBER name="envoler s'"/>
+          <MEMBER name="rebondir"/>
+          <MEMBER name="reculer"/>
+          <MEMBER name="ricocher"/>
+          <MEMBER name="sauver se"/>
+          <MEMBER name="serpenter"/>
+          <MEMBER name="trisser se"/>
+          <MEMBER name="trotter se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le cheval a galopé vers la barrière</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="' + à j q s u vers"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Agent) Preès-de(End(E), Agent, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

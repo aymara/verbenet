@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="coloring-24">
+     <MEMBERS>
+          <MEMBER name="dorer"/>
+          <MEMBER name="émailler"/>
+          <MEMBER name="glacer"/>
+          <MEMBER name="laquer"/>
+          <MEMBER name="peindre"/>
+          <MEMBER name="peinturer"/>
+          <MEMBER name="teinter"/>
+          <MEMBER name="vernir"/>
+          <MEMBER name="vernisser"/>
+          <MEMBER name="colorer"/>
+          <MEMBER name="colorier"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Result"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a colorié son dessin d'une couleur très jolie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) apply_material(during(E), Material, Patient) covered(result(E), Material, Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.result"/>
+               <EXAMPLES>
+                    <EXAMPLE>Mac a colorié son dessin en bleu</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Result">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) apply_material(during(E), Material, Patient) covered(result(E), Material, Patient) Pred(result(E), Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

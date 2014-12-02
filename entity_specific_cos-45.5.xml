@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="entity_specific_cos-45.5">
+     <MEMBERS>
+          <MEMBER name="bourgeonner"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="faiblir"/>
+          <MEMBER name="fleurir"/>
+          <MEMBER name="germer"/>
+          <MEMBER name="germiner"/>
+          <MEMBER name="grossir"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP.patient V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les roses fleurissent</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>state(result(E), Endstate, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

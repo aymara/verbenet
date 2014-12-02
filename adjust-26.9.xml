@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="adjust-26.9">
+     <MEMBERS>
+          <MEMBER name="acclimater"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Goal"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a adapté Luc à la situation.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Goal">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>adjust(during(E), Patient, Goal)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a acclimaté Luc à se lever tôt.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <S_INF value="Goal"/>
+               </SYNTAX>
+               <SEMANTICS>adjust(during(E), Patient, Goal)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

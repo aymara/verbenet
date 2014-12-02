@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="put_spatial-9.2">
+     <MEMBERS>
+          <MEMBER name="appuyer"/>
+          <MEMBER name="asseoir"/>
+          <MEMBER name="coller"/>
+          <MEMBER name="coucher"/>
+          <MEMBER name="disposer"/>
+          <MEMBER name="étendre"/>
+          <MEMBER name="installer"/>
+          <MEMBER name="jeter"/>
+          <MEMBER name="jucher"/>
+          <MEMBER name="pendre"/>
+          <MEMBER name="percher"/>
+          <MEMBER name="poser"/>
+          <MEMBER name="reposer"/>
+          <MEMBER name="suspendre"/>
+          <MEMBER name="adosser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a couché la pendule sur le tapis.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) not(Prep(start(E), Theme, Destination)) Prep(end(E), Theme, Destination) position(end(E), Theme, Pos) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

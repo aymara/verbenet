@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="pour-9.5">
+     <MEMBERS>
+          <MEMBER name="couler"/>
+          <MEMBER name="répandre"/>
+          <MEMBER name="verser"/>
+          <MEMBER name="renverser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="or">
+                    <SELRESTRS logic="and">
+                         <SELRESTR Value="+" type="plural"/>
+                         <SELRESTR Value="+" type="concrete"/>
+                    </SELRESTRS>
+                    <SELRESTR Value="+" type="substance"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Tamara a coulé de l'eau dans le moule.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="Loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) not(Prep(start(E), Theme, Destination)) Prep(E, Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.initial_location PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>De l'eau a coulé du plafond sur le sol.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="src"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="dest_conf"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(Prep(start(E), Theme, Destination)) Prep(E, Theme, Initial_Location) Prep(E, Theme, Destination)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

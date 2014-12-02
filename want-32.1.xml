@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="want-32.1">
+     <MEMBERS>
+          <MEMBER name="ambitionner"/>
+          <MEMBER name="convoiter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Pivot">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Dorothy convoite l'héritage.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V S"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc ambitionne que son fils soit polytechnicien.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Pivot V Theme &lt;+que_Psubj&gt;</SYNTAX>
+               <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="32.1-1">
+               <MEMBERS>
+                    <MEMBER name="déguster"/>
+                    <MEMBER name="goûter"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc ambitionne de devenir président</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Pivot V Theme &lt;de Vinf&gt;</SYNTAX>
+                         <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="32.1-1-1">
+                         <MEMBERS>
+                              <MEMBER name="exiger"/>
+                              <MEMBER name="aimer"/>
+                              <MEMBER name="apprécier"/>
+                              <MEMBER name="désirer"/>
+                              <MEMBER name="préférer"/>
+                              <MEMBER name="souhaiter"/>
+                              <MEMBER name="vouloir"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP ADJ"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc accepte sa femme végétarienne</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Pivot">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <ADJ/>
+                                   </SYNTAX>
+                                   <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="32.1-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V S_INF"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc voudrait devenir président.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Pivot">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <S_INF value="Theme"/>
+                         </SYNTAX>
+                         <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="32.1-2-1">
+                         <MEMBERS/>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP ADJ"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc veut sa viande bleue</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Pivot">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <ADJ/>
+                                   </SYNTAX>
+                                   <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

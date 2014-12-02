@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="chase-51.6">
+     <MEMBERS>
+          <MEMBER name="pister"/>
+          <MEMBER name="pourchasser"/>
+          <MEMBER name="poursuivre"/>
+          <MEMBER name="rechercher"/>
+          <MEMBER name="suivre"/>
+          <MEMBER name="traquer"/>
+          <MEMBER name="filer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Jackie a poursuivi le voleur dans la rue.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="spatial"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Agent) motion(during(E), Theme) Prep(E, Theme, Location) Prep(E, Agent, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

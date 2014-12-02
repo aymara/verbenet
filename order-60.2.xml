@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="order-60.2">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent"/>
+          <THEMROLE type="Recipient"/>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a prié Jean de venir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Recipient &lt;de Vinf&gt;</SYNTAX>
+               <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

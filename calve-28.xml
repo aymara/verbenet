@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="calve-28">
+     <MEMBERS>
+          <MEMBER name="frayer"/>
+          <MEMBER name="lapiner"/>
+          <MEMBER name="multiplier se"/>
+          <MEMBER name="pouliner"/>
+          <MEMBER name="vêler"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V"/>
+               <EXAMPLES>
+                    <EXAMPLE>La poule a pondu.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>give_birth(end(E), Agent, ?Patient) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="28-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>La poule a pondu un oeuf</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>give_birth(end(E), Agent, Patient) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="butter-9.9">
+     <MEMBERS>
+          <MEMBER name="amidonner"/>
+          <MEMBER name="ardoiser"/>
+          <MEMBER name="argenter"/>
+          <MEMBER name="asphalter"/>
+          <MEMBER name="badigeonner"/>
+          <MEMBER name="beurrer"/>
+          <MEMBER name="bitumer"/>
+          <MEMBER name="calfater"/>
+          <MEMBER name="carreler"/>
+          <MEMBER name="charbonner"/>
+          <MEMBER name="chauler"/>
+          <MEMBER name="cirer"/>
+          <MEMBER name="colorer"/>
+          <MEMBER name="couvrir"/>
+          <MEMBER name="cuivrer"/>
+          <MEMBER name="dorer"/>
+          <MEMBER name="empierrer"/>
+          <MEMBER name="encaustiquer"/>
+          <MEMBER name="engazonner"/>
+          <MEMBER name="ensemencer"/>
+          <MEMBER name="étamer"/>
+          <MEMBER name="fariner"/>
+          <MEMBER name="farter"/>
+          <MEMBER name="garnir"/>
+          <MEMBER name="gazonner"/>
+          <MEMBER name="givrer"/>
+          <MEMBER name="glacer"/>
+          <MEMBER name="goudronner"/>
+          <MEMBER name="graisser"/>
+          <MEMBER name="gravillonner"/>
+          <MEMBER name="huiler"/>
+          <MEMBER name="macadamiser"/>
+          <MEMBER name="métalliser"/>
+          <MEMBER name="napper"/>
+          <MEMBER name="nickeler"/>
+          <MEMBER name="orner"/>
+          <MEMBER name="paner"/>
+          <MEMBER name="parfumer"/>
+          <MEMBER name="parqueter"/>
+          <MEMBER name="peindre"/>
+          <MEMBER name="peinturer"/>
+          <MEMBER name="plaquer"/>
+          <MEMBER name="plâtrer"/>
+          <MEMBER name="poisser"/>
+          <MEMBER name="pommader"/>
+          <MEMBER name="poudrer"/>
+          <MEMBER name="recouvrir"/>
+          <MEMBER name="revêtir"/>
+          <MEMBER name="sabler"/>
+          <MEMBER name="saler"/>
+          <MEMBER name="soufrer"/>
+          <MEMBER name="stuquer"/>
+          <MEMBER name="tacher"/>
+          <MEMBER name="taguer"/>
+          <MEMBER name="tapisser"/>
+          <MEMBER name="teindre"/>
+          <MEMBER name="teinter"/>
+          <MEMBER name="tendre"/>
+          <MEMBER name="vernir"/>
+          <MEMBER name="vernisser"/>
+          <MEMBER name="voiler"/>
+          <MEMBER name="amender"/>
+          <MEMBER name="amorcer"/>
+          <MEMBER name="appâter"/>
+          <MEMBER name="aromatiser"/>
+          <MEMBER name="assaisonner"/>
+          <MEMBER name="atteler"/>
+          <MEMBER name="bâillonner"/>
+          <MEMBER name="bander"/>
+          <MEMBER name="boucher"/>
+          <MEMBER name="cacher"/>
+          <MEMBER name="calfeutrer"/>
+          <MEMBER name="calorifuger"/>
+          <MEMBER name="capsuler"/>
+          <MEMBER name="chausser"/>
+          <MEMBER name="clôturer"/>
+          <MEMBER name="coiffer"/>
+          <MEMBER name="corder"/>
+          <MEMBER name="couronner"/>
+          <MEMBER name="cramponner"/>
+          <MEMBER name="déguiser"/>
+          <MEMBER name="droguer"/>
+          <MEMBER name="empailler"/>
+          <MEMBER name="empenner"/>
+          <MEMBER name="empeser"/>
+          <MEMBER name="encadrer"/>
+          <MEMBER name="encrer"/>
+          <MEMBER name="enfiler"/>
+          <MEMBER name="enguirlander"/>
+          <MEMBER name="envelopper"/>
+          <MEMBER name="épicer"/>
+          <MEMBER name="étiqueter"/>
+          <MEMBER name="farder"/>
+          <MEMBER name="ferrer"/>
+          <MEMBER name="ganter"/>
+          <MEMBER name="garrotter"/>
+          <MEMBER name="harnacher"/>
+          <MEMBER name="lambrisser"/>
+          <MEMBER name="langer"/>
+          <MEMBER name="lubrifier"/>
+          <MEMBER name="maculer"/>
+          <MEMBER name="maquiller"/>
+          <MEMBER name="marqueter"/>
+          <MEMBER name="masquer"/>
+          <MEMBER name="mastiquer"/>
+          <MEMBER name="museler"/>
+          <MEMBER name="pailler"/>
+          <MEMBER name="parer"/>
+          <MEMBER name="pimenter"/>
+          <MEMBER name="poivrer"/>
+          <MEMBER name="rapiécer"/>
+          <MEMBER name="ressemeler"/>
+          <MEMBER name="seller"/>
+          <MEMBER name="souiller"/>
+          <MEMBER name="sucrer"/>
+          <MEMBER name="timbrer"/>
+          <MEMBER name="tisser"/>
+          <MEMBER name="vitrer"/>
+          <MEMBER name="vitrifier"/>
+          <MEMBER name="arroser"/>
+          <MEMBER name="blanchir"/>
+          <MEMBER name="empester"/>
+          <MEMBER name="empoisonner"/>
+          <MEMBER name="enchausser"/>
+          <MEMBER name="enherber"/>
+          <MEMBER name="grener"/>
+          <MEMBER name="mâchurer"/>
+          <MEMBER name="marquer"/>
+          <MEMBER name="moquetter"/>
+          <MEMBER name="mordorer"/>
+          <MEMBER name="mouiller"/>
+          <MEMBER name="planchéier"/>
+          <MEMBER name="planter"/>
+          <MEMBER name="sablonner"/>
+          <MEMBER name="saupoudrer"/>
+          <MEMBER name="strier"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Lora a beurré les tartines avec du beurre salé.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value=", a c de e v"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) not(location(start(E), Theme, Destination)) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

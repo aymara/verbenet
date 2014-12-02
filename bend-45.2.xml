@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="bend-45.2">
+     <MEMBERS>
+          <MEMBER name="cambrer"/>
+          <MEMBER name="crisper"/>
+          <MEMBER name="cylindrer"/>
+          <MEMBER name="damer"/>
+          <MEMBER name="déformer"/>
+          <MEMBER name="déjeter"/>
+          <MEMBER name="distendre"/>
+          <MEMBER name="ébouriffer"/>
+          <MEMBER name="étirer"/>
+          <MEMBER name="évaser"/>
+          <MEMBER name="fausser"/>
+          <MEMBER name="forcer"/>
+          <MEMBER name="friper"/>
+          <MEMBER name="incurver"/>
+          <MEMBER name="rajuster"/>
+          <MEMBER name="ratatiner"/>
+          <MEMBER name="rectifier"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="tordre"/>
+          <MEMBER name="déplier"/>
+          <MEMBER name="écraser"/>
+          <MEMBER name="plier"/>
+          <MEMBER name="ployer"/>
+          <MEMBER name="recourber"/>
+          <MEMBER name="replier"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="solid"/>
+          </THEMROLE>
+          <THEMROLE type="Instrument">
+               <SELRESTR Value="+" type="solid"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a plié la branche avec des pinces</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) physical_form(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.patient  se V moyen"/>
+               <EXAMPLES>
+                    <EXAMPLE>La branche s'est pliée</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Patient se V</SYNTAX>
+               <SEMANTICS>physical_form(result(E), Form, Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V ADV-Middle"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les branches de pin se plient facilement</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Patient se V ADV</SYNTAX>
+               <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.instrument V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les pinces ont plié la branche</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>contact(during(E), Instrument, Patient) physical_form(result(E), Form, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="45.2-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.Patient V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>La branche a plié</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>NP.Patient V</SYNTAX>
+                         <SEMANTICS>physical_form(result(E), Form, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

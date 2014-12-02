@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="rehearse-26.8">
+     <MEMBERS>
+          <MEMBER name="doubler"/>
+          <MEMBER name="exercer"/>
+          <MEMBER name="pratiquer"/>
+          <MEMBER name="refaire"/>
+          <MEMBER name="répéter"/>
+          <MEMBER name="reproduire"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max répète la pièce</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>perform(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

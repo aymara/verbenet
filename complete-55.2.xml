@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="complete-55.2">
+     <MEMBERS>
+          <MEMBER name="achever"/>
+          <MEMBER name="arrêter"/>
+          <MEMBER name="boucler"/>
+          <MEMBER name="finir"/>
+          <MEMBER name="terminer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a bouclé son travail</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>end(E, Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

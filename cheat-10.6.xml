@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="cheat-10.6">
+     <MEMBERS>
+          <MEMBER name="déposséder"/>
+          <MEMBER name="déshériter"/>
+          <MEMBER name="plumer"/>
+          <MEMBER name="rançonner"/>
+          <MEMBER name="saigner"/>
+          <MEMBER name="sevrer"/>
+          <MEMBER name="spolier"/>
+          <MEMBER name="débarrasser"/>
+          <MEMBER name="décharger"/>
+          <MEMBER name="défaire"/>
+          <MEMBER name="frauder"/>
+          <MEMBER name="priver"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source">
+               <SELRESTRS logic="or">
+                    <SELRESTRS logic="and">
+                         <SELRESTR Value="-" type="region"/>
+                         <SELRESTR Value="+" type="location"/>
+                    </SELRESTRS>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a déplumé Max de 10€.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Source) not(location(end(E), Theme, Source))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="10.6-1">
+               <MEMBERS>
+                    <MEMBER name="entôler"/>
+                    <MEMBER name="entuber"/>
+                    <MEMBER name="piller"/>
+                    <MEMBER name="purger"/>
+                    <MEMBER name="razzier"/>
+                    <MEMBER name="filouter"/>
+                    <MEMBER name="voler"/>
+                    <MEMBER name="escroquer"/>
+                    <MEMBER name="estamper"/>
+                    <MEMBER name="truander"/>
+                    <MEMBER name="arnaquer"/>
+                    <MEMBER name="dépouiller"/>
+                    <MEMBER name="dévaliser"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.source"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a anarqué 10€ à  Max.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Source">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) location(start(E), Theme, Source) not(location(end(E), Theme, Source))</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="send-11.1">
+     <MEMBERS>
+          <MEMBER name="gouverner"/>
+          <MEMBER name="larguer"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="importer"/>
+          <MEMBER name="acheminer"/>
+          <MEMBER name="amener"/>
+          <MEMBER name="apporter"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="charroyer"/>
+          <MEMBER name="convoyer"/>
+          <MEMBER name="déplacer"/>
+          <MEMBER name="emmener"/>
+          <MEMBER name="emporter"/>
+          <MEMBER name="entraîner"/>
+          <MEMBER name="envoyer"/>
+          <MEMBER name="expédier"/>
+          <MEMBER name="lancer"/>
+          <MEMBER name="passer"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="ramener"/>
+          <MEMBER name="rapporter"/>
+          <MEMBER name="réexpédier"/>
+          <MEMBER name="rejeter"/>
+          <MEMBER name="tirer"/>
+          <MEMBER name="traîner"/>
+          <MEMBER name="transbahuter"/>
+          <MEMBER name="transborder"/>
+          <MEMBER name="transférer"/>
+          <MEMBER name="transporter"/>
+          <MEMBER name="glisser"/>
+          <MEMBER name="remporter"/>
+          <MEMBER name="lâcher"/>
+          <MEMBER name="renvoyer"/>
+          <MEMBER name="mener"/>
+          <MEMBER name="transmettre"/>
+          <MEMBER name="retourner"/>
+          <MEMBER name="aiguiller"/>
+          <MEMBER name="exporter"/>
+          <MEMBER name="ficher"/>
+          <MEMBER name="flanquer"/>
+          <MEMBER name="fourrer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="or">
+                    <SELRESTRS logic="and">
+                         <SELRESTR Value="-" type="region"/>
+                         <SELRESTR Value="+" type="location"/>
+                    </SELRESTRS>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a envoyé le livre à Londres.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a envoyé le livre de Paris à Londres.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme {{de}} Initial_Location {Loc-Dest} Destination</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="11.1-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.initial_location"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a envoyé le livre de Paris.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="d depuis e"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Initial_Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

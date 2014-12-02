@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="amuse-31.1">
+     <MEMBERS>
+          <MEMBER name="abîmer"/>
+          <MEMBER name="abrutir"/>
+          <MEMBER name="accaparer"/>
+          <MEMBER name="adoucir"/>
+          <MEMBER name="affaiblir"/>
+          <MEMBER name="affecter"/>
+          <MEMBER name="affliger"/>
+          <MEMBER name="alarmer"/>
+          <MEMBER name="aliéner"/>
+          <MEMBER name="angoisser"/>
+          <MEMBER name="annihiler"/>
+          <MEMBER name="assouplir"/>
+          <MEMBER name="assurer"/>
+          <MEMBER name="attendrir"/>
+          <MEMBER name="attrister"/>
+          <MEMBER name="aveugler"/>
+          <MEMBER name="aveulir"/>
+          <MEMBER name="bafouer"/>
+          <MEMBER name="blesser"/>
+          <MEMBER name="bousculer"/>
+          <MEMBER name="broyer"/>
+          <MEMBER name="buter"/>
+          <MEMBER name="cabrer"/>
+          <MEMBER name="chagriner"/>
+          <MEMBER name="cingler"/>
+          <MEMBER name="claquer"/>
+          <MEMBER name="concerner"/>
+          <MEMBER name="contrister"/>
+          <MEMBER name="courroucer"/>
+          <MEMBER name="débiliter"/>
+          <MEMBER name="déconcerter"/>
+          <MEMBER name="décontenancer"/>
+          <MEMBER name="décontracter"/>
+          <MEMBER name="délabrer"/>
+          <MEMBER name="délecter"/>
+          <MEMBER name="démolir"/>
+          <MEMBER name="démonter"/>
+          <MEMBER name="démoraliser"/>
+          <MEMBER name="dénaturer"/>
+          <MEMBER name="dépiter"/>
+          <MEMBER name="déprimer"/>
+          <MEMBER name="dérégler"/>
+          <MEMBER name="désabuser"/>
+          <MEMBER name="désarticuler"/>
+          <MEMBER name="déshonorer"/>
+          <MEMBER name="désillusionner"/>
+          <MEMBER name="désoler"/>
+          <MEMBER name="détendre"/>
+          <MEMBER name="détériorer"/>
+          <MEMBER name="détraquer"/>
+          <MEMBER name="détruire"/>
+          <MEMBER name="dévaster"/>
+          <MEMBER name="disqualifier"/>
+          <MEMBER name="dissiper"/>
+          <MEMBER name="distraire"/>
+          <MEMBER name="divertir"/>
+          <MEMBER name="dynamiser"/>
+          <MEMBER name="ébahir"/>
+          <MEMBER name="écraser"/>
+          <MEMBER name="édifier"/>
+          <MEMBER name="effarer"/>
+          <MEMBER name="effaroucher"/>
+          <MEMBER name="égayer"/>
+          <MEMBER name="élever"/>
+          <MEMBER name="émotionner"/>
+          <MEMBER name="émouvoir"/>
+          <MEMBER name="énerver"/>
+          <MEMBER name="enfiévrer"/>
+          <MEMBER name="engager"/>
+          <MEMBER name="engourdir"/>
+          <MEMBER name="enhardir"/>
+          <MEMBER name="enivrer"/>
+          <MEMBER name="entamer"/>
+          <MEMBER name="entortiller"/>
+          <MEMBER name="épater"/>
+          <MEMBER name="époustoufler"/>
+          <MEMBER name="épuiser"/>
+          <MEMBER name="éreinter"/>
+          <MEMBER name="extasier"/>
+          <MEMBER name="exténuer"/>
+          <MEMBER name="fâcher"/>
+          <MEMBER name="fortifier"/>
+          <MEMBER name="froisser"/>
+          <MEMBER name="grandir"/>
+          <MEMBER name="guetter"/>
+          <MEMBER name="hanter"/>
+          <MEMBER name="harasser"/>
+          <MEMBER name="harceler"/>
+          <MEMBER name="hérisser"/>
+          <MEMBER name="humilier"/>
+          <MEMBER name="hypnotiser"/>
+          <MEMBER name="impatienter"/>
+          <MEMBER name="indigner"/>
+          <MEMBER name="infléchir"/>
+          <MEMBER name="injurier"/>
+          <MEMBER name="insulter"/>
+          <MEMBER name="interdire"/>
+          <MEMBER name="interpeller"/>
+          <MEMBER name="irriter"/>
+          <MEMBER name="libérer"/>
+          <MEMBER name="liquéfier"/>
+          <MEMBER name="liquider"/>
+          <MEMBER name="martyriser"/>
+          <MEMBER name="mêler"/>
+          <MEMBER name="ménager"/>
+          <MEMBER name="obséder"/>
+          <MEMBER name="offenser"/>
+          <MEMBER name="offusquer"/>
+          <MEMBER name="outrager"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="préoccuper"/>
+          <MEMBER name="rajeunir"/>
+          <MEMBER name="raser"/>
+          <MEMBER name="rassasier"/>
+          <MEMBER name="rassurer"/>
+          <MEMBER name="ravager"/>
+          <MEMBER name="rebuter"/>
+          <MEMBER name="recharger"/>
+          <MEMBER name="récréer"/>
+          <MEMBER name="regarder"/>
+          <MEMBER name="réjouir"/>
+          <MEMBER name="relaxer"/>
+          <MEMBER name="reposer"/>
+          <MEMBER name="repousser"/>
+          <MEMBER name="réprimer"/>
+          <MEMBER name="répugner"/>
+          <MEMBER name="revitaliser"/>
+          <MEMBER name="révulser"/>
+          <MEMBER name="rompre"/>
+          <MEMBER name="ruiner"/>
+          <MEMBER name="scandaliser"/>
+          <MEMBER name="situer"/>
+          <MEMBER name="soucier"/>
+          <MEMBER name="soulever"/>
+          <MEMBER name="tirailler"/>
+          <MEMBER name="tonifier"/>
+          <MEMBER name="tordre"/>
+          <MEMBER name="tourmenter"/>
+          <MEMBER name="tuer"/>
+          <MEMBER name="vexer"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="vivifier"/>
+          <MEMBER name="accabler"/>
+          <MEMBER name="alerter"/>
+          <MEMBER name="attiser"/>
+          <MEMBER name="avoir"/>
+          <MEMBER name="ballotter"/>
+          <MEMBER name="bercer"/>
+          <MEMBER name="canuler"/>
+          <MEMBER name="coller"/>
+          <MEMBER name="électriser"/>
+          <MEMBER name="embobiner"/>
+          <MEMBER name="encourager"/>
+          <MEMBER name="entraîner"/>
+          <MEMBER name="envenimer"/>
+          <MEMBER name="éveiller"/>
+          <MEMBER name="forcer"/>
+          <MEMBER name="frustrer"/>
+          <MEMBER name="gruger"/>
+          <MEMBER name="jouer"/>
+          <MEMBER name="pacifier"/>
+          <MEMBER name="poindre"/>
+          <MEMBER name="réconforter"/>
+          <MEMBER name="relancer"/>
+          <MEMBER name="stimuler"/>
+          <MEMBER name="transir"/>
+          <MEMBER name="transpercer"/>
+          <MEMBER name="tromper"/>
+          <MEMBER name="abasourdir"/>
+          <MEMBER name="abattre"/>
+          <MEMBER name="abuser"/>
+          <MEMBER name="affoler"/>
+          <MEMBER name="affriander"/>
+          <MEMBER name="affrioler"/>
+          <MEMBER name="agacer"/>
+          <MEMBER name="agiter"/>
+          <MEMBER name="aguicher"/>
+          <MEMBER name="ahurir"/>
+          <MEMBER name="allécher"/>
+          <MEMBER name="allumer"/>
+          <MEMBER name="amadouer"/>
+          <MEMBER name="amuser"/>
+          <MEMBER name="anéantir"/>
+          <MEMBER name="animer"/>
+          <MEMBER name="apaiser"/>
+          <MEMBER name="appâter"/>
+          <MEMBER name="asseoir"/>
+          <MEMBER name="assommer"/>
+          <MEMBER name="assouvir"/>
+          <MEMBER name="atteindre"/>
+          <MEMBER name="atterrer"/>
+          <MEMBER name="attirer"/>
+          <MEMBER name="attraper"/>
+          <MEMBER name="bassiner"/>
+          <MEMBER name="berner"/>
+          <MEMBER name="bluffer"/>
+          <MEMBER name="bouleverser"/>
+          <MEMBER name="brimer"/>
+          <MEMBER name="briser"/>
+          <MEMBER name="calmer"/>
+          <MEMBER name="captiver"/>
+          <MEMBER name="chambouler"/>
+          <MEMBER name="charmer"/>
+          <MEMBER name="chatouiller"/>
+          <MEMBER name="choquer"/>
+          <MEMBER name="cisailler"/>
+          <MEMBER name="combler"/>
+          <MEMBER name="commotionner"/>
+          <MEMBER name="confondre"/>
+          <MEMBER name="consterner"/>
+          <MEMBER name="contenter"/>
+          <MEMBER name="contrarier"/>
+          <MEMBER name="débecter"/>
+          <MEMBER name="décevoir"/>
+          <MEMBER name="déchaîner"/>
+          <MEMBER name="déchirer"/>
+          <MEMBER name="décourager"/>
+          <MEMBER name="défriser"/>
+          <MEMBER name="dégoûter"/>
+          <MEMBER name="déphaser"/>
+          <MEMBER name="déranger"/>
+          <MEMBER name="dérouter"/>
+          <MEMBER name="désappointer"/>
+          <MEMBER name="désarçonner"/>
+          <MEMBER name="désarmer"/>
+          <MEMBER name="désenchanter"/>
+          <MEMBER name="désobliger"/>
+          <MEMBER name="désorienter"/>
+          <MEMBER name="diminuer"/>
+          <MEMBER name="duper"/>
+          <MEMBER name="éberluer"/>
+          <MEMBER name="éblouir"/>
+          <MEMBER name="ébouriffer"/>
+          <MEMBER name="ébranler"/>
+          <MEMBER name="échauffer"/>
+          <MEMBER name="écorcher"/>
+          <MEMBER name="effrayer"/>
+          <MEMBER name="emballer"/>
+          <MEMBER name="embarrasser"/>
+          <MEMBER name="embêter"/>
+          <MEMBER name="embrouiller"/>
+          <MEMBER name="émoustiller"/>
+          <MEMBER name="enchanter"/>
+          <MEMBER name="endormir"/>
+          <MEMBER name="enflammer"/>
+          <MEMBER name="enjôler"/>
+          <MEMBER name="enlever"/>
+          <MEMBER name="ennuyer"/>
+          <MEMBER name="enquiquiner"/>
+          <MEMBER name="ensorceler"/>
+          <MEMBER name="enthousiasmer"/>
+          <MEMBER name="envoûter"/>
+          <MEMBER name="épouvanter"/>
+          <MEMBER name="éprouver"/>
+          <MEMBER name="escagasser"/>
+          <MEMBER name="estomaquer"/>
+          <MEMBER name="estourbir"/>
+          <MEMBER name="éteindre"/>
+          <MEMBER name="étonner"/>
+          <MEMBER name="étouffer"/>
+          <MEMBER name="étourdir"/>
+          <MEMBER name="exacerber"/>
+          <MEMBER name="exalter"/>
+          <MEMBER name="exaspérer"/>
+          <MEMBER name="excéder"/>
+          <MEMBER name="exciter"/>
+          <MEMBER name="fasciner"/>
+          <MEMBER name="fatiguer"/>
+          <MEMBER name="flatter"/>
+          <MEMBER name="fléchir"/>
+          <MEMBER name="foudroyer"/>
+          <MEMBER name="fouetter"/>
+          <MEMBER name="frapper"/>
+          <MEMBER name="galvaniser"/>
+          <MEMBER name="geler"/>
+          <MEMBER name="gêner"/>
+          <MEMBER name="glacer"/>
+          <MEMBER name="griser"/>
+          <MEMBER name="hébéter"/>
+          <MEMBER name="heurter"/>
+          <MEMBER name="horrifier"/>
+          <MEMBER name="illuminer"/>
+          <MEMBER name="importuner"/>
+          <MEMBER name="impressionner"/>
+          <MEMBER name="indisposer"/>
+          <MEMBER name="inquiéter"/>
+          <MEMBER name="inspirer"/>
+          <MEMBER name="intéresser"/>
+          <MEMBER name="intimider"/>
+          <MEMBER name="intriguer"/>
+          <MEMBER name="lanciner"/>
+          <MEMBER name="lasser"/>
+          <MEMBER name="lénifier"/>
+          <MEMBER name="lessiver"/>
+          <MEMBER name="leurrer"/>
+          <MEMBER name="magnétiser"/>
+          <MEMBER name="marquer"/>
+          <MEMBER name="mécontenter"/>
+          <MEMBER name="méduser"/>
+          <MEMBER name="meurtrir"/>
+          <MEMBER name="modérer"/>
+          <MEMBER name="mortifier"/>
+          <MEMBER name="mystifier"/>
+          <MEMBER name="navrer"/>
+          <MEMBER name="nourrir"/>
+          <MEMBER name="obnubiler"/>
+          <MEMBER name="outrer"/>
+          <MEMBER name="paralyser"/>
+          <MEMBER name="passionner"/>
+          <MEMBER name="peiner"/>
+          <MEMBER name="perturber"/>
+          <MEMBER name="pétrifier"/>
+          <MEMBER name="prendre"/>
+          <MEMBER name="provoquer"/>
+          <MEMBER name="rafraîchir"/>
+          <MEMBER name="ravir"/>
+          <MEMBER name="réfrigérer"/>
+          <MEMBER name="refroidir"/>
+          <MEMBER name="remuer"/>
+          <MEMBER name="renverser"/>
+          <MEMBER name="retourner"/>
+          <MEMBER name="réveiller"/>
+          <MEMBER name="revigorer"/>
+          <MEMBER name="revivifier"/>
+          <MEMBER name="révolter"/>
+          <MEMBER name="saisir"/>
+          <MEMBER name="satisfaire"/>
+          <MEMBER name="secouer"/>
+          <MEMBER name="séduire"/>
+          <MEMBER name="sidérer"/>
+          <MEMBER name="sonner"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="stupéfaire"/>
+          <MEMBER name="stupéfier"/>
+          <MEMBER name="subjuguer"/>
+          <MEMBER name="suffoquer"/>
+          <MEMBER name="supplicier"/>
+          <MEMBER name="surprendre"/>
+          <MEMBER name="tarabuster"/>
+          <MEMBER name="tempérer"/>
+          <MEMBER name="tenailler"/>
+          <MEMBER name="tenter"/>
+          <MEMBER name="terrasser"/>
+          <MEMBER name="terrifier"/>
+          <MEMBER name="terroriser"/>
+          <MEMBER name="titiller"/>
+          <MEMBER name="torturer"/>
+          <MEMBER name="toucher"/>
+          <MEMBER name="tracasser"/>
+          <MEMBER name="transporter"/>
+          <MEMBER name="travailler"/>
+          <MEMBER name="tremper"/>
+          <MEMBER name="troubler"/>
+          <MEMBER name="turlupiner"/>
+          <MEMBER name="ulcérer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le clown amusait les enfants</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Stimulus, E) emotional_state(result(E), Emotion, Experiencer)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le clown amuse les enfants par sa grimace.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="par"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS/>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="Que P V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Que le clown fasse des grimaces amuse les enfants.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Stimulus V Experiencer</SYNTAX>
+               <SEMANTICS/>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="31.1-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V neutre de ce Qu P"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les enfants s'amusent (de ce) que les clowns fassent des grimaces.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Experiencer se V {de} Stimulus</SYNTAX>
+                         <SEMANTICS/>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

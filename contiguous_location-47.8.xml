@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="contiguous_location-47.8">
+     <MEMBERS>
+          <MEMBER name="côtoyer"/>
+          <MEMBER name="couronner"/>
+          <MEMBER name="encadrer"/>
+          <MEMBER name="encercler"/>
+          <MEMBER name="enclore"/>
+          <MEMBER name="enjamber"/>
+          <MEMBER name="enlacer"/>
+          <MEMBER name="entourer"/>
+          <MEMBER name="environner"/>
+          <MEMBER name="limiter"/>
+          <MEMBER name="longer"/>
+          <MEMBER name="suivre"/>
+          <MEMBER name="surplomber"/>
+          <MEMBER name="intersecter"/>
+          <MEMBER name="chevaucher"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="napper"/>
+          <MEMBER name="pénétrer"/>
+          <MEMBER name="recouvrir"/>
+          <MEMBER name="serrer"/>
+          <MEMBER name="dominer"/>
+          <MEMBER name="arroser"/>
+          <MEMBER name="avoisiner"/>
+          <MEMBER name="border"/>
+          <MEMBER name="borner"/>
+          <MEMBER name="cerner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Co-Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'Italie borde la France</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Co-Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>contact(during(E), Theme, Co-Theme) exist(during(E), Theme) exist(during(E), Co-Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="47.8-1">
+               <MEMBERS>
+                    <MEMBER name="couper"/>
+                    <MEMBER name="croiser"/>
+                    <MEMBER name="effleurer"/>
+                    <MEMBER name="jouxter"/>
+                    <MEMBER name="toucher"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>L'Italie et la France se touchent</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Theme and Co-Theme se V</SYNTAX>
+                         <SEMANTICS>contact(during(E), Theme, Co-Theme) exist(during(E), Theme) exist(during(E), Co-Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

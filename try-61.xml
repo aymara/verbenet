@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="try-61">
+     <MEMBERS>
+          <MEMBER name="tenter"/>
+          <MEMBER name="essayer"/>
+          <MEMBER name="tâcher"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a essayé la natation</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme &lt;-sentential&gt;</SYNTAX>
+               <SEMANTICS>attempt(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a essayé de nager</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {de} Theme &lt;+sc_to_inf&gt;</SYNTAX>
+               <SEMANTICS>attempt(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="other_cos-45.4">
+     <MEMBERS>
+          <MEMBER name="aseptiser"/>
+          <MEMBER name="assainir"/>
+          <MEMBER name="assurer"/>
+          <MEMBER name="attendrir"/>
+          <MEMBER name="attiédir"/>
+          <MEMBER name="bistrer"/>
+          <MEMBER name="calmer"/>
+          <MEMBER name="empâter"/>
+          <MEMBER name="épurer"/>
+          <MEMBER name="éterniser"/>
+          <MEMBER name="falsifier"/>
+          <MEMBER name="fertiliser"/>
+          <MEMBER name="nationaliser"/>
+          <MEMBER name="neutraliser"/>
+          <MEMBER name="polir"/>
+          <MEMBER name="purifier"/>
+          <MEMBER name="raffiner"/>
+          <MEMBER name="rafraîchir"/>
+          <MEMBER name="régulariser"/>
+          <MEMBER name="stériliser"/>
+          <MEMBER name="volatiliser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Instrument"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc sèche les draps avec un séchoir à cheveux</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="with"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) state(result(E), Endstate, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V ADV-Middle"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le coton se sèche facilement</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <SE/>
+                    <VERB/>
+                    <ADV/>
+               </SYNTAX>
+               <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.instrument V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le séchoir a séché les vêtements</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>use(during(E), ?Agent, Instrument) state(result(E), Endstate, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="45.4-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.Patient se V neutre"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les cerises s'amollissent</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Patient se V</SYNTAX>
+                         <SEMANTICS>state(result(E), Endstate, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="45.4-1-1">
+                         <MEMBERS/>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP. Patient V "/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Les draps sèchent</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>Patient V</SYNTAX>
+                                   <SEMANTICS>state(result(E), Endstate, Patient)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

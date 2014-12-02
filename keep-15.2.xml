@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="keep-15.2">
+     <MEMBERS>
+          <MEMBER name="conserver"/>
+          <MEMBER name="disposer"/>
+          <MEMBER name="garder"/>
+          <MEMBER name="laisser"/>
+          <MEMBER name="maintenir"/>
+          <MEMBER name="mettre"/>
+          <MEMBER name="retenir"/>
+          <MEMBER name="serrer"/>
+          <MEMBER name="stocker"/>
+          <MEMBER name="suivre"/>
+          <MEMBER name="thésauriser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc garde les journaux dans le bureau</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>Prep(during(E), Theme, Location) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="smell_emission-43.3">
+     <MEMBERS>
+          <MEMBER name="cocoter"/>
+          <MEMBER name="embaumer"/>
+          <MEMBER name="empester"/>
+          <MEMBER name="fouetter"/>
+          <MEMBER name="puer"/>
+          <MEMBER name="renifler"/>
+          <MEMBER name="sentir"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="-" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le tabac pue.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Odor)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.location V"/>
+               <EXAMPLES>
+                    <EXAMPLE>La salle pue.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), ?Theme, Odor) location(during(E), Odor, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>La salle pue le tabac.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Odor) location(during(E), Odor, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

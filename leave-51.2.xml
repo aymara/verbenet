@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="leave-51.2">
+     <MEMBERS>
+          <MEMBER name="abandonner"/>
+          <MEMBER name="délaisser"/>
+          <MEMBER name="déserter"/>
+          <MEMBER name="quitter"/>
+          <MEMBER name="fendre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.initial_location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a quiité la pièce</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) not(location(end(E), Theme, Initial_Location)) direction(during(E), from, Theme, Initial_Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

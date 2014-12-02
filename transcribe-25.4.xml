@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="transcribe-25.4">
+     <MEMBERS>
+          <MEMBER name="photographier"/>
+          <MEMBER name="polycopier"/>
+          <MEMBER name="redoubler"/>
+          <MEMBER name="refaire"/>
+          <MEMBER name="reprographier"/>
+          <MEMBER name="ronéoter"/>
+          <MEMBER name="taper"/>
+          <MEMBER name="copier"/>
+          <MEMBER name="enregistrer"/>
+          <MEMBER name="reproduire"/>
+          <MEMBER name="consigner"/>
+          <MEMBER name="établir"/>
+          <MEMBER name="inscrire"/>
+          <MEMBER name="répertorier"/>
+          <MEMBER name="repiquer"/>
+          <MEMBER name="transcrire"/>
+          <MEMBER name="cinématographier"/>
+          <MEMBER name="dactylographier"/>
+          <MEMBER name="décalquer"/>
+          <MEMBER name="décrire"/>
+          <MEMBER name="dupliquer"/>
+          <MEMBER name="filmer"/>
+          <MEMBER name="imiter"/>
+          <MEMBER name="microfilmer"/>
+          <MEMBER name="photocopier"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a copié un fichier sur sa clef USB.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme {{Loc-dest}} Destination</SYNTAX>
+               <SEMANTICS>created_image(result(E), Theme) Prep(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

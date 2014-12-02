@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="consume-66">
+     <MEMBERS>
+          <MEMBER name="dépenser"/>
+          <MEMBER name="consommer"/>
+          <MEMBER name="gâcher"/>
+          <MEMBER name="gaspiller"/>
+          <MEMBER name="user"/>
+          <MEMBER name="utiliser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Asset"/>
+          <THEMROLE type="Goal"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à V0-inf W"/>
+               <EXAMPLES>
+                    <EXAMPLE>J'ai consommé beaucoup de temps à réfléchir.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Asset {à} Goal &lt;+V0_inf&gt;</SYNTAX>
+               <SEMANTICS>exist(start(E), Asset) not(exist(end(E), Asset)) spend(during(E), Agent, Asset, Goal)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="66-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP pour V0-inf W"/>
+                         <EXAMPLES>
+                              <EXAMPLE>J'ai gâché deux jours pour finir ce travail</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agnt V Asset {pour} Goa&lt;+V0-inf&gt;</SYNTAX>
+                         <SEMANTICS>exist(start(E), Asset) not(exist(end(E), Asset)) spend(during(E), Agent, Asset, Goal)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

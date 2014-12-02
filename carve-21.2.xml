@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="carve-21.2">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Instrument">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="21.2-1">
+               <MEMBERS>
+                    <MEMBER name="déchirer"/>
+                    <MEMBER name="découper"/>
+                    <MEMBER name="déliter"/>
+                    <MEMBER name="disloquer"/>
+                    <MEMBER name="diviser"/>
+                    <MEMBER name="effriter"/>
+                    <MEMBER name="émietter"/>
+                    <MEMBER name="émincer"/>
+                    <MEMBER name="fracasser"/>
+                    <MEMBER name="hacher"/>
+                    <MEMBER name="lacérer"/>
+                    <MEMBER name="moudre"/>
+                    <MEMBER name="piler"/>
+                    <MEMBER name="pulvériser"/>
+                    <MEMBER name="saucissonner"/>
+                    <MEMBER name="trancher"/>
+                    <MEMBER name="briser"/>
+                    <MEMBER name="broyer"/>
+                    <MEMBER name="casser"/>
+                    <MEMBER name="cliver"/>
+                    <MEMBER name="concasser"/>
+                    <MEMBER name="couper"/>
+                    <MEMBER name="déchiqueter"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Result"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.instrument"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a broyé la gousse d'ail avec un marteau</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="with"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Instrument">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP  se V ADV"/>
+                         <EXAMPLES>
+                              <EXAMPLE>La gousse d'ail se broye bien</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <SE/>
+                              <VERB/>
+                              <ADV/>
+                         </SYNTAX>
+                         <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.instrument V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le marteau broye l'ail</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Instrument">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.instrument V ADVP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le marteau broye bien</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Instrument V</SYNTAX>
+                         <SEMANTICS>property(Instrument, Prop) Adv(Prop)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.result"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a broyé la gousse d'ail en mille morceaux</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="en"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Result">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="21.2-2">
+               <MEMBERS>
+                    <MEMBER name="hacher"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.instrument"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Carol a haché un arbre avec une hache/du persil avec un hachoir.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="avec"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Instrument">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) manner(during(E), Motion, Agent) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V ADVP-Middle"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le persil se hache facilement.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Patient se&lt;+refl&gt; V</SYNTAX>
+                         <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.instrument V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Ce hachoir hache du persil.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Instrument">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.instrument V ADV"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Ce hachoir hache bien.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Instrument">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <ADV/>
+                         </SYNTAX>
+                         <SEMANTICS>property(Instrument, Prop) Adv(Prop)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

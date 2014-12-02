@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="cooking-45.3">
+     <MEMBERS>
+          <MEMBER name="altérer"/>
+          <MEMBER name="cautériser"/>
+          <MEMBER name="ébouillanter"/>
+          <MEMBER name="enflammer"/>
+          <MEMBER name="flétrir"/>
+          <MEMBER name="saisir"/>
+          <MEMBER name="tremper"/>
+          <MEMBER name="blanchir"/>
+          <MEMBER name="bouillir"/>
+          <MEMBER name="braiser"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="cuire"/>
+          <MEMBER name="cuisiner"/>
+          <MEMBER name="frire"/>
+          <MEMBER name="fumer"/>
+          <MEMBER name="gratiner"/>
+          <MEMBER name="griller"/>
+          <MEMBER name="infuser"/>
+          <MEMBER name="mijoter"/>
+          <MEMBER name="mitonner"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="rissoler"/>
+          <MEMBER name="rôtir"/>
+          <MEMBER name="surcuire"/>
+          <MEMBER name="torréfier"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Instrument">
+               <SELRESTR Value="+" type="solid"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a cuit les pommes de terre au four</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="a à avec d n s"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) apply_heat(during(E), Instrument, Patient) cooked(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V ADV-Middle"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les pommes de terre bretonnes se cuisent facilement</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <SE/>
+                    <VERB/>
+                    <ADV/>
+               </SYNTAX>
+               <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.instrument V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Ce four a cuit les pommes de terre</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>apply_heat(during(E), Instrument, Patient) cooked(result(E), Form, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="45.3-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V neutre"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les pommes de terre ont cuit</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Patient V neutre</SYNTAX>
+                         <SEMANTICS>cooked(result(E), Form, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

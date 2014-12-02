@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="order-60.1">
+     <MEMBERS>
+          <MEMBER name="prescrire"/>
+          <MEMBER name="rappeler"/>
+          <MEMBER name="réclamer"/>
+          <MEMBER name="assigner"/>
+          <MEMBER name="commander"/>
+          <MEMBER name="crier"/>
+          <MEMBER name="demander"/>
+          <MEMBER name="imposer"/>
+          <MEMBER name="intimer"/>
+          <MEMBER name="mander"/>
+          <MEMBER name="ordonner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.Recipient que S&lt;subj&gt;"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a demandé à Jean que son fils vienne ce soir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Topic&lt;Que P subjonctif&gt;</SYNTAX>
+               <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.Recipient de Vinf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a demandé à Jean de venir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Topic &lt;de V1inf&gt;</SYNTAX>
+               <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

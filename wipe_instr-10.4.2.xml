@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="wipe_instr-10.4.2">
+     <MEMBERS>
+          <MEMBER name="éponger"/>
+          <MEMBER name="racler"/>
+          <MEMBER name="râteler"/>
+          <MEMBER name="siphonner"/>
+          <MEMBER name="brosser"/>
+          <MEMBER name="essuyer"/>
+          <MEMBER name="filtrer"/>
+          <MEMBER name="limer"/>
+          <MEMBER name="poncer"/>
+          <MEMBER name="gommer"/>
+          <MEMBER name="pomper"/>
+          <MEMBER name="balayer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="animate"/>
+                    <SELRESTR Value="+" type="concrete"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+          <THEMROLE type="Instrument">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="animate"/>
+                    <SELRESTR Value="+" type="concrete"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Result"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a épongé le vin du comptoir.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme {{de}} Initial_Location</SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Initial_Location) not(location(end(E), Theme, Initial_Location))</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a épongé le comptoir du vin renversé</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), ?Theme, ?Initial_Location) not(location(end(E), ?Theme, ?Initial_Location))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

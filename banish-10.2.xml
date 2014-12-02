@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="banish-10.2">
+     <MEMBERS>
+          <MEMBER name="révoquer"/>
+          <MEMBER name="évacuer"/>
+          <MEMBER name="expulser"/>
+          <MEMBER name="extirper"/>
+          <MEMBER name="extrader"/>
+          <MEMBER name="bannir"/>
+          <MEMBER name="chasser"/>
+          <MEMBER name="exclure"/>
+          <MEMBER name="exhumer"/>
+          <MEMBER name="proscrire"/>
+          <MEMBER name="renvoyer"/>
+          <MEMBER name="écarter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Source">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le roi a banni le général de son pays</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Source) not(location(end(E), Theme, Source))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="10.2-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.destination"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le roi a déporté le général dans une île</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="Loc-Dest"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Destination">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) location(start(E), Theme, ?Source) location(end(E), Theme, Destination)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="slide-11.2">
+     <MEMBERS>
+          <MEMBER name="rouler"/>
+          <MEMBER name="glisser"/>
+          <MEMBER name="darder"/>
+          <MEMBER name="décocher"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="lancer"/>
+          <MEMBER name="pointer"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="renvoyer"/>
+          <MEMBER name="réverbérer"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="transférer"/>
+          <MEMBER name="transporter"/>
+          <MEMBER name="basculer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="or">
+                    <SELRESTRS logic="and">
+                         <SELRESTR Value="-" type="region"/>
+                         <SELRESTR Value="+" type="location"/>
+                    </SELRESTRS>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Trajectory"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.initial_location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a glissé de sa chaise.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Theme V {{de}} Initial_Location</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>La voiture a glissé dans le fossé</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(end(E), Theme, Destination)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.initial_location PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>La valise a glissé du salon au corridor</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Theme V {{de}} Initial_Location {Loc-Dest} Destination</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) location(end(E), Theme, Destination)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max glisse le buffet dans le couloir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="to"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max glisse le buffet du salon dans le couloir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme {{de}} Initial_Location {Loc-Dest} Destination</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

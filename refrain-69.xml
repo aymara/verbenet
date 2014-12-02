@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="refrain-69">
+     <MEMBERS>
+          <MEMBER name="abstenir s'"/>
+          <MEMBER name="arrêter s'"/>
+          <MEMBER name="refréner"/>
+          <MEMBER name="retenir se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il s'abstient de fumer</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {de} Theme &lt;+V0-inf&gt;</SYNTAX>
+               <SEMANTICS>abstain(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

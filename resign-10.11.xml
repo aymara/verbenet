@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="resign-10.11">
+     <MEMBERS>
+          <MEMBER name="démissionner"/>
+          <MEMBER name="partir"/>
+          <MEMBER name="sortir"/>
+          <MEMBER name="désister se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Source"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a démissionné de l'armée.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {de} Source &lt;-sentential&gt;</SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Source) not(location(end(E), Source))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

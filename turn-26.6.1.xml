@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="turn-26.6.1">
+     <MEMBERS>
+          <MEMBER name="arranger"/>
+          <MEMBER name="changer"/>
+          <MEMBER name="convertir"/>
+          <MEMBER name="métamorphoser"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="traduire"/>
+          <MEMBER name="transcrire"/>
+          <MEMBER name="transformer"/>
+          <MEMBER name="transmuer"/>
+          <MEMBER name="transmuter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Result"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.patient PP.result"/>
+               <EXAMPLES>
+                    <EXAMPLE>La sorcière a transformé Paul en grenouille</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Result">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(state(start(E), Result, Patient)) state(result(E), Result, Patient) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.patient se V PP.result"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max s'est transformé en grenouille</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <SE/>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Result">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(state(start(E), Result, Patient)) state(result(E), Result, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

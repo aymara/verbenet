@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="image_impression-25.1">
+     <MEMBERS>
+          <MEMBER name="imprimer"/>
+          <MEMBER name="tatouer"/>
+          <MEMBER name="annoter"/>
+          <MEMBER name="broder"/>
+          <MEMBER name="estampiller"/>
+          <MEMBER name="graver"/>
+          <MEMBER name="ouvrager"/>
+          <MEMBER name="parapher"/>
+          <MEMBER name="peindre"/>
+          <MEMBER name="pointiller"/>
+          <MEMBER name="programmer"/>
+          <MEMBER name="timbrer"/>
+          <MEMBER name="chiffrer"/>
+          <MEMBER name="marquer"/>
+          <MEMBER name="signer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.theme PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc gravait son prénom sur la bague.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>created_image(result(E), Theme) Prep(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.destination PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc gravait l'anneau de son prénom.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>created_image(result(E), Theme) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

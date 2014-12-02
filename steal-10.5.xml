@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="steal-10.5">
+     <MEMBERS>
+          <MEMBER name="soustraire"/>
+          <MEMBER name="soutirer"/>
+          <MEMBER name="tirer"/>
+          <MEMBER name="barboter"/>
+          <MEMBER name="calotter"/>
+          <MEMBER name="carotter"/>
+          <MEMBER name="chaparder"/>
+          <MEMBER name="chauffer"/>
+          <MEMBER name="chiper"/>
+          <MEMBER name="choper"/>
+          <MEMBER name="chouraver"/>
+          <MEMBER name="chourer"/>
+          <MEMBER name="confisquer"/>
+          <MEMBER name="dérober"/>
+          <MEMBER name="emprunter"/>
+          <MEMBER name="enlever"/>
+          <MEMBER name="extorquer"/>
+          <MEMBER name="faucher"/>
+          <MEMBER name="louer"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="prendre"/>
+          <MEMBER name="rabioter"/>
+          <MEMBER name="racheter"/>
+          <MEMBER name="reprendre"/>
+          <MEMBER name="resquiller"/>
+          <MEMBER name="retirer"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="soulever"/>
+          <MEMBER name="subtiliser"/>
+          <MEMBER name="kidnapper"/>
+          <MEMBER name="rafler"/>
+          <MEMBER name="ravir"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source">
+               <SELRESTRS logic="or">
+                    <SELRESTRS logic="and">
+                         <SELRESTR Value="-" type="region"/>
+                         <SELRESTR Value="+" type="location"/>
+                    </SELRESTRS>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Beneficiary">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le bandit a chipé le tableau à Jean.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>manner(during(E), illegal, Agent) has_possession(start(E), Source, Theme) has_possession(end(E), Agent, Theme) not(has_possession(end(E), Source, Theme)) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le bandit a chipé le tableau à Jean pour Marie.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>manner(during(E), illegal, Agent) has_possession(start(E), Source, Theme) has_possession(end(E), Beneficiary, Theme) not(has_possession(end(E), Source, Theme)) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

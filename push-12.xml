@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="push-12">
+     <MEMBERS>
+          <MEMBER name="secouer"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="enfoncer"/>
+          <MEMBER name="tirer"/>
+          <MEMBER name="arracher"/>
+          <MEMBER name="bousculer"/>
+          <MEMBER name="fouler"/>
+          <MEMBER name="resserrer"/>
+          <MEMBER name="tordre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a secoué le shaker</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) contact(during(E), Agent, Theme) exert_force(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

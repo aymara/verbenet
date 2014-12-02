@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="herd-47.5.2">
+     <MEMBERS>
+          <MEMBER name="assembler"/>
+          <MEMBER name="entasser"/>
+          <MEMBER name="grouper"/>
+          <MEMBER name="masser"/>
+          <MEMBER name="rassembler"/>
+          <MEMBER name="regrouper"/>
+          <MEMBER name="réunir"/>
+          <MEMBER name="accumuler"/>
+          <MEMBER name="amasser"/>
+          <MEMBER name="amonceler"/>
+          <MEMBER name="ameuter"/>
+          <MEMBER name="collecter"/>
+          <MEMBER name="collectionner"/>
+          <MEMBER name="cumuler"/>
+          <MEMBER name="agglomérer"/>
+          <MEMBER name="attrouper"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="plural"/>
+                    <SELRESTR Value="+" type="concrete"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP se V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les enfants se rassemblent</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <SE/>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>not(together(start(E), physical, Theme_i, Theme_j)) together(end(E), physical, Theme_i, Theme_j)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le professeur rassemble les enfants</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) not(together(start(E), physical, Theme_i, Theme_j)) together(end(E), physical, Theme_i, Theme_j)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

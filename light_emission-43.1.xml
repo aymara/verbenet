@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="light_emission-43.1">
+     <MEMBERS>
+          <MEMBER name="briller"/>
+          <MEMBER name="chatoyer"/>
+          <MEMBER name="clignoter"/>
+          <MEMBER name="éclater"/>
+          <MEMBER name="étinceler"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="flamboyer"/>
+          <MEMBER name="fulgurer"/>
+          <MEMBER name="luire"/>
+          <MEMBER name="miroiter"/>
+          <MEMBER name="papilloter"/>
+          <MEMBER name="rayonner"/>
+          <MEMBER name="reluire"/>
+          <MEMBER name="resplendir"/>
+          <MEMBER name="rutiler"/>
+          <MEMBER name="scintiller"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="-" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+          <THEMROLE type="Agent"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Une étoile brille dans le ciel</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Prop) Prep(during(E), Prop, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.location V PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le ciel brille d'étoiles</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Prop) location(during(E), Prop, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="IL V NP PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il brille une étoile dans le ciel</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>there V Theme {{+loc}} Location</SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Prop) Prep(during(E), Prop, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

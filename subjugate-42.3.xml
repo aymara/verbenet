@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="subjugate-42.3">
+     <MEMBERS>
+          <MEMBER name="asphyxier"/>
+          <MEMBER name="dégrader"/>
+          <MEMBER name="dompter"/>
+          <MEMBER name="écraser"/>
+          <MEMBER name="étouffer"/>
+          <MEMBER name="mater"/>
+          <MEMBER name="réduire"/>
+          <MEMBER name="supprimer"/>
+          <MEMBER name="tuer"/>
+          <MEMBER name="vaincre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Instrument"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>La Russie a écrasé la Mongolie avec un armement lourd</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) subjugated(during(E), Patient) use(during(E), Agent, Instrument)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

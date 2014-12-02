@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="roll-51.3.1">
+     <MEMBERS>
+          <MEMBER name="choir"/>
+          <MEMBER name="chuter"/>
+          <MEMBER name="descendre"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="voler"/>
+          <MEMBER name="avancer"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="basculer"/>
+          <MEMBER name="bouger"/>
+          <MEMBER name="dériver"/>
+          <MEMBER name="dévier"/>
+          <MEMBER name="glisser"/>
+          <MEMBER name="baisser"/>
+          <MEMBER name="tomber"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP.theme V"/>
+               <EXAMPLES>
+                    <EXAMPLE>La balle a roulé (vers + jusqu'à) la porte.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Theme V {jusqu'à/vers} Location</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) not(location(start(E), Theme, Location)) près-de-location(end(E), Theme, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

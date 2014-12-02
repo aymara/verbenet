@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="begin-55.1">
+     <MEMBERS>
+          <MEMBER name="recommencer"/>
+          <MEMBER name="commencer"/>
+          <MEMBER name="continuer"/>
+          <MEMBER name="mettre se"/>
+          <MEMBER name="partir"/>
+          <MEMBER name="promettre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Instrument"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V à S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a commencé à lire ce livre</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V à Theme &lt;+sc_to_inf&gt;</SYNTAX>
+               <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.theme V"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'orage a commencé.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>begin(E, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP   "/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a commencé le livre</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>begin(E, Theme) cause (Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Son discours a commencé par une plaisanterie.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="par"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>begin(E, Theme) use(during(E), ?Agent, Instrument)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a commencé son discours par une plaisanterie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="par"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>begin(E, Theme) use(during(E), Agent, Instrument) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="55.1-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V de S-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a commencé de lire son livre</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V de Theme &lt;+sc_to_inf&gt;</SYNTAX>
+                         <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

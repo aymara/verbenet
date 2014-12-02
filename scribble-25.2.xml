@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="scribble-25.2">
+     <MEMBERS>
+          <MEMBER name="crayonner"/>
+          <MEMBER name="gribouiller"/>
+          <MEMBER name="griffonner"/>
+          <MEMBER name="peindre"/>
+          <MEMBER name="brosser"/>
+          <MEMBER name="dessiner"/>
+          <MEMBER name="esquisser"/>
+          <MEMBER name="composer"/>
+          <MEMBER name="découper"/>
+          <MEMBER name="ébaucher"/>
+          <MEMBER name="écrivailler"/>
+          <MEMBER name="écrivasser"/>
+          <MEMBER name="exécuter"/>
+          <MEMBER name="fabriquer"/>
+          <MEMBER name="faire"/>
+          <MEMBER name="forger"/>
+          <MEMBER name="former"/>
+          <MEMBER name="produire"/>
+          <MEMBER name="représenter"/>
+          <MEMBER name="tailler"/>
+          <MEMBER name="tracer"/>
+          <MEMBER name="barbouiller"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc dessinait un portrait sur sa feuille.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>created_image(result(E), Theme) Prep(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

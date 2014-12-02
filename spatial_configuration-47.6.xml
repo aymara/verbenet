@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="spatial_configuration-47.6">
+     <MEMBERS>
+          <MEMBER name="tendre"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="virer"/>
+          <MEMBER name="appuyer"/>
+          <MEMBER name="arborer"/>
+          <MEMBER name="asseoir"/>
+          <MEMBER name="avancer"/>
+          <MEMBER name="baisser"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="braquer"/>
+          <MEMBER name="déplier"/>
+          <MEMBER name="exposer"/>
+          <MEMBER name="incliner"/>
+          <MEMBER name="installer"/>
+          <MEMBER name="jucher"/>
+          <MEMBER name="lever"/>
+          <MEMBER name="mettre"/>
+          <MEMBER name="nicher"/>
+          <MEMBER name="pencher"/>
+          <MEMBER name="pendre"/>
+          <MEMBER name="percher"/>
+          <MEMBER name="pivoter"/>
+          <MEMBER name="poser"/>
+          <MEMBER name="projeter"/>
+          <MEMBER name="reposer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.theme PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max dresse le mât dans la cour</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) not(position(start(E), Theme, Pos)) position(end(E), Theme, Pos) Prep(E, Theme, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="47.6-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.theme se V PP.location"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le mât se dresse dans la cour</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <SE/>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="+" type="loc"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>position(E, Theme, Pos) Prep(E, Theme, Location)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="47.6-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.theme V PP.location"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le jambon pend à la poutre</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="+" type="loc"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>position(E, Theme, Pos) Prep(E, Theme, Location)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="urge-58.1">
+     <MEMBERS>
+          <MEMBER name="solliciter"/>
+          <MEMBER name="appeler"/>
+          <MEMBER name="engager"/>
+          <MEMBER name="exhorter"/>
+          <MEMBER name="inviter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.Topic(Inf)"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a poussé Marie à faire la vaiselle</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Recipient {à} Topic &lt;inf&gt;</SYNTAX>
+               <SEMANTICS>urge(during(E), Agent, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à ce que S"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a poussé Marie à ce que son mari démissionne</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Recipient {à} Topic &lt;+ce que P&gt;</SYNTAX>
+               <SEMANTICS>urge(during(E), Agent, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

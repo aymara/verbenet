@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="modes_of_being_with_motion-47.3">
+     <MEMBERS>
+          <MEMBER name="battre"/>
+          <MEMBER name="bouger"/>
+          <MEMBER name="branler"/>
+          <MEMBER name="chanceler"/>
+          <MEMBER name="danser"/>
+          <MEMBER name="flancher"/>
+          <MEMBER name="fléchir"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="tanguer"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="tournoyer"/>
+          <MEMBER name="trembler"/>
+          <MEMBER name="trembloter"/>
+          <MEMBER name="vaciller"/>
+          <MEMBER name="vibrer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Un drapeau flottait au-dessus du fort</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location) motion(during(E), Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="47.3-1">
+               <MEMBERS>
+                    <MEMBER name="remuer"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.agent V NP.theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Max remue son écharpe</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>exist(during(E), Theme) ?Prep(during(E), Theme, Location) cause(during(E), Agent, motion(during(E), Theme))</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="47.3-2">
+               <MEMBERS>
+                    <MEMBER name="frémir"/>
+                    <MEMBER name="ondoyer"/>
+                    <MEMBER name="palpiter"/>
+                    <MEMBER name="papilloter"/>
+                    <MEMBER name="tourbilloner"/>
+                    <MEMBER name="tournoyer"/>
+                    <MEMBER name="trembler"/>
+                    <MEMBER name="trembloter"/>
+                    <MEMBER name="vaciller"/>
+                    <MEMBER name="vibrer"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.location V PP.theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>La surface frémit de petites ondes</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location) motion(during(E), Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

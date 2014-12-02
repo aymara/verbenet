@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="appeal-31.4">
+     <MEMBERS>
+          <MEMBER name="détonner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Stimulus"/>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.experiencer"/>
+               <EXAMPLES>
+                    <EXAMPLE>Ce tableau plaît à Marie.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(E, Emotion, Experiencer) cause(Stimulus, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="Que P V PP.experiencer"/>
+               <EXAMPLES>
+                    <EXAMPLE>Qu'on fasse ça plaît à Marie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Stimulus V {à} Experiencer</SYNTAX>
+               <SEMANTICS/>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="31.4-3">
+               <MEMBERS>
+                    <MEMBER name="compter"/>
+                    <MEMBER name="importer"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>L'argent compte.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Stimulus">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                         </SYNTAX>
+                         <SEMANTICS>emotional_state(E, Emotion, ?Experiencer) cause(Stimulus, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="meander-47.7">
+     <MEMBERS>
+          <MEMBER name="dépasser"/>
+          <MEMBER name="donner"/>
+          <MEMBER name="émerger"/>
+          <MEMBER name="enfoncer"/>
+          <MEMBER name="filer"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="fonctionner"/>
+          <MEMBER name="fuir"/>
+          <MEMBER name="jeter se"/>
+          <MEMBER name="passer"/>
+          <MEMBER name="pencher"/>
+          <MEMBER name="pendre"/>
+          <MEMBER name="percer"/>
+          <MEMBER name="plonger"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="profiler se"/>
+          <MEMBER name="retomber"/>
+          <MEMBER name="sortir"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="abaisser s'"/>
+          <MEMBER name="aboutir"/>
+          <MEMBER name="aller"/>
+          <MEMBER name="apparaître"/>
+          <MEMBER name="déboucher"/>
+          <MEMBER name="dévaler"/>
+          <MEMBER name="dresser se"/>
+          <MEMBER name="élever s'"/>
+          <MEMBER name="grimper"/>
+          <MEMBER name="manquer"/>
+          <MEMBER name="paraître"/>
+          <MEMBER name="remonter"/>
+          <MEMBER name="serpenter"/>
+          <MEMBER name="sinuer"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="tremper"/>
+          <MEMBER name="zigzaguer"/>
+          <MEMBER name="courir"/>
+          <MEMBER name="partir"/>
+          <MEMBER name="tomber"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Location">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="elongated"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>La rivière descend dans la vallée</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="path"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>Prep(during(E), Theme, Location) exist(during(E), Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

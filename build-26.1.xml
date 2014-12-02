@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="build-26.1">
+     <MEMBERS>
+          <MEMBER name="bâtir"/>
+          <MEMBER name="composer"/>
+          <MEMBER name="confectionner"/>
+          <MEMBER name="construire"/>
+          <MEMBER name="fabriquer"/>
+          <MEMBER name="faire"/>
+          <MEMBER name="forger"/>
+          <MEMBER name="former"/>
+          <MEMBER name="imiter"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="tricoter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Material">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Product"/>
+          <THEMROLE type="Beneficiary">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Asset">
+               <SELRESTR Value="+" type="currency"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.material PP.beneficiary"/>
+               <EXAMPLES>
+                    <EXAMPLE>Martha a fabriqué un jouet (à partir) d'un morceau de métal pour l'enfant.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Product">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="_ a à d de e i p r t"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Material">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.material PP.asset"/>
+               <EXAMPLES>
+                    <EXAMPLE>Martha fabrique un jouet (à partir) d'un morceau de bois pour 50 euros.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Product">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="_ a à d de e i p r t"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Material">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material) cause(Agent, E) cost(E, Asset)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP CL-lui V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max lui a fabriqué un jouet (à partir) d'un morceau de métal</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <CLLUI/>
+                    <VERB/>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

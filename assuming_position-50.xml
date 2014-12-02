@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="assuming_position-50">
+     <MEMBERS>
+          <MEMBER name="écrouler s'"/>
+          <MEMBER name="effondrer s'"/>
+          <MEMBER name="étaler s'"/>
+          <MEMBER name="incliner s'"/>
+          <MEMBER name="lever se"/>
+          <MEMBER name="pencher se"/>
+          <MEMBER name="ramasser se"/>
+          <MEMBER name="soulever se"/>
+          <MEMBER name="appuyer"/>
+          <MEMBER name="asseoir"/>
+          <MEMBER name="baisser"/>
+          <MEMBER name="bander"/>
+          <MEMBER name="coller"/>
+          <MEMBER name="enfourcher"/>
+          <MEMBER name="installer"/>
+          <MEMBER name="jucher"/>
+          <MEMBER name="mettre"/>
+          <MEMBER name="pendre"/>
+          <MEMBER name="percher"/>
+          <MEMBER name="plonger"/>
+          <MEMBER name="poser"/>
+          <MEMBER name="reposer"/>
+          <MEMBER name="suspendre"/>
+          <MEMBER name="tendre"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="accouder s'"/>
+          <MEMBER name="accroupir s'"/>
+          <MEMBER name="adosser s'"/>
+          <MEMBER name="affaisser s'"/>
+          <MEMBER name="affaler s'"/>
+          <MEMBER name="agenouiller s'"/>
+          <MEMBER name="appuyer s'"/>
+          <MEMBER name="asseoir s'"/>
+          <MEMBER name="baisser se"/>
+          <MEMBER name="coucher se"/>
+          <MEMBER name="dresser se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc s'est affalé sur le fauteuil</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(position(start(E), Agent, Pos)) motion(during(E), Agent) position(end(E), Agent, Pos) Prep(E, Agent, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

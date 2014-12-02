@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="grow-26.2">
+     <MEMBERS>
+          <MEMBER name="éclore"/>
+          <MEMBER name="grandir"/>
+          <MEMBER name="grossir"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="croître"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Material">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Product">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP.material V PP.product"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cette semence croît en un grand arbre (?).</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Material">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Product">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.product V PP.material"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cette plante pousse (à partir) d'une semence.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Product">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à_partir_de d e"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Material">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="weather-57">
+     <MEMBERS>
+          <MEMBER name="dégeler"/>
+          <MEMBER name="brouillasser"/>
+          <MEMBER name="bruiner"/>
+          <MEMBER name="crachiner"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="geler"/>
+          <MEMBER name="givrer"/>
+          <MEMBER name="grêler"/>
+          <MEMBER name="neiger"/>
+          <MEMBER name="pleuvasser"/>
+          <MEMBER name="pleuviner"/>
+          <MEMBER name="pleuvoir"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="tonner"/>
+     </MEMBERS>
+     <THEMROLES/>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="Il V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il pleut</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Il [+imp] V</SYNTAX>
+               <SEMANTICS>weather(during(E), Weather_type)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

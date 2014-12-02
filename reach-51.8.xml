@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="reach-51.8">
+     <MEMBERS>
+          <MEMBER name="aborder"/>
+          <MEMBER name="atteindre"/>
+          <MEMBER name="gagner"/>
+          <MEMBER name="rallier"/>
+          <MEMBER name="toucher"/>
+          <MEMBER name="frapper"/>
+          <MEMBER name="heurter"/>
+          <MEMBER name="rencontrer"/>
+          <MEMBER name="diriger se"/>
+          <MEMBER name="approcher"/>
+          <MEMBER name="envahir"/>
+          <MEMBER name="réintégrer"/>
+          <MEMBER name="regagner"/>
+          <MEMBER name="rejoindre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="concrete"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a atteint le sommet (retrouver ses camarades)</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Agent) not(location(start(E), Agent, Destination)) location(end(E), Agent, Destination)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

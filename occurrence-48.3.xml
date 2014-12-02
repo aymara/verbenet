@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="occurrence-48.3">
+     <MEMBERS>
+          <MEMBER name="arriver"/>
+          <MEMBER name="déclarer se"/>
+          <MEMBER name="former se"/>
+          <MEMBER name="intervenir"/>
+          <MEMBER name="passer se"/>
+          <MEMBER name="présenter se"/>
+          <MEMBER name="produire se"/>
+          <MEMBER name="reproduire se"/>
+          <MEMBER name="revenir"/>
+          <MEMBER name="survenir"/>
+          <MEMBER name="advenir"/>
+          <MEMBER name="ensuivre s'"/>
+          <MEMBER name="renouveler se"/>
+          <MEMBER name="répéter se"/>
+          <MEMBER name="tenir se"/>
+          <MEMBER name="dérouler se"/>
+          <MEMBER name="établir s'"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Un accident s'est produit devant eux</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>occur(during(E), Theme) Prep(during(E), Theme, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="Il V that S"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il s'est produit que Max a eu un accident</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Il V Theme &lt;+that_comp&gt;</SYNTAX>
+               <SEMANTICS>occur(during(E), Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

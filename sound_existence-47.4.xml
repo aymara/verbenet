@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="sound_existence-47.4">
+     <MEMBERS>
+          <MEMBER name="gronder"/>
+          <MEMBER name="résonner"/>
+          <MEMBER name="retentir"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="sonner"/>
+          <MEMBER name="tinter"/>
+          <MEMBER name="trépider"/>
+          <MEMBER name="corner"/>
+          <MEMBER name="moutonner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="sound"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les voix des enfants résonnent dans la cour</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.location V PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>La cour résonne de voix d'enfants</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme) location(during(E), Theme, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="disappearance-48.2">
+     <MEMBERS>
+          <MEMBER name="évaporer s'"/>
+          <MEMBER name="disparaître"/>
+          <MEMBER name="évanouir s'"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Initial_Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.Initial_Location"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'image disparaît de l'écran</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>disappear(during(E), Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

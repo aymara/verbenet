@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="poison-42.2">
+     <MEMBERS>
+          <MEMBER name="abattre"/>
+          <MEMBER name="asphyxier"/>
+          <MEMBER name="contaminer"/>
+          <MEMBER name="couvrir"/>
+          <MEMBER name="décapiter"/>
+          <MEMBER name="descendre"/>
+          <MEMBER name="électrocuter"/>
+          <MEMBER name="empoisonner"/>
+          <MEMBER name="étouffer"/>
+          <MEMBER name="étrangler"/>
+          <MEMBER name="éventrer"/>
+          <MEMBER name="frapper"/>
+          <MEMBER name="fusiller"/>
+          <MEMBER name="intoxiquer"/>
+          <MEMBER name="lapider"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="raccourcir"/>
+          <MEMBER name="stranguler"/>
+          <MEMBER name="suriner"/>
+          <MEMBER name="tuer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Instrument"/>
+          <THEMROLE type="Result"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>La reine a empoisonné son fils avec de la mort aux rats</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) harmed(during(E), Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

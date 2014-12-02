@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="entity_specific_modes_being-47.2">
+     <MEMBERS>
+          <MEMBER name="bomber"/>
+          <MEMBER name="bourgeonner"/>
+          <MEMBER name="clapoter"/>
+          <MEMBER name="couler"/>
+          <MEMBER name="bouillonner"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="couver"/>
+          <MEMBER name="germer"/>
+          <MEMBER name="mousser"/>
+          <MEMBER name="déborder"/>
+          <MEMBER name="éclore"/>
+          <MEMBER name="écouler s'"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="jeter se"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="saillir"/>
+          <MEMBER name="tournoyer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'arbuste bourgeonne</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Un feu flambait dans la forêt</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="47.2-1">
+               <MEMBERS>
+                    <MEMBER name="fleurir"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.location V PP.theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le pommier fleurit de petites fleurs</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="rely-70">
+     <MEMBERS>
+          <MEMBER name="compter"/>
+          <MEMBER name="parier"/>
+          <MEMBER name="miser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.theme S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max compte sur Luc (l'aide de Luc)  pour finir ce travail</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {sur} Theme {pour} Topic &lt;+V_inf&gt;</SYNTAX>
+               <SEMANTICS>depend(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

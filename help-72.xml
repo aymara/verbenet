@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="help-72">
+     <MEMBERS>
+          <MEMBER name="aider"/>
+          <MEMBER name="assister"/>
+          <MEMBER name="épauler"/>
+          <MEMBER name="patronner"/>
+          <MEMBER name="seconder"/>
+          <MEMBER name="conforter"/>
+          <MEMBER name="encourager"/>
+          <MEMBER name="entretenir"/>
+          <MEMBER name="inciter"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="soutenir"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Beneficiary">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à V1-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a aidé Luc à finir ce travail</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Beneficiary {à} Theme &lt;+V1-inf&gt;</SYNTAX>
+               <SEMANTICS>help(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max aide Luc dans son travail</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Beneficiary {dans} Theme &lt;-V1-inf&gt;</SYNTAX>
+               <SEMANTICS>help(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

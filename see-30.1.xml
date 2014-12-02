@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="see-30.1">
+     <MEMBERS>
+          <MEMBER name="renifler"/>
+          <MEMBER name="déguster"/>
+          <MEMBER name="goûter"/>
+          <MEMBER name="humer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>J'ai vu le match</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V that S"/>
+               <EXAMPLES>
+                    <EXAMPLE>Je vois que tu vas bien</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Experiencer V Stimulus &lt;+que_comp&gt;</SYNTAX>
+               <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V how S"/>
+               <EXAMPLES>
+                    <EXAMPLE>J'ai vu comment ils étaient arrivés</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Experiencer V Stimulus &lt;+comment_extract&gt;</SYNTAX>
+               <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V si P"/>
+               <EXAMPLES>
+                    <EXAMPLE>J'ai vu s'il avait vidé les poubelles</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Experiencer V Stimulus &lt;+ce que_extract&gt;</SYNTAX>
+               <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="30.1-1">
+               <MEMBERS>
+                    <MEMBER name="apercevoir"/>
+                    <MEMBER name="percevoir"/>
+                    <MEMBER name="sentir"/>
+                    <MEMBER name="voir"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V S"/>
+                         <EXAMPLES>
+                              <EXAMPLE>J'ai vu Luc traverser la rue</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Experiencer V Stimulus &lt;+oc_bare_inf&gt;</SYNTAX>
+                         <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V S_ING"/>
+                         <EXAMPLES>
+                              <EXAMPLE>J'ai vu Luc traversant la rue</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Experiencer V Stimulus &lt;+oc_ing&gt;</SYNTAX>
+                         <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="30.1-1-1">
+                         <MEMBERS>
+                              <MEMBER name="discerner"/>
+                              <MEMBER name="écouter"/>
+                              <MEMBER name="entendre"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES/>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

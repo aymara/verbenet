@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="concealment-16">
+     <MEMBERS>
+          <MEMBER name="abriter"/>
+          <MEMBER name="écraser"/>
+          <MEMBER name="embouteiller"/>
+          <MEMBER name="enfermer"/>
+          <MEMBER name="projeter"/>
+          <MEMBER name="retenir"/>
+          <MEMBER name="sasser"/>
+          <MEMBER name="verrouiller"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Beneficiary">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc cache les cadeaux dans le tiroir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) visible(start(E), Patient) not(visible(end(E), Patient)) location(result(E), Patient, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="16-1">
+               <MEMBERS>
+                    <MEMBER name="camoufler"/>
+                    <MEMBER name="dissimuler"/>
+                    <MEMBER name="ensevelir"/>
+                    <MEMBER name="masquer"/>
+                    <MEMBER name="planquer"/>
+                    <MEMBER name="receler"/>
+                    <MEMBER name="cacher"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V PP.location"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc s'est caché dans le placard</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <SE/>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="+" type="loc"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>visible(start(E), Agent) not(visible(end(E), Agent)) location(during(E), Agent, Location)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

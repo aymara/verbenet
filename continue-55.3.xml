@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="continue-55.3">
+     <MEMBERS>
+          <MEMBER name="continuer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V à/de S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il a continué de travailer</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à/de} Theme &lt;+to_inf_rs&gt;</SYNTAX>
+               <SEMANTICS>continue(E, Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.theme V"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'orage a continué</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>continue(E, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

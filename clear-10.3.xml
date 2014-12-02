@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="clear-10.3">
+     <MEMBERS>
+          <MEMBER name="décaper"/>
+          <MEMBER name="détacher"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le vent a dégagé les nuages du ciel.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Location) not(location(end(E), Theme, Location))</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.location PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le vent a dégagé le ciel de ses nuages.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Location) not(location(end(E), Theme, Location))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="10.3-1">
+               <MEMBERS>
+                    <MEMBER name="dégager"/>
+                    <MEMBER name="déménager"/>
+                    <MEMBER name="drainer"/>
+                    <MEMBER name="évacuer"/>
+                    <MEMBER name="libérer"/>
+                    <MEMBER name="vider"/>
+                    <MEMBER name="déblayer"/>
+                    <MEMBER name="dégager se"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.location"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les nuages ont dégagé du ciel.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Theme V {{de}} Location</SYNTAX>
+                         <SEMANTICS>location(start(E), Theme, Location) not(location(end(E), Theme, Location))</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.location se V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le ciel s'est dégagé.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <SE/>
+                              <VERB/>
+                         </SYNTAX>
+                         <SEMANTICS>location(start(E), ?Theme, Location) not(location(end(E), ?Theme, Location))</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

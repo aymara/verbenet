@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="sound_emission-43.2">
+     <MEMBERS>
+          <MEMBER name="bourdonner"/>
+          <MEMBER name="carillonner"/>
+          <MEMBER name="chanter"/>
+          <MEMBER name="claquer"/>
+          <MEMBER name="cliqueter"/>
+          <MEMBER name="couiner"/>
+          <MEMBER name="craqueter"/>
+          <MEMBER name="crépiter"/>
+          <MEMBER name="crisser"/>
+          <MEMBER name="éclater"/>
+          <MEMBER name="frémir"/>
+          <MEMBER name="froufrouter"/>
+          <MEMBER name="gargouiller"/>
+          <MEMBER name="glouglouter"/>
+          <MEMBER name="grésiller"/>
+          <MEMBER name="grincer"/>
+          <MEMBER name="gronder"/>
+          <MEMBER name="hoqueter"/>
+          <MEMBER name="pétiller"/>
+          <MEMBER name="retentir"/>
+          <MEMBER name="ronfler"/>
+          <MEMBER name="ronronner"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="siffler"/>
+          <MEMBER name="sonner"/>
+          <MEMBER name="tictaquer"/>
+          <MEMBER name="tinter"/>
+          <MEMBER name="tintinnabuler"/>
+          <MEMBER name="tonner"/>
+          <MEMBER name="vrombir"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="-" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+          <THEMROLE type="Agent"/>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les abeilles bourdonnent dans les arbres.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Sound) Prep(during(E), Sound, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.location V PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le grenier couine de cris de souris</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Location V {de} Attribute de Theme</SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Sound) location(during(E), Sound, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="Ilimp V NP PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il carillone une cloche dans l'air glacé</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>there V Theme {{+loc}} Location</SYNTAX>
+               <SEMANTICS>emit(during(E), Theme, Sound) Prep(during(E), Sound, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

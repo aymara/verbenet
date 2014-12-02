@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="beg-58.2">
+     <MEMBERS>
+          <MEMBER name="conjurer"/>
+          <MEMBER name="implorer"/>
+          <MEMBER name="presser"/>
+          <MEMBER name="prier"/>
+          <MEMBER name="requérir"/>
+          <MEMBER name="solliciter"/>
+          <MEMBER name="supplier"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a prié Léa de faire la vaiselle.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Recipient Topic &lt;+de_inf&gt;</SYNTAX>
+               <SEMANTICS>supplicate(during(E), Agent, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="58.2-1">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V S_INF"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a imploré de partir.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V {de} Topic &lt;+de_inf&gt;</SYNTAX>
+                         <SEMANTICS>supplicate(during(E), Agent, ?Recipient, Topic)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V Que Psubj"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a imploré que Marie fasse la vaisselle.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V Topic &lt;+que_comp&gt;</SYNTAX>
+                         <SEMANTICS>supplicate(during(E), Agent, ?Recipient, Topic)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="58.2-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP de ce Que Psubj"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a prié Marie (de ce) que leur fils fasse la vaisselle. </EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V Recpient {de ce que} Topic</SYNTAX>
+                         <SEMANTICS>supplicate(during(E), Agent, Recipient, Topic)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

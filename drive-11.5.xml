@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="drive-11.5">
+     <MEMBERS>
+          <MEMBER name="camionner"/>
+          <MEMBER name="charrier"/>
+          <MEMBER name="brouetter"/>
+          <MEMBER name="véhiculer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="vehicle"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTRS logic="or">
+                    <SELRESTRS logic="and">
+                         <SELRESTR Value="-" type="region"/>
+                         <SELRESTR Value="+" type="location"/>
+                    </SELRESTRS>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max camionne les colis  à Dax</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E0), Theme) location(end(E0), Theme, Destination) equals(E0, E1) motion(during(E1), Agent) location(end(E1), Agent, Destination) cause(Agent, E0)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max camionne les colis de Gap</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="d depuis e"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E0), Theme) location(start(E0), Theme, Initial_Location) equals(E0, E1) motion(during(E1), Agent) location(start(E1), Agent, Initial_Location) cause(Agent, E0)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max camionne les colis de Gap à Dax</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E0), Theme) location(start(E0), Theme, Initial_Location) location(end(E0), Theme, Destination) equals(E0, E1) motion(during(E1), Agent) location(start(E1), Agent, Initial_Location) location(end(E1), Agent, Destination) cause(Agent, E0)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

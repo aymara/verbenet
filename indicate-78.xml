@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="indicate-78">
+     <MEMBERS>
+          <MEMBER name="expliquer"/>
+          <MEMBER name="indiquer"/>
+          <MEMBER name="montrer"/>
+          <MEMBER name="prouver"/>
+          <MEMBER name="révéler"/>
+          <MEMBER name="certifier"/>
+          <MEMBER name="confirmer"/>
+          <MEMBER name="enseigner"/>
+          <MEMBER name="expliciter"/>
+          <MEMBER name="prédire"/>
+          <MEMBER name="signaler"/>
+          <MEMBER name="suggérer"/>
+          <MEMBER name="annoncer"/>
+          <MEMBER name="démontrer"/>
+          <MEMBER name="dénoncer"/>
+          <MEMBER name="dire"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Cause"/>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient Que P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cela indique à tout le monde que l'auteur du crime est Max.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Cause V {à} Recipient Topic &lt;+Que_P&gt;</SYNTAX>
+               <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient si P ou si P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cela indique à tout le monde si Max a commis un crime ou non.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Cause V {à} Recipient Topic &lt;+si_P_ou_si_P&gt;</SYNTAX>
+               <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient ce que P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cela indique à tout le monde ce qu'il est.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Cause V {à} Recipient Topic &lt;+ce_que_P&gt;</SYNTAX>
+               <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient comment P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cela indique à tout le monde comment les choses se sont passées.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Cause V {à} Recipient Topic &lt;+comment_P&gt;</SYNTAX>
+               <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient comment V2inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cela indique à tout le monde comment résoudre le problème</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Cause V {à} Recipient Topic &lt;+comment_V2inf&gt;</SYNTAX>
+               <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

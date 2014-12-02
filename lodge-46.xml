@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="lodge-46">
+     <MEMBERS>
+          <MEMBER name="bivouaquer"/>
+          <MEMBER name="camper"/>
+          <MEMBER name="demeurer"/>
+          <MEMBER name="enraciner s'"/>
+          <MEMBER name="fixer se"/>
+          <MEMBER name="gîter"/>
+          <MEMBER name="habiter"/>
+          <MEMBER name="loger"/>
+          <MEMBER name="percher"/>
+          <MEMBER name="résider"/>
+          <MEMBER name="rester"/>
+          <MEMBER name="séjourner"/>
+          <MEMBER name="stationner"/>
+          <MEMBER name="tapir se"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="vivre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Marie réside chez Luc</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="c dans e h z"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(location(start(E), Theme, Location)) location(during(E), Theme, Location)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

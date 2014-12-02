@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="debone-10.8">
+     <MEMBERS>
+          <MEMBER name="décorner"/>
+          <MEMBER name="dégazer"/>
+          <MEMBER name="dégermer"/>
+          <MEMBER name="désosser"/>
+          <MEMBER name="détartrer"/>
+          <MEMBER name="épouiller"/>
+          <MEMBER name="étriper"/>
+          <MEMBER name="désinsectiser"/>
+          <MEMBER name="déboiser"/>
+          <MEMBER name="défleurir"/>
+          <MEMBER name="déflorer"/>
+          <MEMBER name="déglacer"/>
+          <MEMBER name="éviscérer"/>
+          <MEMBER name="décortiquer"/>
+          <MEMBER name="dénoyauter"/>
+          <MEMBER name="dépiauter"/>
+          <MEMBER name="dépouiller"/>
+          <MEMBER name="désherber"/>
+          <MEMBER name="écailler"/>
+          <MEMBER name="écaler"/>
+          <MEMBER name="écimer"/>
+          <MEMBER name="écorcer"/>
+          <MEMBER name="écorcher"/>
+          <MEMBER name="égrapper"/>
+          <MEMBER name="égrener"/>
+          <MEMBER name="émonder"/>
+          <MEMBER name="épépiner"/>
+          <MEMBER name="éplucher"/>
+          <MEMBER name="équeuter"/>
+          <MEMBER name="étêter"/>
+          <MEMBER name="peler"/>
+          <MEMBER name="plumer"/>
+          <MEMBER name="ratiboiser"/>
+          <MEMBER name="traire"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="évider"/>
+          <MEMBER name="scalper"/>
+          <MEMBER name="écosser"/>
+          <MEMBER name="éjointer"/>
+          <MEMBER name="énouer"/>
+          <MEMBER name="énucléer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a épouillé Max</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), ?Theme, Source) not(location(end(E), ?Theme, Source))</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.Theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a épouillé (la tête de) Max de ses lentes</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Source) not(location(end(E), Theme, Source))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

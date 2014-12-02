@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="destroy-44">
+     <MEMBERS>
+          <MEMBER name="abattre"/>
+          <MEMBER name="anéantir"/>
+          <MEMBER name="bousiller"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="défaire"/>
+          <MEMBER name="démolir"/>
+          <MEMBER name="détruire"/>
+          <MEMBER name="écraser"/>
+          <MEMBER name="effacer"/>
+          <MEMBER name="enlever"/>
+          <MEMBER name="plier"/>
+          <MEMBER name="pulvériser"/>
+          <MEMBER name="ratatiner"/>
+          <MEMBER name="ratiboiser"/>
+          <MEMBER name="ruiner"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="supprimer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Instrument">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les Romains ont détruit la ville</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) destroyed(result(E), Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les ouvriers ont détrui l'insatallation avec des explosifs</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) use(during(E), Agent, Instrument) destroyed(result(E), Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.instrument V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les explosifs ont détruit l'insallation</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(?Agent, E) use(during(E), ?Agent, Instrument) destroyed(result(E), Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

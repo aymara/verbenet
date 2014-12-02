@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="pelt-17.2">
+     <MEMBERS>
+          <MEMBER name="pilonner"/>
+          <MEMBER name="frapper"/>
+          <MEMBER name="arroser"/>
+          <MEMBER name="bombarder"/>
+          <MEMBER name="canarder"/>
+          <MEMBER name="canonner"/>
+          <MEMBER name="doucher"/>
+          <MEMBER name="lapider"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les manifestants ont bombardé la mairie d'oeufs pourris.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de+avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) not(contact(during(E), Agent, Theme)) cause(Agent, E) not(location(start(E), Theme, Destination)) location(end(E), Theme, Destination)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

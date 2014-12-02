@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="calibratable_cos-45.6">
+     <MEMBERS>
+          <MEMBER name="avancer"/>
+          <MEMBER name="forcer"/>
+          <MEMBER name="monter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="scalar"/>
+          </THEMROLE>
+          <THEMROLE type="Extent"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP.patient V PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'huile a chuté en prix de 10pourcent</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Patient V {en} Attribute {de} Extent</SYNTAX>
+               <SEMANTICS>change_value(during(E), Direction, Attribute, Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.attribute V PP.extent"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le prix de l'huile a  chuté de 10pourcent</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Extent">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>change_value(during(E), Direction, Attribute, Patient) amount_changed(during(E), Attribute, Patient, Extent)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="45.6-2">
+               <MEMBERS/>
+               <THEMROLES>
+                    <THEMROLE type="Cause"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.Cause V NP.attribute PP.extent"/>
+                         <EXAMPLES>
+                              <EXAMPLE>La guerre en Irak a augmenté le prix de l'huile de 10pour cent </EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Cause">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Extent">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS/>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

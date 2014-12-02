@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="substance_emission-43.4">
+     <MEMBERS>
+          <MEMBER name="cracher"/>
+          <MEMBER name="dégager"/>
+          <MEMBER name="perdre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="-" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Source"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le puits dégage du gaz.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Source, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="43.4-1">
+               <MEMBERS>
+                    <MEMBER name="saigner"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Agent"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP.source"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Bovary saigne le domestique de Rodolph.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Source">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>emit(during(E), Source, ?Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="43.4-2">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP.theme V PP.source"/>
+                         <EXAMPLES>
+                              <EXAMPLE>De l'eau dégorge du puits</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Source">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>emit(during(E), Source, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="escape-51.1">
+     <MEMBERS>
+          <MEMBER name="approcher s'"/>
+          <MEMBER name="avancer s'"/>
+          <MEMBER name="écouler s'"/>
+          <MEMBER name="lever se"/>
+          <MEMBER name="relever se"/>
+          <MEMBER name="déboucher"/>
+          <MEMBER name="écarter s'"/>
+          <MEMBER name="parvenir"/>
+          <MEMBER name="progresser"/>
+          <MEMBER name="tomber"/>
+          <MEMBER name="transporter se"/>
+          <MEMBER name="aller"/>
+          <MEMBER name="arriver"/>
+          <MEMBER name="avancer"/>
+          <MEMBER name="carapater se"/>
+          <MEMBER name="cavaler se"/>
+          <MEMBER name="débarquer"/>
+          <MEMBER name="débouler"/>
+          <MEMBER name="décamper"/>
+          <MEMBER name="dégager se"/>
+          <MEMBER name="dégringoler"/>
+          <MEMBER name="déguerpir"/>
+          <MEMBER name="démarrer"/>
+          <MEMBER name="descendre"/>
+          <MEMBER name="détaler"/>
+          <MEMBER name="disparaître"/>
+          <MEMBER name="échapper s'"/>
+          <MEMBER name="éloigner s'"/>
+          <MEMBER name="émerger"/>
+          <MEMBER name="émigrer"/>
+          <MEMBER name="enfuir s'"/>
+          <MEMBER name="engager s'"/>
+          <MEMBER name="entrer"/>
+          <MEMBER name="esbigner s'"/>
+          <MEMBER name="évader s'"/>
+          <MEMBER name="évanouir s'"/>
+          <MEMBER name="filer"/>
+          <MEMBER name="foncer"/>
+          <MEMBER name="fuir"/>
+          <MEMBER name="jeter se"/>
+          <MEMBER name="monter"/>
+          <MEMBER name="partir"/>
+          <MEMBER name="passer"/>
+          <MEMBER name="plonger"/>
+          <MEMBER name="porter se"/>
+          <MEMBER name="précipiter se"/>
+          <MEMBER name="présenter se"/>
+          <MEMBER name="rapprocher se"/>
+          <MEMBER name="reculer"/>
+          <MEMBER name="réfugier se"/>
+          <MEMBER name="remonter"/>
+          <MEMBER name="rendre se"/>
+          <MEMBER name="rentrer"/>
+          <MEMBER name="replier se"/>
+          <MEMBER name="retirer se"/>
+          <MEMBER name="retourner"/>
+          <MEMBER name="revenir"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="sauter"/>
+          <MEMBER name="sauver se"/>
+          <MEMBER name="sortir"/>
+          <MEMBER name="surgir"/>
+          <MEMBER name="trisser se"/>
+          <MEMBER name="venir"/>
+          <MEMBER name="abouler s'"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Initial_Location">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Trajectory">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.initial_loc"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il est venu de France</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Theme V {de} Initial_Location</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, Initial_Location, ?Trajectory, ?Destination)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il est venu à Paris (retrouver Marie) </EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="Loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, ?Initial_Location, ?Trajectory, Destination)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.trajectory"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il est venu par le couloir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="path"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Trajectory">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, ?Initial_Location, Trajectory, ?Destination)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.initial_loc PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il est venu de Gap à Dax</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Theme V {{+de}} Initial_Location {{+Loc}} Destination</SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, Initial_Location, ?Trajectory, Destination)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

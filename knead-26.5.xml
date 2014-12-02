@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="knead-26.5">
+     <MEMBERS>
+          <MEMBER name="cintrer"/>
+          <MEMBER name="couder"/>
+          <MEMBER name="fondre"/>
+          <MEMBER name="tourner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Product"/>
+          <THEMROLE type="Material"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.material PP.product"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a pétri l'argile en boule</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Material">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Product">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material) not(state(start(E), Endstate, Material)) state(result(E), Endstate, Material) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

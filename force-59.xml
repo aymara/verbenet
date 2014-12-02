@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="force-59">
+     <MEMBERS>
+          <MEMBER name="entraîner"/>
+          <MEMBER name="éveiller"/>
+          <MEMBER name="exciter"/>
+          <MEMBER name="forcer"/>
+          <MEMBER name="inciter"/>
+          <MEMBER name="induire"/>
+          <MEMBER name="motiver"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="provoquer"/>
+          <MEMBER name="réduire"/>
+          <MEMBER name="assigner"/>
+          <MEMBER name="aiguillonner"/>
+          <MEMBER name="attacher"/>
+          <MEMBER name="attraper"/>
+          <MEMBER name="coincer"/>
+          <MEMBER name="commissionner"/>
+          <MEMBER name="fourvoyer"/>
+          <MEMBER name="mener"/>
+          <MEMBER name="programmer"/>
+          <MEMBER name="stimuler"/>
+          <MEMBER name="obliger"/>
+          <MEMBER name="amener"/>
+          <MEMBER name="astreindre"/>
+          <MEMBER name="conduire"/>
+          <MEMBER name="contraindre"/>
+          <MEMBER name="décider"/>
+          <MEMBER name="déterminer"/>
+          <MEMBER name="disposer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Result"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à S_INF"/>
+               <EXAMPLES>
+                    <EXAMPLE>J'ai forcé Luc à manger</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Patient Result &lt;à_V1inf&gt;</SYNTAX>
+               <SEMANTICS>force(during(E), Agent, Patient, Result)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="pocket-9.10">
+     <MEMBERS>
+          <MEMBER name="abattre"/>
+          <MEMBER name="archiver"/>
+          <MEMBER name="asseoir"/>
+          <MEMBER name="blouser"/>
+          <MEMBER name="classer"/>
+          <MEMBER name="emboîter"/>
+          <MEMBER name="embouteiller"/>
+          <MEMBER name="embrocher"/>
+          <MEMBER name="emmagasiner"/>
+          <MEMBER name="empoter"/>
+          <MEMBER name="enfiler"/>
+          <MEMBER name="ensacher"/>
+          <MEMBER name="entreposer"/>
+          <MEMBER name="ficher"/>
+          <MEMBER name="introduire"/>
+          <MEMBER name="jeter"/>
+          <MEMBER name="mettre"/>
+          <MEMBER name="parquer"/>
+          <MEMBER name="pocher"/>
+          <MEMBER name="reculer"/>
+          <MEMBER name="relever"/>
+          <MEMBER name="rentrer"/>
+          <MEMBER name="renvoyer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="human"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.theme PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a embouteillé le vin dans des bouteilles de verre</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="Loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) not(location(start(E), Theme, Destination)) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="9.10-1">
+               <MEMBERS>
+                    <MEMBER name="échouer"/>
+                    <MEMBER name="loger"/>
+                    <MEMBER name="mouiller"/>
+                    <MEMBER name="accoster"/>
+                    <MEMBER name="amerrir"/>
+                    <MEMBER name="apponter"/>
+                    <MEMBER name="atterrir"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.destination"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le bateau a accosté au quai</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Theme V {{Loc}} Destination</SYNTAX>
+                         <SEMANTICS>motion(during(E), Theme) not(Prep(start(E), Theme, Destination)) Prep(end(E), Theme, Destination)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

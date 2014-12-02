@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="accompany-51.7">
+     <MEMBERS>
+          <MEMBER name="emmener"/>
+          <MEMBER name="entraîner"/>
+          <MEMBER name="escorter"/>
+          <MEMBER name="guider"/>
+          <MEMBER name="mener"/>
+          <MEMBER name="piloter"/>
+          <MEMBER name="suivre"/>
+          <MEMBER name="convoyer"/>
+          <MEMBER name="accompagner"/>
+          <MEMBER name="amener"/>
+          <MEMBER name="conduire"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Destination"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Jacques a accompagné Marie à la maison.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="spatial"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Agent) motion(during(E), Theme) Prep(E, Theme, Destination) Prep(E, Agent, Destination)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="illustrate-25.3">
+     <MEMBERS>
+          <MEMBER name="chamarrer"/>
+          <MEMBER name="dater"/>
+          <MEMBER name="dorer"/>
+          <MEMBER name="éclairer"/>
+          <MEMBER name="émarger"/>
+          <MEMBER name="endosser"/>
+          <MEMBER name="habiller"/>
+          <MEMBER name="illuminer"/>
+          <MEMBER name="médailler"/>
+          <MEMBER name="revêtir"/>
+          <MEMBER name="tapisser"/>
+          <MEMBER name="parafer"/>
+          <MEMBER name="adorner"/>
+          <MEMBER name="agrémenter"/>
+          <MEMBER name="baliser"/>
+          <MEMBER name="décorer"/>
+          <MEMBER name="enluminer"/>
+          <MEMBER name="étiqueter"/>
+          <MEMBER name="ferrer"/>
+          <MEMBER name="garnir"/>
+          <MEMBER name="illustrer"/>
+          <MEMBER name="ornementer"/>
+          <MEMBER name="orner"/>
+          <MEMBER name="parer"/>
+          <MEMBER name="rehausser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc décorait la bague de/avec son nom.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+avec d e"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>created_image(result(E), Theme) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="estimate-34.2">
+     <MEMBERS>
+          <MEMBER name="calculer"/>
+          <MEMBER name="compter"/>
+          <MEMBER name="estimer"/>
+          <MEMBER name="mesurer"/>
+          <MEMBER name="noter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Value"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'inspecteur a estimé la probabilité que la maison s'écroule.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.value"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'inspecteur a estimé la probabilité à 20%.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Value">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>assess(during(E), Agent, Theme, Value)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V how S"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'inspecteur estime combien ça peut coûter.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Value &lt;+combien_extract&gt;</SYNTAX>
+               <SEMANTICS>assess(during(E), Agent, ?Theme, Value)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V that S"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'inspecteur estime que c'est bien probable.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme &lt;+que_comp&gt;</SYNTAX>
+               <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V what S"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'inspecteur estime ce que ça peut donner.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme &lt;+ce_que_extract&gt;</SYNTAX>
+               <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V si P ou si P"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'inspecteur estime si la maison va s'écrouler</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme &lt;+si P ou si P&gt;</SYNTAX>
+               <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

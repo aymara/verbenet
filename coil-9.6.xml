@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="coil-9.6">
+     <MEMBERS>
+          <MEMBER name="embobiner"/>
+          <MEMBER name="enrouler"/>
+          <MEMBER name="rouler"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="elongated"/>
+                    <SELRESTR Value="+" type="nonrigid"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Location">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Cora a enroulé un journal autour du bâton.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="autour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>rotational_motion(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(E, Theme, Location) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>La voiture s'est enroulée autour d'un arbre.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <SE/>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="autour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>rotational_motion(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(E, Theme, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V ADV-Moyen PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Ce type de papier s'enroule facilement autour d'un bâton.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <SE/>
+                    <VERB/>
+                    <ADV/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="autour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>property(Theme, Prop) Adv(Prop)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>
