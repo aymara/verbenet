@@ -20,11 +20,20 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V0-inf W"/>
+               <DESCRIPTION primary="NP V NP à V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai consommé beaucoup de temps à réfléchir.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Asset {à} Goal &lt;+V0_inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Goal"/>
+               </SYNTAX>
                <SEMANTICS>exist(start(E), Asset) not(exist(end(E), Asset)) spend(during(E), Agent, Asset, Goal)</SEMANTICS>
           </FRAME>
      </FRAMES>
@@ -34,11 +43,20 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP pour V0-inf W"/>
+                         <DESCRIPTION primary="NP V NP pour V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>J'ai gâché deux jours pour finir ce travail</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agnt V Asset {pour} Goa&lt;+V0-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Asset">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VINF emptysubjectrole="Agent" introduced_by="pour" is_true_prep="true" value="Goal"/>
+                         </SYNTAX>
                          <SEMANTICS>exist(start(E), Asset) not(exist(end(E), Asset)) spend(during(E), Agent, Asset, Goal)</SEMANTICS>
                     </FRAME>
                </FRAMES>

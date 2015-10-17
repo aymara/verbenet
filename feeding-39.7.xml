@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="feeding-39.7">
+     <MEMBERS>
+          <MEMBER name="alimenter"/>
+          <MEMBER name="allaiter"/>
+          <MEMBER name="gaver"/>
+          <MEMBER name="nourrir"/>
+          <MEMBER name="ravitailler"/>
+          <MEMBER name="restaurer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="comestible"/>
+          </THEMROLE>
+          <THEMROLE type="Recipient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.Theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Léa gave le bébé de lait</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_in(during(E), Recipient, ?Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

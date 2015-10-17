@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="hold-15.1">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a agrippé la barre</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>hold(during(E), Agent, Theme) contact(during(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="15.1-1">
+               <MEMBERS>
+                    <MEMBER name="prendre"/>
+                    <MEMBER name="retenir"/>
+                    <MEMBER name="serrer"/>
+                    <MEMBER name="tirer"/>
+                    <MEMBER name="agripper"/>
+                    <MEMBER name="empoigner"/>
+                    <MEMBER name="happer"/>
+                    <MEMBER name="pincer"/>
+                    <MEMBER name="saisir"/>
+                    <MEMBER name="tenir"/>
+                    <MEMBER name="étreindre"/>
+                    <MEMBER name="tâter"/>
+                    <MEMBER name="attraper"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Attribute">
+                         <SELRESTR Value="+" type="body_part"/>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a aggrippé le bras de Luc</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP modifier="+genitive(Theme)" value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>Poss-inalienable(Attribute, Theme) hold(during(E), Agent, Theme) contact(during(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a aggrippé Luc par le bras</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="+" type="loc"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>Poss-inalienable(Patient, Theme) hold(during(E), Agent, Theme) contact(during(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP LUI V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc lui a agrippé le bras.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <LUI/>
+                              <VERB/>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>Poss-inalienable(Patient, Theme) hold(during(E), Agent, Theme) contact(during(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

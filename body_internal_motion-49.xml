@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="body_internal_motion-49">
      <MEMBERS>
-          <MEMBER name="battre"/>
-          <MEMBER name="bouger"/>
+          <MEMBER name="dandiner se"/>
+          <MEMBER name="boiter"/>
+          <MEMBER name="chanceler"/>
+          <MEMBER name="frétiller"/>
+          <MEMBER name="tanguer"/>
+          <MEMBER name="tituber"/>
+          <MEMBER name="tortiller se"/>
+          <MEMBER name="tournoyer"/>
+          <MEMBER name="trémousser se"/>
+          <MEMBER name="tressaillir"/>
+          <MEMBER name="vaciller"/>
           <MEMBER name="dodeliner"/>
-          <MEMBER name="remuer"/>
           <MEMBER name="rouler"/>
           <MEMBER name="sauter"/>
-          <MEMBER name="tortiller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
                <SELRESTR Value="+" type="animate"/>
           </THEMROLE>
-          <THEMROLE type="Patient">
-               <SELRESTR Value="+" type="refl"/>
-          </THEMROLE>
+          <THEMROLE type="Location"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
@@ -31,21 +36,26 @@
                </SYNTAX>
                <SEMANTICS>body_motion(during(E), Agent)</SEMANTICS>
           </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Sylvia se tortillait vers le bar</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="jusqu'à;vers"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>body_motion(during(E), Agent)  location(end(E), Agent, Destination)</SEMANTICS>
+          </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="49-1">
-               <MEMBERS/>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.destination"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Sylvia s'est tortillée jusqu'au bar</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Agent V {{Loc-Dest-vers}} Location</SYNTAX>
-                         <SEMANTICS>body_motion(during(E), Agent)  location(end(E), Agent, Destination)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

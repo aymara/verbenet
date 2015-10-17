@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="instr_communication-37.4">
+     <MEMBERS>
+          <MEMBER name="télégraphier"/>
+          <MEMBER name="téléphoner"/>
+          <MEMBER name="télexer"/>
+          <MEMBER name="radiodiffuser"/>
+          <MEMBER name="télécopier"/>
+          <MEMBER name="téléviser"/>
+          <MEMBER name="câbler"/>
+          <MEMBER name="carillonner"/>
+          <MEMBER name="faxer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Topic">
+               <SELRESTR Value="+" type="communication"/>
+          </THEMROLE>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient NP.topic"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a câblé la nouvelle à Léa.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient PP.topic"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a câblé à Léa sur la situation en Moyen-Orient.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="sur"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient Qu Pind"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a câblé à Sara que rien n'allait.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PIND value="Topic"/>
+               </SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient comment V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a câblé à Sara comment envoyer le paquet.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;</SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a câblé à Sara de venir immédiatement.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

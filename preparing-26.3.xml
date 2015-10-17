@@ -16,19 +16,15 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="26.3-1">
                <MEMBERS>
+                    <MEMBER name="cuire"/>
                     <MEMBER name="apprêter"/>
                     <MEMBER name="brasser"/>
-                    <MEMBER name="confectionner"/>
-                    <MEMBER name="couper"/>
-                    <MEMBER name="créer"/>
                     <MEMBER name="cuisiner"/>
-                    <MEMBER name="donner"/>
-                    <MEMBER name="exécuter"/>
-                    <MEMBER name="fabriquer"/>
-                    <MEMBER name="faire"/>
-                    <MEMBER name="imprimer"/>
                     <MEMBER name="mijoter"/>
                     <MEMBER name="préparer"/>
+                    <MEMBER name="confectionner"/>
+                    <MEMBER name="fabriquer"/>
+                    <MEMBER name="improviser"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Product">
@@ -36,22 +32,6 @@
                     </THEMROLE>
                </THEMROLES>
                <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max a préparé un sandwich</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Product">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) cause(Agent, E)</SEMANTICS>
-                    </FRAME>
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.beneficiary"/>
                          <EXAMPLES>
@@ -76,32 +56,17 @@
                          </SYNTAX>
                          <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
                     </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP CL-lui V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max lui a préparé un sandwich</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <CLLUI/>
-                              <VERB/>
-                              <NP value="Product">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
-                    </FRAME>
                </FRAMES>
           </VNSUBCLASS>
           <VNSUBCLASS ID="26.3-2">
                <MEMBERS>
-                    <MEMBER name="repasser"/>
-                    <MEMBER name="brûler"/>
+                    <MEMBER name="chauffer"/>
                     <MEMBER name="griller"/>
-                    <MEMBER name="ravaler"/>
-                    <MEMBER name="rebouter"/>
+                    <MEMBER name="blanchir"/>
+                    <MEMBER name="bouillir"/>
+                    <MEMBER name="frire"/>
+                    <MEMBER name="rôtir"/>
+                    <MEMBER name="torréfier"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Patient">
@@ -109,22 +74,6 @@
                     </THEMROLE>
                </THEMROLES>
                <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max a grillé des steaks</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>not(state(start(E), Endstate, Patient)) state(result(E), Endstate, Patient) cause(Agent, E)</SEMANTICS>
-                    </FRAME>
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.beneficiary"/>
                          <EXAMPLES>
@@ -144,23 +93,6 @@
                                    </SELRESTRS>
                               </PREP>
                               <NP value="Beneficiary">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>not(state(start(E), Endstate, Patient)) state(result(E), Endstate, Patient) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP CL-lui V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max lui a grillé des steaks</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <CLLUI/>
-                              <VERB/>
-                              <NP value="Patient">
                                    <SYNRESTRS/>
                               </NP>
                          </SYNTAX>

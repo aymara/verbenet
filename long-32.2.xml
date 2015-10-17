@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="long-32.2">
      <MEMBERS>
-          <MEMBER name="balancer"/>
+          <MEMBER name="aspirer"/>
      </MEMBERS>
      <THEMROLES>
-          <THEMROLE type="Experiencer"/>
+          <THEMROLE type="Pivot"/>
           <THEMROLE type="Theme"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V S_INF"/>
+               <DESCRIPTION primary="NP V à V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Jean aspire à devenir président</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
-                    <NP value="Experiencer">
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Pivot" introduced_by="à" is_true_prep="true" value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V à ce Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Jean aspire à ce que son fils devienne président</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Pivot">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
@@ -23,49 +37,30 @@
                               <SELRESTR Value="à"/>
                          </SELRESTRS>
                     </PREP>
-                    <S_INF value="Theme"/>
+                    <PSUBJ introduced_by="à" value="Theme"/>
                </SYNTAX>
-               <SEMANTICS>desire(E, Experiencer, Theme)</SEMANTICS>
+               <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V S_qu P"/>
+               <DESCRIPTION primary="NP V PP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Jean aspire à ce que son fils devienne président</EXAMPLE>
+                    <EXAMPLE>Jean aspire à ce poste</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Experiencer V {à} Theme &lt;ce que Psubj&gt;</SYNTAX>
-               <SEMANTICS>desire(E, Experiencer, Theme)</SEMANTICS>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="32.2-1">
-               <MEMBERS>
-                    <MEMBER name="aspirer"/>
-                    <MEMBER name=""/>
-               </MEMBERS>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V PP.theme"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Jean aspire à ce poste</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Experiencer">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="à"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Theme">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>desire(E, Experiencer, Theme)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

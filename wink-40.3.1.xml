@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="wink-40.3.1">
+     <MEMBERS>
+          <MEMBER name="tortiller"/>
+          <MEMBER name="tortiller se"/>
+          <MEMBER name="tourner se"/>
+          <MEMBER name="bander"/>
+          <MEMBER name="ciller"/>
+          <MEMBER name="cligner"/>
+          <MEMBER name="frétiller"/>
+          <MEMBER name="bigler"/>
+          <MEMBER name="loucher"/>
+          <MEMBER name="dodeliner"/>
+          <MEMBER name="onduler"/>
+          <MEMBER name="arquer"/>
+          <MEMBER name="gigoter"/>
+          <MEMBER name="piaffer"/>
+          <MEMBER name="ruer"/>
+          <MEMBER name="trépigner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="body_part"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Linda a cligné de l'oeil </EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) motion(during(E), Attribute) </SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

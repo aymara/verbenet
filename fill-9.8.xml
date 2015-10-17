@@ -2,8 +2,13 @@
 <VNCLASS ID="fill-9.8">
      <MEMBERS>
           <MEMBER name="engorger"/>
+          <MEMBER name="empester"/>
+          <MEMBER name="baigner"/>
+          <MEMBER name="barrer"/>
+          <MEMBER name="bassiner"/>
           <MEMBER name="polluer"/>
           <MEMBER name="pourvoir"/>
+          <MEMBER name="cribler"/>
           <MEMBER name="adorner"/>
           <MEMBER name="armorier"/>
           <MEMBER name="aveugler"/>
@@ -30,7 +35,7 @@
           <MEMBER name="envahir"/>
           <MEMBER name="environner"/>
           <MEMBER name="estamper"/>
-          <MEMBER name="étendre"/>
+          <MEMBER name="arroser"/>
           <MEMBER name="fermer"/>
           <MEMBER name="festonner"/>
           <MEMBER name="foncer"/>
@@ -46,8 +51,8 @@
           <MEMBER name="monter"/>
           <MEMBER name="obstruer"/>
           <MEMBER name="obturer"/>
-          <MEMBER name="onduler"/>
-          <MEMBER name="orienter"/>
+          <MEMBER name="combler"/>
+          <MEMBER name="couvrir"/>
           <MEMBER name="ornementer"/>
           <MEMBER name="ouvrager"/>
           <MEMBER name="parcourir"/>
@@ -59,7 +64,7 @@
           <MEMBER name="rehausser"/>
           <MEMBER name="relever"/>
           <MEMBER name="remonter"/>
-          <MEMBER name="repérer"/>
+          <MEMBER name="étoiler"/>
           <MEMBER name="repousser"/>
           <MEMBER name="rider"/>
           <MEMBER name="submerger"/>
@@ -67,81 +72,25 @@
           <MEMBER name="taveler"/>
           <MEMBER name="veiner"/>
           <MEMBER name="vicier"/>
-          <MEMBER name="culotter se"/>
-          <MEMBER name="emplir"/>
-          <MEMBER name="moquetter"/>
-          <MEMBER name="parementer"/>
-          <MEMBER name="argenter"/>
-          <MEMBER name="arroser"/>
-          <MEMBER name="badigeonner"/>
-          <MEMBER name="baigner"/>
-          <MEMBER name="barbouiller"/>
-          <MEMBER name="barrer"/>
-          <MEMBER name="bassiner"/>
-          <MEMBER name="bourrer"/>
-          <MEMBER name="carreler"/>
-          <MEMBER name="chamarrer"/>
-          <MEMBER name="charger"/>
-          <MEMBER name="colorer"/>
-          <MEMBER name="combler"/>
-          <MEMBER name="couvrir"/>
-          <MEMBER name="cribler"/>
-          <MEMBER name="culotter"/>
-          <MEMBER name="daller"/>
-          <MEMBER name="diaprer"/>
-          <MEMBER name="dorer"/>
-          <MEMBER name="émailler"/>
-          <MEMBER name="embouteiller"/>
-          <MEMBER name="empester"/>
-          <MEMBER name="encrasser"/>
-          <MEMBER name="encroûter"/>
-          <MEMBER name="enduire"/>
-          <MEMBER name="enrober"/>
-          <MEMBER name="étoiler"/>
           <MEMBER name="fourrer"/>
-          <MEMBER name="garnir"/>
-          <MEMBER name="gonfler"/>
-          <MEMBER name="habiller"/>
-          <MEMBER name="inonder"/>
           <MEMBER name="jalonner"/>
-          <MEMBER name="joncher"/>
-          <MEMBER name="lester"/>
+          <MEMBER name="gonfler"/>
           <MEMBER name="mâchurer"/>
           <MEMBER name="marquer"/>
-          <MEMBER name="meringuer"/>
-          <MEMBER name="métalliser"/>
-          <MEMBER name="meubler"/>
           <MEMBER name="moucheter"/>
           <MEMBER name="mouiller"/>
-          <MEMBER name="napper"/>
-          <MEMBER name="nickeler"/>
           <MEMBER name="noyer"/>
-          <MEMBER name="orner"/>
-          <MEMBER name="paner"/>
-          <MEMBER name="parqueter"/>
           <MEMBER name="parsemer"/>
-          <MEMBER name="paver"/>
-          <MEMBER name="peindre"/>
-          <MEMBER name="peupler"/>
           <MEMBER name="piqueter"/>
-          <MEMBER name="plaquer"/>
-          <MEMBER name="plâtrer"/>
-          <MEMBER name="plomber"/>
           <MEMBER name="rayer"/>
+          <MEMBER name="inonder"/>
           <MEMBER name="recouvrir"/>
           <MEMBER name="remplir"/>
-          <MEMBER name="repeupler"/>
           <MEMBER name="revêtir"/>
           <MEMBER name="saturer"/>
-          <MEMBER name="semer"/>
-          <MEMBER name="tacher"/>
-          <MEMBER name="tacheter"/>
-          <MEMBER name="tapisser"/>
-          <MEMBER name="teindre"/>
-          <MEMBER name="teinter"/>
+          <MEMBER name="joncher"/>
           <MEMBER name="tremper"/>
           <MEMBER name="trouer"/>
-          <MEMBER name="voiler"/>
           <MEMBER name="doter"/>
      </MEMBERS>
      <THEMROLES>
@@ -162,7 +111,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Leslie a équipé le magasin avec les gardes de sécurité.</EXAMPLE>
+                    <EXAMPLE>Luc a équipé le magasin d'un nouveau système de protection</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -174,7 +123,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value=", avec d e"/>
+                              <SELRESTR Value="avec;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Theme">
@@ -186,7 +135,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Leslie a équipé le magasin en systèmes de protection.</EXAMPLE>
+                    <EXAMPLE>Luc a équipé le magasin en systèmes de protection.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -210,7 +159,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP"/>
                <EXAMPLES>
-                    <EXAMPLE>Le nouveau système de protection équipe le magasin.</EXAMPLE>
+                    <EXAMPLE>Un nouveau système de protection équipe le magasin.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Theme">

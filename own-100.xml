@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="own-100">
+     <MEMBERS>
+          <MEMBER name="avoir"/>
+          <MEMBER name="détenir"/>
+          <MEMBER name="posséder"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Pivot">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc possède deux voitures.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(E, Pivot, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

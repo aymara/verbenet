@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="matter-91">
+     <MEMBERS>
+          <MEMBER name="compter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.experiencer"/>
+               <EXAMPLES>
+                    <EXAMPLE>La venue du président compte pour Max.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(E, Emotion, ?Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="IL V PP.experiencer Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Il importe pour Max que le président vienne.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <IL/>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PSUBJ value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="91-1">
+               <MEMBERS>
+                    <MEMBER name="importer"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="IL V PP.experiencer Qu Psubj"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Il importe à Max que le président vienne.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <IL/>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Experiencer">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PSUBJ value="Stimulus"/>
+                         </SYNTAX>
+                         <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

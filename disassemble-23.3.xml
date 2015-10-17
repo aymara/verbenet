@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="disassemble-23.3">
+     <MEMBERS>
+          <MEMBER name="décrocher"/>
+          <MEMBER name="défaire"/>
+          <MEMBER name="détacher"/>
+          <MEMBER name="dételer"/>
+          <MEMBER name="dégager"/>
+          <MEMBER name="désaxer"/>
+          <MEMBER name="déboulonner"/>
+          <MEMBER name="débrancher"/>
+          <MEMBER name="déconnecter"/>
+          <MEMBER name="découpler"/>
+          <MEMBER name="déficeler"/>
+          <MEMBER name="dégrafer"/>
+          <MEMBER name="délacer"/>
+          <MEMBER name="délier"/>
+          <MEMBER name="dénouer"/>
+          <MEMBER name="désassembler"/>
+          <MEMBER name="dévisser"/>
+          <MEMBER name="disjoindre"/>
+          <MEMBER name="disjoncter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Co-Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a détaché la poignée de la porte</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) together(start(E), physical, Patient, Co-Patient) apart(result(E), physical, Patient, Co-Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="forbid-67">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent"/>
+          <THEMROLE type="Recipient"/>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="67-1">
+               <MEMBERS>
+                    <MEMBER name="déconseiller"/>
+                    <MEMBER name="défendre"/>
+                    <MEMBER name="interdire"/>
+                    <MEMBER name="prohiber"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc interdit à Marie de fumer</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
+                         <SEMANTICS>forbid(during(E), Agent, Recipient, Topic)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="67-2">
+               <MEMBERS>
+                    <MEMBER name="réfreiner"/>
+                    <MEMBER name="freiner"/>
+                    <MEMBER name="stopper"/>
+                    <MEMBER name="empêcher"/>
+                    <MEMBER name="dissuader"/>
+                    <MEMBER name="décourager"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP de V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc empêche Marie de fumer</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Recipient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VINF emptysubjectrole="Recipient" introduced_by="de" is_true_prep="true" value="Topic"/>
+                         </SYNTAX>
+                         <SEMANTICS>forbid(during(E), Agent, Recipient, Topic)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V Qu Psubj"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc empêche que Marie fume</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PSUBJ value="Topic"/>
+                         </SYNTAX>
+                         <SEMANTICS>forbid(during(E), Agent, Topic)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

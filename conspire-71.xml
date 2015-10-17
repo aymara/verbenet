@@ -3,9 +3,10 @@
      <MEMBERS>
           <MEMBER name="collaborer"/>
           <MEMBER name="comploter"/>
-          <MEMBER name="rebeller se"/>
           <MEMBER name="conspirer"/>
           <MEMBER name="riposter"/>
+          <MEMBER name="protester"/>
+          <MEMBER name="rebeller se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -21,18 +22,33 @@
                </SELRESTRS>
           </THEMROLE>
           <THEMROLE type="Theme"/>
+          <THEMROLE type="Beneficiary"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent pour V0-inf"/>
+               <DESCRIPTION primary="NP V PP.co-agent pour V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Jean conspire avec Marie pour prendre le pouvoir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {avec} Co_Agent {pour} Theme &lt;V0-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Agent" introduced_by="pour" is_true_prep="true" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>conspire(during(E), Agent_i, Agent_j, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.theme"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP.beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Jean conspire avec Marie contre Max</EXAMPLE>
                </EXAMPLES>
@@ -54,19 +70,19 @@
                               <SELRESTR Value="contre"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP value="Theme">
+                    <NP value="Beneficiary">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>conspire(during(E), Agent, Co-Agent, Theme)</SEMANTICS>
+               <SEMANTICS>conspire(during(E), Agent, Co-Agent, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V PP.beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Jean et Marie conspirent contre Max</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
-                    <NP value="Agent">
+                    <NP modifier="+plural" value="Agent">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
@@ -75,18 +91,24 @@
                               <SELRESTR Value="contre"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP value="Theme">
+                    <NP value="Beneficiary">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>conspire(during(E), Agent, Theme)</SEMANTICS>
+               <SEMANTICS>conspire(during(E), Agent, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V pour V0_INF"/>
+               <DESCRIPTION primary="NP V pour V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Jean et Marie conspirent pour prendre le pouvoir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {pour} Theme &lt;V0-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="pour" is_true_prep="true" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>conspire(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="touch-20">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a caressé le chat</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) contact(end(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="20-1">
+               <MEMBERS>
+                    <MEMBER name="baiser"/>
+                    <MEMBER name="bécoter"/>
+                    <MEMBER name="biser"/>
+                    <MEMBER name="caresser"/>
+                    <MEMBER name=""/>
+                    <MEMBER name="chatouiller"/>
+                    <MEMBER name="embrasser"/>
+                    <MEMBER name="flatter"/>
+                    <MEMBER name="frôler"/>
+                    <MEMBER name="frotter"/>
+                    <MEMBER name="lécher"/>
+                    <MEMBER name="malaxer"/>
+                    <MEMBER name="masser"/>
+                    <MEMBER name="peloter"/>
+                    <MEMBER name="pétrir"/>
+                    <MEMBER name="tâter"/>
+                    <MEMBER name="titiller"/>
+                    <MEMBER name="toucher"/>
+                    <MEMBER name="tripoter"/>
+                    <MEMBER name="triturer"/>
+                    <MEMBER name="empoigner"/>
+                    <MEMBER name="fouetter"/>
+                    <MEMBER name="frapper"/>
+                    <MEMBER name="frictionner"/>
+                    <MEMBER name="mordre"/>
+                    <MEMBER name="saisir"/>
+                    <MEMBER name="taper"/>
+                    <MEMBER name="tapoter"/>
+                    <MEMBER name="tripatouiller"/>
+                    <MEMBER name="effleurer"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Attribute">
+                         <SELRESTR Value="+" type="body_part"/>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a caressé son bras</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP modifier="+genitive(Theme)" value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>contact(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.attribute"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a carressé Max sur le bras</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="+" type="loc"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>contact(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP LUI V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc lui a caressé le bras</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <LUI/>
+                              <VERB/>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>contact(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc et Max se sont caressés</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP modifier="+plural" value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="reciproque"/>
+                         </SYNTAX>
+                         <SEMANTICS/>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

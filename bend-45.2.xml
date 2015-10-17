@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="bend-45.2">
      <MEMBERS>
+          <MEMBER name="incurver"/>
           <MEMBER name="cambrer"/>
           <MEMBER name="crisper"/>
           <MEMBER name="cylindrer"/>
           <MEMBER name="damer"/>
           <MEMBER name="déformer"/>
-          <MEMBER name="déjeter"/>
           <MEMBER name="distendre"/>
-          <MEMBER name="ébouriffer"/>
           <MEMBER name="étirer"/>
           <MEMBER name="évaser"/>
           <MEMBER name="fausser"/>
           <MEMBER name="forcer"/>
           <MEMBER name="friper"/>
-          <MEMBER name="incurver"/>
           <MEMBER name="rajuster"/>
           <MEMBER name="ratatiner"/>
           <MEMBER name="rectifier"/>
           <MEMBER name="rouler"/>
           <MEMBER name="tordre"/>
-          <MEMBER name="déplier"/>
-          <MEMBER name="écraser"/>
-          <MEMBER name="plier"/>
-          <MEMBER name="ployer"/>
-          <MEMBER name="recourber"/>
-          <MEMBER name="replier"/>
+          <MEMBER name="allonger"/>
+          <MEMBER name="arquer"/>
+          <MEMBER name="arrondir"/>
+          <MEMBER name="étaler"/>
+          <MEMBER name="moutonner"/>
+          <MEMBER name="plisser"/>
+          <MEMBER name="raidir"/>
+          <MEMBER name="redresser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -64,19 +64,30 @@
                <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) physical_form(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.patient  se V moyen"/>
+               <DESCRIPTION primary="NP.patient se V"/>
                <EXAMPLES>
                     <EXAMPLE>La branche s'est pliée</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Patient se V</SYNTAX>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+               </SYNTAX>
                <SEMANTICS>physical_form(result(E), Form, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V ADV-Middle"/>
+               <DESCRIPTION primary="NP se V ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Les branches de pin se plient facilement</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Patient se V ADV</SYNTAX>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="middle"/>
+                    <ADV/>
+               </SYNTAX>
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -98,7 +109,10 @@
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="45.2-1">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="dilater"/>
+                    <MEMBER name="plier"/>
+               </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
@@ -106,7 +120,12 @@
                          <EXAMPLES>
                               <EXAMPLE>La branche a plié</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>NP.Patient V</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                         </SYNTAX>
                          <SEMANTICS>physical_form(result(E), Form, Patient)</SEMANTICS>
                     </FRAME>
                </FRAMES>

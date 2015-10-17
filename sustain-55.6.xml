@@ -2,18 +2,17 @@
 <VNCLASS ID="sustain-55.6">
      <MEMBERS>
           <MEMBER name="animer"/>
-          <MEMBER name="continuer"/>
           <MEMBER name="élever"/>
           <MEMBER name="entretenir"/>
           <MEMBER name="garder"/>
           <MEMBER name="maintenir"/>
           <MEMBER name="pérenniser"/>
           <MEMBER name="porter"/>
-          <MEMBER name="presser"/>
           <MEMBER name="prolonger"/>
           <MEMBER name="reprendre"/>
           <MEMBER name="retenir"/>
-          <MEMBER name="soigner"/>
+          <MEMBER name="perpétuer"/>
+          <MEMBER name="poursuivre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

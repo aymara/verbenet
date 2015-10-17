@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="simple_dressing-41.3.1">
+     <MEMBERS>
+          <MEMBER name="afficher"/>
+          <MEMBER name="arborer"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="ceindre"/>
+          <MEMBER name="mettre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="garment"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Elle porte toujours une jupe.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>wear(E, Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

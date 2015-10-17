@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="convert-26.6.2">
      <MEMBERS>
-          <MEMBER name="affecter"/>
-          <MEMBER name="ramener"/>
-          <MEMBER name="rappeler"/>
-          <MEMBER name="rendre"/>
+          <MEMBER name="convertir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -25,8 +22,7 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true"/>
                     <PREP>
                          <SELRESTRS>
                               <SELRESTR Value="à"/>
@@ -38,39 +34,29 @@
                </SYNTAX>
                <SEMANTICS>convert(during(E), Patient, Goal)</SEMANTICS>
           </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.goal"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a converti Luc au boudhisme</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Goal">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>convert(during(E), Patient, ?Source, Goal) cause(E, Agent)</SEMANTICS>
+          </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="26.6.2-1">
-               <MEMBERS>
-                    <MEMBER name="convertir"/>
-               </MEMBERS>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.goal"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max a converti Luc au boudhisme</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="à"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Goal">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>convert(during(E), Patient, ?Source, Goal) cause(E, Agent)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

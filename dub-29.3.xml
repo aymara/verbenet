@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="dub-29.3">
+     <MEMBERS>
+          <MEMBER name="labelliser"/>
+          <MEMBER name="rebaptiser"/>
+          <MEMBER name="appeler"/>
+          <MEMBER name="couronner"/>
+          <MEMBER name="dénommer"/>
+          <MEMBER name="intituler"/>
+          <MEMBER name="prénommer"/>
+          <MEMBER name="sacrer"/>
+          <MEMBER name="surnommer"/>
+          <MEMBER name="adouber"/>
+          <MEMBER name="consacrer"/>
+          <MEMBER name="millésimer"/>
+          <MEMBER name="baptiser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="concrete"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Result"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a baptisé son fils Thierry</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>designated(result(E), Theme, Attribute) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -14,28 +14,21 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="26.7-1">
                <MEMBERS>
+                    <MEMBER name="psalmodier"/>
+                    <MEMBER name="chantonner"/>
+                    <MEMBER name="chanter"/>
                     <MEMBER name="entonner"/>
-                    <MEMBER name="réaliser"/>
-                    <MEMBER name="vocaliser"/>
+                    <MEMBER name="exécuter"/>
+                    <MEMBER name="interpréter"/>
+                    <MEMBER name="jouer"/>
+                    <MEMBER name="monter"/>
+                    <MEMBER name="siffler"/>
+                    <MEMBER name="talonner"/>
+                    <MEMBER name="fredonner"/>
+                    <MEMBER name="siffloter"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max chante une chanson</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Theme">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>perform(during(E), Agent, Theme)</SEMANTICS>
-                    </FRAME>
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.beneficiary"/>
                          <EXAMPLES>
@@ -61,43 +54,30 @@
                          <SEMANTICS>perform(during(E), Agent, Theme) benefit(E, Beneficiary)</SEMANTICS>
                     </FRAME>
                </FRAMES>
-               <SUBCLASSES>
-                    <VNSUBCLASS ID="26.7-1-1">
-                         <MEMBERS>
-                              <MEMBER name="chanter"/>
-                              <MEMBER name="chantonner"/>
-                              <MEMBER name="exécuter"/>
-                              <MEMBER name="faire"/>
-                              <MEMBER name="interpréter"/>
-                              <MEMBER name="jouer"/>
-                              <MEMBER name="monter"/>
-                              <MEMBER name="passer"/>
-                              <MEMBER name="pratiquer"/>
-                              <MEMBER name="siffler"/>
-                         </MEMBERS>
-                         <THEMROLES/>
-                         <FRAMES/>
-                    </VNSUBCLASS>
-               </SUBCLASSES>
           </VNSUBCLASS>
           <VNSUBCLASS ID="26.7-2">
                <MEMBERS>
-                    <MEMBER name="confectionner"/>
-                    <MEMBER name="constituer"/>
-                    <MEMBER name="créer"/>
-                    <MEMBER name="donner"/>
-                    <MEMBER name="éditer"/>
-                    <MEMBER name="élever"/>
-                    <MEMBER name="fournir"/>
-                    <MEMBER name="monter"/>
-                    <MEMBER name="réaliser"/>
+                    <MEMBER name="brosser"/>
+                    <MEMBER name="dessiner"/>
+                    <MEMBER name="chorégraphier"/>
+                    <MEMBER name="exécuter"/>
+                    <MEMBER name="inventer"/>
+                    <MEMBER name="peindre"/>
+                    <MEMBER name="tracer"/>
+                    <MEMBER name="rédiger"/>
+                    <MEMBER name="tourner"/>
+                    <MEMBER name="décrire"/>
+                    <MEMBER name="composer"/>
+                    <MEMBER name="tisser"/>
+                    <MEMBER name="écrire"/>
+                    <MEMBER name="concevoir"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
+                         <DESCRIPTION primary="NP V NP PP.Beneficiary"/>
                          <EXAMPLES>
-                              <EXAMPLE>Chopin a composé un oratorio</EXAMPLE>
+                              <EXAMPLE>Chopin a composé un oratorio pour Marie</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">
@@ -107,32 +87,18 @@
                               <NP value="Theme">
                                    <SYNRESTRS/>
                               </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="pour"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Beneficiary">
+                                   <SYNRESTRS/>
+                              </NP>
                          </SYNTAX>
-                         <SEMANTICS>not(exist(start(E), Theme)) exist(result(E), Theme) cause(Agent, E)</SEMANTICS>
+                         <SEMANTICS>not(exist(start(E), Theme)) exist(result(E), Theme) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
                     </FRAME>
                </FRAMES>
-               <SUBCLASSES>
-                    <VNSUBCLASS ID="26.7-2-1">
-                         <MEMBERS>
-                              <MEMBER name="composer"/>
-                              <MEMBER name="dessiner"/>
-                              <MEMBER name="écrire"/>
-                              <MEMBER name="établir"/>
-                              <MEMBER name="exécuter"/>
-                              <MEMBER name="fabriquer"/>
-                              <MEMBER name="faire"/>
-                              <MEMBER name="inventer"/>
-                              <MEMBER name="lever"/>
-                              <MEMBER name="peindre"/>
-                              <MEMBER name="produire"/>
-                              <MEMBER name="tirer"/>
-                              <MEMBER name="tracer"/>
-                              <MEMBER name="brosser"/>
-                         </MEMBERS>
-                         <THEMROLES/>
-                         <FRAMES/>
-                    </VNSUBCLASS>
-               </SUBCLASSES>
           </VNSUBCLASS>
      </SUBCLASSES>
 </VNCLASS>

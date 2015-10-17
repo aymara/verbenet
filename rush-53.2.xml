@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="rush-53.2">
+     <MEMBERS>
+          <MEMBER name="presser se"/>
+          <MEMBER name="dégrouiller se"/>
+          <MEMBER name="dépêcher se"/>
+          <MEMBER name="empresser s'"/>
+          <MEMBER name="hâter se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Marie s'est dépêchée de finir sa thèse.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="de" is_true_prep="true" value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>rush(during(E), Agent, Theme) end(end(E), Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

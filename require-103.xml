@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="require-103">
+     <MEMBERS>
+          <MEMBER name="supposer"/>
+          <MEMBER name="exiger"/>
+          <MEMBER name="nécessiter"/>
+          <MEMBER name="demander"/>
+          <MEMBER name="requérir"/>
+          <MEMBER name="réclamer"/>
+          <MEMBER name="impliquer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Pivot"/>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.source NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le succès exige beaucoup de travail pour/de la part de Paul.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de la part de;pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>necessitate(E, Pivot, Theme, Source)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.source Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le succès exige pour/de la part de Paul qu'il travaille beaucoup.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de la part de;pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PSUBJ value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>necessitate(E, Pivot, Theme, Source)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.source de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le succès exige pour/de la part de Paul de travailler beaucoup</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Pivot V {pour/de la part de} Source Theme&lt;+de VSource-inf&gt;</SYNTAX>
+               <SEMANTICS>necessitate(E, Pivot, Theme, Source)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

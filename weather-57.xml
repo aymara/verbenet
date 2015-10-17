@@ -19,11 +19,14 @@
      <THEMROLES/>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="Il V"/>
+               <DESCRIPTION primary="IL V"/>
                <EXAMPLES>
                     <EXAMPLE>Il pleut</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Il [+imp] V</SYNTAX>
+               <SYNTAX>
+                    <IL/>
+                    <VERB/>
+               </SYNTAX>
                <SEMANTICS>weather(during(E), Weather_type)</SEMANTICS>
           </FRAME>
      </FRAMES>

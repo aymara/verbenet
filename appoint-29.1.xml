@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="appoint-29.1">
+     <MEMBERS>
+          <MEMBER name="étiqueter"/>
+          <MEMBER name="ordonner"/>
+          <MEMBER name="pressentir"/>
+          <MEMBER name="choisir"/>
+          <MEMBER name="désigner"/>
+          <MEMBER name="élire"/>
+          <MEMBER name="mandater"/>
+          <MEMBER name="nommer"/>
+          <MEMBER name="promouvoir"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Nous avons nommé Max président</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>designated(result(E), Theme, Attribute) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Nous avons nommé Max comme président</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="comme"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>designated(result(E), Theme, Attribute) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

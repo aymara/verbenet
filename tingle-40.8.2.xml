@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="tingle-40.8.2">
+     <MEMBERS>
+          <MEMBER name="tournoyer"/>
+          <MEMBER name="battre"/>
+          <MEMBER name="ronronner"/>
+          <MEMBER name="vibrer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="body_part"/>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.stimulus"/>
+               <EXAMPLES>
+                    <EXAMPLE>Mon coeur bat de peur.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+genitive(Experiencer)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>discomfort(during(E), Attribute) experience(E, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

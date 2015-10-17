@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="void-106">
+     <MEMBERS>
+          <MEMBER name="annuler"/>
+          <MEMBER name="invalider"/>
+          <MEMBER name="abolir"/>
+          <MEMBER name="abroger"/>
+          <MEMBER name="casser"/>
+          <MEMBER name="infirmer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a annulé le contrat de Léa.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) designated(start(E), Patient) not(designated(end(E), Patient))</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

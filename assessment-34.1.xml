@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="assessment-34.1">
      <MEMBERS>
-          <MEMBER name="scruter"/>
           <MEMBER name="apprécier"/>
           <MEMBER name="étudier"/>
-          <MEMBER name="évaluer"/>
           <MEMBER name="expertiser"/>
           <MEMBER name="explorer"/>
           <MEMBER name="inspecter"/>
           <MEMBER name="peser"/>
+          <MEMBER name="examiner"/>
+          <MEMBER name="auditer"/>
+          <MEMBER name="chiffrer"/>
+          <MEMBER name="mesurer"/>
+          <MEMBER name="méjuger"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -18,22 +21,6 @@
           <THEMROLE type="Attribute"/>
      </THEMROLES>
      <FRAMES>
-          <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
-               <EXAMPLES>
-                    <EXAMPLE>L'inspecteur a évalué le bâtiment.</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>
-                    <NP value="Agent">
-                         <SYNRESTRS/>
-                    </NP>
-                    <VERB/>
-                    <NP value="Theme">
-                         <SYNRESTRS/>
-                    </NP>
-               </SYNTAX>
-               <SEMANTICS>assess(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
-          </FRAME>
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.attribute"/>
                <EXAMPLES>
@@ -59,7 +46,7 @@
                <SEMANTICS>assess(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.attribute PP"/>
+               <DESCRIPTION primary="NP V NP.attribute"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur a évalué la résistance du bâtiment.</EXAMPLE>
                </EXAMPLES>
@@ -68,26 +55,24 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <NP value="Attribute">
-                         <SYNRESTRS/>
-                    </NP>
-                    <PREP>
-                         <SELRESTRS>
-                              <SELRESTR Value="de"/>
-                         </SELRESTRS>
-                    </PREP>
-                    <NP value="Theme">
+                    <NP modifier="+genitive(Theme)" value="Attribute">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
                <SEMANTICS>assess(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V si P ou si P"/>
+               <DESCRIPTION primary="NP V si P"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur a évalué si le bâtiment allait s'écrouler</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme &lt;+si P ou si P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="si" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>assess(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
           </FRAME>
      </FRAMES>

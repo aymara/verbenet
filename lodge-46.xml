@@ -15,8 +15,10 @@
           <MEMBER name="séjourner"/>
           <MEMBER name="stationner"/>
           <MEMBER name="tapir se"/>
-          <MEMBER name="tenir"/>
           <MEMBER name="vivre"/>
+          <MEMBER name="arrêter"/>
+          <MEMBER name="caserner"/>
+          <MEMBER name="installer s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">
@@ -37,7 +39,7 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="c dans e h z"/>
+                              <SELRESTR Value="chez;dans"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Location">

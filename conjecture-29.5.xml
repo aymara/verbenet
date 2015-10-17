@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="conjecture-29.5">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="29.5-1">
+               <MEMBERS>
+                    <MEMBER name="pressentir"/>
+                    <MEMBER name="sentir"/>
+                    <MEMBER name="présupposer"/>
+                    <MEMBER name="savoir"/>
+                    <MEMBER name="rêver"/>
+                    <MEMBER name="ressentir"/>
+                    <MEMBER name="soupçonner"/>
+                    <MEMBER name="subodorer"/>
+                    <MEMBER name="suspecter"/>
+                    <MEMBER name="supposer"/>
+                    <MEMBER name="présumer"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Attribute"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V Qu Pind"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les gens croient que le projet est faisable.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PIND value="Theme"/>
+                         </SYNTAX>
+                         <SEMANTICS>believe(during(E), Agent, Theme, ?Predicate)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les experts croient ce projet faisable.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <ADJ/>
+                         </SYNTAX>
+                         <SEMANTICS>believe(during(E), Agent, Theme, Predicate)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="29.5-1-1">
+                         <MEMBERS>
+                              <MEMBER name="estimer"/>
+                              <MEMBER name="espérer"/>
+                              <MEMBER name="croire"/>
+                              <MEMBER name="penser"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V V-inf"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc pense partir demain.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <VINF emptysubjectrole="Agent" value="Theme"/>
+                                   </SYNTAX>
+                                   <SEMANTICS>believe(during(E), Agent, Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+                    <VNSUBCLASS ID="29.5-1-2">
+                         <MEMBERS>
+                              <MEMBER name="prévoir"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V de V-inf"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc prévoit de partir demain.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+                                   <SEMANTICS>believe(during(E), Agent, Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="29.5-2">
+               <MEMBERS>
+                    <MEMBER name="préétablir"/>
+                    <MEMBER name="proférer"/>
+                    <MEMBER name="prononcer"/>
+                    <MEMBER name="trouver"/>
+                    <MEMBER name="asserter"/>
+                    <MEMBER name="avaliser"/>
+                    <MEMBER name="constater"/>
+                    <MEMBER name="homologuer"/>
+                    <MEMBER name="proclamer"/>
+                    <MEMBER name="percevoir"/>
+                    <MEMBER name="prétendre"/>
+                    <MEMBER name="admettre"/>
+                    <MEMBER name="décréter"/>
+                    <MEMBER name="juger"/>
+                    <MEMBER name="ratifier"/>
+                    <MEMBER name="éventer"/>
+                    <MEMBER name="inventer"/>
+                    <MEMBER name=""/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V Qu Pind"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le président a reconnu que le problème était grave.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PIND value="Theme"/>
+                         </SYNTAX>
+                         <SEMANTICS>declare(during(E), Agent, Theme, ?Predicate)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le coupable a reconnu sa culpabilité.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>declare(during(E), Agent, Theme, ?Predicate)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le président a reconnu Luc coupable.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <ADJ/>
+                         </SYNTAX>
+                         <SEMANTICS>declare(during(E), Agent, Theme, Predicate)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="29.5-2-1">
+                         <MEMBERS>
+                              <MEMBER name="noter"/>
+                              <MEMBER name="pronostiquer"/>
+                              <MEMBER name="reconnaître"/>
+                              <MEMBER name="déclarer"/>
+                              <MEMBER name="postuler"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP PP.attribute"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>On a reconnu le français comme langue officielle.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <PREP>
+                                             <SELRESTRS>
+                                                  <SELRESTR Value="comme"/>
+                                             </SELRESTRS>
+                                        </PREP>
+                                        <NP value="Attribute">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                   </SYNTAX>
+                                   <SEMANTICS>declare(during(E), Agent, Theme, Attribute)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

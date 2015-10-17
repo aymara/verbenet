@@ -4,6 +4,13 @@
           <MEMBER name="cracher"/>
           <MEMBER name="dégager"/>
           <MEMBER name="perdre"/>
+          <MEMBER name="dégueuler"/>
+          <MEMBER name="diffuser"/>
+          <MEMBER name="émettre"/>
+          <MEMBER name="éructer"/>
+          <MEMBER name="exsuder"/>
+          <MEMBER name="jeter"/>
+          <MEMBER name="projeter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">
@@ -57,7 +64,15 @@
                </FRAMES>
           </VNSUBCLASS>
           <VNSUBCLASS ID="43.4-2">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="dégorger"/>
+                    <MEMBER name="déborder"/>
+                    <MEMBER name="dégouliner"/>
+                    <MEMBER name="suer"/>
+                    <MEMBER name="suinter"/>
+                    <MEMBER name="pisser"/>
+                    <MEMBER name="ruisseler"/>
+               </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>

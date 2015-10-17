@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="gorge-39.6">
+     <MEMBERS>
+          <MEMBER name="vivre"/>
+          <MEMBER name="alimenter s'"/>
+          <MEMBER name="nourrir se"/>
+          <MEMBER name="gaver se"/>
+          <MEMBER name="subsister"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="comestible"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.patient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Léa se gave de pêches</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_in(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="entity_specific_modes_being-47.2">
      <MEMBERS>
-          <MEMBER name="bomber"/>
-          <MEMBER name="bourgeonner"/>
-          <MEMBER name="clapoter"/>
-          <MEMBER name="couler"/>
-          <MEMBER name="bouillonner"/>
           <MEMBER name="brûler"/>
-          <MEMBER name="couver"/>
           <MEMBER name="germer"/>
           <MEMBER name="mousser"/>
-          <MEMBER name="déborder"/>
-          <MEMBER name="éclore"/>
-          <MEMBER name="écouler s'"/>
-          <MEMBER name="flamber"/>
-          <MEMBER name="flotter"/>
-          <MEMBER name="jeter se"/>
-          <MEMBER name="monter"/>
-          <MEMBER name="pousser"/>
-          <MEMBER name="saillir"/>
-          <MEMBER name="tournoyer"/>
+          <MEMBER name="bourgeonner"/>
+          <MEMBER name="bouillonner"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

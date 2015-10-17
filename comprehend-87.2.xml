@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="comprehend-87.2">
+     <MEMBERS>
+          <MEMBER name="saisir"/>
+          <MEMBER name="concevoir"/>
+          <MEMBER name="démêler"/>
+          <MEMBER name="mésestimer"/>
+          <MEMBER name="appréhender"/>
+          <MEMBER name="comprendre"/>
+          <MEMBER name="déchiffrer"/>
+          <MEMBER name="décoder"/>
+          <MEMBER name="entendre"/>
+          <MEMBER name="méconnaître"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Stimulus"/>
+          <THEMROLE type="Experiencer"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V comment P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc comprend comment on en est arrivé là.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="comment" value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>understand(E, Experiencer, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc comprend le problème.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>understand(E, Experiencer, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Pind"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc comprend que le travail est difficile.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PIND value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>understand(E, Experiencer, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

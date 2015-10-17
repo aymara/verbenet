@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="dress-41.1.1">
+     <MEMBERS>
+          <MEMBER name="baigner"/>
+          <MEMBER name="doucher"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Marle a douché son fils.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="41.1.1-1">
+               <MEMBERS>
+                    <MEMBER name="dépouiller"/>
+                    <MEMBER name="habiller"/>
+                    <MEMBER name="langer"/>
+                    <MEMBER name="parer"/>
+                    <MEMBER name="revêtir"/>
+                    <MEMBER name="vêtir"/>
+                    <MEMBER name="dénuder"/>
+                    <MEMBER name="fringuer"/>
+                    <MEMBER name="pomponner"/>
+                    <MEMBER name="désaper"/>
+                    <MEMBER name="déshabiller"/>
+                    <MEMBER name="appareiller"/>
+                    <MEMBER name="couvrir"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Theme"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Marlene a habillé son fils d'un manteau</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>take_care_of(during(E), Agent, Patient, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

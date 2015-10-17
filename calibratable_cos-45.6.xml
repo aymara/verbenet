@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="calibratable_cos-45.6">
      <MEMBERS>
+          <MEMBER name="choir"/>
+          <MEMBER name="chuter"/>
+          <MEMBER name="décroître"/>
+          <MEMBER name="dégonfler"/>
+          <MEMBER name="démultiplier"/>
+          <MEMBER name="diminuer"/>
+          <MEMBER name="enfler"/>
+          <MEMBER name="gonfler"/>
+          <MEMBER name="hausser"/>
+          <MEMBER name="rabaisser"/>
+          <MEMBER name="réduire"/>
+          <MEMBER name="remonter"/>
           <MEMBER name="avancer"/>
+          <MEMBER name="croître"/>
+          <MEMBER name="décliner"/>
+          <MEMBER name="dégringoler"/>
+          <MEMBER name="descendre"/>
+          <MEMBER name="exploser"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="fléchir"/>
           <MEMBER name="forcer"/>
+          <MEMBER name="grandir"/>
+          <MEMBER name="grimper"/>
           <MEMBER name="monter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="reculer"/>
+          <MEMBER name="régresser"/>
+          <MEMBER name="retomber"/>
+          <MEMBER name="tomber"/>
+          <MEMBER name="affaisser s'"/>
+          <MEMBER name="avancer s'"/>
+          <MEMBER name="basculer"/>
+          <MEMBER name="couler"/>
+          <MEMBER name="couvrir se"/>
+          <MEMBER name="déraper"/>
+          <MEMBER name="écrouler s'"/>
+          <MEMBER name="envoler s'"/>
+          <MEMBER name="évoluer"/>
+          <MEMBER name="faiblir"/>
+          <MEMBER name="fluctuer"/>
+          <MEMBER name="former se"/>
+          <MEMBER name="maigrir"/>
+          <MEMBER name="plonger"/>
+          <MEMBER name="progresser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Patient"/>
@@ -14,20 +55,41 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP.patient V PP.attribute"/>
+               <DESCRIPTION primary="NP.patient V PP.attribute PP.extent"/>
                <EXAMPLES>
-                    <EXAMPLE>L'huile a chuté en prix de 10pourcent</EXAMPLE>
+                    <EXAMPLE>L'huile a chuté en prix de 10%</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Patient V {en} Attribute {de} Extent</SYNTAX>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Extent">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>change_value(during(E), Direction, Attribute, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
                <DESCRIPTION primary="NP.attribute V PP.extent"/>
                <EXAMPLES>
-                    <EXAMPLE>Le prix de l'huile a  chuté de 10pourcent</EXAMPLE>
+                    <EXAMPLE>Le prix de l'huile a  chuté de 10%</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
-                    <NP value="Attribute">
+                    <NP modifier="+genitive(Patient)" value="Attribute">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
@@ -45,7 +107,15 @@
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="45.6-2">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="rehausser"/>
+                    <MEMBER name="augmenter"/>
+                    <MEMBER name="abaisser"/>
+                    <MEMBER name="bouger"/>
+                    <MEMBER name="changer"/>
+                    <MEMBER name="accroître"/>
+                    <MEMBER name="amplifer"/>
+               </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Cause"/>
                </THEMROLES>
@@ -53,14 +123,14 @@
                     <FRAME>
                          <DESCRIPTION primary="NP.Cause V NP.attribute PP.extent"/>
                          <EXAMPLES>
-                              <EXAMPLE>La guerre en Irak a augmenté le prix de l'huile de 10pour cent </EXAMPLE>
+                              <EXAMPLE>La guerre en Irak a augmenté le prix de l'huile de 10% </EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Cause">
                                    <SYNRESTRS/>
                               </NP>
                               <VERB/>
-                              <NP value="Attribute">
+                              <NP modifier="+genitive(Patient)" value="Attribute">
                                    <SYNRESTRS/>
                               </NP>
                               <PREP>
@@ -72,7 +142,7 @@
                                    <SYNRESTRS/>
                               </NP>
                          </SYNTAX>
-                         <SEMANTICS/>
+                         <SEMANTICS>change_value(during(E), Direction, Attribute, Patient) amount_changed(during(E), Attribute, Patient, Extent)</SEMANTICS>
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>

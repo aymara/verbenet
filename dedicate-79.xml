@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="dedicate-79">
+     <MEMBERS>
+          <MEMBER name="dédier"/>
+          <MEMBER name="consacrer"/>
+          <MEMBER name="dévouer"/>
+          <MEMBER name="vouer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Goal"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP se V PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc s'est dévoué à/pour aider les autres </EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+VAgent-inf" value="Goal">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>dedicate(during(E), Agent, Theme, Goal)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a dévoué sa vie à/pour aider les autres</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Agent)" value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+VAgent-inf" value="Goal">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>dedicate(during(E), Agent, Theme, Goal)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="flinch-40.5">
+     <MEMBERS>
+          <MEMBER name="trembloter"/>
+          <MEMBER name="tressaillir"/>
+          <MEMBER name="frémir"/>
+          <MEMBER name="frissonner"/>
+          <MEMBER name="défaillir"/>
+          <MEMBER name="pâlir"/>
+          <MEMBER name="verdir"/>
+          <MEMBER name="vibrer"/>
+          <MEMBER name="ratatiner se"/>
+          <MEMBER name="recroqueviller se"/>
+          <MEMBER name="vaciller"/>
+          <MEMBER name="blêmir"/>
+          <MEMBER name="tordre se"/>
+          <MEMBER name="trembler"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.stimulus"/>
+               <EXAMPLES>
+                    <EXAMPLE>Sharon a tressailli (à la vue de Marie, de peur)</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>flinch(during(E), Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="pain-40.8.1">
+     <MEMBERS>
+          <MEMBER name="ronger"/>
+          <MEMBER name="picoter"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="démanger"/>
+          <MEMBER name="gratter"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="tarabuster"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="body_part"/>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP LUI V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les yeux lui piquent</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+                    <LUI/>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>discompfrt(during(E), Attribute) experience(E, Experiencer) in_reaction_to(E, ?Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>La fatigue pique les yeux de Luc</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Experiencer)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>discompfrt(during(E), Attribute) experience(E, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP LUI V NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>La fatigue lui pique les yeux</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <LUI/>
+                    <VERB/>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>discompfrt(during(E), Attribute) experience(E, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

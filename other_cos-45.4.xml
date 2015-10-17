@@ -1,27 +1,392 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="other_cos-45.4">
      <MEMBERS>
+          <MEMBER name="engourdir"/>
+          <MEMBER name="engraisser"/>
+          <MEMBER name="ensanglanter"/>
+          <MEMBER name="entamer"/>
+          <MEMBER name="entrebâiller"/>
+          <MEMBER name="entrouvrir"/>
+          <MEMBER name="envenimer"/>
+          <MEMBER name="épanouir"/>
+          <MEMBER name="épointer"/>
+          <MEMBER name="érailler"/>
+          <MEMBER name="éteindre"/>
+          <MEMBER name="étrangler"/>
+          <MEMBER name="évaporer"/>
+          <MEMBER name="évaser"/>
+          <MEMBER name="éventer"/>
+          <MEMBER name="exciter"/>
+          <MEMBER name="faner"/>
+          <MEMBER name="fausser"/>
+          <MEMBER name="fédéraliser"/>
+          <MEMBER name="fermer"/>
+          <MEMBER name="fixer"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="fléchir"/>
+          <MEMBER name="flétrir"/>
+          <MEMBER name="fondre"/>
+          <MEMBER name="forcer"/>
+          <MEMBER name="forcir"/>
+          <MEMBER name="fortifier"/>
+          <MEMBER name="fossiliser"/>
+          <MEMBER name="fouler"/>
+          <MEMBER name="fraîchir"/>
+          <MEMBER name="frapper"/>
+          <MEMBER name="frigorifier"/>
+          <MEMBER name="friper"/>
+          <MEMBER name="froisser"/>
+          <MEMBER name="fuseler"/>
+          <MEMBER name="gâcher"/>
+          <MEMBER name="gangrener"/>
+          <MEMBER name="gaspiller"/>
+          <MEMBER name="gâter"/>
+          <MEMBER name="gazéifier"/>
+          <MEMBER name="gélatiniser"/>
+          <MEMBER name="gêner"/>
+          <MEMBER name="germaniser"/>
+          <MEMBER name="glacer"/>
+          <MEMBER name="griller"/>
+          <MEMBER name="hausser"/>
+          <MEMBER name="helléniser"/>
+          <MEMBER name="hérisser"/>
+          <MEMBER name="hypertrophier"/>
+          <MEMBER name="incendier"/>
+          <MEMBER name="incinérer"/>
+          <MEMBER name="inverser"/>
+          <MEMBER name="jeter"/>
+          <MEMBER name="laïciser"/>
+          <MEMBER name="laminer"/>
+          <MEMBER name="liquéfier"/>
+          <MEMBER name="maigrir"/>
+          <MEMBER name="minéraliser"/>
+          <MEMBER name="moderniser"/>
+          <MEMBER name="momifier"/>
+          <MEMBER name="mortifier"/>
+          <MEMBER name="nasaliser"/>
+          <MEMBER name="nettoyer"/>
+          <MEMBER name="niveler"/>
+          <MEMBER name="occidentaliser"/>
+          <MEMBER name="ossifier"/>
+          <MEMBER name="ouvrir"/>
+          <MEMBER name="paralyser"/>
+          <MEMBER name="parfaire"/>
+          <MEMBER name="pasteuriser"/>
+          <MEMBER name="percer"/>
+          <MEMBER name="péter"/>
+          <MEMBER name="pétrifier"/>
+          <MEMBER name="plier"/>
+          <MEMBER name="polymériser"/>
+          <MEMBER name="pourrir"/>
+          <MEMBER name="précipiter"/>
+          <MEMBER name="préciser"/>
+          <MEMBER name="prolonger"/>
+          <MEMBER name="putréfier"/>
+          <MEMBER name="quadrupler"/>
+          <MEMBER name="rabougrir"/>
+          <MEMBER name="racornir"/>
+          <MEMBER name="radicaliser"/>
+          <MEMBER name="rafistoler"/>
+          <MEMBER name="rajuster"/>
+          <MEMBER name="ralentir"/>
+          <MEMBER name="râper"/>
+          <MEMBER name="ratatiner"/>
+          <MEMBER name="ravaler"/>
+          <MEMBER name="rectifier"/>
+          <MEMBER name="refermer"/>
+          <MEMBER name="réfrigérer"/>
+          <MEMBER name="régénérer"/>
+          <MEMBER name="régler"/>
+          <MEMBER name="rehausser"/>
+          <MEMBER name="relâcher"/>
+          <MEMBER name="relever"/>
+          <MEMBER name="remettre"/>
+          <MEMBER name="remonter"/>
+          <MEMBER name="remplir"/>
+          <MEMBER name="remuer"/>
+          <MEMBER name="renchérir"/>
+          <MEMBER name="renforcer"/>
+          <MEMBER name="renverser"/>
+          <MEMBER name="réparer"/>
+          <MEMBER name="repasser"/>
+          <MEMBER name="reprendre"/>
+          <MEMBER name="resserrer"/>
+          <MEMBER name="résumer"/>
+          <MEMBER name="retoucher"/>
+          <MEMBER name="ronger"/>
+          <MEMBER name="ruiner"/>
+          <MEMBER name="saboter"/>
+          <MEMBER name="saisir"/>
+          <MEMBER name="salir"/>
+          <MEMBER name="saponifier"/>
+          <MEMBER name="scléroser"/>
+          <MEMBER name="serrer"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="soviétiser"/>
+          <MEMBER name="syndicaliser"/>
+          <MEMBER name="tapoter"/>
+          <MEMBER name="tendre"/>
+          <MEMBER name="tirer"/>
+          <MEMBER name="toucher"/>
+          <MEMBER name="tourner"/>
+          <MEMBER name="transir"/>
+          <MEMBER name="tremper"/>
+          <MEMBER name="tripler"/>
+          <MEMBER name="user"/>
+          <MEMBER name="vaporiser"/>
+          <MEMBER name="verrouiller"/>
+          <MEMBER name="vitrifier"/>
+          <MEMBER name="vulcaniser"/>
+          <MEMBER name="vulgariser"/>
+          <MEMBER name="apurer"/>
+          <MEMBER name="avilir"/>
+          <MEMBER name="dorer"/>
+          <MEMBER name="dynamiser"/>
+          <MEMBER name="éclairer"/>
+          <MEMBER name="édulcorer"/>
+          <MEMBER name="équilibrer"/>
+          <MEMBER name="foncer"/>
+          <MEMBER name="harmoniser"/>
+          <MEMBER name="insensibiliser"/>
+          <MEMBER name="abaisser"/>
+          <MEMBER name="abâtardir"/>
+          <MEMBER name="activer"/>
+          <MEMBER name="adoucir"/>
+          <MEMBER name="affaiblir"/>
+          <MEMBER name="affermir"/>
+          <MEMBER name="affiner"/>
+          <MEMBER name="aggraver"/>
+          <MEMBER name="agrandir"/>
+          <MEMBER name="aigrir"/>
+          <MEMBER name="aiguiser"/>
+          <MEMBER name="ajuster"/>
+          <MEMBER name="alléger"/>
+          <MEMBER name="allonger"/>
+          <MEMBER name="alourdir"/>
+          <MEMBER name="amaigrir"/>
+          <MEMBER name="améliorer"/>
+          <MEMBER name="amenuiser"/>
+          <MEMBER name="ameublir"/>
+          <MEMBER name="amincir"/>
+          <MEMBER name="amoindrir"/>
+          <MEMBER name="amollir"/>
+          <MEMBER name="amplifier"/>
+          <MEMBER name="anémier"/>
+          <MEMBER name="aplanir"/>
+          <MEMBER name="aplatir"/>
+          <MEMBER name="appauvrir"/>
+          <MEMBER name="approfondir"/>
+          <MEMBER name="arrondir"/>
           <MEMBER name="aseptiser"/>
           <MEMBER name="assainir"/>
+          <MEMBER name="assécher"/>
+          <MEMBER name="assombrir"/>
+          <MEMBER name="assouplir"/>
           <MEMBER name="assurer"/>
           <MEMBER name="attendrir"/>
+          <MEMBER name="atténuer"/>
           <MEMBER name="attiédir"/>
+          <MEMBER name="aviver"/>
+          <MEMBER name="baisser"/>
+          <MEMBER name="banaliser"/>
           <MEMBER name="bistrer"/>
+          <MEMBER name="blanchir"/>
+          <MEMBER name="blêmir"/>
+          <MEMBER name="blondir"/>
+          <MEMBER name="bonifier"/>
+          <MEMBER name="brunir"/>
           <MEMBER name="calmer"/>
+          <MEMBER name="chauffer"/>
+          <MEMBER name="clarifier"/>
+          <MEMBER name="compléter"/>
+          <MEMBER name="consolider"/>
+          <MEMBER name="cristalliser"/>
+          <MEMBER name="démocratiser"/>
+          <MEMBER name="dessécher"/>
+          <MEMBER name="doubler"/>
+          <MEMBER name="durcir"/>
+          <MEMBER name="échauder"/>
+          <MEMBER name="échauffer"/>
+          <MEMBER name="éclaircir"/>
+          <MEMBER name="égaliser"/>
+          <MEMBER name="égayer"/>
+          <MEMBER name="élargir"/>
+          <MEMBER name="embellir"/>
           <MEMBER name="empâter"/>
+          <MEMBER name="endurcir"/>
+          <MEMBER name="enrichir"/>
+          <MEMBER name="épaissir"/>
           <MEMBER name="épurer"/>
           <MEMBER name="éterniser"/>
           <MEMBER name="falsifier"/>
+          <MEMBER name="féconder"/>
+          <MEMBER name="féminiser"/>
           <MEMBER name="fertiliser"/>
+          <MEMBER name="figer"/>
+          <MEMBER name="fragiliser"/>
+          <MEMBER name="geler"/>
+          <MEMBER name="grandir"/>
+          <MEMBER name="griser"/>
+          <MEMBER name="grisonner"/>
+          <MEMBER name="grossir"/>
+          <MEMBER name="humidifier"/>
+          <MEMBER name="intensifier"/>
+          <MEMBER name="jaunir"/>
+          <MEMBER name="libérer"/>
+          <MEMBER name="lisser"/>
+          <MEMBER name="lyophiliser"/>
+          <MEMBER name="magnétiser"/>
+          <MEMBER name="mécaniser"/>
+          <MEMBER name="multiplier"/>
+          <MEMBER name="mûrir"/>
           <MEMBER name="nationaliser"/>
+          <MEMBER name="naturaliser"/>
           <MEMBER name="neutraliser"/>
+          <MEMBER name="noircir"/>
+          <MEMBER name="normaliser"/>
+          <MEMBER name="objectiver"/>
+          <MEMBER name="obscurcir"/>
+          <MEMBER name="pâlir"/>
+          <MEMBER name="planer"/>
+          <MEMBER name="polariser"/>
           <MEMBER name="polir"/>
+          <MEMBER name="populariser"/>
           <MEMBER name="purifier"/>
+          <MEMBER name="raccourcir"/>
+          <MEMBER name="radoucir"/>
+          <MEMBER name="raffermir"/>
           <MEMBER name="raffiner"/>
           <MEMBER name="rafraîchir"/>
+          <MEMBER name="raidir"/>
+          <MEMBER name="rajeunir"/>
+          <MEMBER name="rallonger"/>
+          <MEMBER name="ramollir"/>
+          <MEMBER name="rapetisser"/>
+          <MEMBER name="rapprocher"/>
+          <MEMBER name="raréfier"/>
+          <MEMBER name="raviver"/>
+          <MEMBER name="réactiver"/>
+          <MEMBER name="réchauffer"/>
+          <MEMBER name="redresser"/>
+          <MEMBER name="refroidir"/>
           <MEMBER name="régulariser"/>
+          <MEMBER name="renouveler"/>
+          <MEMBER name="rénover"/>
+          <MEMBER name="rétrécir"/>
+          <MEMBER name="rigidifier"/>
+          <MEMBER name="rougir"/>
+          <MEMBER name="roussir"/>
+          <MEMBER name="sécher"/>
+          <MEMBER name="séculariser"/>
+          <MEMBER name="solidifier"/>
+          <MEMBER name="stabiliser"/>
+          <MEMBER name="standardiser"/>
           <MEMBER name="stériliser"/>
+          <MEMBER name="surir"/>
+          <MEMBER name="ternir"/>
+          <MEMBER name="tiédir"/>
+          <MEMBER name="troubler"/>
+          <MEMBER name="unifier"/>
+          <MEMBER name="uniformiser"/>
+          <MEMBER name="urbaniser"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="vieillir"/>
+          <MEMBER name="vivifier"/>
           <MEMBER name="volatiliser"/>
+          <MEMBER name="abîmer"/>
+          <MEMBER name="abréger"/>
+          <MEMBER name="acidifier"/>
+          <MEMBER name="actionner"/>
+          <MEMBER name="affiler"/>
+          <MEMBER name="affûter"/>
+          <MEMBER name="aimanter"/>
+          <MEMBER name="altérer"/>
+          <MEMBER name="américaniser"/>
+          <MEMBER name="angliciser"/>
+          <MEMBER name="ankyloser"/>
+          <MEMBER name="annuler"/>
+          <MEMBER name="appesantir"/>
+          <MEMBER name="arranger"/>
+          <MEMBER name="assourdir"/>
+          <MEMBER name="atrophier"/>
+          <MEMBER name="avachir"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="bloquer"/>
+          <MEMBER name="boucaner"/>
+          <MEMBER name="bouger"/>
+          <MEMBER name="bousiller"/>
+          <MEMBER name="brouiller"/>
+          <MEMBER name="broyer"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="cailler"/>
+          <MEMBER name="calcifier"/>
+          <MEMBER name="calibrer"/>
+          <MEMBER name="caraméliser"/>
+          <MEMBER name="carboniser"/>
+          <MEMBER name="casser"/>
+          <MEMBER name="cautériser"/>
+          <MEMBER name="chiffonner"/>
+          <MEMBER name="cicatriser"/>
+          <MEMBER name="clore"/>
+          <MEMBER name="coaguler"/>
+          <MEMBER name="compacter"/>
+          <MEMBER name="concentrer"/>
+          <MEMBER name="condenser"/>
+          <MEMBER name="congeler"/>
+          <MEMBER name="congestionner"/>
+          <MEMBER name="consumer"/>
+          <MEMBER name="contracter"/>
+          <MEMBER name="corroder"/>
+          <MEMBER name="corrompre"/>
+          <MEMBER name="couper"/>
+          <MEMBER name="couver"/>
+          <MEMBER name="cramer"/>
+          <MEMBER name="craquer"/>
+          <MEMBER name="creuser"/>
+          <MEMBER name="crever"/>
+          <MEMBER name="crisper"/>
+          <MEMBER name="crocheter"/>
+          <MEMBER name="décharner"/>
+          <MEMBER name="décolorer"/>
+          <MEMBER name="décomposer"/>
+          <MEMBER name="défaire"/>
+          <MEMBER name="défraîchir"/>
+          <MEMBER name="dégager"/>
+          <MEMBER name="dégrader"/>
+          <MEMBER name="délabrer"/>
+          <MEMBER name="démancher"/>
+          <MEMBER name="démettre"/>
+          <MEMBER name="démolir"/>
+          <MEMBER name="déplier"/>
+          <MEMBER name="dépouiller"/>
+          <MEMBER name="désamorcer"/>
+          <MEMBER name="désarticuler"/>
+          <MEMBER name="déstabiliser"/>
+          <MEMBER name="détériorer"/>
+          <MEMBER name="détremper"/>
+          <MEMBER name="dilater"/>
+          <MEMBER name="dissoudre"/>
+          <MEMBER name="distendre"/>
+          <MEMBER name="domestiquer"/>
+          <MEMBER name="doser"/>
+          <MEMBER name="dresser"/>
+          <MEMBER name="dynamiter"/>
+          <MEMBER name="ébouillanter"/>
+          <MEMBER name="ébouriffer"/>
+          <MEMBER name="écailler"/>
+          <MEMBER name="éclater"/>
+          <MEMBER name="écourter"/>
+          <MEMBER name="efféminer"/>
+          <MEMBER name="effiler"/>
+          <MEMBER name="effilocher"/>
+          <MEMBER name="élaborer"/>
+          <MEMBER name="émacier"/>
+          <MEMBER name="empirer"/>
+          <MEMBER name="emplir"/>
+          <MEMBER name="empourprer"/>
+          <MEMBER name="émulsionner"/>
+          <MEMBER name="enflammer"/>
+          <MEMBER name="enfoncer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -34,7 +399,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.instrument"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc sèche les draps avec un séchoir à cheveux</EXAMPLE>
+                    <EXAMPLE>Luc a séché les draps avec ce séchoir à cheveux</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -46,7 +411,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="with"/>
+                              <SELRESTR Value="avec"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Instrument">
@@ -56,7 +421,7 @@
                <SEMANTICS>cause(Agent, E) state(result(E), Endstate, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV-Middle"/>
+               <DESCRIPTION primary="NP se V ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Le coton se sèche facilement</EXAMPLE>
                </EXAMPLES>
@@ -64,8 +429,7 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="middle"/>
                     <ADV/>
                </SYNTAX>
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
@@ -73,7 +437,7 @@
           <FRAME>
                <DESCRIPTION primary="NP.instrument V NP"/>
                <EXAMPLES>
-                    <EXAMPLE>Le séchoir a séché les vêtements</EXAMPLE>
+                    <EXAMPLE>Ce séchoir à cheveux a séché les draps</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Instrument">
@@ -89,29 +453,43 @@
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="45.4-1">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="amollir se"/>
+               </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.Patient se V neutre"/>
+                         <DESCRIPTION primary="NP.Patient se V"/>
                          <EXAMPLES>
                               <EXAMPLE>Les cerises s'amollissent</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Patient se V</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="neutre"/>
+                         </SYNTAX>
                          <SEMANTICS>state(result(E), Endstate, Patient)</SEMANTICS>
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
                     <VNSUBCLASS ID="45.4-1-1">
-                         <MEMBERS/>
+                         <MEMBERS>
+                              <MEMBER name="sécher"/>
+                         </MEMBERS>
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP. Patient V "/>
+                                   <DESCRIPTION primary="NP.Patient V"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Les draps sèchent</EXAMPLE>
                                    </EXAMPLES>
-                                   <SYNTAX>Patient V</SYNTAX>
+                                   <SYNTAX>
+                                        <NP value="Patient">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                   </SYNTAX>
                                    <SEMANTICS>state(result(E), Endstate, Patient)</SEMANTICS>
                               </FRAME>
                          </FRAMES>

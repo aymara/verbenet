@@ -6,7 +6,6 @@
           <MEMBER name="presser"/>
           <MEMBER name="prier"/>
           <MEMBER name="requérir"/>
-          <MEMBER name="solliciter"/>
           <MEMBER name="supplier"/>
      </MEMBERS>
      <THEMROLES>
@@ -26,11 +25,20 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP S_INF"/>
+               <DESCRIPTION primary="NP V NP de V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a prié Léa de faire la vaiselle.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Recipient Topic &lt;+de_inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="de" is_true_prep="true" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>supplicate(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>
@@ -40,19 +48,25 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V S_INF"/>
+                         <DESCRIPTION primary="NP V de V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a imploré de partir.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V {de} Topic &lt;+de_inf&gt;</SYNTAX>
+                         <SYNTAX>Agent V  Topic&lt;+de VAgent-inf&gt;</SYNTAX>
                          <SEMANTICS>supplicate(during(E), Agent, ?Recipient, Topic)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V Que Psubj"/>
+                         <DESCRIPTION primary="NP V Qu Psubj"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a imploré que Marie fasse la vaisselle.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V Topic &lt;+que_comp&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PSUBJ value="Topic"/>
+                         </SYNTAX>
                          <SEMANTICS>supplicate(during(E), Agent, ?Recipient, Topic)</SEMANTICS>
                     </FRAME>
                </FRAMES>
@@ -62,11 +76,27 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP de ce Que Psubj"/>
+                         <DESCRIPTION primary="NP V NP PP.topic"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a prié Marie (de ce) que leur fils fasse la vaisselle. </EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V Recpient {de ce que} Topic</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Recipient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP modifier="+Qu Psubj" value="Topic">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
                          <SEMANTICS>supplicate(during(E), Agent, Recipient, Topic)</SEMANTICS>
                     </FRAME>
                </FRAMES>

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="knead-26.5">
      <MEMBERS>
-          <MEMBER name="cintrer"/>
-          <MEMBER name="couder"/>
-          <MEMBER name="fondre"/>
-          <MEMBER name="tourner"/>
+          <MEMBER name="repétrir"/>
+          <MEMBER name="pétrir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

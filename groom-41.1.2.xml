@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="groom-41.1.2">
+     <MEMBERS>
+          <MEMBER name="panser"/>
+          <MEMBER name="étriller"/>
+          <MEMBER name="soigner"/>
+          <MEMBER name="toiletter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Sheila a pansé le cheval.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

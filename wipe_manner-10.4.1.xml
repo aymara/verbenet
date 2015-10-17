@@ -6,11 +6,14 @@
           <MEMBER name="draguer"/>
           <MEMBER name="effacer"/>
           <MEMBER name="ramoner"/>
-          <MEMBER name="récurer"/>
+          <MEMBER name="rincer"/>
           <MEMBER name="laver"/>
           <MEMBER name="lessiver"/>
-          <MEMBER name="rincer"/>
-          <MEMBER name="extraire"/>
+          <MEMBER name="récurer"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="débarasser"/>
+          <MEMBER name="décharger"/>
+          <MEMBER name="élaguer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -22,30 +25,46 @@
                     <SELRESTR Value="+" type="concrete"/>
                </SELRESTRS>
           </THEMROLE>
-          <THEMROLE type="Source">
+          <THEMROLE type="Initial_Location">
                <SELRESTR Value="+" type="location"/>
           </THEMROLE>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a nettoyé les traces de doigt du comptoir.</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Agent V Theme {{de}} Source</SYNTAX>
-               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Source) not(location(end(E), Theme, Source))</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
-               <EXAMPLES>
-                    <EXAMPLE>Luc a nettoyé le comptoir des miettes.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <NP value="Source">
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Initial_Location) not(location(end(E), Theme, Initial_Location))</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a nettoyé le comptoir de ses traces de doigt</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Initial_Location">
                          <SYNRESTRS/>
                     </NP>
                     <PREP>
@@ -57,7 +76,7 @@
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Source) not(location(end(E), Theme, Source))</SEMANTICS>
+               <SEMANTICS>cause(Agent, E) location(start(E), Theme, Initial_Location) not(Initial_Location(end(E), Theme, Initial_Location))</SEMANTICS>
           </FRAME>
      </FRAMES>
 </VNCLASS>

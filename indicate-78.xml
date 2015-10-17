@@ -30,27 +30,47 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient Que P"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Pind"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde que l'auteur du crime est Max.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Cause V {à} Recipient Topic &lt;+Que_P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PIND value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient si P ou si P"/>
+               <DESCRIPTION primary="NP V PP.recipient si P"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde si Max a commis un crime ou non.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Cause V {à} Recipient Topic &lt;+si_P_ou_si_P&gt;</SYNTAX>
-               <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient ce que P"/>
-               <EXAMPLES>
-                    <EXAMPLE>Cela indique à tout le monde ce qu'il est.</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Cause V {à} Recipient Topic &lt;+ce_que_P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <P introduced_by="si" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -58,15 +78,29 @@
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde comment les choses se sont passées.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Cause V {à} Recipient Topic &lt;+comment_P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <P introduced_by="comment" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient comment V2inf"/>
+               <DESCRIPTION primary="NP V PP.recipient comment V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde comment résoudre le problème</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Cause V {à} Recipient Topic &lt;+comment_V2inf&gt;</SYNTAX>
+               <SYNTAX>Cause V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;</SYNTAX>
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>

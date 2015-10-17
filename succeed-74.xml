@@ -14,20 +14,22 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="74-1">
                <MEMBERS>
-                    <MEMBER name="réussir"/>
-                    <MEMBER name="démerder se"/>
-                    <MEMBER name="aboutir"/>
                     <MEMBER name="arriver"/>
-                    <MEMBER name="parvenir"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <DESCRIPTION primary="NP V à V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a réussi à escalader la montagne</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V {à|pour} Theme &lt;+V0-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Theme"/>
+                         </SYNTAX>
                          <SEMANTICS>successful_in(E, Agent, Theme)</SEMANTICS>
                     </FRAME>
                </FRAMES>
@@ -43,15 +45,34 @@
                          <EXAMPLES>
                               <EXAMPLE>Max a échoué à l'examen</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V {à} Theme &lt;-sentential&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
                          <SEMANTICS>not(successful_in(E, Agent, Theme))</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V à S_INF"/>
+                         <DESCRIPTION primary="NP V à V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a échoué à passer le test</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V {à}  Theme &lt;V0-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Theme"/>
+                         </SYNTAX>
                          <SEMANTICS>not(successful_in(E, Agent, Theme))</SEMANTICS>
                     </FRAME>
                </FRAMES>

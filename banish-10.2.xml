@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="banish-10.2">
      <MEMBERS>
-          <MEMBER name="révoquer"/>
-          <MEMBER name="évacuer"/>
-          <MEMBER name="expulser"/>
-          <MEMBER name="extirper"/>
-          <MEMBER name="extrader"/>
-          <MEMBER name="bannir"/>
-          <MEMBER name="chasser"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="congédier"/>
+          <MEMBER name="débarquer"/>
+          <MEMBER name="détrôner"/>
+          <MEMBER name="éconduire"/>
+          <MEMBER name="éjecter"/>
+          <MEMBER name="évincer"/>
           <MEMBER name="exclure"/>
+          <MEMBER name="licencier"/>
+          <MEMBER name="relaxer"/>
+          <MEMBER name="sacquer"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="virer"/>
+          <MEMBER name="déboulonner"/>
+          <MEMBER name="dégommer"/>
+          <MEMBER name="bannir"/>
           <MEMBER name="exhumer"/>
+          <MEMBER name="limoger"/>
           <MEMBER name="proscrire"/>
-          <MEMBER name="renvoyer"/>
+          <MEMBER name="suspendre"/>
           <MEMBER name="écarter"/>
+          <MEMBER name="révoquer"/>
+          <MEMBER name="éliminer"/>
+          <MEMBER name="éloigner"/>
+          <MEMBER name="évacuer"/>
+          <MEMBER name="extrader"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -26,12 +40,6 @@
           </THEMROLE>
           <THEMROLE type="Source">
                <SELRESTR Value="+" type="location"/>
-          </THEMROLE>
-          <THEMROLE type="Destination">
-               <SELRESTRS logic="and">
-                    <SELRESTR Value="-" type="region"/>
-                    <SELRESTR Value="+" type="location"/>
-               </SELRESTRS>
           </THEMROLE>
      </THEMROLES>
      <FRAMES>
@@ -50,7 +58,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="de"/>
+                              <SELRESTR Value="de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Source">
@@ -62,8 +70,15 @@
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="10.2-1">
-               <MEMBERS/>
-               <THEMROLES/>
+               <MEMBERS>
+                    <MEMBER name="expulser"/>
+                    <MEMBER name="renvoyer"/>
+                    <MEMBER name="chasser"/>
+                    <MEMBER name="déporter"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Destination"/>
+               </THEMROLES>
                <FRAMES>
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.destination"/>

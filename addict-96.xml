@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="addict-96">
+     <MEMBERS>
+          <MEMBER name="destiner"/>
+          <MEMBER name="prédisposer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.stimulus"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a prédisposé sa fille à la musique.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) desire(result(E), Patient, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a prédisposé sa fille à faire de la musique.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) desire(result(E), Patient, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

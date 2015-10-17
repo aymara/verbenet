@@ -2,6 +2,8 @@
 <VNCLASS ID="contiguous_location-47.8">
      <MEMBERS>
           <MEMBER name="côtoyer"/>
+          <MEMBER name="pénétrer"/>
+          <MEMBER name="recouvrir"/>
           <MEMBER name="couronner"/>
           <MEMBER name="encadrer"/>
           <MEMBER name="encercler"/>
@@ -9,19 +11,12 @@
           <MEMBER name="enjamber"/>
           <MEMBER name="enlacer"/>
           <MEMBER name="entourer"/>
-          <MEMBER name="environner"/>
-          <MEMBER name="limiter"/>
           <MEMBER name="longer"/>
           <MEMBER name="suivre"/>
+          <MEMBER name="environner"/>
+          <MEMBER name="limiter"/>
           <MEMBER name="surplomber"/>
           <MEMBER name="intersecter"/>
-          <MEMBER name="chevaucher"/>
-          <MEMBER name="monter"/>
-          <MEMBER name="napper"/>
-          <MEMBER name="pénétrer"/>
-          <MEMBER name="recouvrir"/>
-          <MEMBER name="serrer"/>
-          <MEMBER name="dominer"/>
           <MEMBER name="arroser"/>
           <MEMBER name="avoisiner"/>
           <MEMBER name="border"/>
@@ -57,20 +52,26 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="47.8-1">
                <MEMBERS>
+                    <MEMBER name="chevaucher"/>
+                    <MEMBER name="jouxter"/>
+                    <MEMBER name="toucher"/>
                     <MEMBER name="couper"/>
                     <MEMBER name="croiser"/>
                     <MEMBER name="effleurer"/>
-                    <MEMBER name="jouxter"/>
-                    <MEMBER name="toucher"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V"/>
+                         <DESCRIPTION primary="NP se V"/>
                          <EXAMPLES>
                               <EXAMPLE>L'Italie et la France se touchent</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Theme and Co-Theme se V</SYNTAX>
+                         <SYNTAX>
+                              <NP modifier="+plural" value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="reciproque"/>
+                         </SYNTAX>
                          <SEMANTICS>contact(during(E), Theme, Co-Theme) exist(during(E), Theme) exist(during(E), Co-Theme)</SEMANTICS>
                     </FRAME>
                </FRAMES>

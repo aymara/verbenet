@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="price-54.4">
+     <MEMBERS>
+          <MEMBER name="coter"/>
+          <MEMBER name="noter"/>
+          <MEMBER name="apprécier"/>
+          <MEMBER name="chiffrer"/>
+          <MEMBER name="estimer"/>
+          <MEMBER name="évaluer"/>
+          <MEMBER name="réévaluer"/>
+          <MEMBER name="approximer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Value">
+               <SELRESTR Value="+" type="currency"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.value"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le vendeur a évalué le livre à 40 euros.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Value">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>value(result(E), Theme, Value) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

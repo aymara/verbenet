@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="confine-92">
+     <MEMBERS>
+          <MEMBER name="enfermer"/>
+          <MEMBER name="hospitaliser"/>
+          <MEMBER name="incarcérer"/>
+          <MEMBER name="chambrer"/>
+          <MEMBER name="consigner"/>
+          <MEMBER name="emmurer"/>
+          <MEMBER name="séquestrer"/>
+          <MEMBER name="coffrer"/>
+          <MEMBER name="écrouer"/>
+          <MEMBER name="embastiller"/>
+          <MEMBER name="emprisonner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Destination">
+               <SELRESTR Value="+" type="location"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.theme PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les gens ont enfermé Luc dans une chambre.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="dans"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>not(location(start(E), Theme, Destination)) location(end(E), Theme, Destination) confined(result(E), Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

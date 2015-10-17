@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="separate-23.1">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Co-Patient"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc sépare les pions noirs des pions blancs.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) together(start(E), physical/abstract, Patient, Co-Patient) apart(end(E), physical/abstract, Patient, Co-Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc sépare les pions noirs et les pions blancs.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) together(start(E), physical/abstract, Patient_i, Patient_j) apart(end(E), physical/abstract, Patient_i, Patient_j)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'eau et l'huile se sont séparées.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+               </SYNTAX>
+               <SEMANTICS>together(start(E), physical/abstract, Patient_i, Patient_j) apart(end(E), physical/abstract, Patient_i, Patient_j)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V ADV PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>La crème se sépare facilement du lait.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="middle"/>
+                    <ADV/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>property(Patient+Co-Patient, Prop) Adv(Prop)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V ADV"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'eau et l'huile se séparent facilement.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="middle"/>
+                    <ADV/>
+               </SYNTAX>
+               <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="23.1-1">
+               <MEMBERS>
+                    <MEMBER name="isoler"/>
+                    <MEMBER name="séparer"/>
+                    <MEMBER name="débrouiller"/>
+                    <MEMBER name="démêler"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>L'eau s'est séparée du lait.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="neutre"/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>together(start(E), physical/abstract, Patient, Co-Patient) apart(end(E), physical/abstract, Patient, Co-Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="23.1-2">
+               <MEMBERS>
+                    <MEMBER name="écarter"/>
+                    <MEMBER name="départager"/>
+                    <MEMBER name="dissocier"/>
+                    <MEMBER name="trier"/>
+                    <MEMBER name="désaccoupler"/>
+                    <MEMBER name="désolidariser"/>
+                    <MEMBER name="désunir"/>
+                    <MEMBER name="détacher"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Le blanc s'est détaché d'avec le vert</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="neutre"/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="d'avec"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>together(start(E), physical/abstract, Patient, Co-Patient) apart(end(E), physical/abstract, Patient, Co-Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a détaché le blanc d'avec le vert</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="d'avec"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) together(start(E), physical/abstract, Patient_i, Patient_j) apart(end(E), physical/abstract, Patient_i, Patient_j)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

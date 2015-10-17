@@ -30,11 +30,20 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V1-inf"/>
+               <DESCRIPTION primary="NP V NP à V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Max a aidé Luc à finir ce travail</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Beneficiary {à} Theme &lt;+V1-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Beneficiary" introduced_by="à" is_true_prep="true" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>help(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -42,7 +51,23 @@
                <EXAMPLES>
                     <EXAMPLE>Max aide Luc dans son travail</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Beneficiary {dans} Theme &lt;-V1-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="dans"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>help(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

@@ -16,29 +16,25 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="21.2-1">
                <MEMBERS>
-                    <MEMBER name="déchirer"/>
-                    <MEMBER name="découper"/>
+                    <MEMBER name="biseauter"/>
+                    <MEMBER name="ébrécher"/>
+                    <MEMBER name="tailler"/>
+                    <MEMBER name="moudre"/>
+                    <MEMBER name="briser"/>
+                    <MEMBER name="broyer"/>
+                    <MEMBER name="cliver"/>
+                    <MEMBER name="concasser"/>
+                    <MEMBER name="déchiqueter"/>
                     <MEMBER name="déliter"/>
                     <MEMBER name="disloquer"/>
-                    <MEMBER name="diviser"/>
                     <MEMBER name="effriter"/>
                     <MEMBER name="émietter"/>
                     <MEMBER name="émincer"/>
                     <MEMBER name="fracasser"/>
-                    <MEMBER name="hacher"/>
                     <MEMBER name="lacérer"/>
-                    <MEMBER name="moudre"/>
                     <MEMBER name="piler"/>
                     <MEMBER name="pulvériser"/>
                     <MEMBER name="saucissonner"/>
-                    <MEMBER name="trancher"/>
-                    <MEMBER name="briser"/>
-                    <MEMBER name="broyer"/>
-                    <MEMBER name="casser"/>
-                    <MEMBER name="cliver"/>
-                    <MEMBER name="concasser"/>
-                    <MEMBER name="couper"/>
-                    <MEMBER name="déchiqueter"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Result"/>
@@ -59,7 +55,7 @@
                               </NP>
                               <PREP>
                                    <SELRESTRS>
-                                        <SELRESTR Value="with"/>
+                                        <SELRESTR Value="avec"/>
                                    </SELRESTRS>
                               </PREP>
                               <NP value="Instrument">
@@ -69,7 +65,7 @@
                          <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP  se V ADV"/>
+                         <DESCRIPTION primary="NP se V ADV"/>
                          <EXAMPLES>
                               <EXAMPLE>La gousse d'ail se broye bien</EXAMPLE>
                          </EXAMPLES>
@@ -77,8 +73,7 @@
                               <NP value="Patient">
                                    <SYNRESTRS/>
                               </NP>
-                              <SE/>
-                              <VERB/>
+                              <VERB pronominal="true" restr="middle"/>
                               <ADV/>
                          </SYNTAX>
                          <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
@@ -100,11 +95,17 @@
                          <SEMANTICS>contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP.instrument V ADVP"/>
+                         <DESCRIPTION primary="NP.instrument V ADV"/>
                          <EXAMPLES>
                               <EXAMPLE>Le marteau broye bien</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Instrument V</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Instrument">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <ADV/>
+                         </SYNTAX>
                          <SEMANTICS>property(Instrument, Prop) Adv(Prop)</SEMANTICS>
                     </FRAME>
                     <FRAME>
@@ -125,7 +126,7 @@
                                         <SELRESTR Value="en"/>
                                    </SELRESTRS>
                               </PREP>
-                              <NP value="Result">
+                              <NP modifier="+plural" value="Result">
                                    <SYNRESTRS/>
                               </NP>
                          </SYNTAX>
@@ -135,7 +136,11 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="21.2-2">
                <MEMBERS>
+                    <MEMBER name="râper"/>
+                    <MEMBER name="massicoter"/>
                     <MEMBER name="hacher"/>
+                    <MEMBER name="cisailler"/>
+                    <MEMBER name="scier"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -164,11 +169,17 @@
                          <SEMANTICS>cause(Agent, E) manner(during(E), Motion, Agent) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) use(during(E), Agent, Instrument)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V ADVP-Middle"/>
+                         <DESCRIPTION primary="NP se V ADV"/>
                          <EXAMPLES>
                               <EXAMPLE>Le persil se hache facilement.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Patient se&lt;+refl&gt; V</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="middle"/>
+                              <ADV/>
+                         </SYNTAX>
                          <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
                     </FRAME>
                     <FRAME>

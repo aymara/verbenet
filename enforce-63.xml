@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="enforce-63">
+     <MEMBERS>
+          <MEMBER name="imposer"/>
+          <MEMBER name="infliger"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Recipient"/>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a imposé son opinion.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>enforce(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a  imposé que tout le monde lui obéisse.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PSUBJ value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>enforce(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a imposé à Marie de partir</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Theme&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SEMANTICS>enforce(during(E), Agent, Recipient, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

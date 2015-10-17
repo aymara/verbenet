@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="neglect-75">
+     <MEMBERS>
+          <MEMBER name=""/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="75-1">
+               <MEMBERS>
+                    <MEMBER name="omettre"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>J'ai négligé de faire ce travail</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Agent" introduced_by="de" is_true_prep="false" value="Theme"/>
+                         </SYNTAX>
+                         <SEMANTICS>neglect(E, Agent, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="75-1-1">
+                         <MEMBERS>
+                              <MEMBER name="négliger"/>
+                              <MEMBER name="oublier"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Léa a négligé son travail.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                   </SYNTAX>
+                                   <SEMANTICS>neglect(E, Agent, Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

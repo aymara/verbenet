@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="hiccup-40.1.1">
+     <MEMBERS>
+          <MEMBER name="hoqueter"/>
+          <MEMBER name="bâiller"/>
+          <MEMBER name="grelotter"/>
+          <MEMBER name="haleter"/>
+          <MEMBER name="ronfler"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="tousser"/>
+          <MEMBER name="éternuer"/>
+          <MEMBER name="râler"/>
+          <MEMBER name="renifler"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Paul a bâillé.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>body_process(E, Agent) involuntary(E, Agent)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

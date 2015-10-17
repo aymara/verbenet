@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV-Middle"/>
+               <DESCRIPTION primary="NP se V ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Le pain se coupe facilement</EXAMPLE>
                </EXAMPLES>
@@ -24,8 +24,7 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="middle"/>
                     <ADV/>
                </SYNTAX>
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
@@ -62,7 +61,7 @@
                               <SELRESTR Value="en"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP value="Result">
+                    <NP modifier="+plural" value="Result">
                          <SYNRESTRS/>
                     </NP>
                     <PREP>
@@ -94,7 +93,7 @@
                               <SELRESTR Value="en"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP value="Result">
+                    <NP modifier="+plural" value="Result">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
@@ -115,7 +114,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="Loc"/>
+                              <SELRESTR Value="{+loc"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Source">
@@ -136,46 +135,54 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="21.1-1">
                <MEMBERS>
+                    <MEMBER name="tondre"/>
                     <MEMBER name="casser"/>
-                    <MEMBER name="cisailler"/>
                     <MEMBER name="couper"/>
                     <MEMBER name="déchirer"/>
                     <MEMBER name="découper"/>
-                    <MEMBER name="hacher"/>
+                    <MEMBER name="fendre"/>
                     <MEMBER name="réduire"/>
-                    <MEMBER name="scier"/>
                     <MEMBER name="sectionner"/>
                     <MEMBER name="trancher"/>
                     <MEMBER name="tronçonner"/>
                </MEMBERS>
                <THEMROLES>
-                    <THEMROLE type="Patient">
-                         <SELRESTRS logic="or">
-                              <SELRESTR Value="+" type="refl"/>
-                              <SELRESTR Value="+" type="body_part"/>
-                         </SELRESTRS>
+                    <THEMROLE type="Attribute">
+                         <SELRESTR Value="+" type="body_part"/>
                     </THEMROLE>
+                    <THEMROLE type="Patient"/>
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP"/>
+                         <DESCRIPTION primary="NP LUI V NP.attribute"/>
                          <EXAMPLES>
-                              <EXAMPLE>Luc lui a coupé le doigt</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Agent V Patient&lt;+body_part&gt;  {à ?de} Genitive</SYNTAX>
-                         <SEMANTICS>manner(during(E), Motion, Agent) contact(during(E), ?Instrument, Patient) degradation_material_integrity(result(E), Patient)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP se V"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Luc s'est coupé</EXAMPLE>
+                              <EXAMPLE>Luc lui a coupé l'annulaire</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">
                                    <SYNRESTRS/>
                               </NP>
-                              <SE/>
+                              <LUI/>
                               <VERB/>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>manner(during(E), Motion, Agent) contact(during(E), ?Instrument, Patient) degradation_material_integrity(result(E), Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a coupé l'annulaire de Marie</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP modifier="+genitive(Patient)" value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
                          </SYNTAX>
                          <SEMANTICS>manner(during(E), Motion, Agent) contact(during(E), ?Instrument, Patient) degradation_material_integrity(result(E), Patient)</SEMANTICS>
                     </FRAME>

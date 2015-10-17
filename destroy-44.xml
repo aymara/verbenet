@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="destroy-44">
      <MEMBERS>
+          <MEMBER name="ratatiner"/>
+          <MEMBER name="ratiboiser"/>
+          <MEMBER name="ruiner"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="supprimer"/>
+          <MEMBER name="dégrader"/>
+          <MEMBER name="liquider"/>
+          <MEMBER name="terrasser"/>
+          <MEMBER name="volatiliser"/>
+          <MEMBER name="zigouiller"/>
+          <MEMBER name="araser"/>
+          <MEMBER name="démanteler"/>
+          <MEMBER name="dévaster"/>
+          <MEMBER name="éradiquer"/>
+          <MEMBER name="raser"/>
+          <MEMBER name="rayer"/>
+          <MEMBER name="saccager"/>
           <MEMBER name="abattre"/>
           <MEMBER name="anéantir"/>
           <MEMBER name="bousiller"/>
@@ -13,11 +30,6 @@
           <MEMBER name="enlever"/>
           <MEMBER name="plier"/>
           <MEMBER name="pulvériser"/>
-          <MEMBER name="ratatiner"/>
-          <MEMBER name="ratiboiser"/>
-          <MEMBER name="ruiner"/>
-          <MEMBER name="souffler"/>
-          <MEMBER name="supprimer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

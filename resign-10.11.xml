@@ -21,7 +21,20 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a démissionné de l'armée.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {de} Source &lt;-sentential&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>cause(Agent, E) location(start(E), Source) not(location(end(E), Source))</SEMANTICS>
           </FRAME>
      </FRAMES>

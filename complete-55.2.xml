@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="complete-55.2">
      <MEMBERS>
-          <MEMBER name="achever"/>
-          <MEMBER name="arrêter"/>
+          <MEMBER name="compléter"/>
+          <MEMBER name="interrompre"/>
+          <MEMBER name="réaliser"/>
           <MEMBER name="boucler"/>
-          <MEMBER name="finir"/>
-          <MEMBER name="terminer"/>
+          <MEMBER name="parfaire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

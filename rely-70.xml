@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="rely-70">
      <MEMBERS>
+          <MEMBER name="miser"/>
           <MEMBER name="compter"/>
           <MEMBER name="parier"/>
-          <MEMBER name="miser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -17,11 +17,25 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme S_INF"/>
+               <DESCRIPTION primary="NP V PP.theme pour V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Max compte sur Luc (l'aide de Luc)  pour finir ce travail</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {sur} Theme {pour} Topic &lt;+V_inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="sur"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Theme" introduced_by="pour" is_true_prep="true" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>depend(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

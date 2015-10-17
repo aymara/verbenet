@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="characterize-29.2">
+     <MEMBERS>
+          <MEMBER name="sélectionner"/>
+          <MEMBER name="vanter"/>
+          <MEMBER name="maquiller"/>
+          <MEMBER name="adopter"/>
+          <MEMBER name="dénoncer"/>
+          <MEMBER name="compter"/>
+          <MEMBER name="discerner"/>
+          <MEMBER name="authentifier"/>
+          <MEMBER name="afficher"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="marquer"/>
+          <MEMBER name="préfigurer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="concrete"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a décrit Léa comme acerbe</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="comme"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+Adj" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>characterize(during(E), Theme, Attribute) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="29.2-1">
+               <MEMBERS>
+                    <MEMBER name="représenter"/>
+                    <MEMBER name="dépeindre"/>
+                    <MEMBER name="signaler"/>
+                    <MEMBER name="conceptualiser"/>
+                    <MEMBER name="décrypter"/>
+                    <MEMBER name="détailler"/>
+                    <MEMBER name="évoquer"/>
+                    <MEMBER name="interpréter"/>
+                    <MEMBER name="comprendre"/>
+                    <MEMBER name="fixer"/>
+                    <MEMBER name="identifier"/>
+                    <MEMBER name="imaginer"/>
+                    <MEMBER name="imaginer s'"/>
+                    <MEMBER name="regarder"/>
+                    <MEMBER name="remarquer"/>
+                    <MEMBER name="trouver"/>
+                    <MEMBER name="visualiser"/>
+                    <MEMBER name="caractériser"/>
+                    <MEMBER name="décrire"/>
+                    <MEMBER name="définir"/>
+                    <MEMBER name="peindre"/>
+                    <MEMBER name="présenter"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V comment P"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a décrit comment le processus fonctionne.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <P introduced_by="comment" value="Theme"/>
+                         </SYNTAX>
+                         <SEMANTICS>describe(during(E), Agent, Theme, ?Predicate) cause(Agent, E)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

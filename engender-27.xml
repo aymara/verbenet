@@ -2,11 +2,16 @@
 <VNCLASS ID="engender-27">
      <MEMBERS>
           <MEMBER name="causer"/>
-          <MEMBER name="déterminer"/>
           <MEMBER name="engendrer"/>
-          <MEMBER name="faire"/>
           <MEMBER name="produire"/>
           <MEMBER name="provoquer"/>
+          <MEMBER name="amener"/>
+          <MEMBER name="déchaîner"/>
+          <MEMBER name="déclencher"/>
+          <MEMBER name="faire"/>
+          <MEMBER name="déterminer"/>
+          <MEMBER name="susciter"/>
+          <MEMBER name="permettre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Cause">
@@ -15,13 +20,13 @@
           <THEMROLE type="Theme">
                <SELRESTR Value="+" type="abstract"/>
           </THEMROLE>
-          <THEMROLE type="Predicate"/>
+          <THEMROLE type="Beneficiary[+human]"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP PP.beneficiary"/>
                <EXAMPLES>
-                    <EXAMPLE>L'inégalité engendre des conflits</EXAMPLE>
+                    <EXAMPLE>L'inégalité engendre des conflits chez les Africains</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Cause">
@@ -31,32 +36,30 @@
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="chez;pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
                </SYNTAX>
                <SEMANTICS>not(exist(start(E), Theme)) exist(result(E), Theme) nonagentive_cause(Cause, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V that S"/>
+               <DESCRIPTION primary="NP V Qu Psubj"/>
                <EXAMPLES>
                     <EXAMPLE>La crise a provoqué que le chomage augmente</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Cause V Theme  &lt;+que_comp&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PSUBJ value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>not(exist(start(E), Theme)) exist(result(E), Theme) nonagentive_cause(Cause, E)</SEMANTICS>
           </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="27-1">
-               <MEMBERS/>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP  V NP PP.bénéficiaire"/>
-                         <EXAMPLES>
-                              <EXAMPLE>La crise a provoqué une augmentation du chomage {pour chez) les personnes âgées</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Cause V Theme {pour chez} Bénéficiare</SYNTAX>
-                         <SEMANTICS>not(exist(start(E), Theme)) exist(result(E), Theme) nonagentive_cause(Cause, E) subir (Theme Bénéficiaire)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

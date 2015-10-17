@@ -4,30 +4,39 @@
           <MEMBER name="préoccuper se"/>
           <MEMBER name="rêver"/>
           <MEMBER name="souffrir"/>
+          <MEMBER name="exulter"/>
+          <MEMBER name="jubiler"/>
+          <MEMBER name="pavoiser"/>
+          <MEMBER name="rager"/>
+          <MEMBER name="triompher"/>
           <MEMBER name="angoisser"/>
           <MEMBER name="déraisonner"/>
           <MEMBER name="désespérer"/>
-          <MEMBER name="méditer"/>
-          <MEMBER name="rappeler se"/>
+          <MEMBER name="frissonner"/>
           <MEMBER name="affliger s'"/>
           <MEMBER name="amuser s'"/>
           <MEMBER name="bander"/>
-          <MEMBER name="craindre"/>
-          <MEMBER name="danser"/>
           <MEMBER name="délecter se"/>
           <MEMBER name="désespérer se"/>
           <MEMBER name="désoler se"/>
           <MEMBER name="divertir se"/>
+          <MEMBER name="ébahir s'"/>
+          <MEMBER name="ébaubir s'"/>
+          <MEMBER name="émerveiller s'"/>
           <MEMBER name="emporter s'"/>
+          <MEMBER name="enchanter s'"/>
+          <MEMBER name="étonner s'"/>
           <MEMBER name="fatiguer se"/>
           <MEMBER name="halluciner"/>
           <MEMBER name="lasser se"/>
-          <MEMBER name="piquer"/>
           <MEMBER name="pleurer"/>
+          <MEMBER name="réjouir se"/>
           <MEMBER name="saigner"/>
           <MEMBER name="saliver"/>
           <MEMBER name="tourmenter se"/>
           <MEMBER name="tracasser se"/>
+          <MEMBER name="vibrer"/>
+          <MEMBER name="angoisser s'"/>
           <MEMBER name="baver"/>
           <MEMBER name="bouillonner"/>
           <MEMBER name="délirer"/>
@@ -44,11 +53,36 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V de ce Qu P"/>
+               <DESCRIPTION primary="NP V de ce Qu Psubj"/>
                <EXAMPLES>
                     <EXAMPLE>Luc enrage de ce que Max parte</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Experiencer V {de} Stimulus &lt;+ce que P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <PSUBJ introduced_by="de" value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc enrage de partir demain</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Experiencer" introduced_by="de" is_true_prep="true" value="Stimulus"/>
+               </SYNTAX>
                <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
      </FRAMES>
@@ -56,13 +90,8 @@
           <VNSUBCLASS ID="31.3-1">
                <MEMBERS>
                     <MEMBER name="bondir"/>
-                    <MEMBER name="exulter"/>
-                    <MEMBER name="fumer"/>
-                    <MEMBER name="jubiler"/>
                     <MEMBER name="pâmer se"/>
-                    <MEMBER name="pavoiser"/>
-                    <MEMBER name="rager"/>
-                    <MEMBER name="triompher"/>
+                    <MEMBER name="extasier s'"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

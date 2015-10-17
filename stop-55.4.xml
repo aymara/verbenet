@@ -4,11 +4,11 @@
           <MEMBER name="achever"/>
           <MEMBER name="arrêter"/>
           <MEMBER name="cesser"/>
-          <MEMBER name="finir"/>
-          <MEMBER name="rester"/>
           <MEMBER name="sortir"/>
           <MEMBER name="stopper"/>
           <MEMBER name="terminer"/>
+          <MEMBER name="arrêter s'"/>
+          <MEMBER name="finir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -21,17 +21,17 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V de S_INF"/>
+               <DESCRIPTION primary="NP V de V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a stoppé de faire des conneries</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V de Theme&lt;+to_inf_rs&gt;</SYNTAX>
+               <SYNTAX>Agent V  Theme&lt;+de VAgent-inf&gt;</SYNTAX>
                <SEMANTICS>end(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
                <DESCRIPTION primary="NP V NP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Jean a stoppé ses conneries</EXAMPLE>
+                    <EXAMPLE>Jean a stoppé les conneries de Luc</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -44,60 +44,50 @@
                </SYNTAX>
                <SEMANTICS>end(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Son discours a fini par une plaisanterie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="par"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>end(E, Theme) use(during(E), ?Agent, Instrument)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.theme PP.instrument"/>
+               <EXAMPLES>
+                    <EXAMPLE>Jean a fini son discours par une plaisanterie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="par"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Instrument">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>end(E, Theme) use(during(E), Agent, Instrument) cause(Agent, E)</SEMANTICS>
+          </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="55.4-2">
-               <MEMBERS/>
-               <THEMROLES>
-                    <THEMROLE type="Instrument"/>
-               </THEMROLES>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V PP.instrument"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Son discours a fini par une plaisanterie</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Theme">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="par"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Instrument">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>end(E, Theme) use(during(E), ?Agent, Instrument)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP.theme PP.instrument"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Jean a fini son discours par une plaisanterie</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Theme">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="par"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Instrument">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>end(E, Theme) use(during(E), Agent, Instrument) cause(Agent, E)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

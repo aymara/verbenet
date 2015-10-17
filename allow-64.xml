@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="allow-64">
+     <MEMBERS>
+          <MEMBER name="approuver"/>
+          <MEMBER name="autoriser"/>
+          <MEMBER name="tolérer"/>
+          <MEMBER name="supporter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Je n'approuve pas qu'il ait cette attitude. </EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PSUBJ value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>allow(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc approuve l'attitude de Léa</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>allow(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

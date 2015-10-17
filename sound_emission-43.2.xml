@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="sound_emission-43.2">
      <MEMBERS>
+          <MEMBER name="ronfler"/>
+          <MEMBER name="ronronner"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="siffler"/>
+          <MEMBER name="sonner"/>
+          <MEMBER name="tictaquer"/>
+          <MEMBER name="tinter"/>
+          <MEMBER name="tintinnabuler"/>
+          <MEMBER name="tonner"/>
+          <MEMBER name="vrombir"/>
+          <MEMBER name="bouillonner"/>
+          <MEMBER name="bruire"/>
+          <MEMBER name="palpiter"/>
+          <MEMBER name="résonner"/>
           <MEMBER name="bourdonner"/>
           <MEMBER name="carillonner"/>
           <MEMBER name="chanter"/>
@@ -21,24 +35,15 @@
           <MEMBER name="hoqueter"/>
           <MEMBER name="pétiller"/>
           <MEMBER name="retentir"/>
-          <MEMBER name="ronfler"/>
-          <MEMBER name="ronronner"/>
-          <MEMBER name="rouler"/>
-          <MEMBER name="siffler"/>
-          <MEMBER name="sonner"/>
-          <MEMBER name="tictaquer"/>
-          <MEMBER name="tinter"/>
-          <MEMBER name="tintinnabuler"/>
-          <MEMBER name="tonner"/>
-          <MEMBER name="vrombir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">
                <SELRESTR Value="-" type="animate"/>
           </THEMROLE>
           <THEMROLE type="Location"/>
-          <THEMROLE type="Agent"/>
-          <THEMROLE type="Attribute"/>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="son"/>
+          </THEMROLE>
      </THEMROLES>
      <FRAMES>
           <FRAME>
@@ -63,19 +68,46 @@
                <SEMANTICS>emit(during(E), Theme, Sound) Prep(during(E), Sound, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.location V PP.theme"/>
+               <DESCRIPTION primary="NP.location V PP.attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Le grenier couine de cris de souris</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Location V {de} Attribute de Theme</SYNTAX>
+               <SYNTAX>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+genitive(Theme)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>emit(during(E), Theme, Sound) location(during(E), Sound, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="Ilimp V NP PP"/>
+               <DESCRIPTION primary="IL V NP PP"/>
                <EXAMPLES>
                     <EXAMPLE>Il carillone une cloche dans l'air glacé</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>there V Theme {{+loc}} Location</SYNTAX>
+               <SYNTAX>
+                    <IL/>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>emit(during(E), Theme, Sound) Prep(during(E), Sound, Location)</SEMANTICS>
           </FRAME>
      </FRAMES>

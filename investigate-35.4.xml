@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="investigate-35.4">
+     <MEMBERS>
+          <MEMBER name="perquisitionner"/>
+          <MEMBER name="inspecter"/>
+          <MEMBER name="prospecter"/>
+          <MEMBER name="sonder"/>
+          <MEMBER name="arpenter"/>
+          <MEMBER name="explorer"/>
+          <MEMBER name="fouiller"/>
+          <MEMBER name="patrouiller"/>
+          <MEMBER name="ratisser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Lus a inspecté la région</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>search(during(E), Agent, Location, ?Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

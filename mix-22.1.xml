@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="mix-22.1">
+     <MEMBERS>
+          <MEMBER name="grouper"/>
+          <MEMBER name="confédérer"/>
+          <MEMBER name="lier"/>
+          <MEMBER name="rassembler"/>
+          <MEMBER name="englober"/>
+          <MEMBER name="additionner"/>
+          <MEMBER name="ajouter"/>
+          <MEMBER name="coaliser"/>
+          <MEMBER name="rallier"/>
+          <MEMBER name="sommer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Co-Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="22.1-1">
+               <MEMBERS>
+                    <MEMBER name="joindre"/>
+                    <MEMBER name="brouiller"/>
+                    <MEMBER name="entremêler"/>
+                    <MEMBER name="unifier"/>
+                    <MEMBER name="unir"/>
+                    <MEMBER name="malaxer"/>
+                    <MEMBER name="regrouper"/>
+                    <MEMBER name="battre"/>
+                    <MEMBER name="remembrer"/>
+                    <MEMBER name="assembler"/>
+                    <MEMBER name="réunir"/>
+                    <MEMBER name="combiner"/>
+                    <MEMBER name="mêler"/>
+                    <MEMBER name="mixer"/>
+                    <MEMBER name="agencer"/>
+                    <MEMBER name="agglomérer"/>
+                    <MEMBER name="composer"/>
+                    <MEMBER name="fusionner"/>
+                    <MEMBER name="délayer"/>
+                    <MEMBER name="mélanger"/>
+                    <MEMBER name="gâcher"/>
+                    <MEMBER name="panacher"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Max a mélangé les oeufs à/avec la crème</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="avec;à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) degradation_material_integrity(result(E), Patient) degradation_material_integrity(result(E), Co-Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP ensemble"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Max a mélangé les oeufs et la crème ensemble</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V Patient&lt;+plural&gt; ensemble</SYNTAX>
+                         <SEMANTICS>cause(Agent, E) degradation_material_integrity(result(E), Patient_i) degradation_material_integrity(result(E), Patient_j) mingled(result(E), physical, Patient_i, Patient_j)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les oeufs se sont mélangés avec la crème</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="neutre"/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="avec;à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>degradation_material_integrity(result(E), Patient) degradation_material_integrity(result(E), Co-Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V ADV PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les oeufs se mélangent bien à la crème</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="middle"/>
+                              <ADV/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="avec;à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>property(Patient+Co-Patient, Prop) Adv(Prop)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V ADV"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les oeufs et la crème se mélangent bien</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP modifier="+plural" value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="middle"/>
+                              <ADV/>
+                         </SYNTAX>
+                         <SEMANTICS>property(Patient_i+Patient_j, Prop) Adv(Prop)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

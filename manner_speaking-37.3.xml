@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="manner_speaking-37.3">
+     <MEMBERS>
+          <MEMBER name="chuchoter"/>
+          <MEMBER name="clabauder"/>
+          <MEMBER name="corner"/>
+          <MEMBER name="cracher"/>
+          <MEMBER name="criailler"/>
+          <MEMBER name="crier"/>
+          <MEMBER name="déclamer"/>
+          <MEMBER name="gémir"/>
+          <MEMBER name="grognasser"/>
+          <MEMBER name="grogner"/>
+          <MEMBER name="grommeler"/>
+          <MEMBER name="gronder"/>
+          <MEMBER name="gueuler"/>
+          <MEMBER name="hurler"/>
+          <MEMBER name="jacter"/>
+          <MEMBER name="larmoyer"/>
+          <MEMBER name="marmonner"/>
+          <MEMBER name="marmotter"/>
+          <MEMBER name="maugréer"/>
+          <MEMBER name="murmurer"/>
+          <MEMBER name="pleurer"/>
+          <MEMBER name="pleurnicher"/>
+          <MEMBER name="ronchonner"/>
+          <MEMBER name="roucouler"/>
+          <MEMBER name="rugir"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="susurrer"/>
+          <MEMBER name="tempêter"/>
+          <MEMBER name="tonitruer"/>
+          <MEMBER name="tonner"/>
+          <MEMBER name="vociférer"/>
+          <MEMBER name="aboyer"/>
+          <MEMBER name="babiller"/>
+          <MEMBER name="barrir"/>
+          <MEMBER name="bêler"/>
+          <MEMBER name="blatérer"/>
+          <MEMBER name="bourdonner"/>
+          <MEMBER name="brailler"/>
+          <MEMBER name="braire"/>
+          <MEMBER name="bramer"/>
+          <MEMBER name="bruire"/>
+          <MEMBER name="caqueter"/>
+          <MEMBER name="chanter"/>
+          <MEMBER name="chantonner"/>
+          <MEMBER name="chevroter"/>
+          <MEMBER name="chuinter"/>
+          <MEMBER name="claironner"/>
+          <MEMBER name="clamer"/>
+          <MEMBER name="coasser"/>
+          <MEMBER name="couiner"/>
+          <MEMBER name="crachoter"/>
+          <MEMBER name="crachouiller"/>
+          <MEMBER name="craqueter"/>
+          <MEMBER name="crépiter"/>
+          <MEMBER name="crisser"/>
+          <MEMBER name="croasser"/>
+          <MEMBER name="fanfaronner"/>
+          <MEMBER name="feuler"/>
+          <MEMBER name="fredonner"/>
+          <MEMBER name="gargouiller"/>
+          <MEMBER name="gazouiller"/>
+          <MEMBER name="glapir"/>
+          <MEMBER name="glouglouter"/>
+          <MEMBER name="glousser"/>
+          <MEMBER name="grésiller"/>
+          <MEMBER name="grincer"/>
+          <MEMBER name="haleter"/>
+          <MEMBER name="hennir"/>
+          <MEMBER name="hoqueter"/>
+          <MEMBER name="hululer"/>
+          <MEMBER name="iodler"/>
+          <MEMBER name="japper"/>
+          <MEMBER name="jargonner"/>
+          <MEMBER name="mâchonner"/>
+          <MEMBER name="meugler"/>
+          <MEMBER name="minauder"/>
+          <MEMBER name="moduler"/>
+          <MEMBER name="moucharder"/>
+          <MEMBER name="mugir"/>
+          <MEMBER name="nasiller"/>
+          <MEMBER name="pépier"/>
+          <MEMBER name="piailler"/>
+          <MEMBER name="piauler"/>
+          <MEMBER name="postillonner"/>
+          <MEMBER name="psalmodier"/>
+          <MEMBER name="ramager"/>
+          <MEMBER name="réciter"/>
+          <MEMBER name="ronronner"/>
+          <MEMBER name="scander"/>
+          <MEMBER name="siffler"/>
+          <MEMBER name="siffloter"/>
+          <MEMBER name="sonner"/>
+          <MEMBER name="soupirer"/>
+          <MEMBER name="striduler"/>
+          <MEMBER name="tambouriner"/>
+          <MEMBER name="tinter"/>
+          <MEMBER name="triller"/>
+          <MEMBER name="trompeter"/>
+          <MEMBER name="ululer"/>
+          <MEMBER name="vagir"/>
+          <MEMBER name="yodler"/>
+          <MEMBER name="zézayer"/>
+          <MEMBER name="zozoter"/>
+          <MEMBER name="bafouiller"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="balbutier"/>
+          <MEMBER name="baragouiner"/>
+          <MEMBER name="bégayer"/>
+          <MEMBER name="beugler"/>
+          <MEMBER name="bougonner"/>
+          <MEMBER name="bredouiller"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Topic">
+               <SELRESTR Value="+" type="communication"/>
+          </THEMROLE>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Susan a murmuré la nouvelle à Léa.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient Qu Pind"/>
+               <EXAMPLES>
+                    <EXAMPLE>Susan a murmuré à Léa qu'il y aurait une soirée le soir même.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PIND value="Topic"/>
+               </SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient comment V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Susan a murmuré à Léa comment éviter la queue.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;</SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Susan a murmuré à Léa de venir tout de suite.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

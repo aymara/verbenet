@@ -7,11 +7,12 @@
           <MEMBER name="laisser"/>
           <MEMBER name="maintenir"/>
           <MEMBER name="mettre"/>
+          <MEMBER name="stocker"/>
+          <MEMBER name="thésauriser"/>
           <MEMBER name="retenir"/>
           <MEMBER name="serrer"/>
-          <MEMBER name="stocker"/>
-          <MEMBER name="suivre"/>
-          <MEMBER name="thésauriser"/>
+          <MEMBER name="emmagasiner"/>
+          <MEMBER name="entreposer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

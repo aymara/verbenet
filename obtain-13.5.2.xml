@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="obtain-13.5.2">
+     <MEMBERS>
+          <MEMBER name="acquérir"/>
+          <MEMBER name="hériter"/>
+          <MEMBER name="percevoir"/>
+          <MEMBER name="obtenir"/>
+          <MEMBER name="prendre"/>
+          <MEMBER name="collecter"/>
+          <MEMBER name="tirer"/>
+          <MEMBER name="accepter"/>
+          <MEMBER name="capter"/>
+          <MEMBER name="ramasser"/>
+          <MEMBER name="réceptionner"/>
+          <MEMBER name="recevoir"/>
+          <MEMBER name="toucher"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Carmen a obtenu une pièce de rechange de Diana.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(start(E), Source, Theme) transfer(during(E), Theme) has_possession(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

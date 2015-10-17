@@ -69,7 +69,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="d depuis e"/>
+                              <SELRESTR Value="de;depuis"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Initial_Location">

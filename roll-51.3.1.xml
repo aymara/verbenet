@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="roll-51.3.1">
      <MEMBERS>
-          <MEMBER name="choir"/>
-          <MEMBER name="chuter"/>
-          <MEMBER name="descendre"/>
-          <MEMBER name="rouler"/>
-          <MEMBER name="voler"/>
-          <MEMBER name="avancer"/>
+          <MEMBER name="voguer"/>
+          <MEMBER name="braquer"/>
           <MEMBER name="balancer"/>
           <MEMBER name="basculer"/>
           <MEMBER name="bouger"/>
@@ -14,7 +10,18 @@
           <MEMBER name="dévier"/>
           <MEMBER name="glisser"/>
           <MEMBER name="baisser"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="glisser se"/>
           <MEMBER name="tomber"/>
+          <MEMBER name="choir"/>
+          <MEMBER name="chuter"/>
+          <MEMBER name="roulotter"/>
+          <MEMBER name="sauter"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="voler"/>
+          <MEMBER name="osciller"/>
+          <MEMBER name="rebondir"/>
+          <MEMBER name="ricocher"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">
@@ -26,11 +33,24 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP.theme V"/>
+               <DESCRIPTION primary="NP.theme V PP.location"/>
                <EXAMPLES>
                     <EXAMPLE>La balle a roulé (vers + jusqu'à) la porte.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Theme V {jusqu'à/vers} Location</SYNTAX>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="jusqu'à;vers"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>motion(during(E), Theme) not(location(start(E), Theme, Location)) près-de-location(end(E), Theme, Location)</SEMANTICS>
           </FRAME>
      </FRAMES>

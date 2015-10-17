@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="pocket-9.10">
      <MEMBERS>
-          <MEMBER name="abattre"/>
+          <MEMBER name="ficher"/>
+          <MEMBER name="parquer"/>
+          <MEMBER name="emmailloter"/>
           <MEMBER name="archiver"/>
-          <MEMBER name="asseoir"/>
-          <MEMBER name="blouser"/>
           <MEMBER name="classer"/>
           <MEMBER name="emboîter"/>
           <MEMBER name="embouteiller"/>
@@ -14,16 +14,6 @@
           <MEMBER name="enfiler"/>
           <MEMBER name="ensacher"/>
           <MEMBER name="entreposer"/>
-          <MEMBER name="ficher"/>
-          <MEMBER name="introduire"/>
-          <MEMBER name="jeter"/>
-          <MEMBER name="mettre"/>
-          <MEMBER name="parquer"/>
-          <MEMBER name="pocher"/>
-          <MEMBER name="reculer"/>
-          <MEMBER name="relever"/>
-          <MEMBER name="rentrer"/>
-          <MEMBER name="renvoyer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -55,7 +45,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="Loc"/>
+                              <SELRESTR Value="Loc-Dest"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Destination">
@@ -83,7 +73,20 @@
                          <EXAMPLES>
                               <EXAMPLE>Le bateau a accosté au quai</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Theme V {{Loc}} Destination</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="Loc-Dest"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Destination">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
                          <SEMANTICS>motion(during(E), Theme) not(Prep(start(E), Theme, Destination)) Prep(end(E), Theme, Destination)</SEMANTICS>
                     </FRAME>
                </FRAMES>

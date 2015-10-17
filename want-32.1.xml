@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="want-32.1">
-     <MEMBERS>
-          <MEMBER name="ambitionner"/>
-          <MEMBER name="convoiter"/>
-     </MEMBERS>
+     <MEMBERS/>
      <THEMROLES>
           <THEMROLE type="Pivot">
                <SELRESTR Value="+" type="animate"/>
@@ -28,19 +25,26 @@
                <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V S"/>
+               <DESCRIPTION primary="NP V Qu Psubj"/>
                <EXAMPLES>
                     <EXAMPLE>Luc ambitionne que son fils soit polytechnicien.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Pivot V Theme &lt;+que_Psubj&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PSUBJ value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="32.1-1">
                <MEMBERS>
-                    <MEMBER name="déguster"/>
-                    <MEMBER name="goûter"/>
+                    <MEMBER name="programmer"/>
+                    <MEMBER name="ambitionner"/>
+                    <MEMBER name="convoiter"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -49,7 +53,7 @@
                          <EXAMPLES>
                               <EXAMPLE>Luc ambitionne de devenir président</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Pivot V Theme &lt;de Vinf&gt;</SYNTAX>
+                         <SYNTAX>Pivot V Theme&lt;+de VPivot-inf&gt;</SYNTAX>
                          <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
                     </FRAME>
                </FRAMES>
@@ -57,14 +61,12 @@
                     <VNSUBCLASS ID="32.1-1-1">
                          <MEMBERS>
                               <MEMBER name="exiger"/>
-                              <MEMBER name="aimer"/>
                               <MEMBER name="apprécier"/>
-                              <MEMBER name="désirer"/>
-                              <MEMBER name="préférer"/>
-                              <MEMBER name="souhaiter"/>
-                              <MEMBER name="vouloir"/>
+                              <MEMBER name="attendre"/>
                          </MEMBERS>
-                         <THEMROLES/>
+                         <THEMROLES>
+                              <THEMROLE type="Attribute"/>
+                         </THEMROLES>
                          <FRAMES>
                               <FRAME>
                                    <DESCRIPTION primary="NP V NP ADJ"/>
@@ -81,18 +83,20 @@
                                         </NP>
                                         <ADJ/>
                                    </SYNTAX>
-                                   <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+                                   <SEMANTICS>desire(E, Pivot, Theme, Attribute)</SEMANTICS>
                               </FRAME>
                          </FRAMES>
                     </VNSUBCLASS>
                </SUBCLASSES>
           </VNSUBCLASS>
           <VNSUBCLASS ID="32.1-2">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="entendre"/>
+               </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V S_INF"/>
+                         <DESCRIPTION primary="NP V V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc voudrait devenir président.</EXAMPLE>
                          </EXAMPLES>
@@ -101,15 +105,26 @@
                                    <SYNRESTRS/>
                               </NP>
                               <VERB/>
-                              <S_INF value="Theme"/>
+                              <VINF emptysubjectrole="Pivot" value="Theme"/>
                          </SYNTAX>
                          <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
                     <VNSUBCLASS ID="32.1-2-1">
-                         <MEMBERS/>
-                         <THEMROLES/>
+                         <MEMBERS>
+                              <MEMBER name="tabler"/>
+                              <MEMBER name="escompter"/>
+                              <MEMBER name="vouloir"/>
+                              <MEMBER name="aimer"/>
+                              <MEMBER name="désirer"/>
+                              <MEMBER name="préférer"/>
+                              <MEMBER name="souhaiter"/>
+                              <MEMBER name="compter"/>
+                         </MEMBERS>
+                         <THEMROLES>
+                              <THEMROLE type="Attribute"/>
+                         </THEMROLES>
                          <FRAMES>
                               <FRAME>
                                    <DESCRIPTION primary="NP V NP ADJ"/>
@@ -126,7 +141,7 @@
                                         </NP>
                                         <ADJ/>
                                    </SYNTAX>
-                                   <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
+                                   <SEMANTICS>desire(E, Pivot, Theme, Attribute)</SEMANTICS>
                               </FRAME>
                          </FRAMES>
                     </VNSUBCLASS>

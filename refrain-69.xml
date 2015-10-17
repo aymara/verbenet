@@ -13,16 +13,22 @@
                     <SELRESTR Value="+" type="animate"/>
                </SELRESTRS>
           </THEMROLE>
-          <THEMROLE type="Theme"/>
+          <THEMROLE type="Topic"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V de V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Il s'abstient de fumer</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {de} Theme &lt;+V0-inf&gt;</SYNTAX>
-               <SEMANTICS>abstain(during(E), Agent, Theme)</SEMANTICS>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="de" is_true_prep="true" value="Topic"/>
+               </SYNTAX>
+               <SEMANTICS>abstain(during(E), Agent, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>
 </VNCLASS>

@@ -4,8 +4,14 @@
           <MEMBER name="calculer"/>
           <MEMBER name="compter"/>
           <MEMBER name="estimer"/>
-          <MEMBER name="mesurer"/>
           <MEMBER name="noter"/>
+          <MEMBER name="juger"/>
+          <MEMBER name="supputer"/>
+          <MEMBER name="approximer"/>
+          <MEMBER name="analyser"/>
+          <MEMBER name="évaluer"/>
+          <MEMBER name="jauger"/>
+          <MEMBER name="diagnostiquer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -59,35 +65,45 @@
                <SEMANTICS>assess(during(E), Agent, Theme, Value)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V how S"/>
+               <DESCRIPTION primary="NP V combien P"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur estime combien ça peut coûter.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Value &lt;+combien_extract&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="combien" value="Value"/>
+               </SYNTAX>
                <SEMANTICS>assess(during(E), Agent, ?Theme, Value)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V that S"/>
+               <DESCRIPTION primary="NP V Qu Pind"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur estime que c'est bien probable.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme &lt;+que_comp&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PIND value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V what S"/>
-               <EXAMPLES>
-                    <EXAMPLE>L'inspecteur estime ce que ça peut donner.</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Agent V Theme &lt;+ce_que_extract&gt;</SYNTAX>
-               <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V si P ou si P"/>
+               <DESCRIPTION primary="NP V si P"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur estime si la maison va s'écrouler</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme &lt;+si P ou si P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="si" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>assess(during(E), Agent, Theme, ?Value)</SEMANTICS>
           </FRAME>
      </FRAMES>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="put_direction-9.4">
      <MEMBERS>
+          <MEMBER name="élever"/>
+          <MEMBER name="relever"/>
+          <MEMBER name="affaler"/>
+          <MEMBER name="hisser"/>
           <MEMBER name="baisser"/>
           <MEMBER name="lâcher"/>
           <MEMBER name="larguer"/>
-          <MEMBER name="élever"/>
           <MEMBER name="accoter"/>
-          <MEMBER name="relever"/>
-          <MEMBER name="affaler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="hurt-40.8.3">
+     <MEMBERS>
+          <MEMBER name="casser"/>
+          <MEMBER name="contusionner"/>
+          <MEMBER name="déchirer"/>
+          <MEMBER name="fouler"/>
+          <MEMBER name="frisotter"/>
+          <MEMBER name="froisser"/>
+          <MEMBER name="tordre"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="écorcher"/>
+          <MEMBER name="égratigner"/>
+          <MEMBER name="entailler"/>
+          <MEMBER name="érafler"/>
+          <MEMBER name="fendre"/>
+          <MEMBER name="fracturer"/>
+          <MEMBER name="griffer"/>
+          <MEMBER name="lacérer"/>
+          <MEMBER name="pincer"/>
+          <MEMBER name="friser"/>
+          <MEMBER name="abîmer"/>
+          <MEMBER name="blesser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="body_part"/>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP se V NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max s'est fracturé la jambe.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>harmed(during(E), Attribute) experience(E, Experiencer)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V"/>
+               <EXAMPLES>
+                    <EXAMPLE>La jambe de Max s'est fracturée.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+genitive(Experiencer)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+               </SYNTAX>
+               <SEMANTICS>harmed(during(E), Patient) experiencer(E, Experiencer)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le choc a fracturé la jambe de Max</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Experiencer)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>harmed(during(E), Attribute) experiencer(E, Experiencer)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP LUI V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le choc lui a fracturé la jambe.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+                    <LUI/>
+                    <VERB/>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>harmed(during(E), Attribute) experiencer(E, Experiencer)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

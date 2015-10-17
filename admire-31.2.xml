@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="admire-31.2">
      <MEMBERS>
-          <MEMBER name="admirer"/>
-          <MEMBER name="chérir"/>
-          <MEMBER name="envier"/>
           <MEMBER name="estimer"/>
           <MEMBER name="idolâtrer"/>
           <MEMBER name="priser"/>
@@ -11,33 +8,19 @@
           <MEMBER name="révérer"/>
           <MEMBER name="vénérer"/>
           <MEMBER name="vomir"/>
+          <MEMBER name="choyer"/>
+          <MEMBER name="maudire"/>
+          <MEMBER name="apprécier"/>
           <MEMBER name="acclamer"/>
           <MEMBER name="applaudir"/>
           <MEMBER name="approuver"/>
           <MEMBER name="appuyer"/>
           <MEMBER name="exalter"/>
-          <MEMBER name="presser"/>
           <MEMBER name="soutenir"/>
           <MEMBER name="vanter"/>
-          <MEMBER name="appréhender"/>
-          <MEMBER name="caresser"/>
-          <MEMBER name="choyer"/>
-          <MEMBER name="considérer"/>
-          <MEMBER name="déplorer"/>
-          <MEMBER name="endurer"/>
-          <MEMBER name="entretenir"/>
-          <MEMBER name="éprouver"/>
-          <MEMBER name="espérer"/>
-          <MEMBER name="maudire"/>
-          <MEMBER name="plaindre"/>
-          <MEMBER name="pleurer"/>
-          <MEMBER name="préférer"/>
-          <MEMBER name="savourer"/>
-          <MEMBER name="sentir"/>
-          <MEMBER name="souffrir"/>
-          <MEMBER name="subir"/>
-          <MEMBER name="supporter"/>
-          <MEMBER name="tolérer"/>
+          <MEMBER name="admirer"/>
+          <MEMBER name="chérir"/>
+          <MEMBER name="envier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Stimulus"/>
@@ -50,7 +33,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP"/>
                <EXAMPLES>
-                    <EXAMPLE>Les touristes admiraient les tableaux</EXAMPLE>
+                    <EXAMPLE>Max admire la chasteté</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Experiencer">
@@ -88,7 +71,7 @@
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.stimulus"/>
+               <DESCRIPTION primary="NP V NP.attribute"/>
                <EXAMPLES>
                     <EXAMPLE>J'admire l'honnêteté de Luc</EXAMPLE>
                </EXAMPLES>
@@ -97,48 +80,80 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <NP value="Stimulus">
+                    <NP modifier="+genitive (Stimulus)" value="Attribute">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V Que Psubj"/>
+               <DESCRIPTION primary="NP V Qu Psubj"/>
                <EXAMPLES>
                     <EXAMPLE>J'admire qu'on puisse travailler autant</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Experiencer V Stimulus &lt;+que_P&gt;</SYNTAX>
-               <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V NP P_INF"/>
-               <EXAMPLES>
-                    <EXAMPLE>J'admire Luc d'écrire des romans</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Experiencer V Stimulus &lt;+N1_de_inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PSUBJ value="Stimulus"/>
+               </SYNTAX>
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="31.2-1">
                <MEMBERS>
-                    <MEMBER name="aimer"/>
-                    <MEMBER name="détester"/>
-                    <MEMBER name="haïr"/>
                     <MEMBER name="abhorrer"/>
                     <MEMBER name="abominer"/>
                     <MEMBER name="exécrer"/>
                     <MEMBER name="adorer"/>
+                    <MEMBER name="aimer"/>
+                    <MEMBER name="détester"/>
+                    <MEMBER name="haïr"/>
+                    <MEMBER name="souhaiter"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V S_INF"/>
+                         <DESCRIPTION primary="NP V V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>J'aime écrire.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Experiencer V Stimulus &lt;+V0-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Experiencer">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Experiencer" value="Stimulus"/>
+                         </SYNTAX>
+                         <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="31.2-2">
+               <MEMBERS>
+                    <MEMBER name="craindre"/>
+                    <MEMBER name="exécrer"/>
+                    <MEMBER name="abominer"/>
+                    <MEMBER name="abhorrer"/>
+                    <MEMBER name="adorer"/>
+                    <MEMBER name="réprouver"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc exècre d'être dérangé au milieu de la nuit.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Experiencer">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Experiencer" introduced_by="de" is_true_prep="false" value="Stimulus"/>
+                         </SYNTAX>
                          <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
                     </FRAME>
                </FRAMES>

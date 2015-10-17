@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="suffocate-40.7">
+     <MEMBERS>
+          <MEMBER name="étrangler"/>
+          <MEMBER name="noyer"/>
+          <MEMBER name="suffoquer"/>
+          <MEMBER name="asphyxier"/>
+          <MEMBER name="étouffer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.patient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a  noyé un chaton</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) suffocate(during(E), Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP.patient se V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Un chaton s'est noyé</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+               </SYNTAX>
+               <SEMANTICS>suffocate(during(E), Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -2,7 +2,6 @@
 <VNCLASS ID="pelt-17.2">
      <MEMBERS>
           <MEMBER name="pilonner"/>
-          <MEMBER name="frapper"/>
           <MEMBER name="arroser"/>
           <MEMBER name="bombarder"/>
           <MEMBER name="canarder"/>
@@ -37,7 +36,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="de+avec"/>
+                              <SELRESTR Value="avec;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Theme">

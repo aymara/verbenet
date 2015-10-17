@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cheat-10.6">
      <MEMBERS>
+          <MEMBER name="débarrasser"/>
+          <MEMBER name="décharger"/>
+          <MEMBER name="défaire"/>
           <MEMBER name="déposséder"/>
           <MEMBER name="déshériter"/>
+          <MEMBER name="blouser"/>
+          <MEMBER name="dégarnir"/>
+          <MEMBER name="gruger"/>
+          <MEMBER name="rouler"/>
           <MEMBER name="plumer"/>
           <MEMBER name="rançonner"/>
           <MEMBER name="saigner"/>
           <MEMBER name="sevrer"/>
           <MEMBER name="spolier"/>
-          <MEMBER name="débarrasser"/>
-          <MEMBER name="décharger"/>
-          <MEMBER name="défaire"/>
           <MEMBER name="frauder"/>
           <MEMBER name="priver"/>
      </MEMBERS>
@@ -36,7 +40,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a déplumé Max de 10€.</EXAMPLE>
+                    <EXAMPLE>Luc a arnaqué Max de 10€.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -80,7 +84,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.source"/>
                          <EXAMPLES>
-                              <EXAMPLE>Luc a anarqué 10€ à  Max.</EXAMPLE>
+                              <EXAMPLE>Luc a arnarqué 10€ à  Max.</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">

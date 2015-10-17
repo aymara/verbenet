@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="hire-13.5.3">
+     <MEMBERS>
+          <MEMBER name="engager"/>
+          <MEMBER name="exercer"/>
+          <MEMBER name="gagner"/>
+          <MEMBER name="instruire"/>
+          <MEMBER name="prendre"/>
+          <MEMBER name="rétablir"/>
+          <MEMBER name="employer"/>
+          <MEMBER name="lever"/>
+          <MEMBER name="recruter"/>
+          <MEMBER name="récupérer"/>
+          <MEMBER name="retenir"/>
+          <MEMBER name="soustraire"/>
+          <MEMBER name="avoir"/>
+          <MEMBER name="dresser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>J'ai recruté deux secrétaires.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) not(location(start(E), Theme)) location(end(E), Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a recruté Luc comme lecteur.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="comme"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) not(location(start(E), Theme, Attribute)) location(end(E), Theme, Attribute)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

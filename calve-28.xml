@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="calve-28">
      <MEMBERS>
+          <MEMBER name=""/>
           <MEMBER name="frayer"/>
+          <MEMBER name="agneler"/>
+          <MEMBER name="engendrer"/>
+          <MEMBER name="louveter"/>
+          <MEMBER name="pondre"/>
           <MEMBER name="lapiner"/>
-          <MEMBER name="multiplier se"/>
           <MEMBER name="pouliner"/>
           <MEMBER name="vêler"/>
      </MEMBERS>
@@ -17,41 +21,20 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V"/>
+               <DESCRIPTION primary="NP V NP"/>
                <EXAMPLES>
-                    <EXAMPLE>La poule a pondu.</EXAMPLE>
+                    <EXAMPLE>La poule a pondu un oeuf.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
                </SYNTAX>
-               <SEMANTICS>give_birth(end(E), Agent, ?Patient) cause(Agent, E)</SEMANTICS>
+               <SEMANTICS>give_birth(end(E), Agent, Patient) cause(Agent, E)</SEMANTICS>
           </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="28-1">
-               <MEMBERS/>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>La poule a pondu un oeuf</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>give_birth(end(E), Agent, Patient) cause(Agent, E)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

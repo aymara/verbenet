@@ -6,12 +6,9 @@
           <MEMBER name="planter"/>
           <MEMBER name="saupoudrer"/>
           <MEMBER name="semer"/>
-          <MEMBER name="baguer"/>
           <MEMBER name="barbouiller"/>
-          <MEMBER name="emmailloter"/>
           <MEMBER name="enfiler"/>
           <MEMBER name="pulvériser"/>
-          <MEMBER name="tendre"/>
           <MEMBER name="vaporiser"/>
           <MEMBER name="infiltrer"/>
      </MEMBERS>
@@ -31,7 +28,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.destination"/>
                <EXAMPLES>
-                    <EXAMPLE>Jessica a chargé les colis sur le camion.</EXAMPLE>
+                    <EXAMPLE>Luc a chargé les colis sur le camion.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -55,7 +52,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP.destination PP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Jessica a chargé le camion (avec des, de) caisses.</EXAMPLE>
+                    <EXAMPLE>Luc a chargé le camion (avec des, de) caisses.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -67,7 +64,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="avec/de"/>
+                              <SELRESTR Value="avec;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Theme">

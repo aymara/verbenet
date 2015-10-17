@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="limit-76">
+     <MEMBERS>
+          <MEMBER name="borner"/>
+          <MEMBER name="cantonner"/>
+          <MEMBER name="circonscrire"/>
+          <MEMBER name="confiner"/>
+          <MEMBER name="limiter"/>
+          <MEMBER name="restreindre"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Cause"/>
+          <THEMROLE type="Patient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Goal"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le manque d'argent restreint les citoyens à n'acheter que des choses nécessaires</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Goal"/>
+               </SYNTAX>
+               <SEMANTICS>limit(during(E), Cause, Patient, Goal)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le manque d'argent restreint l'aide médical</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>limit(during(E), Cause, Patient, ?Goal)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

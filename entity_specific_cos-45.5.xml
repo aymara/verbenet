@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="entity_specific_cos-45.5">
      <MEMBERS>
+          <MEMBER name="grossir"/>
+          <MEMBER name="croître"/>
+          <MEMBER name="croupir"/>
+          <MEMBER name="décliner"/>
+          <MEMBER name="éclore"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="piétiner"/>
+          <MEMBER name="poindre"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="végéter"/>
+          <MEMBER name="cloquer"/>
+          <MEMBER name="ternir"/>
           <MEMBER name="bourgeonner"/>
           <MEMBER name="brûler"/>
           <MEMBER name="faiblir"/>
           <MEMBER name="fleurir"/>
           <MEMBER name="germer"/>
           <MEMBER name="germiner"/>
-          <MEMBER name="grossir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Patient">

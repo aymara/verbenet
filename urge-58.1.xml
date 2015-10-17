@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="urge-58.1">
      <MEMBERS>
-          <MEMBER name="solliciter"/>
           <MEMBER name="appeler"/>
           <MEMBER name="engager"/>
           <MEMBER name="exhorter"/>
           <MEMBER name="inviter"/>
+          <MEMBER name="solliciter"/>
+          <MEMBER name="inciter"/>
+          <MEMBER name="pousser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -24,19 +26,49 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.Topic(Inf)"/>
+               <DESCRIPTION primary="NP V NP PP.Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a poussé Marie à faire la vaiselle</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Recipient {à} Topic &lt;inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+VRecipient-inf" value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>urge(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à ce que S"/>
+               <DESCRIPTION primary="NP V NP à ce Qu Psubj"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a poussé Marie à ce que son mari démissionne</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Recipient {à} Topic &lt;+ce que P&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <PSUBJ introduced_by="à" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>urge(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>

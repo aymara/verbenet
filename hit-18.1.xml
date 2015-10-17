@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="hit-18.1">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="int_control"/>
+          </THEMROLE>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a frappé la balle</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) manner(during(E), directedmotion, Agent) not(contact(during(E), Agent, Patient)) manner(end(E), forceful, Agent) contact(end(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="18.1-1">
+               <MEMBERS>
+                    <MEMBER name="cogner"/>
+                    <MEMBER name="frapper"/>
+                    <MEMBER name="gifler"/>
+                    <MEMBER name="taper"/>
+                    <MEMBER name="tapoter"/>
+                    <MEMBER name="toucher"/>
+                    <MEMBER name="claquer"/>
+                    <MEMBER name="frotter"/>
+                    <MEMBER name="gratter"/>
+                    <MEMBER name="mordre"/>
+                    <MEMBER name="pincer"/>
+                    <MEMBER name="piquer"/>
+                    <MEMBER name="saisir"/>
+                    <MEMBER name="botter"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Attribute">
+                         <SELRESTR Value="+" type="body_part"/>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.attribute"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a tapé Max sur les fesses</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="+" type="loc"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) manner(during(E), directedmotion, Agent) not(contact(during(E), Agent, Patient)) manner(end(E), forceful, Agent) contact(end(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP LUI V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc lui a tapé les fesses</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <LUI/>
+                              <VERB/>
+                              <NP value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) manner(during(E), directedmotion, Agent) not(contact(during(E), Agent, Patient)) manner(end(E), forceful, Agent) contact(end(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a tapé les fesses de Max</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP modifier="+genitive(Theme)" value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) manner(during(E), directedmotion, Agent) not(contact(during(E), Agent, Patient)) manner(end(E), forceful, Agent) contact(end(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

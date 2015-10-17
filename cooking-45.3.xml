@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cooking-45.3">
      <MEMBERS>
-          <MEMBER name="altérer"/>
+          <MEMBER name="torréfier"/>
+          <MEMBER name="réchauffer"/>
           <MEMBER name="cautériser"/>
           <MEMBER name="ébouillanter"/>
           <MEMBER name="enflammer"/>
           <MEMBER name="flétrir"/>
           <MEMBER name="saisir"/>
           <MEMBER name="tremper"/>
-          <MEMBER name="blanchir"/>
-          <MEMBER name="bouillir"/>
-          <MEMBER name="braiser"/>
-          <MEMBER name="brûler"/>
-          <MEMBER name="cuire"/>
           <MEMBER name="cuisiner"/>
           <MEMBER name="frire"/>
           <MEMBER name="fumer"/>
-          <MEMBER name="gratiner"/>
-          <MEMBER name="griller"/>
-          <MEMBER name="infuser"/>
-          <MEMBER name="mijoter"/>
-          <MEMBER name="mitonner"/>
-          <MEMBER name="monter"/>
-          <MEMBER name="rissoler"/>
-          <MEMBER name="rôtir"/>
           <MEMBER name="surcuire"/>
-          <MEMBER name="torréfier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -54,7 +41,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="a à avec d n s"/>
+                              <SELRESTR Value="avec;dans;à"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Instrument">
@@ -64,7 +51,7 @@
                <SEMANTICS>cause(Agent, E) apply_heat(during(E), Instrument, Patient) cooked(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV-Middle"/>
+               <DESCRIPTION primary="NP se V ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Les pommes de terre bretonnes se cuisent facilement</EXAMPLE>
                </EXAMPLES>
@@ -72,8 +59,7 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="middle"/>
                     <ADV/>
                </SYNTAX>
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
@@ -97,15 +83,27 @@
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="45.3-1">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="cuire"/>
+                    <MEMBER name="mijoter"/>
+                    <MEMBER name="mitonner"/>
+                    <MEMBER name="gratiner griller infuser"/>
+                    <MEMBER name="monter rissoler rôtir"/>
+                    <MEMBER name="blanchir bouillir braiser brûler"/>
+               </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V neutre"/>
+                         <DESCRIPTION primary="NP V"/>
                          <EXAMPLES>
                               <EXAMPLE>Les pommes de terre ont cuit</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Patient V neutre</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                         </SYNTAX>
                          <SEMANTICS>cooked(result(E), Form, Patient)</SEMANTICS>
                     </FRAME>
                </FRAMES>

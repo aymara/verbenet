@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="differ-23.4">
+     <MEMBERS>
+          <MEMBER name="écarter s'"/>
+          <MEMBER name="diverger"/>
+          <MEMBER name="différencier se"/>
+          <MEMBER name="différer"/>
+          <MEMBER name="distinguer se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Co-Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.co-theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Mon avis diverge de/d'avec le sien.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="d'avec;de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>different(Theme, Co-Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Nos avis divergent.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+               </SYNTAX>
+               <SEMANTICS>different(Theme, Co-Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -39,8 +39,7 @@
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="neutre"/>
                </SYNTAX>
                <SEMANTICS>not(together(start(E), physical, Theme_i, Theme_j)) together(end(E), physical, Theme_i, Theme_j)</SEMANTICS>
           </FRAME>

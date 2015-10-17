@@ -38,7 +38,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="spatial"/>
+                              <SELRESTR Value="Loc-Dest"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Destination">

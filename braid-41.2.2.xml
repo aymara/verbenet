@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="braid-41.2.2">
+     <MEMBERS>
+          <MEMBER name="gélifier"/>
+          <MEMBER name="maquiller"/>
+          <MEMBER name="natter"/>
+          <MEMBER name="ondoyer"/>
+          <MEMBER name="onduler"/>
+          <MEMBER name="parer"/>
+          <MEMBER name="shampooiner"/>
+          <MEMBER name="tondre"/>
+          <MEMBER name="coiffer"/>
+          <MEMBER name="crêper"/>
+          <MEMBER name="manucurer"/>
+          <MEMBER name="nouer"/>
+          <MEMBER name="rafraîchir"/>
+          <MEMBER name="shampouiner"/>
+          <MEMBER name="moucher"/>
+          <MEMBER name="peigner"/>
+          <MEMBER name="boucler"/>
+          <MEMBER name="brosser"/>
+          <MEMBER name="friser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="body_part"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a shapouiné les cheveux de Bébé</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Patient)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a shampouiné Bébé</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP LUI V NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc lui a shampouiné les cheveux</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <LUI/>
+                    <VERB/>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

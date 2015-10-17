@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="multiply-108">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Co-Theme"/>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="108-4">
+               <MEMBERS/>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a additionné ces nombres.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP modifier="+plural" value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>calculate(during(E), Agent, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="108-4-1">
+                         <MEMBERS>
+                              <MEMBER name="sommer"/>
+                              <MEMBER name="rajouter"/>
+                              <MEMBER name="ajouter"/>
+                              <MEMBER name="additionner"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP.theme PP.co-theme"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc a additionné x à y.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <PREP>
+                                             <SELRESTRS>
+                                                  <SELRESTR Value="à"/>
+                                             </SELRESTRS>
+                                        </PREP>
+                                        <NP value="Co-Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                   </SYNTAX>
+                                   <SEMANTICS>calculate(during(E), Agent, Theme, Co-Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+                    <VNSUBCLASS ID="108-4-2">
+                         <MEMBERS>
+                              <MEMBER name="multiplier"/>
+                              <MEMBER name="diviser"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP.theme PP.co-theme"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc a multiplié x par y.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <PREP>
+                                             <SELRESTRS>
+                                                  <SELRESTR Value="par"/>
+                                             </SELRESTRS>
+                                        </PREP>
+                                        <NP value="Co-Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                   </SYNTAX>
+                                   <SEMANTICS>calculate(during(E), Agent, Theme, Co-Theme)</SEMANTICS>
+                              </FRAME>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc a multiplié ces deux nombres</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <NP modifier="+plural" value="Theme">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                   </SYNTAX>
+                                   <SEMANTICS>calculate(during(E), Agent, Theme, Co-Theme)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="108-5">
+               <MEMBERS>
+                    <MEMBER name="soustraire"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.co-theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a soustrait x de y.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>calculate(during(E), Agent, Theme, Co-Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

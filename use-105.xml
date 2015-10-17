@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="use-105">
+     <MEMBERS>
+          <MEMBER name="utiliser"/>
+          <MEMBER name="appliquer"/>
+          <MEMBER name="employer"/>
+          <MEMBER name="exploiter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Goal"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP à/pour V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Léa a utilisé le panier à/pour stocker de la nourriture.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Agent" introduced_by="pour;à" is_true_prep="true" value="Goal"/>
+               </SYNTAX>
+               <SEMANTICS>use(during(E), Agent, Theme, Goal)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="begin-55.1">
      <MEMBERS>
-          <MEMBER name="recommencer"/>
           <MEMBER name="commencer"/>
-          <MEMBER name="continuer"/>
-          <MEMBER name="mettre se"/>
-          <MEMBER name="partir"/>
-          <MEMBER name="promettre"/>
+          <MEMBER name="recommencer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -20,11 +16,11 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V à S_INF"/>
+               <DESCRIPTION primary="NP V à V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Il a commencé à lire ce livre</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V à Theme &lt;+sc_to_inf&gt;</SYNTAX>
+               <SYNTAX>Agent V Theme&lt;+à VAgent-inf&gt;</SYNTAX>
                <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -41,7 +37,7 @@
                <SEMANTICS>begin(E, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP   "/>
+               <DESCRIPTION primary="NP V NP"/>
                <EXAMPLES>
                     <EXAMPLE>Il a commencé le livre</EXAMPLE>
                </EXAMPLES>
@@ -101,21 +97,13 @@
                </SYNTAX>
                <SEMANTICS>begin(E, Theme) use(during(E), Agent, Instrument) cause(Agent, E)</SEMANTICS>
           </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V de V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a commencé de lire ce livre</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+               <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="55.1-2">
-               <MEMBERS/>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V de S-inf"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Luc a commencé de lire son livre</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Agent V de Theme &lt;+sc_to_inf&gt;</SYNTAX>
-                         <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

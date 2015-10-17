@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="judgment-33">
      <MEMBERS>
-          <MEMBER name="blâmer"/>
+          <MEMBER name="railler"/>
+          <MEMBER name="remercier"/>
+          <MEMBER name="réprimander"/>
+          <MEMBER name="absoudre"/>
+          <MEMBER name="gracier"/>
+          <MEMBER name="houspiller"/>
+          <MEMBER name="innocenter"/>
+          <MEMBER name="pardonner"/>
+          <MEMBER name="payer"/>
+          <MEMBER name="saluer"/>
+          <MEMBER name="stigmatiser"/>
+          <MEMBER name="vilipender"/>
+          <MEMBER name="vitupérer"/>
+          <MEMBER name="pénaliser"/>
+          <MEMBER name="dédaigner"/>
+          <MEMBER name="honnir"/>
+          <MEMBER name="rabrouer"/>
           <MEMBER name="rembourser"/>
-          <MEMBER name="débiner"/>
+          <MEMBER name="récompenser"/>
+          <MEMBER name="tancer"/>
+          <MEMBER name="accabler"/>
+          <MEMBER name="accuser"/>
+          <MEMBER name="glorifier"/>
+          <MEMBER name="incriminer"/>
+          <MEMBER name="attaquer"/>
+          <MEMBER name="bafouer"/>
+          <MEMBER name="calomnier"/>
+          <MEMBER name="criticailler"/>
+          <MEMBER name="diffamer"/>
+          <MEMBER name="insulter"/>
+          <MEMBER name="interpeller"/>
+          <MEMBER name="malmener"/>
           <MEMBER name="maltraiter"/>
+          <MEMBER name="narguer"/>
+          <MEMBER name="parodier"/>
+          <MEMBER name="pourfendre"/>
+          <MEMBER name="rabaisser"/>
+          <MEMBER name="sanctifier"/>
+          <MEMBER name="satiriser"/>
+          <MEMBER name="blâmer"/>
+          <MEMBER name="chapitrer"/>
+          <MEMBER name="complimenter"/>
+          <MEMBER name="congratuler"/>
+          <MEMBER name="corriger"/>
+          <MEMBER name="excuser"/>
+          <MEMBER name="féliciter"/>
+          <MEMBER name="gourmander"/>
+          <MEMBER name="gronder"/>
+          <MEMBER name="honorer"/>
+          <MEMBER name="injurier"/>
+          <MEMBER name="morigéner"/>
+          <MEMBER name="persifler"/>
+          <MEMBER name="punir"/>
+          <MEMBER name="quereller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -12,27 +62,10 @@
           </THEMROLE>
           <THEMROLE type="Theme"/>
           <THEMROLE type="Attribute"/>
-          <THEMROLE type="Cause"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
-               <EXAMPLES>
-                    <EXAMPLE>Ils ont loué les volontaires.</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>
-                    <NP value="Agent">
-                         <SYNRESTRS/>
-                    </NP>
-                    <VERB/>
-                    <NP value="Theme">
-                         <SYNRESTRS/>
-                    </NP>
-               </SYNTAX>
-               <SEMANTICS>declare(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP.Theme PP.attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont loué les volontaires pour leur courage.</EXAMPLE>
                </EXAMPLES>
@@ -53,119 +86,84 @@
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>declare(during(E), Agent, Theme, Attribute)</SEMANTICS>
+               <SEMANTICS>judge(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme de V1inf"/>
+               <DESCRIPTION primary="NP V NP.Attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Ils ont loué le courage des volontaires.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Theme)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>judge(during(E), Agent, Theme, Attribute)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.Theme PP.Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont loué les volontaires d'avoir secouru les naufragés.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme {de/pour} Cause&lt;+de V1-inf&gt;</SYNTAX>
-               <SEMANTICS/>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de;pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+VTheme-inf" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>judge(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="33-1">
+          <VNSUBCLASS ID="33-4">
                <MEMBERS>
-                    <MEMBER name="célébrer"/>
-                    <MEMBER name="censurer"/>
-                    <MEMBER name="chansonner"/>
-                    <MEMBER name="chapitrer"/>
-                    <MEMBER name="complimenter"/>
-                    <MEMBER name="condamner"/>
-                    <MEMBER name="congratuler"/>
-                    <MEMBER name="consacrer"/>
-                    <MEMBER name="corriger"/>
-                    <MEMBER name="criticailler"/>
-                    <MEMBER name="critiquer"/>
-                    <MEMBER name="décrier"/>
-                    <MEMBER name="dénigrer"/>
-                    <MEMBER name="désapprouver"/>
-                    <MEMBER name="désavouer"/>
-                    <MEMBER name="diffamer"/>
-                    <MEMBER name="éreinter"/>
-                    <MEMBER name="exalter"/>
-                    <MEMBER name="excuser"/>
-                    <MEMBER name="féliciter"/>
-                    <MEMBER name="fêter"/>
-                    <MEMBER name="flétrir"/>
-                    <MEMBER name="fustiger"/>
-                    <MEMBER name="gausser se"/>
-                    <MEMBER name="gourmander"/>
-                    <MEMBER name="gronder"/>
-                    <MEMBER name="héler"/>
-                    <MEMBER name="accabler"/>
-                    <MEMBER name="accuser"/>
-                    <MEMBER name="glorifier"/>
-                    <MEMBER name="incriminer"/>
-                    <MEMBER name="louer"/>
-                    <MEMBER name="honorer"/>
-                    <MEMBER name="injurier"/>
-                    <MEMBER name="insulter"/>
-                    <MEMBER name="interpeller"/>
-                    <MEMBER name="invoquer"/>
-                    <MEMBER name="louanger"/>
-                    <MEMBER name="magnifier"/>
-                    <MEMBER name="malmener"/>
-                    <MEMBER name="maudire"/>
-                    <MEMBER name="moquer"/>
-                    <MEMBER name="moquer se"/>
-                    <MEMBER name="morigéner"/>
-                    <MEMBER name="narguer"/>
-                    <MEMBER name="outrager"/>
-                    <MEMBER name="parodier"/>
-                    <MEMBER name="persifler"/>
-                    <MEMBER name="pourfendre"/>
-                    <MEMBER name="punir"/>
-                    <MEMBER name="quereller"/>
-                    <MEMBER name="rabaisser"/>
-                    <MEMBER name="railler"/>
-                    <MEMBER name="railler se"/>
-                    <MEMBER name="remercier"/>
-                    <MEMBER name="reprendre"/>
-                    <MEMBER name="réprimander"/>
-                    <MEMBER name="réprimer"/>
-                    <MEMBER name="saluer"/>
-                    <MEMBER name="sanctifier"/>
-                    <MEMBER name="satiriser"/>
-                    <MEMBER name="stigmatiser"/>
-                    <MEMBER name="vilipender"/>
-                    <MEMBER name="vitupérer"/>
-                    <MEMBER name="fatiguer"/>
                     <MEMBER name="acclamer"/>
-                    <MEMBER name="agonir"/>
                     <MEMBER name="applaudir"/>
-                    <MEMBER name="arroser"/>
-                    <MEMBER name="attaquer"/>
-                    <MEMBER name="attraper"/>
-                    <MEMBER name="bafouer"/>
                     <MEMBER name="bénir"/>
-                    <MEMBER name="blâmer"/>
-                    <MEMBER name="calomnier"/>
+                    <MEMBER name="censurer"/>
+                    <MEMBER name="critiquer débiner décrier dénigrer désapprouver désavouer exalter"/>
+                    <MEMBER name="fêter fustiger"/>
+                    <MEMBER name="maudire"/>
+                    <MEMBER name="louanger"/>
+                    <MEMBER name="louer"/>
+                    <MEMBER name="approuver"/>
+                    <MEMBER name="châtier"/>
+                    <MEMBER name="réprouver sanctionner"/>
+                    <MEMBER name="vanter"/>
+                    <MEMBER name="célébrer"/>
+                    <MEMBER name="condamner"/>
+                    <MEMBER name="réprimer"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP.attribute de NP.theme"/>
+                         <DESCRIPTION primary="NP V Qu Psubj"/>
                          <EXAMPLES>
-                              <EXAMPLE>Paul a loué le courage des volontaires.</EXAMPLE>
+                              <EXAMPLE>Luc critique que Marie porte des talons hauts</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V Theme &lt;+genitive&gt;</SYNTAX>
-                         <SEMANTICS>declare(during(E), Agent, Theme, Attribute)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-          <VNSUBCLASS ID="33-2">
-               <MEMBERS/>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP.theme de NP.cause"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Ils ont félicité Marie de son mariage.</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Agent V Theme {de} Cause</SYNTAX>
-                         <SEMANTICS>declare(during(E), Agent, Theme, Attribute)</SEMANTICS>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PSUBJ value="Theme"/>
+                         </SYNTAX>
+                         <SEMANTICS>judge(during(E), Agent, Theme, Attribute)</SEMANTICS>
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>

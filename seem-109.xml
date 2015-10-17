@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="seem-109">
+     <MEMBERS>
+          <MEMBER name="sembler"/>
+          <MEMBER name="paraître"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V ADJ"/>
+               <EXAMPLES>
+                    <EXAMPLE>Léa semble fatiguée</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <ADJ/>
+               </SYNTAX>
+               <SEMANTICS>seem(E, Theme, Attribute)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Léa semble avoir compris.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Theme" value="Attribute"/>
+               </SYNTAX>
+               <SEMANTICS>seem(E, Theme, Attribute)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

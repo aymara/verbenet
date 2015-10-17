@@ -2,7 +2,6 @@
 <VNCLASS ID="mine-10.9">
      <MEMBERS>
           <MEMBER name="déterrer"/>
-          <MEMBER name="extraire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -34,7 +33,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="src"/>
+                              <SELRESTR Value="de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Initial_Location">

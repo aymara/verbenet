@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="register-54.1">
+     <MEMBERS>
+          <MEMBER name="chronométrer"/>
+          <MEMBER name="minuter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a chronomété les coureurs</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>value(E, Agent, Theme, ?Value)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="54.1-1">
+               <MEMBERS>
+                    <MEMBER name="jauger"/>
+                    <MEMBER name="mesurer"/>
+                    <MEMBER name="peser"/>
+                    <MEMBER name="totaliser"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Value"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP.value"/>
+                         <EXAMPLES>
+                              <EXAMPLE>La valise pèse 5 kilos</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Value">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>value(E, ?Agent, Theme, Value)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -2,6 +2,10 @@
 <VNCLASS ID="adjust-26.9">
      <MEMBERS>
           <MEMBER name="acclimater"/>
+          <MEMBER name="adapter"/>
+          <MEMBER name="réadapter"/>
+          <MEMBER name="ajuster"/>
+          <MEMBER name="réajuster"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -39,7 +43,7 @@
                <SEMANTICS>adjust(during(E), Patient, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP S_INF"/>
+               <DESCRIPTION primary="NP V NP à V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Max a acclimaté Luc à se lever tôt.</EXAMPLE>
                </EXAMPLES>
@@ -51,12 +55,7 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <PREP>
-                         <SELRESTRS>
-                              <SELRESTR Value="à"/>
-                         </SELRESTRS>
-                    </PREP>
-                    <S_INF value="Goal"/>
+                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Goal"/>
                </SYNTAX>
                <SEMANTICS>adjust(during(E), Patient, Goal)</SEMANTICS>
           </FRAME>

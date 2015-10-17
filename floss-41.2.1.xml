@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="floss-41.2.1">
+     <MEMBERS>
+          <MEMBER name="brosser"/>
+          <MEMBER name="raser"/>
+          <MEMBER name="détartrer"/>
+          <MEMBER name="laver"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute">
+               <SELRESTR Value="+" type="body_part"/>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le dentiste a lavé les dents de Marie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Patient)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP LUI V NP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le dentiste lui a lavé les dents</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <LUI/>
+                    <VERB/>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

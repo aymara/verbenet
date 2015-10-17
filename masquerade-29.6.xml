@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="masquerade-29.6">
+     <MEMBERS>
+          <MEMBER name="agir"/>
+          <MEMBER name="fonctionner"/>
+          <MEMBER name="tenir se"/>
+          <MEMBER name="officier"/>
+          <MEMBER name="comporter se"/>
+          <MEMBER name="conduire se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max agit comme un idiot</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="comme"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>masquerade(during(E), Agent, Attribute)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

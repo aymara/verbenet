@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="order-60.2">
-     <MEMBERS/>
+     <MEMBERS>
+          <MEMBER name="prier"/>
+          <MEMBER name="enjoindre"/>
+          <MEMBER name="implorer"/>
+          <MEMBER name="supplier"/>
+          <MEMBER name="conjurer"/>
+     </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent"/>
           <THEMROLE type="Recipient"/>
@@ -8,11 +14,20 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP de V-inf"/>
                <EXAMPLES>
-                    <EXAMPLE>Il a prié Jean de venir</EXAMPLE>
+                    <EXAMPLE>Luc a prié Jean de venir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Recipient &lt;de Vinf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="de" is_true_prep="true" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>

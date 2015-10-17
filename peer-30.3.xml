@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="peer-30.3">
      <MEMBERS>
-          <MEMBER name="bigler"/>
           <MEMBER name="lorgner"/>
           <MEMBER name="loucher"/>
+          <MEMBER name="reluquer"/>
+          <MEMBER name="bigler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Experiencer">

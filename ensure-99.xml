@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="ensure-99">
+     <MEMBERS>
+          <MEMBER name="assurer"/>
+          <MEMBER name="certifier"/>
+          <MEMBER name="garantir"/>
+          <MEMBER name="sécuriser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Cause"/>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Beneficiary"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.beneficiary NP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Nos actions assure à Paul un bon résultat.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Cause, E) ensure(Theme, Beneficiary)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.beneficiary Qu Pind"/>
+               <EXAMPLES>
+                    <EXAMPLE>Nos actions assurent à Paul qu'il va réussir.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PIND value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>cause(Cause, E) ensure(Theme, Beneficiary)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

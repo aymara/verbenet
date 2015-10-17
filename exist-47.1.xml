@@ -36,10 +36,19 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="47.1-1">
                <MEMBERS>
-                    <MEMBER name="rester"/>
-                    <MEMBER name="stationner"/>
-                    <MEMBER name="dresser se"/>
+                    <MEMBER name="régner"/>
+                    <MEMBER name="subsister"/>
+                    <MEMBER name="survivre"/>
+                    <MEMBER name="traîner"/>
+                    <MEMBER name="vivre"/>
+                    <MEMBER name="culminer"/>
+                    <MEMBER name="demeurer"/>
+                    <MEMBER name="exister"/>
+                    <MEMBER name="loger"/>
                     <MEMBER name="étendre s'"/>
+                    <MEMBER name="abriter s'"/>
+                    <MEMBER name="cacher se"/>
+                    <MEMBER name="languir"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

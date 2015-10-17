@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="pay-68">
+     <MEMBERS>
+          <MEMBER name="dilapider"/>
+          <MEMBER name="gâcher"/>
+          <MEMBER name="gaspiller"/>
+          <MEMBER name="manger"/>
+          <MEMBER name="dépenser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Asset">
+               <SELRESTR Value="+" type="currency"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max a payé 500€ pour sa voiture</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>transfer(during(E), Theme) has_possession(start(E), Agent, Asset) has_possession(end(E), Agent, Theme) value(E, Theme, Asset)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="68-1">
+               <MEMBERS>
+                    <MEMBER name="régler"/>
+                    <MEMBER name="rembourser"/>
+                    <MEMBER name="verser"/>
+                    <MEMBER name="payer"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Recipient"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP PP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a payé 4000 euros pour sa voiture à Marie.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Asset">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="pour"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Recipient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>transfer(during(E), Theme) transfer(during(E), Asset) has_possession(start(E), Agent, Asset) not(has_possession(start(E), Agent, Theme)) has_possession(end(E), Agent, Theme) not(has_possession(end(E), Agent, Asset)) value(E, Theme, Asset)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

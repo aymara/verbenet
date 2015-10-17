@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="give-13.1">
+     <MEMBERS>
+          <MEMBER name="administrer"/>
+          <MEMBER name="allonger"/>
+          <MEMBER name="allouer"/>
+          <MEMBER name="assigner"/>
+          <MEMBER name="attribuer"/>
+          <MEMBER name="avancer"/>
+          <MEMBER name="consentir"/>
+          <MEMBER name="distribuer"/>
+          <MEMBER name="envoyer"/>
+          <MEMBER name="filer"/>
+          <MEMBER name="laisser"/>
+          <MEMBER name="léguer"/>
+          <MEMBER name="redonner"/>
+          <MEMBER name="rembourser"/>
+          <MEMBER name="remettre"/>
+          <MEMBER name="rendre"/>
+          <MEMBER name="restituer"/>
+          <MEMBER name="reverser"/>
+          <MEMBER name="ristourner"/>
+          <MEMBER name="servir"/>
+          <MEMBER name="transmettre"/>
+          <MEMBER name="adresser"/>
+          <MEMBER name="concéder"/>
+          <MEMBER name="débourser"/>
+          <MEMBER name="déléguer"/>
+          <MEMBER name="destiner"/>
+          <MEMBER name="devoir"/>
+          <MEMBER name="dispenser"/>
+          <MEMBER name="promettre"/>
+          <MEMBER name="proposer"/>
+          <MEMBER name="redistribuer"/>
+          <MEMBER name="soumettre"/>
+          <MEMBER name="abandonner"/>
+          <MEMBER name="assurer"/>
+          <MEMBER name="dealer"/>
+          <MEMBER name="décaisser"/>
+          <MEMBER name="lâcher"/>
+          <MEMBER name="lancer"/>
+          <MEMBER name="réallouer"/>
+          <MEMBER name="réattribuer"/>
+          <MEMBER name="répartir"/>
+          <MEMBER name="repasser"/>
+          <MEMBER name="retourner"/>
+          <MEMBER name="sacrifier"/>
+          <MEMBER name="verser"/>
+          <MEMBER name="virer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Recipient">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.recipient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a donné une bicyclette à Max</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(start(E), Agent, Theme) has_possession(end(E), Recipient, Theme) transfer(during(E), Theme) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="13.1-1">
+               <MEMBERS>
+                    <MEMBER name="louer"/>
+                    <MEMBER name="payer"/>
+                    <MEMBER name="revendre"/>
+                    <MEMBER name="vendre"/>
+                    <MEMBER name="écouler"/>
+                    <MEMBER name="passer"/>
+                    <MEMBER name="prêter"/>
+                    <MEMBER name="brader"/>
+                    <MEMBER name="refiler"/>
+                    <MEMBER name="adjuger"/>
+                    <MEMBER name="affermer"/>
+                    <MEMBER name="céder"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Asset"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.recipient PP.asset"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a vendu sa bicyclette à Max pour 200€</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Recipient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="pour"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Asset">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>has_possession(start(E), Agent, Theme) has_possession(end(E), ?Recipient, Theme) has_possession(start(E), ?Recipient, Asset) has_possession(end(E), Agent, Asset) transfer(during(E), Theme)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.recipient NP.asset"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a vendu sa bicyclette à Max  200€</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Recipient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <NP value="Asset">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>has_possession(start(E), Agent, Theme) has_possession(end(E), Recipient, Theme) has_possession(start(E), Recipient, Asset) has_possession(end(E), Agent, Asset) transfer(during(E), Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

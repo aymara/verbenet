@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="gobble-39.3">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="39.3-1">
+               <MEMBERS>
+                    <MEMBER name="ingérer"/>
+                    <MEMBER name="ingurgiter"/>
+                    <MEMBER name="prendre"/>
+                    <MEMBER name="avaler"/>
+                    <MEMBER name="bouffer"/>
+                    <MEMBER name="enfourner"/>
+                    <MEMBER name="fumer"/>
+                    <MEMBER name="bâfrer"/>
+                    <MEMBER name="engloutir"/>
+                    <MEMBER name="engouffrer"/>
+                    <MEMBER name="consommer"/>
+                    <MEMBER name="dévorer"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Patient">
+                         <SELRESTRS logic="and">
+                              <SELRESTR Value="+" type="solid"/>
+                              <SELRESTR Value="+" type="comestible"/>
+                         </SELRESTRS>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Cynthia a englouti sa pizza</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>take_in(during(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="39.3-2">
+               <MEMBERS>
+                    <MEMBER name="picoler"/>
+                    <MEMBER name="écluser"/>
+                    <MEMBER name="gober"/>
+                    <MEMBER name="avaler"/>
+                    <MEMBER name="descendre"/>
+                    <MEMBER name="déglutir"/>
+                    <MEMBER name="assimiler"/>
+                    <MEMBER name="lamper"/>
+                    <MEMBER name="siffler"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Patient">
+                         <SELRESTRS logic="and">
+                              <SELRESTR Value="-" type="solid"/>
+                              <SELRESTR Value="+" type="comestible"/>
+                         </SELRESTRS>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a sifflé son pastis</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>take_in(during(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="meet-36.3">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Co-Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="36.3-1">
+               <MEMBERS>
+                    <MEMBER name="marier se"/>
+                    <MEMBER name="réunir se"/>
+                    <MEMBER name="flirter"/>
+                    <MEMBER name="voir se"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.co-agent"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc flirte avec Marie</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="avec"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>social_interaction(during(E), Agent, Co-Agent)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc et Marie flirtent</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP modifier="+plural" value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                         </SYNTAX>
+                         <SEMANTICS>social_interaction(during(E), Agent, Co-Agent)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="36.3-2">
+               <MEMBERS>
+                    <MEMBER name="boxer"/>
+                    <MEMBER name="lutter"/>
+                    <MEMBER name="catcher"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.co-agent"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc boxe avec Marie</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="avec"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>social_interaction(during(E), Agent, Co-Agent) conflict(during(E), Agent, Co-Agent)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+               <SUBCLASSES>
+                    <VNSUBCLASS ID="36.3-2-1">
+                         <MEMBERS>
+                              <MEMBER name="bagarrer se"/>
+                              <MEMBER name="batailler"/>
+                              <MEMBER name="battre se"/>
+                              <MEMBER name="combattre"/>
+                              <MEMBER name="empoigner s'"/>
+                         </MEMBERS>
+                         <THEMROLES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP  V"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc et Marie combattent</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP modifier="+plural" value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                   </SYNTAX>
+                                   <SEMANTICS>social_interaction(during(E), Agent, Co-Agent) conflict(during(E), Agent, Co-Agent)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
+                    </VNSUBCLASS>
+               </SUBCLASSES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

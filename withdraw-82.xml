@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="withdraw-82">
+     <MEMBERS>
+          <MEMBER name="replier se"/>
+          <MEMBER name="retirer se"/>
+          <MEMBER name="écarter s'"/>
+          <MEMBER name="effacer s'"/>
+          <MEMBER name="éloigner s'"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Source"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max s'est retiré de la scène</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>renege(during(E), Agent, Source)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

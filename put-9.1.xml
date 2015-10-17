@@ -3,8 +3,10 @@
      <MEMBERS>
           <MEMBER name="serrer"/>
           <MEMBER name="stationner"/>
-          <MEMBER name="verser"/>
+          <MEMBER name="mettre"/>
           <MEMBER name="immerger"/>
+          <MEMBER name="ranger"/>
+          <MEMBER name=""/>
           <MEMBER name="cacher"/>
           <MEMBER name="consigner"/>
           <MEMBER name="déposer"/>
@@ -13,8 +15,6 @@
           <MEMBER name="enfouir"/>
           <MEMBER name="ensevelir"/>
           <MEMBER name="enterrer"/>
-          <MEMBER name="établir"/>
-          <MEMBER name="étendre"/>
           <MEMBER name="garer"/>
           <MEMBER name="implanter"/>
           <MEMBER name="inclure"/>
@@ -24,7 +24,6 @@
           <MEMBER name="jeter"/>
           <MEMBER name="laisser"/>
           <MEMBER name="lancer"/>
-          <MEMBER name="noyer"/>
           <MEMBER name="parquer"/>
           <MEMBER name="planquer"/>
           <MEMBER name="positionner"/>
@@ -72,12 +71,15 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="9.1-2">
                <MEMBERS>
+                    <MEMBER name="mettre"/>
                     <MEMBER name="placer"/>
-                    <MEMBER name="coller"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Theme">
                          <SELRESTR Value="+" type="abstract"/>
+                    </THEMROLE>
+                    <THEMROLE type="Destination">
+                         <SELRESTR Value="+" type="animate"/>
                     </THEMROLE>
                </THEMROLES>
                <FRAMES>

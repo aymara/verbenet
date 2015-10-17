@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="captain-29.8">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Beneficiary">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="29.8-1">
+               <MEMBERS>
+                    <MEMBER name="sponsoriser"/>
+                    <MEMBER name="entraîner"/>
+                    <MEMBER name="régenter"/>
+                    <MEMBER name="assister"/>
+                    <MEMBER name="chaperonner"/>
+                    <MEMBER name="doubler"/>
+                    <MEMBER name="escorter"/>
+                    <MEMBER name="parrainer"/>
+                    <MEMBER name="patronner"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Max escorte son frère</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Beneficiary">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>masquerade(during(E), Agent, Role) benefit(E, Beneficiary)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

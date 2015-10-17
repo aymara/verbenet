@@ -3,28 +3,15 @@
      <MEMBERS>
           <MEMBER name="entraîner"/>
           <MEMBER name="éveiller"/>
-          <MEMBER name="exciter"/>
+          <MEMBER name="commissionner"/>
           <MEMBER name="forcer"/>
-          <MEMBER name="inciter"/>
+          <MEMBER name="fourvoyer"/>
           <MEMBER name="induire"/>
-          <MEMBER name="motiver"/>
           <MEMBER name="porter"/>
           <MEMBER name="pousser"/>
-          <MEMBER name="provoquer"/>
           <MEMBER name="réduire"/>
-          <MEMBER name="assigner"/>
-          <MEMBER name="aiguillonner"/>
-          <MEMBER name="attacher"/>
-          <MEMBER name="attraper"/>
-          <MEMBER name="coincer"/>
-          <MEMBER name="commissionner"/>
-          <MEMBER name="fourvoyer"/>
-          <MEMBER name="mener"/>
-          <MEMBER name="programmer"/>
-          <MEMBER name="stimuler"/>
           <MEMBER name="obliger"/>
           <MEMBER name="amener"/>
-          <MEMBER name="astreindre"/>
           <MEMBER name="conduire"/>
           <MEMBER name="contraindre"/>
           <MEMBER name="décider"/>
@@ -48,12 +35,56 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à S_INF"/>
+               <DESCRIPTION primary="NP V NP à V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai forcé Luc à manger</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Patient Result &lt;à_V1inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Result"/>
+               </SYNTAX>
                <SEMANTICS>force(during(E), Agent, Patient, Result)</SEMANTICS>
           </FRAME>
      </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="59-1">
+               <MEMBERS>
+                    <MEMBER name="assigner"/>
+                    <MEMBER name="astreindre"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.result"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a assigné Léa à la lessive</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Result">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>force(during(E), Agent, Patient, Result)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
 </VNCLASS>

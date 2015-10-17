@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="shake-22.3">
+     <MEMBERS>
+          <MEMBER name="emmêler"/>
+          <MEMBER name="épisser"/>
+          <MEMBER name="rassembler"/>
+          <MEMBER name="regrouper"/>
+          <MEMBER name="réunir"/>
+          <MEMBER name="souder"/>
+          <MEMBER name="arrimer"/>
+          <MEMBER name="botteler"/>
+          <MEMBER name="coudre"/>
+          <MEMBER name="enliasser"/>
+          <MEMBER name="fondre"/>
+          <MEMBER name="ligoter"/>
+          <MEMBER name="masser"/>
+          <MEMBER name="agglutiner s'"/>
+          <MEMBER name="agrafer"/>
+          <MEMBER name="concaténer"/>
+          <MEMBER name="joindre"/>
+          <MEMBER name="rattacher"/>
+          <MEMBER name="touiller"/>
+          <MEMBER name="brasser"/>
+          <MEMBER name="brouiller"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Co-Patient">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a fouetté le sucre dans les oeufs</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec;dans"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agnt, E) degradation_material-integrity(result(E), Patient) degradation_material_integrity(result(E), Co_Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP ensemble"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a fouetté le sucre et les oeufs ensemble</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Patient&lt;+plural&gt; ensemble</SYNTAX>
+               <SEMANTICS>cause(Agent, E) degradation_material_integrity(result(E), Patient) degradation_material_integrity(result(E), Co-Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

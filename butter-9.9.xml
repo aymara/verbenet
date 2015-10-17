@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="butter-9.9">
      <MEMBERS>
+          <MEMBER name="baguer"/>
           <MEMBER name="amidonner"/>
           <MEMBER name="ardoiser"/>
           <MEMBER name="argenter"/>
@@ -71,7 +72,6 @@
           <MEMBER name="bâillonner"/>
           <MEMBER name="bander"/>
           <MEMBER name="boucher"/>
-          <MEMBER name="cacher"/>
           <MEMBER name="calfeutrer"/>
           <MEMBER name="calorifuger"/>
           <MEMBER name="capsuler"/>
@@ -92,7 +92,6 @@
           <MEMBER name="enguirlander"/>
           <MEMBER name="envelopper"/>
           <MEMBER name="épicer"/>
-          <MEMBER name="étiqueter"/>
           <MEMBER name="farder"/>
           <MEMBER name="ferrer"/>
           <MEMBER name="ganter"/>
@@ -114,29 +113,13 @@
           <MEMBER name="rapiécer"/>
           <MEMBER name="ressemeler"/>
           <MEMBER name="seller"/>
+          <MEMBER name="étiqueter"/>
           <MEMBER name="souiller"/>
           <MEMBER name="sucrer"/>
           <MEMBER name="timbrer"/>
           <MEMBER name="tisser"/>
           <MEMBER name="vitrer"/>
           <MEMBER name="vitrifier"/>
-          <MEMBER name="arroser"/>
-          <MEMBER name="blanchir"/>
-          <MEMBER name="empester"/>
-          <MEMBER name="empoisonner"/>
-          <MEMBER name="enchausser"/>
-          <MEMBER name="enherber"/>
-          <MEMBER name="grener"/>
-          <MEMBER name="mâchurer"/>
-          <MEMBER name="marquer"/>
-          <MEMBER name="moquetter"/>
-          <MEMBER name="mordorer"/>
-          <MEMBER name="mouiller"/>
-          <MEMBER name="planchéier"/>
-          <MEMBER name="planter"/>
-          <MEMBER name="sablonner"/>
-          <MEMBER name="saupoudrer"/>
-          <MEMBER name="strier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -168,7 +151,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value=", a c de e v"/>
+                              <SELRESTR Value="avec;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Theme">

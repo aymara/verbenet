@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="dévaler-51.9">
-     <MEMBERS/>
+     <MEMBERS>
+          <MEMBER name="ouvrir"/>
+          <MEMBER name="descendre"/>
+          <MEMBER name="dévaler"/>
+          <MEMBER name="emprunter"/>
+          <MEMBER name="enfiler"/>
+     </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent"/>
+          <THEMROLE type="Trajectory"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
@@ -10,7 +17,15 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a descendu l'escalier (voir Marie).</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Trajectoire</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Trajectory">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS/>
           </FRAME>
      </FRAMES>

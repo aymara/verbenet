@@ -10,6 +10,9 @@
           <MEMBER name="teinter"/>
           <MEMBER name="vernir"/>
           <MEMBER name="vernisser"/>
+          <MEMBER name="badigeonner"/>
+          <MEMBER name="teindre"/>
+          <MEMBER name="repeindre"/>
           <MEMBER name="colorer"/>
           <MEMBER name="colorier"/>
      </MEMBERS>
@@ -41,7 +44,7 @@
                               <SELRESTR Value="de"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP value="Theme">
+                    <NP value="Material">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="discover-84">
+     <MEMBERS>
+          <MEMBER name="découvrir"/>
+          <MEMBER name="deviner"/>
+          <MEMBER name="discerner"/>
+          <MEMBER name="déceler"/>
+          <MEMBER name="observer"/>
+          <MEMBER name="percevoir"/>
+          <MEMBER name="réaliser"/>
+          <MEMBER name="relever"/>
+          <MEMBER name="repérer"/>
+          <MEMBER name="retrouver"/>
+          <MEMBER name=""/>
+          <MEMBER name="dépister"/>
+          <MEMBER name="trouver"/>
+          <MEMBER name="voir"/>
+          <MEMBER name="ignorer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Pind"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a découvert que sa démarche n'a pas abouti.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PIND value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a découvert le cachemire</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V comment V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a découvert comment réduire l'émission de CO2.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>Agent V Theme&lt;+comment VAgent-inf&gt;</SYNTAX>
+               <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V comment P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a découvert comment l'émission de CO2 se réduit.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="comment" value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="concealment-16">
      <MEMBERS>
-          <MEMBER name="abriter"/>
-          <MEMBER name="écraser"/>
-          <MEMBER name="embouteiller"/>
-          <MEMBER name="enfermer"/>
-          <MEMBER name="projeter"/>
           <MEMBER name="retenir"/>
-          <MEMBER name="sasser"/>
           <MEMBER name="verrouiller"/>
+          <MEMBER name="bloquer"/>
+          <MEMBER name="séquestrer"/>
+          <MEMBER name="recueillir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
                <SELRESTR Value="+" type="animate"/>
           </THEMROLE>
-          <THEMROLE type="Beneficiary">
-               <SELRESTR Value="+" type="animate"/>
-          </THEMROLE>
           <THEMROLE type="Patient"/>
-          <THEMROLE type="Location"/>
+          <THEMROLE type="Location">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="+" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
      </THEMROLES>
      <FRAMES>
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.location"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc cache les cadeaux dans le tiroir</EXAMPLE>
+                    <EXAMPLE>Luc a caché les cadeaux dans le placard</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -52,9 +51,11 @@
                     <MEMBER name="camoufler"/>
                     <MEMBER name="dissimuler"/>
                     <MEMBER name="ensevelir"/>
-                    <MEMBER name="masquer"/>
+                    <MEMBER name="cloîtrer"/>
                     <MEMBER name="planquer"/>
-                    <MEMBER name="receler"/>
+                    <MEMBER name="abriter"/>
+                    <MEMBER name="enfermer"/>
+                    <MEMBER name="murer"/>
                     <MEMBER name="cacher"/>
                </MEMBERS>
                <THEMROLES/>
@@ -68,8 +69,7 @@
                               <NP value="Agent">
                                    <SYNRESTRS/>
                               </NP>
-                              <SE/>
-                              <VERB/>
+                              <VERB pronominal="true" restr="reflexive"/>
                               <PREP>
                                    <SELRESTRS>
                                         <SELRESTR Value="+" type="loc"/>

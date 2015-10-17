@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="linger-53.1">
+     <MEMBERS>
+          <MEMBER name="tarder"/>
+          <MEMBER name="traînasser"/>
+          <MEMBER name="éterniser s'"/>
+          <MEMBER name="tergiverser"/>
+          <MEMBER name="traîner"/>
+          <MEMBER name="lambiner"/>
+          <MEMBER name="procrastiner"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Location"/>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Sarah s'est éternisée devant le miroir/à table.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>linger(during(E), Agent, ?Theme) Prep(E, Agent, Location)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V à V-inf"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max s'éternise à mettre tout en ordre.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>linger(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

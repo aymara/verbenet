@@ -4,6 +4,9 @@
           <MEMBER name="foisonner"/>
           <MEMBER name="abonder"/>
           <MEMBER name="regorger"/>
+          <MEMBER name="fourmiller"/>
+          <MEMBER name="grouiller"/>
+          <MEMBER name="pulluler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">
@@ -19,60 +22,48 @@
                </SELRESTRS>
           </THEMROLE>
      </THEMROLES>
-     <FRAMES/>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="47.5.1-1">
-               <MEMBERS>
-                    <MEMBER name="fourmiller"/>
-                    <MEMBER name="grouiller"/>
-                    <MEMBER name="pulluler"/>
-                    <MEMBER name="rouler"/>
-               </MEMBERS>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V PP.location"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Des abeilles grouillent dans le jardin</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Theme">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="+" type="loc"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Location">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location) motion(during(E), Theme)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="PP.location V PP.theme"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Le jardin grouille d'abeilles</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Location">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="de"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Theme">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>exist(during(E), Theme) location(during(E), Theme, Location) motion(during(E), Theme)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.location"/>
+               <EXAMPLES>
+                    <EXAMPLE>Des abeilles grouillent dans le jardin</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme) Prep(during(E), Theme, Location) motion(during(E), Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le jardin grouille d'abeilles</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exist(during(E), Theme) location(during(E), Theme, Location) motion(during(E), Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
 </VNCLASS>

@@ -19,7 +19,6 @@
           <MEMBER name="enlever"/>
           <MEMBER name="extorquer"/>
           <MEMBER name="faucher"/>
-          <MEMBER name="louer"/>
           <MEMBER name="piquer"/>
           <MEMBER name="prendre"/>
           <MEMBER name="rabioter"/>
@@ -33,6 +32,7 @@
           <MEMBER name="kidnapper"/>
           <MEMBER name="rafler"/>
           <MEMBER name="ravir"/>
+          <MEMBER name="extirper"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -57,30 +57,6 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
-               <EXAMPLES>
-                    <EXAMPLE>Le bandit a chipé le tableau à Jean.</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>
-                    <NP value="Agent">
-                         <SYNRESTRS/>
-                    </NP>
-                    <VERB/>
-                    <NP value="Theme">
-                         <SYNRESTRS/>
-                    </NP>
-                    <PREP>
-                         <SELRESTRS>
-                              <SELRESTR Value="à"/>
-                         </SELRESTRS>
-                    </PREP>
-                    <NP value="Source">
-                         <SYNRESTRS/>
-                    </NP>
-               </SYNTAX>
-               <SEMANTICS>manner(during(E), illegal, Agent) has_possession(start(E), Source, Theme) has_possession(end(E), Agent, Theme) not(has_possession(end(E), Source, Theme)) cause(Agent, E)</SEMANTICS>
-          </FRAME>
-          <FRAME>
                <DESCRIPTION primary="NP V NP PP.source PP.beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Le bandit a chipé le tableau à Jean pour Marie.</EXAMPLE>
@@ -95,7 +71,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+à"/>
+                              <SELRESTR Value="à"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Source">

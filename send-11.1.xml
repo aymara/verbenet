@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="send-11.1">
      <MEMBERS>
-          <MEMBER name="gouverner"/>
-          <MEMBER name="larguer"/>
-          <MEMBER name="monter"/>
           <MEMBER name="importer"/>
           <MEMBER name="acheminer"/>
           <MEMBER name="amener"/>
@@ -31,18 +28,12 @@
           <MEMBER name="transborder"/>
           <MEMBER name="transférer"/>
           <MEMBER name="transporter"/>
-          <MEMBER name="glisser"/>
           <MEMBER name="remporter"/>
-          <MEMBER name="lâcher"/>
           <MEMBER name="renvoyer"/>
-          <MEMBER name="mener"/>
           <MEMBER name="transmettre"/>
           <MEMBER name="retourner"/>
           <MEMBER name="aiguiller"/>
           <MEMBER name="exporter"/>
-          <MEMBER name="ficher"/>
-          <MEMBER name="flanquer"/>
-          <MEMBER name="fourrer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -97,7 +88,31 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a envoyé le livre de Paris à Londres.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme {{de}} Initial_Location {Loc-Dest} Destination</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de;depuis"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
      </FRAMES>
@@ -121,7 +136,7 @@
                               </NP>
                               <PREP>
                                    <SELRESTRS>
-                                        <SELRESTR Value="d depuis e"/>
+                                        <SELRESTR Value="de;depuis"/>
                                    </SELRESTRS>
                               </PREP>
                               <NP value="Initial_Location">

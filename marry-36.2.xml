@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="marry-36.2">
+     <MEMBERS>
+          <MEMBER name="enlacer"/>
+          <MEMBER name="courtiser"/>
+          <MEMBER name="étreindre"/>
+          <MEMBER name="embrasser"/>
+          <MEMBER name="chouchouter"/>
+          <MEMBER name="choyer"/>
+          <MEMBER name="cajoler"/>
+          <MEMBER name="câliner"/>
+          <MEMBER name="épouser"/>
+          <MEMBER name="marier"/>
+          <MEMBER name="baiser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Co-Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP se V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc et Léa se sont embrassés.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="reciproque"/>
+               </SYNTAX>
+               <SEMANTICS>social_interaction(during(E), Agent_i, Agent_j)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a embrassé Léa.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Co-Agent">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>social_interaction(during(E), Agent, Co-Agent)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

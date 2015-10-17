@@ -30,7 +30,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP.theme PP.destination"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc gravait son prénom sur la bague.</EXAMPLE>
+                    <EXAMPLE>Luc gravait son prénom sur la gourmette</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -42,7 +42,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="Loc-dest"/>
+                              <SELRESTR Value="+" type="loc"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Destination">
@@ -54,7 +54,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP.destination PP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc gravait l'anneau de son prénom.</EXAMPLE>
+                    <EXAMPLE>Luc gravait la gourmette de son prénom</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

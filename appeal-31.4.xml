@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="appeal-31.4">
      <MEMBERS>
-          <MEMBER name="détonner"/>
+          <MEMBER name="répugner"/>
+          <MEMBER name="plaire"/>
+          <MEMBER name="déplaire"/>
+          <MEMBER name="botter"/>
+          <MEMBER name="désagréer"/>
+          <MEMBER name="convenir"/>
+          <MEMBER name="peser"/>
+          <MEMBER name="seoir"/>
+          <MEMBER name="agréer"/>
+          <MEMBER name="aller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Stimulus"/>
@@ -32,18 +41,29 @@
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) cause(Stimulus, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="Que P V PP.experiencer"/>
+               <DESCRIPTION primary="IL V PP.experiencer Qu Psubj"/>
                <EXAMPLES>
-                    <EXAMPLE>Qu'on fasse ça plaît à Marie</EXAMPLE>
+                    <EXAMPLE>Il plaît à Marie qu'on fasse cela</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Stimulus V {à} Experiencer</SYNTAX>
-               <SEMANTICS/>
+               <SYNTAX>
+                    <IL/>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PSUBJ value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(E, Emotion, Experiencer) cause(Stimulus, E)</SEMANTICS>
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="31.4-3">
                <MEMBERS>
-                    <MEMBER name="compter"/>
                     <MEMBER name="importer"/>
                </MEMBERS>
                <THEMROLES/>

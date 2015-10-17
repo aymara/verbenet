@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="learn-14">
      <MEMBERS>
-          <MEMBER name="fourrer"/>
+          <MEMBER name="glaner"/>
+          <MEMBER name="apprendre"/>
+          <MEMBER name="comprendre"/>
+          <MEMBER name="lire"/>
+          <MEMBER name="voir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -14,7 +18,31 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.source"/>
                <EXAMPLES>
-                    <EXAMPLE>Rhoda a appris cela (par/de) Luc.</EXAMPLE>
+                    <EXAMPLE>Luc a appris que Marie était malade  (par/de) Luc.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+Qu Pind" value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de;par"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>transfer_info(during(E), Source, Agent, Topic) cause(Agent, E)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a appris l'anglais (par/de) Luc.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -26,7 +54,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="par/de"/>
+                              <SELRESTR Value="de;par"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Source">
@@ -36,58 +64,4 @@
                <SEMANTICS>transfer_info(during(E), Source, Agent, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
      </FRAMES>
-     <SUBCLASSES>
-          <VNSUBCLASS ID="14-2">
-               <MEMBERS>
-                    <MEMBER name="butiner"/>
-                    <MEMBER name="glaner"/>
-                    <MEMBER name="grappiller"/>
-               </MEMBERS>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V that S"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Max a appris que Léa est partie.</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Agent V Topic &lt;+that_comp&gt;</SYNTAX>
-                         <SEMANTICS>transfer_info(during(E), ?Source, Agent, Topic)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
-               <SUBCLASSES>
-                    <VNSUBCLASS ID="14-2-1">
-                         <MEMBERS>
-                              <MEMBER name="apprendre"/>
-                              <MEMBER name="comprendre"/>
-                              <MEMBER name="lire"/>
-                              <MEMBER name="voir"/>
-                         </MEMBERS>
-                         <THEMROLES/>
-                         <FRAMES>
-                              <FRAME>
-                                   <DESCRIPTION primary="NP V PP.topic"/>
-                                   <EXAMPLES>
-                                        <EXAMPLE>Luc a appris de son décès.</EXAMPLE>
-                                   </EXAMPLES>
-                                   <SYNTAX>
-                                        <NP value="Agent">
-                                             <SYNRESTRS/>
-                                        </NP>
-                                        <VERB/>
-                                        <PREP>
-                                             <SELRESTRS>
-                                                  <SELRESTR Value="de"/>
-                                             </SELRESTRS>
-                                        </PREP>
-                                        <NP value="Topic">
-                                             <SYNRESTRS/>
-                                        </NP>
-                                   </SYNTAX>
-                                   <SEMANTICS>transfer_info(during(E), ?Source, Agent, Topic)</SEMANTICS>
-                              </FRAME>
-                         </FRAMES>
-                    </VNSUBCLASS>
-               </SUBCLASSES>
-          </VNSUBCLASS>
-     </SUBCLASSES>
 </VNCLASS>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="exceed-90">
+     <MEMBERS>
+          <MEMBER name="surpasser"/>
+          <MEMBER name="dépasser"/>
+          <MEMBER name="devancer"/>
+          <MEMBER name="excéder"/>
+          <MEMBER name="outrepasser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Co-Theme"/>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc dépasse Marie en intelligence</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Co-Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exceed(during(E), Theme, Co-Theme, Attribute)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'intelligence de Luc dépasse l'intelligence de Marie.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+genitive(Theme)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+genitive(Co-Theme)" value="Attribute">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>exceed(during(E), Theme, Co-Theme, ?Attribute)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

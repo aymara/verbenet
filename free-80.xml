@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="free-80">
+     <MEMBERS>
+          <MEMBER name="affranchir"/>
+          <MEMBER name="blanchir"/>
+          <MEMBER name="débarrasser"/>
+          <MEMBER name="décharger"/>
+          <MEMBER name="délivrer"/>
+          <MEMBER name="disculper"/>
+          <MEMBER name="guérir"/>
+          <MEMBER name="libérer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Cause"/>
+          <THEMROLE type="Source">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'incident a débarrassé Max de sa culpabilité</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Cause, E) not(free(stard(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>L'incident a débarrassé Max de se sentir coupable</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP modifier="+VSource-inf" value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Cause, E) not(free(stard(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

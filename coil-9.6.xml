@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="coil-9.6">
      <MEMBERS>
+          <MEMBER name="entortiller"/>
           <MEMBER name="embobiner"/>
           <MEMBER name="enrouler"/>
           <MEMBER name="rouler"/>
@@ -23,7 +24,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.location"/>
                <EXAMPLES>
-                    <EXAMPLE>Cora a enroulé un journal autour du bâton.</EXAMPLE>
+                    <EXAMPLE>Luc a enroulé un journal autour du bâton.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -47,14 +48,13 @@
           <FRAME>
                <DESCRIPTION primary="NP se V PP.location"/>
                <EXAMPLES>
-                    <EXAMPLE>La voiture s'est enroulée autour d'un arbre.</EXAMPLE>
+                    <EXAMPLE>La liane s'est enroulée autour d'un arbre.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="neutre"/>
                     <PREP>
                          <SELRESTRS>
                               <SELRESTR Value="autour"/>
@@ -67,7 +67,7 @@
                <SEMANTICS>rotational_motion(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(E, Theme, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV-Moyen PP.location"/>
+               <DESCRIPTION primary="NP se V ADV PP.location"/>
                <EXAMPLES>
                     <EXAMPLE>Ce type de papier s'enroule facilement autour d'un bâton.</EXAMPLE>
                </EXAMPLES>
@@ -75,8 +75,7 @@
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="middle"/>
                     <ADV/>
                     <PREP>
                          <SELRESTRS>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="clear-10.3">
      <MEMBERS>
-          <MEMBER name="décaper"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="déménager drainer"/>
+          <MEMBER name="évacuer"/>
           <MEMBER name="détacher"/>
+          <MEMBER name=""/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -17,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.location"/>
+               <DESCRIPTION primary="NP V NP.theme PP.location"/>
                <EXAMPLES>
                     <EXAMPLE>Le vent a dégagé les nuages du ciel.</EXAMPLE>
                </EXAMPLES>
@@ -31,7 +34,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="de"/>
+                              <SELRESTR Value="de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Location">
@@ -69,13 +72,7 @@
           <VNSUBCLASS ID="10.3-1">
                <MEMBERS>
                     <MEMBER name="dégager"/>
-                    <MEMBER name="déménager"/>
-                    <MEMBER name="drainer"/>
-                    <MEMBER name="évacuer"/>
-                    <MEMBER name="libérer"/>
-                    <MEMBER name="vider"/>
                     <MEMBER name="déblayer"/>
-                    <MEMBER name="dégager se"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -84,7 +81,20 @@
                          <EXAMPLES>
                               <EXAMPLE>Les nuages ont dégagé du ciel.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Theme V {{de}} Location</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Location">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
                          <SEMANTICS>location(start(E), Theme, Location) not(location(end(E), Theme, Location))</SEMANTICS>
                     </FRAME>
                     <FRAME>
@@ -96,8 +106,7 @@
                               <NP value="Location">
                                    <SYNRESTRS/>
                               </NP>
-                              <SE/>
-                              <VERB/>
+                              <VERB pronominal="true" restr="neutre"/>
                          </SYNTAX>
                          <SEMANTICS>location(start(E), ?Theme, Location) not(location(end(E), ?Theme, Location))</SEMANTICS>
                     </FRAME>

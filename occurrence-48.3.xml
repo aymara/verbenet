@@ -46,11 +46,15 @@
                <SEMANTICS>occur(during(E), Theme) Prep(during(E), Theme, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="Il V that S"/>
+               <DESCRIPTION primary="IL V Qu Pind"/>
                <EXAMPLES>
                     <EXAMPLE>Il s'est produit que Max a eu un accident</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Il V Theme &lt;+that_comp&gt;</SYNTAX>
+               <SYNTAX>
+                    <IL/>
+                    <VERB/>
+                    <PIND value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>occur(during(E), Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

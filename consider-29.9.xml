@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="consider-29.9">
+     <MEMBERS>
+          <MEMBER name="rappeler se"/>
+          <MEMBER name="appréhender"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Attribute"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Pind"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc considère que Marie est stupide.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PIND value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>consider(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V si P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc considère si le problème peut être résolu.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="si" value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>consider(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="29.9-1">
+               <MEMBERS>
+                    <MEMBER name="envisager"/>
+                    <MEMBER name="voir"/>
+                    <MEMBER name="figurer se"/>
+                    <MEMBER name="représenter se"/>
+                    <MEMBER name="considérer"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc considère Marie stupide.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <ADJ/>
+                         </SYNTAX>
+                         <SEMANTICS>consider(during(E), Agent, Theme, Attribute)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.attribute"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc considère Marie comme stupide</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="comme"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP modifier="+Adj" value="Attribute">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>consider(during(E), Agent, Theme, Attribute)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="29.9-2">
+               <MEMBERS>
+                    <MEMBER name="préméditer"/>
+                    <MEMBER name="décider"/>
+                    <MEMBER name="projeter"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc prémédite de partir.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+                         <SEMANTICS>consider(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="29.9-3">
+               <MEMBERS>
+                    <MEMBER name="réfléchir"/>
+                    <MEMBER name="songer"/>
+                    <MEMBER name="penser"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc réfléchit à ce problème.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>consider(during(E), Agent, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="29.9-4">
+               <MEMBERS>
+                    <MEMBER name="souvenir se"/>
+                    <MEMBER name="remémorer se"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc se souvient de son code.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="de"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>consider(during(E), Agent, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -4,7 +4,7 @@
           <MEMBER name="escamoter"/>
           <MEMBER name="esquiver"/>
           <MEMBER name="éviter"/>
-          <MEMBER name="refuser"/>
+          <MEMBER name="boycotter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -51,7 +51,7 @@
                <EXAMPLES>
                     <EXAMPLE>Il a évité d'aller dans cette zone</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme&lt;+de_Vinf&gt;</SYNTAX>
+               <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
                <SEMANTICS>avoid(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

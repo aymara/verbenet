@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="deduce-97.2">
+     <MEMBERS>
+          <MEMBER name="tirer"/>
+          <MEMBER name="dériver"/>
+          <MEMBER name="conclure"/>
+          <MEMBER name="déduire"/>
+          <MEMBER name="induire"/>
+          <MEMBER name="inférer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a déduit cette affirmation de ce fait.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>conclude(during(E), Agent, Theme, Source)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Pind PP.source"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a déduit que Léa était un espion de ce fait.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PIND value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>conclude(during(E), Agent, Theme, Source)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

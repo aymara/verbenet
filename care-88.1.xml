@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="care-88.1">
+     <MEMBERS>
+          <MEMBER name="ficher se"/>
+          <MEMBER name="foutre se"/>
+          <MEMBER name="tourmenter se"/>
+          <MEMBER name="tracasser se"/>
+          <MEMBER name="inquiéter s'"/>
+          <MEMBER name="préoccuper se"/>
+          <MEMBER name="branler se"/>
+          <MEMBER name="contreficher se"/>
+          <MEMBER name="contrefoutre se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Experiencer">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Stimulus"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V de comment P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc se fiche de comment Marie vient</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <P introduced_by="comment" value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V de ce Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc se fiche (de ce) que Léa soit morte</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <PSUBJ introduced_by="de" value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.stimulus"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc se fiche de la santé de Marie</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Stimulus">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V de si P"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc se fiche de si Marie vient ou non</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <P introduced_by="si" value="Stimulus"/>
+               </SYNTAX>
+               <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

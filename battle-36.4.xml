@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="battle-36.4">
+     <MEMBERS>
+          <MEMBER name="empoigner s'"/>
+          <MEMBER name="guerroyer"/>
+          <MEMBER name="heurter se"/>
+          <MEMBER name="jouter"/>
+          <MEMBER name="rivaliser"/>
+          <MEMBER name="accrocher s'"/>
+          <MEMBER name="batailler"/>
+          <MEMBER name="battre se"/>
+          <MEMBER name="chamailler se"/>
+          <MEMBER name="combattre"/>
+          <MEMBER name="ergoter"/>
+          <MEMBER name="disputer se"/>
+          <MEMBER name="chicaner se"/>
+          <MEMBER name="quereller se"/>
+          <MEMBER name="bagarrer se"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Co-Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Topic"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP PP.topic"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc bataille avec Marie sur ce point</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="sur"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>social_interaction(during(E), Agent, Co-Agent) conflict(during(E), Agent, Co-Agent) about(E, Topic)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V PP.topic"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc et Marie se bataillent sur ce point</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="reciproque"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="sur"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>social_interaction(during(E), Agent, Co-Agent) conflict(during(E), Agent, Co-Agent) about(E, Topic)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

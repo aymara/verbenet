@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="see-30.1">
      <MEMBERS>
+          <MEMBER name="flairer"/>
+          <MEMBER name="regarder"/>
+          <MEMBER name="palper"/>
+          <MEMBER name="tâter"/>
+          <MEMBER name="ouïr"/>
+          <MEMBER name="entrevoir"/>
+          <MEMBER name="reluquer"/>
           <MEMBER name="renifler"/>
-          <MEMBER name="déguster"/>
-          <MEMBER name="goûter"/>
+          <MEMBER name="zieuter"/>
+          <MEMBER name="contrôler"/>
+          <MEMBER name="espionner"/>
+          <MEMBER name="guetter"/>
           <MEMBER name="humer"/>
+          <MEMBER name="investiguer"/>
+          <MEMBER name="scruter"/>
+          <MEMBER name="sonder"/>
+          <MEMBER name="surveiller"/>
+          <MEMBER name="vérifier"/>
+          <MEMBER name="contempler"/>
+          <MEMBER name="épier"/>
+          <MEMBER name="lorgner"/>
+          <MEMBER name="goûter"/>
+          <MEMBER name="ressentir"/>
+          <MEMBER name="discerner"/>
+          <MEMBER name="écouter"/>
+          <MEMBER name="percevoir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Experiencer">
@@ -30,66 +52,85 @@
                <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V that S"/>
-               <EXAMPLES>
-                    <EXAMPLE>Je vois que tu vas bien</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Experiencer V Stimulus &lt;+que_comp&gt;</SYNTAX>
-               <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V how S"/>
-               <EXAMPLES>
-                    <EXAMPLE>J'ai vu comment ils étaient arrivés</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Experiencer V Stimulus &lt;+comment_extract&gt;</SYNTAX>
-               <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
-          </FRAME>
-          <FRAME>
                <DESCRIPTION primary="NP V si P"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai vu s'il avait vidé les poubelles</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Experiencer V Stimulus &lt;+ce que_extract&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Experiencer">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <P introduced_by="si" value="Stimulus"/>
+               </SYNTAX>
                <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="30.1-1">
                <MEMBERS>
-                    <MEMBER name="apercevoir"/>
-                    <MEMBER name="percevoir"/>
-                    <MEMBER name="sentir"/>
-                    <MEMBER name="voir"/>
+                    <MEMBER name="remarquer"/>
+                    <MEMBER name="repérer"/>
+                    <MEMBER name="reconnaître"/>
+                    <MEMBER name="constater"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V S"/>
+                         <DESCRIPTION primary="NP V Qu Pind"/>
                          <EXAMPLES>
-                              <EXAMPLE>J'ai vu Luc traverser la rue</EXAMPLE>
+                              <EXAMPLE>Luc a vu qu'il pleuvait beaucoup.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Experiencer V Stimulus &lt;+oc_bare_inf&gt;</SYNTAX>
-                         <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V S_ING"/>
-                         <EXAMPLES>
-                              <EXAMPLE>J'ai vu Luc traversant la rue</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>Experiencer V Stimulus &lt;+oc_ing&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Experiencer">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PIND value="Stimulus"/>
+                         </SYNTAX>
                          <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
                     <VNSUBCLASS ID="30.1-1-1">
                          <MEMBERS>
-                              <MEMBER name="discerner"/>
-                              <MEMBER name="écouter"/>
+                              <MEMBER name="voir"/>
+                              <MEMBER name="observer"/>
                               <MEMBER name="entendre"/>
+                              <MEMBER name="apercevoir"/>
+                              <MEMBER name="sentir"/>
                          </MEMBERS>
                          <THEMROLES/>
-                         <FRAMES/>
+                         <FRAMES>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP V-inf"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc a vu Marie traverser la rue.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Experiencer">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <VINF value="Stimulus"/>
+                                   </SYNTAX>
+                                   <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+                              </FRAME>
+                              <FRAME>
+                                   <DESCRIPTION primary="NP V NP V-ant"/>
+                                   <EXAMPLES>
+                                        <EXAMPLE>Luc a vu Marie traversant la rue.</EXAMPLE>
+                                   </EXAMPLES>
+                                   <SYNTAX>
+                                        <NP value="Experiencer">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <VINF value="Stimulus"/>
+                                   </SYNTAX>
+                                   <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
+                              </FRAME>
+                         </FRAMES>
                     </VNSUBCLASS>
                </SUBCLASSES>
           </VNSUBCLASS>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="cost-54.2">
+     <MEMBERS>
+          <MEMBER name="prendre"/>
+          <MEMBER name="coûter"/>
+          <MEMBER name="faire"/>
+          <MEMBER name="durer"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Theme">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Value"/>
+          <THEMROLE type="Beneficiary">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Ce voyage coûtera 100€ à Luc</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Value">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>value(E, Theme, Value) benefit(E, Beneficiary)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

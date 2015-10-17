@@ -7,6 +7,7 @@
           <MEMBER name="lever se"/>
           <MEMBER name="relever se"/>
           <MEMBER name="déboucher"/>
+          <MEMBER name="barrer se"/>
           <MEMBER name="écarter s'"/>
           <MEMBER name="parvenir"/>
           <MEMBER name="progresser"/>
@@ -47,7 +48,6 @@
           <MEMBER name="plonger"/>
           <MEMBER name="porter se"/>
           <MEMBER name="précipiter se"/>
-          <MEMBER name="présenter se"/>
           <MEMBER name="rapprocher se"/>
           <MEMBER name="reculer"/>
           <MEMBER name="réfugier se"/>
@@ -83,17 +83,9 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.initial_loc"/>
+               <DESCRIPTION primary="NP V PP.initial_location"/>
                <EXAMPLES>
-                    <EXAMPLE>Il est venu de France</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>Theme V {de} Initial_Location</SYNTAX>
-               <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, Initial_Location, ?Trajectory, ?Destination)</SEMANTICS>
-          </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V PP.destination"/>
-               <EXAMPLES>
-                    <EXAMPLE>Il est venu à Paris (retrouver Marie) </EXAMPLE>
+                    <EXAMPLE>Luc est venu de France</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Theme">
@@ -102,7 +94,28 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="Loc"/>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, Initial_Location, ?Trajectory, ?Destination)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.destination"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc est venu à Paris (retrouver Marie) </EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Destination">
@@ -114,7 +127,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V PP.trajectory"/>
                <EXAMPLES>
-                    <EXAMPLE>Il est venu par le couloir</EXAMPLE>
+                    <EXAMPLE>Luc est venu par le couloir</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Theme">
@@ -123,7 +136,7 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="path"/>
+                              <SELRESTR Value="par"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Trajectory">
@@ -133,11 +146,32 @@
                <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, ?Initial_Location, Trajectory, ?Destination)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.initial_loc PP.destination"/>
+               <DESCRIPTION primary="NP V PP.initial_location PP.destination"/>
                <EXAMPLES>
-                    <EXAMPLE>Il est venu de Gap à Dax</EXAMPLE>
+                    <EXAMPLE>Luc est venu de Gap à Dax</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Theme V {{+de}} Initial_Location {{+Loc}} Destination</SYNTAX>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Initial_Location">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="Loc-Dest"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Destination">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, Initial_Location, ?Trajectory, Destination)</SEMANTICS>
           </FRAME>
      </FRAMES>

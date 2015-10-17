@@ -55,7 +55,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+avec d e"/>
+                              <SELRESTR Value="avec;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Theme">

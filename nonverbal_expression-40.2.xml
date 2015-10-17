@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="nonverbal_expression-40.2">
+     <MEMBERS>
+          <MEMBER name="gémir"/>
+          <MEMBER name="glousser"/>
+          <MEMBER name="grogner"/>
+          <MEMBER name="grommeler"/>
+          <MEMBER name="gronder"/>
+          <MEMBER name="gueuler"/>
+          <MEMBER name="huer"/>
+          <MEMBER name="hurler"/>
+          <MEMBER name="jacasser"/>
+          <MEMBER name="larmoyer"/>
+          <MEMBER name="maugréer"/>
+          <MEMBER name="mugir"/>
+          <MEMBER name="pleurer"/>
+          <MEMBER name="pleurnicher"/>
+          <MEMBER name="exclamer s'"/>
+          <MEMBER name="rauquer"/>
+          <MEMBER name="ricaner"/>
+          <MEMBER name="ronchonner"/>
+          <MEMBER name="rugir"/>
+          <MEMBER name="sangloter"/>
+          <MEMBER name="soupirer"/>
+          <MEMBER name="tonner"/>
+          <MEMBER name="vagir"/>
+          <MEMBER name="gargouiller"/>
+          <MEMBER name="grimacer"/>
+          <MEMBER name="minauder"/>
+          <MEMBER name="rigoler"/>
+          <MEMBER name="rire"/>
+          <MEMBER name="siffler"/>
+          <MEMBER name="siffloter"/>
+          <MEMBER name="esclaffer s'"/>
+          <MEMBER name="brailler"/>
+          <MEMBER name="caqueter"/>
+          <MEMBER name="clabauder"/>
+          <MEMBER name="feuler"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Recipient">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Paul a grogné son mécontentement.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) express(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Paul a crié sur/après/contre Max.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="après;contre;sur"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) transfer_info(during(E), Agent, Recipient, ?Theme) express(during(E), Agent, ?Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

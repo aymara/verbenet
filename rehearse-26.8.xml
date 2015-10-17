@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="rehearse-26.8">
      <MEMBERS>
-          <MEMBER name="doubler"/>
-          <MEMBER name="exercer"/>
           <MEMBER name="pratiquer"/>
-          <MEMBER name="refaire"/>
           <MEMBER name="répéter"/>
-          <MEMBER name="reproduire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

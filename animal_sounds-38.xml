@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="animal_sounds-38">
+     <MEMBERS>
+          <MEMBER name="aboyer"/>
+          <MEMBER name="babiller"/>
+          <MEMBER name="barrir"/>
+          <MEMBER name="bêler"/>
+          <MEMBER name="beugler"/>
+          <MEMBER name="blatérer"/>
+          <MEMBER name="braire"/>
+          <MEMBER name="bramer"/>
+          <MEMBER name="cacarder"/>
+          <MEMBER name="cancaner"/>
+          <MEMBER name="caqueter"/>
+          <MEMBER name="chuinter"/>
+          <MEMBER name="clabauder"/>
+          <MEMBER name="coasser"/>
+          <MEMBER name="couiner"/>
+          <MEMBER name="craqueter"/>
+          <MEMBER name="criailler"/>
+          <MEMBER name="crier"/>
+          <MEMBER name="croasser"/>
+          <MEMBER name="feuler"/>
+          <MEMBER name="gazouiller"/>
+          <MEMBER name="gémir"/>
+          <MEMBER name="glapir"/>
+          <MEMBER name="glouglouter"/>
+          <MEMBER name="glousser"/>
+          <MEMBER name="grailler"/>
+          <MEMBER name="grogner"/>
+          <MEMBER name="grommeler"/>
+          <MEMBER name="gronder"/>
+          <MEMBER name="hennir"/>
+          <MEMBER name="hululer"/>
+          <MEMBER name="hurler"/>
+          <MEMBER name="jacasser"/>
+          <MEMBER name="japper"/>
+          <MEMBER name="meugler"/>
+          <MEMBER name="miauler"/>
+          <MEMBER name="mugir"/>
+          <MEMBER name="nasiller"/>
+          <MEMBER name="pépier"/>
+          <MEMBER name="piailler"/>
+          <MEMBER name="piauler"/>
+          <MEMBER name="ramager"/>
+          <MEMBER name="rappeler"/>
+          <MEMBER name="ronronner"/>
+          <MEMBER name="roucouler"/>
+          <MEMBER name="rugir"/>
+          <MEMBER name="trompeter"/>
+          <MEMBER name="ululer"/>
+          <MEMBER name="vagir"/>
+          <MEMBER name="boubouler"/>
+          <MEMBER name="craquer"/>
+          <MEMBER name="huer"/>
+          <MEMBER name="jaser"/>
+          <MEMBER name="rauquer"/>
+          <MEMBER name="zinzinuler"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animal"/>
+          </THEMROLE>
+          <THEMROLE type="Recipient"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V PP.recipient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Le chien a aboyé après un chat.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="après"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>emit(during(E), Agent, Sound) Prep(during(E), Sound, Recipient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

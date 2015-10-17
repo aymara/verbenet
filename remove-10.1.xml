@@ -2,8 +2,6 @@
 <VNCLASS ID="remove-10.1">
      <MEMBERS>
           <MEMBER name="arracher"/>
-          <MEMBER name="chasser"/>
-          <MEMBER name="dégager"/>
           <MEMBER name="dégainer"/>
           <MEMBER name="déloger"/>
           <MEMBER name="déraciner"/>
@@ -11,8 +9,6 @@
           <MEMBER name="distraire"/>
           <MEMBER name="éliminer"/>
           <MEMBER name="enlever"/>
-          <MEMBER name="évacuer"/>
-          <MEMBER name="exclure"/>
           <MEMBER name="extirper"/>
           <MEMBER name="extraire"/>
           <MEMBER name="lever"/>

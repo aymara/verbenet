@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="order-60.1">
      <MEMBERS>
+          <MEMBER name="permettre"/>
           <MEMBER name="prescrire"/>
           <MEMBER name="rappeler"/>
           <MEMBER name="réclamer"/>
@@ -30,19 +31,33 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.Recipient que S&lt;subj&gt;"/>
+               <DESCRIPTION primary="NP V PP.Recipient Qu Psubj"/>
                <EXAMPLES>
                     <EXAMPLE>Il a demandé à Jean que son fils vienne ce soir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic&lt;Que P subjonctif&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PSUBJ value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.Recipient de Vinf"/>
+               <DESCRIPTION primary="NP V PP.Recipient de V-inf"/>
                <EXAMPLES>
                     <EXAMPLE>Il a demandé à Jean de venir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic &lt;de V1inf&gt;</SYNTAX>
+               <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
                <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>

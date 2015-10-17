@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="appear-48.1.1">
      <MEMBERS>
-          <MEMBER name="exsuder"/>
-          <MEMBER name="fluer"/>
-          <MEMBER name="fuser"/>
+          <MEMBER name="réapparaître"/>
+          <MEMBER name="apparaître"/>
+          <MEMBER name="reparaître"/>
+          <MEMBER name="ressortir"/>
+          <MEMBER name="dériver"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="trouver se"/>
+          <MEMBER name="échapper s'"/>
+          <MEMBER name="émaner"/>
           <MEMBER name="installer s'"/>
           <MEMBER name="jaillir"/>
-          <MEMBER name="monter"/>
-          <MEMBER name="partir"/>
-          <MEMBER name="provenir"/>
-          <MEMBER name="revenir"/>
-          <MEMBER name="ruisseler"/>
           <MEMBER name="sortir"/>
           <MEMBER name="sourdre"/>
           <MEMBER name="surgir"/>
-          <MEMBER name="venir"/>
-          <MEMBER name="voler"/>
-          <MEMBER name="apparaître"/>
-          <MEMBER name="couler"/>
-          <MEMBER name="dégouliner"/>
-          <MEMBER name="dériver"/>
-          <MEMBER name="échapper s'"/>
-          <MEMBER name="émaner"/>
-          <MEMBER name="étaler s'"/>
+          <MEMBER name="déboucher"/>
+          <MEMBER name="dégager se"/>
+          <MEMBER name="écouler s'"/>
+          <MEMBER name="élever s'"/>
+          <MEMBER name="fondre se"/>
+          <MEMBER name="former se"/>
+          <MEMBER name="jeter se"/>
+          <MEMBER name="propager se"/>
+          <MEMBER name="répandre se"/>
+          <MEMBER name="ressurgir"/>
+          <MEMBER name="survenir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>
@@ -51,11 +54,25 @@
                <SEMANTICS>appear(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(end(E), Theme, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="Il V NP.theme PP.location"/>
+               <DESCRIPTION primary="IL V NP.theme PP.location"/>
                <EXAMPLES>
                     <EXAMPLE>Il est apparu un bateau à l'horizon</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Il V Theme {{+loc}} Location</SYNTAX>
+               <SYNTAX>
+                    <IL/>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="+" type="loc"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Location">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>appear(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(end(E), Theme, Location)</SEMANTICS>
           </FRAME>
      </FRAMES>

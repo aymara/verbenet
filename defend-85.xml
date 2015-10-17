@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="defend-85">
+     <MEMBERS>
+          <MEMBER name="assurer"/>
+          <MEMBER name="défendre"/>
+          <MEMBER name="garantir"/>
+          <MEMBER name="prémunir"/>
+          <MEMBER name="protéger"/>
+          <MEMBER name="préserver"/>
+          <MEMBER name="sauvegarder"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Beneficiary">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a protégé ses soldats contre une attaque ennemie.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="contre"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>defend(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

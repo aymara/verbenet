@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="fit-54.3">
+     <MEMBERS>
+          <MEMBER name="contenir"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="admettre"/>
+          <MEMBER name="acceuillir"/>
+          <MEMBER name="accepter"/>
+          <MEMBER name="valoir"/>
+          <MEMBER name="comporter"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Value"/>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Chaque chambre contient cinq personnes.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Value">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>value(E, Theme, Value)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="accept-77">
+     <MEMBERS>
+          <MEMBER name="contester"/>
+          <MEMBER name="démentir"/>
+          <MEMBER name="dénier"/>
+          <MEMBER name="renier"/>
+          <MEMBER name="nier"/>
+          <MEMBER name="agréer"/>
+          <MEMBER name="assimiler"/>
+          <MEMBER name="avaler"/>
+          <MEMBER name="encourager"/>
+          <MEMBER name="entendre"/>
+          <MEMBER name="expliquer s'"/>
+          <MEMBER name="favoriser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a accepté que son fils devienne écrivain</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PSUBJ value="Theme"/>
+               </SYNTAX>
+               <SEMANTICS>approve(during(E), Agent, Theme)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="77-1">
+               <MEMBERS>
+                    <MEMBER name="regretter"/>
+                    <MEMBER name="refuser"/>
+                    <MEMBER name="accepter"/>
+                    <MEMBER name="admettre"/>
+                    <MEMBER name="rejeter"/>
+                    <MEMBER name="exclure"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Attribute"/>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc accepte sa femme végétarienne.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Theme">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <ADJ/>
+                         </SYNTAX>
+                         <SEMANTICS>approve(during(E), Agent, Theme, Predicate)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc accepte de partir</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+                         <SEMANTICS>approve(during(E), Agent, Theme)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="poison-42.2">
      <MEMBERS>
+          <MEMBER name="empoisonner"/>
+          <MEMBER name="étriper"/>
+          <MEMBER name="noyer"/>
+          <MEMBER name="pendre"/>
+          <MEMBER name="poignarder"/>
           <MEMBER name="abattre"/>
           <MEMBER name="asphyxier"/>
-          <MEMBER name="contaminer"/>
-          <MEMBER name="couvrir"/>
           <MEMBER name="décapiter"/>
           <MEMBER name="descendre"/>
           <MEMBER name="électrocuter"/>
-          <MEMBER name="empoisonner"/>
           <MEMBER name="étouffer"/>
           <MEMBER name="étrangler"/>
           <MEMBER name="éventrer"/>
@@ -20,7 +22,6 @@
           <MEMBER name="raccourcir"/>
           <MEMBER name="stranguler"/>
           <MEMBER name="suriner"/>
-          <MEMBER name="tuer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -30,7 +31,6 @@
                <SELRESTR Value="+" type="animate"/>
           </THEMROLE>
           <THEMROLE type="Instrument"/>
-          <THEMROLE type="Result"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="get-13.5.1">
+     <MEMBERS>
+          <MEMBER name="acheter"/>
+          <MEMBER name="affréter"/>
+          <MEMBER name="chiper"/>
+          <MEMBER name="choper"/>
+          <MEMBER name="dérober"/>
+          <MEMBER name="enlever"/>
+          <MEMBER name="fréter"/>
+          <MEMBER name="louer"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="prendre"/>
+          <MEMBER name="racheter"/>
+          <MEMBER name="reprendre"/>
+          <MEMBER name="voler"/>
+          <MEMBER name="commander"/>
+          <MEMBER name="gagner"/>
+          <MEMBER name="ravir"/>
+          <MEMBER name="réserver"/>
+          <MEMBER name="saisir"/>
+          <MEMBER name="suspendre"/>
+          <MEMBER name="arracher"/>
+          <MEMBER name="ôter"/>
+          <MEMBER name="subtiliser"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Theme"/>
+          <THEMROLE type="Source">
+               <SELRESTR Value="+" type="concrete"/>
+          </THEMROLE>
+          <THEMROLE type="Beneficiary">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="organization"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Asset">
+               <SELRESTRS logic="and">
+                    <SELRESTR Value="-" type="region"/>
+                    <SELRESTR Value="-" type="location"/>
+               </SELRESTRS>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.beneficiary"/>
+               <EXAMPLES>
+                    <EXAMPLE>Max achète une bague à Ida</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(start(E), ?Source, Theme) transfer(during(E), Theme) has_possession(end(E), Agent, Theme) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>$50, ça n'achète pas une voiture.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(start(E), ?Source, Theme) transfer(during(E), Theme) has_possession(end(E), ?Agent, Theme) cause(?Agent, E) cost(E, Asset)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary PP.asset"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a acheté une belle bague à un bijoutier pour sa femme pour 300 euros.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(start(E), Source, Theme) transfer(during(E), Theme) has_possession(end(E), Agent, Theme) cause(Agent, E) benefit(E, Beneficiary) cost(E, Asset)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary NP.asset"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a acheté une belle bague à un bijoutier du quartier pour sa femme 300 euros</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Theme">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Beneficiary">
+                         <SYNRESTRS/>
+                    </NP>
+                    <NP value="Asset">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>has_possession(start(E), Source, Theme) transfer(during(E), Theme) has_possession(end(E), Agent, Theme) cause(Agent, E) benefit(E, Beneficiary) cost(E, Asset)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+</VNCLASS>

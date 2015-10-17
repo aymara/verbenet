@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="chew-39.2">
+     <MEMBERS/>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTR Value="+" type="animate"/>
+          </THEMROLE>
+          <THEMROLE type="Patient">
+               <SELRESTR Value="+" type="comestible"/>
+          </THEMROLE>
+     </THEMROLES>
+     <FRAMES/>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="39.2-1">
+               <MEMBERS>
+                    <MEMBER name="becqueter"/>
+                    <MEMBER name="brouter"/>
+                    <MEMBER name="grignoter"/>
+                    <MEMBER name="licher"/>
+                    <MEMBER name="picorer"/>
+                    <MEMBER name="picoter"/>
+                    <MEMBER name="chiquer"/>
+                    <MEMBER name="croquer"/>
+                    <MEMBER name="gruger"/>
+                    <MEMBER name="lécher"/>
+                    <MEMBER name="mâcher"/>
+                    <MEMBER name="mâchonner"/>
+                    <MEMBER name="mâchouiller"/>
+                    <MEMBER name="mangeotter"/>
+                    <MEMBER name="mastiquer"/>
+                    <MEMBER name="mordiller"/>
+                    <MEMBER name="mordre"/>
+                    <MEMBER name="ronger"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Patient">
+                         <SELRESTRS logic="and">
+                              <SELRESTR Value="+" type="solid"/>
+                              <SELRESTR Value="+" type="comestible"/>
+                         </SELRESTRS>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Léa a grignoté la carotte</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>take_in(during(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="39.2-2">
+               <MEMBERS>
+                    <MEMBER name="absorber"/>
+                    <MEMBER name="aspirer"/>
+                    <MEMBER name="laper"/>
+                    <MEMBER name="pomper"/>
+                    <MEMBER name="siroter"/>
+                    <MEMBER name="téter"/>
+                    <MEMBER name="sucer"/>
+                    <MEMBER name="suçoter"/>
+               </MEMBERS>
+               <THEMROLES>
+                    <THEMROLE type="Patient">
+                         <SELRESTRS logic="and">
+                              <SELRESTR Value="-" type="solid"/>
+                              <SELRESTR Value="+" type="comestible"/>
+                         </SELRESTRS>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Luc a siroté sa tisane</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>take_in(during(E), Agent, Patient)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>

@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="throw-17.1">
      <MEMBERS>
-          <MEMBER name="hisser"/>
-          <MEMBER name="ballotter"/>
-          <MEMBER name="pousser"/>
-          <MEMBER name="reculer"/>
-          <MEMBER name="basculer"/>
-          <MEMBER name="catapulter"/>
-          <MEMBER name="passer"/>
-          <MEMBER name="plonger"/>
-          <MEMBER name="balancer"/>
-          <MEMBER name="jeter"/>
-          <MEMBER name="drainer"/>
-          <MEMBER name="lancer"/>
-          <MEMBER name="tirer"/>
           <MEMBER name="précipiter"/>
           <MEMBER name="projeter"/>
-          <MEMBER name="amener"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -54,7 +40,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="dest"/>
+                              <SELRESTR Value="Loc-Dest"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Destination">
@@ -78,7 +64,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="src"/>
+                              <SELRESTR Value="de;depuis"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Initial_Location">
@@ -102,7 +88,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="src"/>
+                              <SELRESTR Value="de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Initial_Location">
@@ -110,7 +96,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="+" type="dest_dir"/>
+                              <SELRESTR Value="Loc-Dest"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Destination">
@@ -122,15 +108,20 @@
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="17.1-1">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="balancer"/>
+                    <MEMBER name="lancer"/>
+                    <MEMBER name="catapulter"/>
+                    <MEMBER name="jeter"/>
+               </MEMBERS>
                <THEMROLES>
-                    <THEMROLE type="Destination">
+                    <THEMROLE type="Recipient">
                          <SELRESTR Value="+" type="animate"/>
                     </THEMROLE>
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.destination"/>
+                         <DESCRIPTION primary="NP V NP PP.recipient"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a lancé la botte à Ida</EXAMPLE>
                          </EXAMPLES>
@@ -147,48 +138,13 @@
                                         <SELRESTR Value="à"/>
                                    </SELRESTRS>
                               </PREP>
-                              <NP value="Destination">
+                              <NP value="Recipient">
                                    <SYNRESTRS/>
                               </NP>
                          </SYNTAX>
-                         <SEMANTICS>exert_force(during(E0), Agent, Theme) contact(end(E0), Agent, Theme) motion(during(E1), Theme) not(contact(during(E1), Agent, Theme)) not(location(start(E1), Theme, Destination)) location(end(E1), Theme, Destination) cause(Agent, E1) meets(E0, E1)</SEMANTICS>
+                         <SEMANTICS>exert_force(during(E0), Agent, Theme) contact(end(E0), Agent, Theme) motion(during(E1), Theme) not(contact(during(E1), Agent, Theme)) not(location(start(E1), Theme, Recipient)) location(end(E1), Theme, Recipient) cause(Agent, E1) meets(E0, E1)</SEMANTICS>
                     </FRAME>
                </FRAMES>
-               <SUBCLASSES>
-                    <VNSUBCLASS ID="17.1-1-1">
-                         <MEMBERS/>
-                         <THEMROLES>
-                              <THEMROLE type="Cause"/>
-                              <THEMROLE type="Result"/>
-                         </THEMROLES>
-                         <FRAMES>
-                              <FRAME>
-                                   <DESCRIPTION primary="NP V NP PP.result"/>
-                                   <EXAMPLES>
-                                        <EXAMPLE>Cette nouvelle a jeté le départment dans le chaos</EXAMPLE>
-                                   </EXAMPLES>
-                                   <SYNTAX>
-                                        <NP value="Cause">
-                                             <SYNRESTRS/>
-                                        </NP>
-                                        <VERB/>
-                                        <NP value="Theme">
-                                             <SYNRESTRS/>
-                                        </NP>
-                                        <PREP>
-                                             <SELRESTRS>
-                                                  <SELRESTR Value="dans"/>
-                                             </SELRESTRS>
-                                        </PREP>
-                                        <NP value="Result">
-                                             <SYNRESTRS/>
-                                        </NP>
-                                   </SYNTAX>
-                                   <SEMANTICS/>
-                              </FRAME>
-                         </FRAMES>
-                    </VNSUBCLASS>
-               </SUBCLASSES>
           </VNSUBCLASS>
      </SUBCLASSES>
 </VNCLASS>

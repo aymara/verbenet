@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="break-45.1">
      <MEMBERS>
-          <MEMBER name="atomiser"/>
           <MEMBER name="briser"/>
           <MEMBER name="broyer"/>
-          <MEMBER name="buriner"/>
           <MEMBER name="concasser"/>
           <MEMBER name="couper"/>
           <MEMBER name="déchiqueter"/>
@@ -12,27 +10,17 @@
           <MEMBER name="désintégrer"/>
           <MEMBER name="disloquer"/>
           <MEMBER name="diviser"/>
-          <MEMBER name="écorcher"/>
-          <MEMBER name="étoiler"/>
-          <MEMBER name="fendre"/>
           <MEMBER name="fracasser"/>
-          <MEMBER name="fracturer"/>
           <MEMBER name="fragmenter"/>
-          <MEMBER name="labourer"/>
           <MEMBER name="lacérer"/>
-          <MEMBER name="lézarder"/>
-          <MEMBER name="moudre"/>
           <MEMBER name="partager"/>
-          <MEMBER name="percer"/>
           <MEMBER name="piler"/>
           <MEMBER name="pulvériser"/>
-          <MEMBER name="râper"/>
-          <MEMBER name="répartir"/>
           <MEMBER name="scinder"/>
           <MEMBER name="sectionner"/>
           <MEMBER name="séparer"/>
-          <MEMBER name="casser"/>
-          <MEMBER name="rompre"/>
+          <MEMBER name="déchirer"/>
+          <MEMBER name="atomiser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -44,10 +32,11 @@
           <THEMROLE type="Instrument">
                <SELRESTR Value="+" type="solid"/>
           </THEMROLE>
+          <THEMROLE type="Result"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se  V ADV-Middle"/>
+               <DESCRIPTION primary="NP se V ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Les vases en cristal se cassent facilement</EXAMPLE>
                </EXAMPLES>
@@ -55,8 +44,7 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <SE/>
-                    <VERB/>
+                    <VERB pronominal="true" restr="middle"/>
                     <ADV/>
                </SYNTAX>
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
@@ -86,7 +74,7 @@
                <SEMANTICS>contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP  PP.Result PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.Result PP.instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Tony a casé la carafe  en mille morceaux avec un marteau</EXAMPLE>
                </EXAMPLES>
@@ -118,17 +106,36 @@
                <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient) Pred(result(E), Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.Patient se  V neutre PP.Result"/>
+               <DESCRIPTION primary="NP.Patient se V PP.Result"/>
                <EXAMPLES>
                     <EXAMPLE>Le vase s'est cassé en mille morceaux</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Patient se V  {en} Result</SYNTAX>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Result">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
                <SEMANTICS>degradation_material_integrity(result(E), Patient) Pred(result(E), Patient)</SEMANTICS>
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="45.1-1">
-               <MEMBERS/>
+               <MEMBERS>
+                    <MEMBER name="fendre"/>
+                    <MEMBER name="fêler"/>
+                    <MEMBER name="péter"/>
+                    <MEMBER name="rompre"/>
+                    <MEMBER name="casser"/>
+               </MEMBERS>
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
@@ -136,7 +143,20 @@
                          <EXAMPLES>
                               <EXAMPLE>La carafe a cassé en mille morceux</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Patient V PP.Result</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="en"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Result">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
                          <SEMANTICS>degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient)</SEMANTICS>
                     </FRAME>
                </FRAMES>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VNCLASS ID="amalgamate-22.2">
+     <MEMBERS>
+          <MEMBER name="solidariser"/>
+          <MEMBER name="interconnecter"/>
+          <MEMBER name="accoupler"/>
+          <MEMBER name="lier"/>
+          <MEMBER name="relier"/>
+          <MEMBER name="amalgamer"/>
+          <MEMBER name="appareiller"/>
+          <MEMBER name="apparier"/>
+          <MEMBER name="brouiller"/>
+          <MEMBER name="comparer"/>
+          <MEMBER name="confondre"/>
+          <MEMBER name="confronter"/>
+          <MEMBER name="embrouiller"/>
+          <MEMBER name="totaliser"/>
+          <MEMBER name="allier"/>
+          <MEMBER name="coupler"/>
+          <MEMBER name="joindre"/>
+          <MEMBER name="alterner"/>
+          <MEMBER name="assortir"/>
+          <MEMBER name="concilier"/>
+          <MEMBER name="corréler"/>
+          <MEMBER name="égaler"/>
+          <MEMBER name="entrecroiser"/>
+          <MEMBER name="entrelacer"/>
+          <MEMBER name="harmoniser"/>
+          <MEMBER name="interchanger"/>
+          <MEMBER name="marier"/>
+          <MEMBER name="rallier"/>
+          <MEMBER name="recouper"/>
+     </MEMBERS>
+     <THEMROLES>
+          <THEMROLE type="Agent">
+               <SELRESTRS logic="or">
+                    <SELRESTR Value="+" type="machine"/>
+                    <SELRESTR Value="+" type="animate"/>
+               </SELRESTRS>
+          </THEMROLE>
+          <THEMROLE type="Patient"/>
+          <THEMROLE type="Co-Patient"/>
+     </THEMROLES>
+     <FRAMES>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a associé la compagnie A avec/à la compagnie B</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient_i, Patient_j)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP V NP"/>
+               <EXAMPLES>
+                    <EXAMPLE>Luc a associé les deux compagnies.</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient_i, Patient_j)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V PP.co-patient"/>
+               <EXAMPLES>
+                    <EXAMPLE>La compagnie A s'est associée à/avec la compagnie B</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="avec;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Co-Patient">
+                         <SYNRESTRS/>
+                    </NP>
+               </SYNTAX>
+               <SEMANTICS>together(end(E), physical, Patient, Co-Patient)</SEMANTICS>
+          </FRAME>
+     </FRAMES>
+     <SUBCLASSES>
+          <VNSUBCLASS ID="22.2-2">
+               <MEMBERS/>
+               <THEMROLES>
+                    <THEMROLE type="Patient">
+                         <SELRESTR Value="+" type="concrete"/>
+                    </THEMROLE>
+                    <THEMROLE type="Co-Patient">
+                         <SELRESTRS logic="or">
+                              <SELRESTR Value="+" type="abstract"/>
+                              <SELRESTR Value="+" type="animate"/>
+                         </SELRESTRS>
+                    </THEMROLE>
+                    <THEMROLE type="Agent">
+                         <SELRESTRS logic="or">
+                              <SELRESTR Value="+" type="abstract"/>
+                              <SELRESTR Value="+" type="animate"/>
+                         </SELRESTRS>
+                    </THEMROLE>
+               </THEMROLES>
+               <FRAMES/>
+          </VNSUBCLASS>
+          <VNSUBCLASS ID="22.2-3">
+               <MEMBERS>
+                    <MEMBER name="présenter"/>
+                    <MEMBER name="opposer"/>
+                    <MEMBER name="allier"/>
+                    <MEMBER name="marier"/>
+               </MEMBERS>
+               <THEMROLES/>
+               <FRAMES>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Jean a opposé les deux idées</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP modifier="+plural" value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) together(end(E), abstract/physical, Patient_i, Patient_j)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP V NP PP.co-patient"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Jean a opposé une idée à l'autre</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <NP value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <NP value="Co-Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                         </SYNTAX>
+                         <SEMANTICS>cause(Agent, E) together(end(E), abstract/physical, Patient_i, Patient_j)</SEMANTICS>
+                    </FRAME>
+                    <FRAME>
+                         <DESCRIPTION primary="NP se V"/>
+                         <EXAMPLES>
+                              <EXAMPLE>Les deux idées s'opposent.</EXAMPLE>
+                         </EXAMPLES>
+                         <SYNTAX>
+                              <NP modifier="+plural" value="Patient">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB pronominal="true" restr="neutre"/>
+                         </SYNTAX>
+                         <SEMANTICS>together(end(E), abstract/physical, Patient_i, Patient_j)</SEMANTICS>
+                    </FRAME>
+               </FRAMES>
+          </VNSUBCLASS>
+     </SUBCLASSES>
+</VNCLASS>
