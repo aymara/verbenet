@@ -18,7 +18,12 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <VINF emptysubjectrole="Pivot" introduced_by="à" is_true_prep="true" value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Pivot" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>

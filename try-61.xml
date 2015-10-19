@@ -18,7 +18,13 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a essayé de nager</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="de" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>attempt(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

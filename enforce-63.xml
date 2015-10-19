@@ -50,7 +50,21 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a imposé à Marie de partir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Theme&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="de" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>enforce(during(E), Agent, Recipient, Theme)</SEMANTICS>
           </FRAME>
      </FRAMES>

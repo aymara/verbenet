@@ -81,7 +81,12 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <VINF emptysubjectrole="Experiencer" introduced_by="de" is_true_prep="true" value="Stimulus"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Experiencer" value="Stimulus"/>
                </SYNTAX>
                <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>

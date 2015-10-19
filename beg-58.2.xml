@@ -37,7 +37,12 @@
                     <NP value="Recipient">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Recipient" introduced_by="de" is_true_prep="true" value="Topic"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Recipient" value="Topic"/>
                </SYNTAX>
                <SEMANTICS>supplicate(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
@@ -52,7 +57,13 @@
                          <EXAMPLES>
                               <EXAMPLE>Luc a imploré de partir.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V  Topic&lt;+de VAgent-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Agent" introduced_by="de" value="Topic"/>
+                         </SYNTAX>
                          <SEMANTICS>supplicate(during(E), Agent, ?Recipient, Topic)</SEMANTICS>
                     </FRAME>
                     <FRAME>

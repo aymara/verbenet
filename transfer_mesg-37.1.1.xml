@@ -139,7 +139,21 @@
                <EXAMPLES>
                     <EXAMPLE>J'ai expliqué à Marie comment le faire.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="comment" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -171,7 +185,21 @@
                <EXAMPLES>
                     <EXAMPLE>Wanda a indiqué à Léa de faire cela.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="de" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>

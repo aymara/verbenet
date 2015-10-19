@@ -32,7 +32,12 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Goal"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Patient" value="Goal"/>
                </SYNTAX>
                <SEMANTICS>limit(during(E), Cause, Patient, Goal)</SEMANTICS>
           </FRAME>

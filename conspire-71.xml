@@ -43,7 +43,12 @@
                     <NP value="Co-Agent">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Agent" introduced_by="pour" is_true_prep="true" value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>conspire(during(E), Agent_i, Agent_j, Theme)</SEMANTICS>
           </FRAME>
@@ -107,7 +112,12 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <VINF emptysubjectrole="Agent" introduced_by="pour" is_true_prep="true" value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>conspire(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>

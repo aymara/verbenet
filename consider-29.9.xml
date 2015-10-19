@@ -111,7 +111,13 @@
                          <EXAMPLES>
                               <EXAMPLE>Luc prémédite de partir.</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Agent">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Agent" introduced_by="de" value="Theme"/>
+                         </SYNTAX>
                          <SEMANTICS>consider(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
                     </FRAME>
                </FRAMES>

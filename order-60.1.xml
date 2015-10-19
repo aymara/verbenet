@@ -57,7 +57,21 @@
                <EXAMPLES>
                     <EXAMPLE>Il a demandé à Jean de venir</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="de" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>

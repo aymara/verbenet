@@ -25,7 +25,13 @@
                <EXAMPLES>
                     <EXAMPLE>Jean a stoppé de faire des conneries</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V  Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="de" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>end(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>

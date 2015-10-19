@@ -32,7 +32,12 @@
                     <NP value="Asset">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Goal"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Goal"/>
                </SYNTAX>
                <SEMANTICS>exist(start(E), Asset) not(exist(end(E), Asset)) spend(during(E), Agent, Asset, Goal)</SEMANTICS>
           </FRAME>
@@ -55,7 +60,12 @@
                               <NP value="Asset">
                                    <SYNRESTRS/>
                               </NP>
-                              <VINF emptysubjectrole="Agent" introduced_by="pour" is_true_prep="true" value="Goal"/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="pour"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <VINF emptysubjectrole="Agent" value="Goal"/>
                          </SYNTAX>
                          <SEMANTICS>exist(start(E), Asset) not(exist(end(E), Asset)) spend(during(E), Agent, Asset, Goal)</SEMANTICS>
                     </FRAME>

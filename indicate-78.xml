@@ -100,7 +100,21 @@
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde comment résoudre le problème</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Cause V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Cause">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="comment" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
      </FRAMES>

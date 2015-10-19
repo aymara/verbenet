@@ -24,7 +24,12 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <VINF emptysubjectrole="Agent" introduced_by="de" is_true_prep="true" value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>rush(during(E), Agent, Theme) end(end(E), Theme)</SEMANTICS>
           </FRAME>

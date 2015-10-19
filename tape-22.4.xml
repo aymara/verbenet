@@ -74,7 +74,16 @@
                <EXAMPLES>
                     <EXAMPLE>Max a scotché la feuille rouge et la feuille noire ensemble</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Patient&lt;+plural&gt; ensemble</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <ensemble/>
+               </SYNTAX>
                <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient_i, Patient_j) attached(end(E), Patient_i, Instrument) attached(end(E), Patient_j, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>

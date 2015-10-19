@@ -143,7 +143,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc exècre d'être dérangé au milieu de la nuit.</EXAMPLE>
                          </EXAMPLES>
@@ -152,7 +152,7 @@
                                    <SYNRESTRS/>
                               </NP>
                               <VERB/>
-                              <VINF emptysubjectrole="Experiencer" introduced_by="de" is_true_prep="false" value="Stimulus"/>
+                              <VINF emptysubjectrole="Experiencer" introduced_by="de" value="Stimulus"/>
                          </SYNTAX>
                          <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
                     </FRAME>

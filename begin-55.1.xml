@@ -20,7 +20,13 @@
                <EXAMPLES>
                     <EXAMPLE>Il a commencé à lire ce livre</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme&lt;+à VAgent-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="à" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -102,7 +108,13 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a commencé de lire ce livre</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <VINF emptysubjectrole="Agent" introduced_by="de" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
      </FRAMES>

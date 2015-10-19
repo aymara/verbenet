@@ -26,7 +26,12 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <VINF emptysubjectrole="Agent" introduced_by="de" is_true_prep="true" value="Topic"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Topic"/>
                </SYNTAX>
                <SEMANTICS>abstain(during(E), Agent, Topic)</SEMANTICS>
           </FRAME>

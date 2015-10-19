@@ -26,7 +26,12 @@
                     <NP value="Recipient">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Recipient" introduced_by="de" is_true_prep="true" value="Topic"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Recipient" value="Topic"/>
                </SYNTAX>
                <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>

@@ -66,7 +66,21 @@
                <EXAMPLES>
                     <EXAMPLE>Le succès exige pour/de la part de Paul de travailler beaucoup</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Pivot V {pour/de la part de} Source Theme&lt;+de VSource-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Pivot">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de la part de;pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Source">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Source" introduced_by="de" value="Theme"/>
+               </SYNTAX>
                <SEMANTICS>necessitate(E, Pivot, Theme, Source)</SEMANTICS>
           </FRAME>
      </FRAMES>

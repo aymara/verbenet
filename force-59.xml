@@ -47,7 +47,12 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Result"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Patient" value="Result"/>
                </SYNTAX>
                <SEMANTICS>force(during(E), Agent, Patient, Result)</SEMANTICS>
           </FRAME>

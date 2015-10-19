@@ -57,7 +57,12 @@
                     <NP value="Patient">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Patient" introduced_by="à" is_true_prep="true" value="Stimulus"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Patient" value="Stimulus"/>
                </SYNTAX>
                <SEMANTICS>cause(Agent, E) desire(result(E), Patient, Stimulus)</SEMANTICS>
           </FRAME>

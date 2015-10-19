@@ -23,7 +23,12 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <VINF emptysubjectrole="Agent" introduced_by="de;à" is_true_prep="true" value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="de;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>continue(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>

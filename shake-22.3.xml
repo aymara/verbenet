@@ -67,7 +67,16 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a fouetté le sucre et les oeufs ensemble</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V Patient&lt;+plural&gt; ensemble</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <ensemble/>
+               </SYNTAX>
                <SEMANTICS>cause(Agent, E) degradation_material_integrity(result(E), Patient) degradation_material_integrity(result(E), Co-Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
           </FRAME>
      </FRAMES>

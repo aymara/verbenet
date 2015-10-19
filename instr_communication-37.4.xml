@@ -109,7 +109,21 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé à Sara comment envoyer le paquet.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="comment" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
@@ -117,7 +131,21 @@
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé à Sara de venir immédiatement.</EXAMPLE>
                </EXAMPLES>
-               <SYNTAX>Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;</SYNTAX>
+               <SYNTAX>
+                    <NP value="Agent">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VINF emptysubjectrole="Recipient" introduced_by="de" value="Topic"/>
+               </SYNTAX>
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
      </FRAMES>

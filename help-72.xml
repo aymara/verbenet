@@ -42,7 +42,12 @@
                     <NP value="Beneficiary">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Beneficiary" introduced_by="à" is_true_prep="true" value="Theme"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Beneficiary" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>help(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
           </FRAME>

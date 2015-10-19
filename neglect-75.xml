@@ -21,7 +21,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf"/>
                          <EXAMPLES>
                               <EXAMPLE>J'ai négligé de faire ce travail</EXAMPLE>
                          </EXAMPLES>
@@ -30,7 +30,7 @@
                                    <SYNRESTRS/>
                               </NP>
                               <VERB/>
-                              <VINF emptysubjectrole="Agent" introduced_by="de" is_true_prep="false" value="Theme"/>
+                              <VINF emptysubjectrole="Agent" introduced_by="de" value="Theme"/>
                          </SYNTAX>
                          <SEMANTICS>neglect(E, Agent, Theme)</SEMANTICS>
                     </FRAME>

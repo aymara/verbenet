@@ -53,7 +53,13 @@
                          <EXAMPLES>
                               <EXAMPLE>Luc ambitionne de devenir président</EXAMPLE>
                          </EXAMPLES>
-                         <SYNTAX>Pivot V Theme&lt;+de VPivot-inf&gt;</SYNTAX>
+                         <SYNTAX>
+                              <NP value="Pivot">
+                                   <SYNRESTRS/>
+                              </NP>
+                              <VERB/>
+                              <VINF emptysubjectrole="Pivot" introduced_by="de" value="Theme"/>
+                         </SYNTAX>
                          <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
                     </FRAME>
                </FRAMES>

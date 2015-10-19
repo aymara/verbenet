@@ -28,7 +28,12 @@
                                    <SYNRESTRS/>
                               </NP>
                               <VERB/>
-                              <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Theme"/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <VINF emptysubjectrole="Agent" value="Theme"/>
                          </SYNTAX>
                          <SEMANTICS>successful_in(E, Agent, Theme)</SEMANTICS>
                     </FRAME>
@@ -71,7 +76,12 @@
                                    <SYNRESTRS/>
                               </NP>
                               <VERB/>
-                              <VINF emptysubjectrole="Agent" introduced_by="à" is_true_prep="true" value="Theme"/>
+                              <PREP>
+                                   <SELRESTRS>
+                                        <SELRESTR Value="à"/>
+                                   </SELRESTRS>
+                              </PREP>
+                              <VINF emptysubjectrole="Agent" value="Theme"/>
                          </SYNTAX>
                          <SEMANTICS>not(successful_in(E, Agent, Theme))</SEMANTICS>
                     </FRAME>

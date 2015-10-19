@@ -30,7 +30,12 @@
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Agent" introduced_by="pour;à" is_true_prep="true" value="Goal"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour;à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Agent" value="Goal"/>
                </SYNTAX>
                <SEMANTICS>use(during(E), Agent, Theme, Goal)</SEMANTICS>
           </FRAME>

@@ -99,7 +99,13 @@
                                    <EXAMPLES>
                                         <EXAMPLE>Luc prévoit de partir demain.</EXAMPLE>
                                    </EXAMPLES>
-                                   <SYNTAX>Agent V Theme&lt;+de VAgent-inf&gt;</SYNTAX>
+                                   <SYNTAX>
+                                        <NP value="Agent">
+                                             <SYNRESTRS/>
+                                        </NP>
+                                        <VERB/>
+                                        <VINF emptysubjectrole="Agent" introduced_by="de" value="Theme"/>
+                                   </SYNTAX>
                                    <SEMANTICS>believe(during(E), Agent, Theme)</SEMANTICS>
                               </FRAME>
                          </FRAMES>

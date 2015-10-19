@@ -34,7 +34,12 @@
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
-                    <VINF emptysubjectrole="Theme" introduced_by="pour" is_true_prep="true" value="Topic"/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="pour"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <VINF emptysubjectrole="Theme" value="Topic"/>
                </SYNTAX>
                <SEMANTICS>depend(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
