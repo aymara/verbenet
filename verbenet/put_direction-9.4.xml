@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="put_direction-9.4">
+<VNCLASS ID="put_direction-9.4" ladl="38LD" lvf="L3b">
      <MEMBERS>
           <MEMBER name="élever"/>
           <MEMBER name="relever"/>

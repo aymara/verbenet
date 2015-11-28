@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="own-100">
+<VNCLASS ID="own-100" ladl="32R2" lvf="S3k">
      <MEMBERS>
           <MEMBER name="avoir"/>
           <MEMBER name="détenir"/>

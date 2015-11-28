@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="talk-37.5">
+<VNCLASS ID="talk-37.5" ladl="15[Prép2=à] " lvf="C1a">
      <MEMBERS>
           <MEMBER name="causer"/>
           <MEMBER name="parler"/>

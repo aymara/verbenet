@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="performance-26.7">
+<VNCLASS ID="performance-26.7" ladl="32R2 ou 32R3" lvf="R3a ou R4a.1 ou C1b">
      <MEMBERS/>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -55,7 +55,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="26.7-2">
+          <VNSUBCLASS ID="26.7-2" ladl="32A">
                <MEMBERS>
                     <MEMBER name="brosser"/>
                     <MEMBER name="dessiner"/>

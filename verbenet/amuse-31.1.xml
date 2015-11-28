@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="amuse-31.1">
+<VNCLASS ID="amuse-31.1" ladl="4" lvf="P2a ou P2c">
      <MEMBERS>
           <MEMBER name="attraper"/>
           <MEMBER name="bluffer"/>

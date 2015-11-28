@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="conspire-71">
+<VNCLASS ID="conspire-71" ladl="14[Prép2=avec] ou 15" lvf="F2d">
      <MEMBERS>
           <MEMBER name="collaborer"/>
           <MEMBER name="comploter"/>

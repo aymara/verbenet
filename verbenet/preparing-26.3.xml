@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="26.3-1">
+          <VNSUBCLASS ID="26.3-1" ladl="32A" lvf="R3c">
                <MEMBERS>
                     <MEMBER name="cuire"/>
                     <MEMBER name="apprêter"/>
@@ -58,7 +58,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="26.3-2">
+          <VNSUBCLASS ID="26.3-2" ladl="32C" lvf="R3c.1 ou R3c.2">
                <MEMBERS>
                     <MEMBER name="chauffer"/>
                     <MEMBER name="griller"/>

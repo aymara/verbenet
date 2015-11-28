@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="care-88.1">
+<VNCLASS ID="care-88.1" ladl="8" lvf="P1a">
      <MEMBERS>
           <MEMBER name="ficher se"/>
           <MEMBER name="foutre se"/>

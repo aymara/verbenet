@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="herd-47.5.2">
+<VNCLASS ID="herd-47.5.2" ladl="32PL" lvf="U1a">
      <MEMBERS>
           <MEMBER name="assembler"/>
           <MEMBER name="entasser"/>

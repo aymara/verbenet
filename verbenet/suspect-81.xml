@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="suspect-81">
+<VNCLASS ID="suspect-81" ladl="13" lvf="P3c">
      <MEMBERS>
           <MEMBER name="soupçonner"/>
           <MEMBER name="suspecter"/>

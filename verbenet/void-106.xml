@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="void-106">
+<VNCLASS ID="void-106" ladl="32RA" lvf="F4b">
      <MEMBERS>
           <MEMBER name="annuler"/>
           <MEMBER name="invalider"/>

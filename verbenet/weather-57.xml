@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="weather-57">
+<VNCLASS ID="weather-57" ladl="C_31i" lvf="H3b">
      <MEMBERS>
           <MEMBER name="dégeler"/>
           <MEMBER name="brouillasser"/>

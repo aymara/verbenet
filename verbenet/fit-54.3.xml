@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="fit-54.3">
+<VNCLASS ID="fit-54.3" ladl="32NM[-N actif V N0]" lvf="S3k">
      <MEMBERS>
           <MEMBER name="contenir"/>
           <MEMBER name="tenir"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="simple_dressing-41.3.1">
+<VNCLASS ID="simple_dressing-41.3.1" ladl="32R3 ou 38L0" lvf="L3b.2">
      <MEMBERS>
           <MEMBER name="afficher"/>
           <MEMBER name="arborer"/>

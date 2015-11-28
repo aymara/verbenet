@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="neglect-75">
+<VNCLASS ID="neglect-75" ladl="1 ou 6" lvf="S4b">
      <MEMBERS>
           <MEMBER name=""/>
      </MEMBERS>
@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="75-1">
+          <VNSUBCLASS ID="75-1" ladl="1 ou 6" lvf="P1g.1">
                <MEMBERS>
                     <MEMBER name="omettre"/>
                </MEMBERS>

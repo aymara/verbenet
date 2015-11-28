@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="transfer_mesg-37.1.1">
+<VNCLASS ID="transfer_mesg-37.1.1" ladl="9" lvf="C2a ou C3a">
      <MEMBERS>
           <MEMBER name="spécifier"/>
           <MEMBER name="stipuler"/>

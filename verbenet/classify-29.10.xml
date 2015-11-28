@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="classify-29.10">
+<VNCLASS ID="classify-29.10" ladl="32PL[+N0 V N1 en N2]" lvf="R4a ou L2b">
      <MEMBERS>
           <MEMBER name="classifier"/>
           <MEMBER name="reclasser"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="throw-17.1">
+<VNCLASS ID="throw-17.1" ladl="38L" lvf="E3f.3 et E3c">
      <MEMBERS>
           <MEMBER name="précipiter"/>
           <MEMBER name="projeter"/>
@@ -107,7 +107,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="17.1-1">
+          <VNSUBCLASS ID="17.1-1" ladl="38L[+à Nhum destination]">
                <MEMBERS>
                     <MEMBER name="balancer"/>
                     <MEMBER name="lancer"/>

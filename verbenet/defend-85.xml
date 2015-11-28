@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="defend-85">
+<VNCLASS ID="defend-85" ladl="13 ou 38RR" lvf="N2a">
      <MEMBERS>
           <MEMBER name="assurer"/>
           <MEMBER name="défendre"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="limit-76">
+<VNCLASS ID="limit-76" ladl="11" lvf="L4b ou L2b ou M2c">
      <MEMBERS>
           <MEMBER name="borner"/>
           <MEMBER name="cantonner"/>

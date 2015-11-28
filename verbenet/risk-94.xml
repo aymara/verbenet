@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="risk-94">
+<VNCLASS ID="risk-94" ladl="6" lvf="L4b.4">
      <MEMBERS>
           <MEMBER name="parier"/>
           <MEMBER name="gager"/>

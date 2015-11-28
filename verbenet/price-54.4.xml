@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="price-54.4">
+<VNCLASS ID="price-54.4" ladl="32R2 ou 36R" lvf="H3f">
      <MEMBERS>
           <MEMBER name="coter"/>
           <MEMBER name="noter"/>

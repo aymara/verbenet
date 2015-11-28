@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="cooking-45.3">
+<VNCLASS ID="cooking-45.3" ladl="32C[-N1 V]" lvf="R3c.1">
      <MEMBERS>
           <MEMBER name="torréfier"/>
           <MEMBER name="réchauffer"/>
@@ -82,7 +82,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="45.3-1">
+          <VNSUBCLASS ID="45.3-1" ladl="32C[+N1 V]" lvf="R3c.1">
                <MEMBERS>
                     <MEMBER name="cuire"/>
                     <MEMBER name="mijoter"/>

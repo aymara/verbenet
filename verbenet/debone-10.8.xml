@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="debone-10.8">
+<VNCLASS ID="debone-10.8" ladl="37E" lvf="N1d ou N1b ou N3b">
      <MEMBERS>
           <MEMBER name="décorner"/>
           <MEMBER name="dégazer"/>

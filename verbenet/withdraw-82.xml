@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="withdraw-82">
+<VNCLASS ID="withdraw-82" ladl="2" lvf="E1a">
      <MEMBERS>
           <MEMBER name="replier se"/>
           <MEMBER name="retirer se"/>

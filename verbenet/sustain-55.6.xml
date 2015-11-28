@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="sustain-55.6">
+<VNCLASS ID="sustain-55.6" ladl="32R2 ou 32R3" lvf="S4f ou L2b ou M4b">
      <MEMBERS>
           <MEMBER name="animer"/>
           <MEMBER name="élever"/>

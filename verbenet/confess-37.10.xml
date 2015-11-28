@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="confess-37.10">
+<VNCLASS ID="confess-37.10" ladl="9" lvf="C2d">
      <MEMBERS>
           <MEMBER name="avouer"/>
           <MEMBER name="confesser"/>

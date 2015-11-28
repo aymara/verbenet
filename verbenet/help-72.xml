@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="help-72">
+<VNCLASS ID="help-72" ladl="32R1 ou 11" lvf="D1c">
      <MEMBERS>
           <MEMBER name="aider"/>
           <MEMBER name="assister"/>

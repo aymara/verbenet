@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="chase-51.6">
+<VNCLASS ID="chase-51.6" ladl="38LD ou 38LHR ou 38LH" lvf="M1c">
      <MEMBERS>
           <MEMBER name="pister"/>
           <MEMBER name="pourchasser"/>

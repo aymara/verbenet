@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="hunt-35.1">
+<VNCLASS ID="hunt-35.1" ladl="32H ou 32R3 ou 38LR ou 38LHR" lvf="M1c.1">
      <MEMBERS>
           <MEMBER name="esquinter"/>
           <MEMBER name="pêcher"/>

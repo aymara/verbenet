@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="coil-9.6">
+<VNCLASS ID="coil-9.6" ladl="38LD[+Loc N2 =: autour de N2 destination]" lvf="L3b">
      <MEMBERS>
           <MEMBER name="entortiller"/>
           <MEMBER name="embobiner"/>

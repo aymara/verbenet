@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="investigate-35.4">
+<VNCLASS ID="investigate-35.4" ladl="38L1[+N1 lieu statique de N0 ou +N1 lieu de passage de N0]" lvf="M1b.1 ou P3b.1">
      <MEMBERS>
           <MEMBER name="perquisitionner"/>
           <MEMBER name="inspecter"/>

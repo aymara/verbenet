@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="captain-29.8">
+<VNCLASS ID="captain-29.8" ladl="37M1[+N2 =: Nhum]" lvf="H2h">
      <MEMBERS/>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -11,7 +11,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="29.8-1">
+          <VNSUBCLASS ID="29.8-1" ladl="37M1[+N2 V N1] ou 32R1">
                <MEMBERS>
                     <MEMBER name="sponsoriser"/>
                     <MEMBER name="entraîner"/>

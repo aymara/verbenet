@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="entity_specific_modes_being-47.2">
+<VNCLASS ID="entity_specific_modes_being-47.2" ladl="35ST ou 31R" lvf="H3e">
      <MEMBERS>
           <MEMBER name="brûler"/>
           <MEMBER name="germer"/>
@@ -53,7 +53,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="47.2-1">
+          <VNSUBCLASS ID="47.2-1" ladl="34L0">
                <MEMBERS>
                     <MEMBER name="fleurir"/>
                </MEMBERS>

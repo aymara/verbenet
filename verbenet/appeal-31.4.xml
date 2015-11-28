@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="appeal-31.4">
+<VNCLASS ID="appeal-31.4" ladl="5" lvf="P2b">
      <MEMBERS>
           <MEMBER name="répugner"/>
           <MEMBER name="plaire"/>
@@ -62,7 +62,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="31.4-3">
+          <VNSUBCLASS ID="31.4-3" ladl="5[+N0 V]">
                <MEMBERS>
                     <MEMBER name="importer"/>
                </MEMBERS>

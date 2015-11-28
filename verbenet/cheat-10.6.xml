@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="cheat-10.6">
+<VNCLASS ID="cheat-10.6" ladl="37E" lvf="N1b ou N2b ou N3d">
      <MEMBERS>
           <MEMBER name="débarrasser"/>
           <MEMBER name="décharger"/>
@@ -63,7 +63,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="10.6-1">
+          <VNSUBCLASS ID="10.6-1" ladl="36DT et 37E">
                <MEMBERS>
                     <MEMBER name="entôler"/>
                     <MEMBER name="entuber"/>

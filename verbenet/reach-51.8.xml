@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="reach-51.8">
+<VNCLASS ID="reach-51.8" ladl="38L1[+N1 lieu de destination de N0] ou 2T" lvf="S3g ou E1d ou E3d">
      <MEMBERS>
           <MEMBER name="aborder"/>
           <MEMBER name="atteindre"/>

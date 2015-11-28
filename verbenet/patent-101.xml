@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="patent-101">
+<VNCLASS ID="patent-101" ladl="32R3" lvf="L3b ou N4a">
      <MEMBERS>
           <MEMBER name="enregistrer"/>
           <MEMBER name="breveter"/>

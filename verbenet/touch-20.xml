@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="touch-20">
+<VNCLASS ID="touch-20" ladl="32CL" lvf="F1f ou F3d">
      <MEMBERS/>
      <THEMROLES>
           <THEMROLE type="Agent">

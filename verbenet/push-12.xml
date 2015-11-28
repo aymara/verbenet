@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="push-12">
+<VNCLASS ID="push-12" ladl="32C" lvf="E3f">
      <MEMBERS>
           <MEMBER name="tordre"/>
           <MEMBER name="balancer"/>

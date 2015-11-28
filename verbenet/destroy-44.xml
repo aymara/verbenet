@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="destroy-44">
+<VNCLASS ID="destroy-44" ladl="32D ou 32H" lvf="F3c">
      <MEMBERS>
           <MEMBER name="ratatiner"/>
           <MEMBER name="ratiboiser"/>

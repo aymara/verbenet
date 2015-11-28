@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="dress-41.1.1">
+<VNCLASS ID="dress-41.1.1" ladl="37M6 ou 37E" lvf="N1a ou N1b">
      <MEMBERS>
           <MEMBER name="baigner"/>
           <MEMBER name="doucher"/>

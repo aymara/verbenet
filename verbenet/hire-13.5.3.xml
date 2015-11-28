@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="hire-13.5.3">
+<VNCLASS ID="hire-13.5.3" ladl="38R" lvf="S2b">
      <MEMBERS>
           <MEMBER name="engager"/>
           <MEMBER name="exercer"/>

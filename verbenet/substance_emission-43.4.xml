@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="substance_emission-43.4">
+<VNCLASS ID="substance_emission-43.4" ladl="38L0[+N0 lieu source de N1 et -N1 V de N0 source]" lvf="E3b[-P3030 et -T3300] ou E3c">
      <MEMBERS>
           <MEMBER name="cracher"/>
           <MEMBER name="dégager"/>
@@ -63,7 +63,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="43.4-2">
+          <VNSUBCLASS ID="43.4-2" ladl="38L0[+N0 lieu source de N1 et +N1 V de N0 source]" lvf="E3b[+P3030 et +T3300]">
                <MEMBERS>
                     <MEMBER name="dégorger"/>
                     <MEMBER name="déborder"/>

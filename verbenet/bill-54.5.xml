@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="bill-54.5">
+<VNCLASS ID="bill-54.5" ladl="36DT" lvf="D2a ou L1b ou N4a ou F2b">
      <MEMBERS>
           <MEMBER name="facturer"/>
           <MEMBER name="imposer"/>

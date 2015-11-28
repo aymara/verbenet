@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="admire-31.2">
+<VNCLASS ID="admire-31.2" ladl="12" lvf="P1j">
      <MEMBERS>
           <MEMBER name="estimer"/>
           <MEMBER name="idolâtrer"/>
@@ -102,7 +102,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="31.2-1">
+          <VNSUBCLASS ID="31.2-1" ladl="12[+Qu Psubj = V0-inf W]" lvf="P1i.2[-T14b0]">
                <MEMBERS>
                     <MEMBER name="abhorrer"/>
                     <MEMBER name="abominer"/>
@@ -131,7 +131,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="31.2-2">
+          <VNSUBCLASS ID="31.2-2" ladl="12[+Qu Psubj = de V0-inf W]">
                <MEMBERS>
                     <MEMBER name="craindre"/>
                     <MEMBER name="exécrer"/>

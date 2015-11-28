@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="build-26.1">
+<VNCLASS ID="build-26.1" ladl="32A[+N0 V N1 de N2 matériau]" lvf="R3a.1 ou R3a.2">
      <MEMBERS>
           <MEMBER name="bâtir"/>
           <MEMBER name="composer"/>

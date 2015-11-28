@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="equip-13.4.2">
+<VNCLASS ID="equip-13.4.2" ladl="37M1[-N0 V N2 (E+Loc N1 destination)]" lvf="N1a">
      <MEMBERS>
           <MEMBER name="seller"/>
           <MEMBER name="régaler"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="begin-55.1">
+<VNCLASS ID="begin-55.1" ladl="1" lvf="X1a ou X4a ou M4b">
      <MEMBERS>
           <MEMBER name="commencer"/>
           <MEMBER name="recommencer"/>

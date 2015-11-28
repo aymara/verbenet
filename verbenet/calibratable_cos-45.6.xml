@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="calibratable_cos-45.6">
+<VNCLASS ID="calibratable_cos-45.6" ladl="31R" lvf="M4b.1 ou M4a.4">
      <MEMBERS>
           <MEMBER name="choir"/>
           <MEMBER name="chuter"/>
@@ -106,7 +106,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="45.6-2">
+          <VNSUBCLASS ID="45.6-2" ladl="37M4[+N1 V W] ou 37M1[+N1 V W]">
                <MEMBERS>
                     <MEMBER name="rehausser"/>
                     <MEMBER name="augmenter"/>

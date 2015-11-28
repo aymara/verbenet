@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="confine-92">
+<VNCLASS ID="confine-92" ladl="38LHD" lvf="L1b">
      <MEMBERS>
           <MEMBER name="enfermer"/>
           <MEMBER name="hospitaliser"/>

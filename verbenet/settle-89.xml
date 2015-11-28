@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="settle-89">
+<VNCLASS ID="settle-89" ladl="14 ou 16" lvf="U2a ou F4b ou X1a">
      <MEMBERS>
           <MEMBER name="accorder s'"/>
           <MEMBER name="arranger s'"/>

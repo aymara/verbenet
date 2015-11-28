@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="appear-48.1.1">
+<VNCLASS ID="appear-48.1.1" ladl="35L ou 35LS ou 35LD" lvf="L1a ou E3a">
      <MEMBERS>
           <MEMBER name="réapparaître"/>
           <MEMBER name="apparaître"/>

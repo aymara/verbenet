@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="concealment-16">
+<VNCLASS ID="concealment-16" ladl="38LD ou 38LR" lvf="L3b ou L1b">
      <MEMBERS>
           <MEMBER name="retenir"/>
           <MEMBER name="verrouiller"/>

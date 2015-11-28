@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="matter-91">
+<VNCLASS ID="matter-91" ladl="5" lvf="H2k">
      <MEMBERS>
           <MEMBER name="compter"/>
      </MEMBERS>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="pain-40.8.1">
+<VNCLASS ID="pain-40.8.1" ladl="32H" lvf="F1d.1">
      <MEMBERS>
           <MEMBER name="ronger"/>
           <MEMBER name="picoter"/>

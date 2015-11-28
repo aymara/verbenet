@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="exist-47.1">
+<VNCLASS ID="exist-47.1" ladl="35ST[-N0 V] ou 35R" lvf="X3a ou L3a">
      <MEMBERS/>
      <THEMROLES>
           <THEMROLE type="Theme"/>
@@ -34,7 +34,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="47.1-1">
+          <VNSUBCLASS ID="47.1-1" ladl="35ST[+N0 V] ou 35R">
                <MEMBERS>
                     <MEMBER name="régner"/>
                     <MEMBER name="subsister"/>

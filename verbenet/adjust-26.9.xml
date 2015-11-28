@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="adjust-26.9">
+<VNCLASS ID="adjust-26.9" ladl="11" lvf="U2b ou U4b">
      <MEMBERS>
           <MEMBER name="acclimater"/>
           <MEMBER name="adapter"/>

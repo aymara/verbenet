@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="disassemble-23.3">
+<VNCLASS ID="disassemble-23.3" ladl="38LS" lvf="U3d">
      <MEMBERS>
           <MEMBER name="décrocher"/>
           <MEMBER name="défaire"/>

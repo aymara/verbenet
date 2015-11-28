@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="spatial_configuration-47.6">
+<VNCLASS ID="spatial_configuration-47.6" ladl="38LR ou 38LD" lvf="M3b ou M3a ou L3b">
      <MEMBERS>
           <MEMBER name="déplier"/>
           <MEMBER name="incliner"/>
@@ -87,7 +87,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="47.6-2">
+          <VNSUBCLASS ID="47.6-2" ladl="38LR[+N1 V W] ou 38LD[+N1 V W]">
                <MEMBERS>
                     <MEMBER name="pendre"/>
                </MEMBERS>

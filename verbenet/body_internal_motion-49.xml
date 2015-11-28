@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="body_internal_motion-49">
+<VNCLASS ID="body_internal_motion-49" ladl="32CL ou 32R3 ou 32C" lvf="M1a">
      <MEMBERS>
           <MEMBER name="dandiner se"/>
           <MEMBER name="boiter"/>

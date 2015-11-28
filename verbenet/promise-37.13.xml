@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VNCLASS ID="promise-37.13">
+<VNCLASS ID="promise-37.13" ladl="9" lvf="C2 ou D3a ou D3c">
      <MEMBERS>
           <MEMBER name="assurer"/>
           <MEMBER name="certifier"/>
