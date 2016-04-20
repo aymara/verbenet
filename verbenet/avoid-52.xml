@@ -1,39 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="avoid-52" ladl="32R2 ou 6" lvf="S3c ou D3f ou M1c ou L3b">
      <MEMBERS>
+          <MEMBER name="boycotter"/>
           <MEMBER name="escamoter"/>
           <MEMBER name="esquiver"/>
           <MEMBER name="éviter"/>
-          <MEMBER name="boycotter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
                <SELRESTR Value="+" type="animate"/>
           </THEMROLE>
-          <THEMROLE type="Location"/>
           <THEMROLE type="Theme"/>
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.location"/>
-               <EXAMPLES>
-                    <EXAMPLE>Nous avons évité cette zone</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>
-                    <NP value="Agent">
-                         <SYNRESTRS/>
-                    </NP>
-                    <VERB/>
-                    <NP value="Location">
-                         <SYNRESTRS/>
-                    </NP>
-               </SYNTAX>
-               <SEMANTICS>avoid(during(E), Agent, Location)</SEMANTICS>
-          </FRAME>
-          <FRAME>
                <DESCRIPTION primary="NP V NP.theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Nous avons évité la balle</EXAMPLE>
+                    <EXAMPLE>Luc a évité la balle</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -49,7 +32,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V de V-inf"/>
                <EXAMPLES>
-                    <EXAMPLE>Il a évité d'aller dans cette zone</EXAMPLE>
+                    <EXAMPLE>Luc a évité d'aller dans cette zone</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

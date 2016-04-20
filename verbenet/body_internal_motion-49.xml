@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="body_internal_motion-49" ladl="32CL ou 32R3 ou 32C" lvf="M1a">
      <MEMBERS>
-          <MEMBER name="dandiner se"/>
           <MEMBER name="boiter"/>
           <MEMBER name="chanceler"/>
+          <MEMBER name="dandiner se"/>
+          <MEMBER name="dodeliner"/>
           <MEMBER name="frétiller"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="sauter"/>
           <MEMBER name="tanguer"/>
           <MEMBER name="tituber"/>
           <MEMBER name="tortiller se"/>
@@ -12,9 +15,6 @@
           <MEMBER name="trémousser se"/>
           <MEMBER name="tressaillir"/>
           <MEMBER name="vaciller"/>
-          <MEMBER name="dodeliner"/>
-          <MEMBER name="rouler"/>
-          <MEMBER name="sauter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

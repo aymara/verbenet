@@ -2,31 +2,31 @@
 <VNCLASS ID="banish-10.2" ladl="38LHS" lvf="E1b ou E2b">
      <MEMBERS>
           <MEMBER name="balancer"/>
+          <MEMBER name="bannir"/>
           <MEMBER name="congédier"/>
           <MEMBER name="débarquer"/>
-          <MEMBER name="détrôner"/>
-          <MEMBER name="éconduire"/>
-          <MEMBER name="éjecter"/>
-          <MEMBER name="évincer"/>
-          <MEMBER name="exclure"/>
-          <MEMBER name="licencier"/>
-          <MEMBER name="relaxer"/>
-          <MEMBER name="sacquer"/>
-          <MEMBER name="vider"/>
-          <MEMBER name="virer"/>
           <MEMBER name="déboulonner"/>
           <MEMBER name="dégommer"/>
-          <MEMBER name="bannir"/>
-          <MEMBER name="exhumer"/>
-          <MEMBER name="limoger"/>
-          <MEMBER name="proscrire"/>
-          <MEMBER name="suspendre"/>
+          <MEMBER name="détrôner"/>
           <MEMBER name="écarter"/>
-          <MEMBER name="révoquer"/>
+          <MEMBER name="éconduire"/>
+          <MEMBER name="éjecter"/>
           <MEMBER name="éliminer"/>
           <MEMBER name="éloigner"/>
           <MEMBER name="évacuer"/>
+          <MEMBER name="évincer"/>
+          <MEMBER name="exclure"/>
+          <MEMBER name="exhumer"/>
           <MEMBER name="extrader"/>
+          <MEMBER name="licencier"/>
+          <MEMBER name="limoger"/>
+          <MEMBER name="proscrire"/>
+          <MEMBER name="relaxer"/>
+          <MEMBER name="révoquer"/>
+          <MEMBER name="sacquer"/>
+          <MEMBER name="suspendre"/>
+          <MEMBER name="vider"/>
+          <MEMBER name="virer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -71,10 +71,10 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="10.2-1">
                <MEMBERS>
-                    <MEMBER name="expulser"/>
-                    <MEMBER name="renvoyer"/>
                     <MEMBER name="chasser"/>
                     <MEMBER name="déporter"/>
+                    <MEMBER name="expulser"/>
+                    <MEMBER name="renvoyer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Destination"/>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="investigate-35.4" ladl="38L1[+N1 lieu statique de N0 ou +N1 lieu de passage de N0]" lvf="M1b.1 ou P3b.1">
      <MEMBERS>
-          <MEMBER name="perquisitionner"/>
-          <MEMBER name="inspecter"/>
-          <MEMBER name="prospecter"/>
-          <MEMBER name="sonder"/>
           <MEMBER name="arpenter"/>
           <MEMBER name="explorer"/>
           <MEMBER name="fouiller"/>
+          <MEMBER name="inspecter"/>
           <MEMBER name="patrouiller"/>
+          <MEMBER name="perquisitionner"/>
+          <MEMBER name="prospecter"/>
           <MEMBER name="ratisser"/>
+          <MEMBER name="sonder"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="put-9.1" ladl="38LD" lvf="L3b">
      <MEMBERS>
-          <MEMBER name="serrer"/>
-          <MEMBER name="stationner"/>
-          <MEMBER name="mettre"/>
-          <MEMBER name="immerger"/>
-          <MEMBER name="ranger"/>
           <MEMBER name=""/>
           <MEMBER name="cacher"/>
           <MEMBER name="consigner"/>
@@ -16,6 +11,7 @@
           <MEMBER name="ensevelir"/>
           <MEMBER name="enterrer"/>
           <MEMBER name="garer"/>
+          <MEMBER name="immerger"/>
           <MEMBER name="implanter"/>
           <MEMBER name="inclure"/>
           <MEMBER name="incorporer"/>
@@ -24,9 +20,13 @@
           <MEMBER name="jeter"/>
           <MEMBER name="laisser"/>
           <MEMBER name="lancer"/>
+          <MEMBER name="mettre"/>
           <MEMBER name="parquer"/>
           <MEMBER name="planquer"/>
           <MEMBER name="positionner"/>
+          <MEMBER name="ranger"/>
+          <MEMBER name="serrer"/>
+          <MEMBER name="stationner"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

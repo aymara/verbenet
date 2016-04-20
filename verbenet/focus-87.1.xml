@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="focus-87.1" ladl="11" lvf="P1e ou P1f">
      <MEMBERS>
-          <MEMBER name="gamberger"/>
-          <MEMBER name="focaliser se"/>
           <MEMBER name="concentrer se"/>
+          <MEMBER name="focaliser se"/>
+          <MEMBER name="gamberger"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Experiencer">
@@ -48,7 +48,7 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP modifier="+VExperiencer-inf" value="Theme">

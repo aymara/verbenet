@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="marry-36.2" ladl="32H" lvf="U2">
      <MEMBERS>
-          <MEMBER name="enlacer"/>
-          <MEMBER name="courtiser"/>
-          <MEMBER name="étreindre"/>
-          <MEMBER name="embrasser"/>
-          <MEMBER name="chouchouter"/>
-          <MEMBER name="choyer"/>
+          <MEMBER name="baiser"/>
           <MEMBER name="cajoler"/>
           <MEMBER name="câliner"/>
+          <MEMBER name="chouchouter"/>
+          <MEMBER name="choyer"/>
+          <MEMBER name="courtiser"/>
+          <MEMBER name="embrasser"/>
+          <MEMBER name="enlacer"/>
           <MEMBER name="épouser"/>
+          <MEMBER name="étreindre"/>
           <MEMBER name="marier"/>
-          <MEMBER name="baiser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

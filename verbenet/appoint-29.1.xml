@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="appoint-29.1" ladl="39[+N0 V N1 comme N2]" lvf="E2d ou S2f">
      <MEMBERS>
-          <MEMBER name="étiqueter"/>
-          <MEMBER name="ordonner"/>
-          <MEMBER name="pressentir"/>
           <MEMBER name="choisir"/>
           <MEMBER name="désigner"/>
           <MEMBER name="élire"/>
+          <MEMBER name="étiqueter"/>
           <MEMBER name="mandater"/>
           <MEMBER name="nommer"/>
+          <MEMBER name="ordonner"/>
+          <MEMBER name="pressentir"/>
           <MEMBER name="promouvoir"/>
      </MEMBERS>
      <THEMROLES>

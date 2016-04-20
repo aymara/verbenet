@@ -2,9 +2,9 @@
 <VNCLASS ID="settle-89" ladl="14 ou 16" lvf="U2a ou F4b ou X1a">
      <MEMBERS>
           <MEMBER name="accorder s'"/>
+          <MEMBER name="allier s'"/>
           <MEMBER name="arranger s'"/>
           <MEMBER name="entendre s'"/>
-          <MEMBER name="allier s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -23,9 +23,9 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.goal"/>
+               <DESCRIPTION primary="NP V PP.co-agent pour V-inf"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc s'est entendu avec Marie à/pour proposer un projet</EXAMPLE>
+                    <EXAMPLE>Luc s'est entendu avec Marie pour proposer un projet</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -42,17 +42,15 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="pour"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP modifier="+VAgent-inf" value="Goal">
-                         <SYNRESTRS/>
-                    </NP>
+                    <VINF emptysubjectrole="Agent" value="Goal"/>
                </SYNTAX>
                <SEMANTICS>agree(result(E), Agent, Co-Agent, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.goal"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est entendu avec Marie sur le prix.</EXAMPLE>
                </EXAMPLES>
@@ -81,9 +79,9 @@
                <SEMANTICS>agree(result(E), Agent, Co-Agent, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.goal"/>
+               <DESCRIPTION primary="NP V pour V-inf"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc et Marie se sont entendus à/pour proposer un projet</EXAMPLE>
+                    <EXAMPLE>Luc et Marie se sont entendus pour proposer un projet</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP modifier="+plural" value="Agent">
@@ -92,17 +90,15 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="pour"/>
                          </SELRESTRS>
                     </PREP>
-                    <NP modifier="+VAgent-inf" value="Goal">
-                         <SYNRESTRS/>
-                    </NP>
+                    <VINF emptysubjectrole="Agent" value="Goal"/>
                </SYNTAX>
                <SEMANTICS>agree(result(E), Agent, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.goal"/>
+               <DESCRIPTION primary="NP V PP"/>
                <EXAMPLES>
                     <EXAMPLE>Luc et Marie se sont entendus sur le prix</EXAMPLE>
                </EXAMPLES>

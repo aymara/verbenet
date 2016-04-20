@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="pelt-17.2" ladl="37M4" lvf="F3a">
      <MEMBERS>
-          <MEMBER name="pilonner"/>
           <MEMBER name="arroser"/>
           <MEMBER name="bombarder"/>
           <MEMBER name="canarder"/>
           <MEMBER name="canonner"/>
           <MEMBER name="doucher"/>
           <MEMBER name="lapider"/>
+          <MEMBER name="pilonner"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

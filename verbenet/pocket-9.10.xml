@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="pocket-9.10" ladl="38LD[+N2 être V-n (forme V-n)]" lvf="E3f ou L3b">
      <MEMBERS>
-          <MEMBER name="ficher"/>
-          <MEMBER name="parquer"/>
-          <MEMBER name="emmailloter"/>
           <MEMBER name="archiver"/>
           <MEMBER name="classer"/>
           <MEMBER name="emboîter"/>
           <MEMBER name="embouteiller"/>
           <MEMBER name="embrocher"/>
           <MEMBER name="emmagasiner"/>
+          <MEMBER name="emmailloter"/>
           <MEMBER name="empoter"/>
           <MEMBER name="enfiler"/>
           <MEMBER name="ensacher"/>
           <MEMBER name="entreposer"/>
+          <MEMBER name="ficher"/>
+          <MEMBER name="parquer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -58,13 +58,13 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="9.10-1" ladl="38LD[+N1 V W]">
                <MEMBERS>
-                    <MEMBER name="échouer"/>
-                    <MEMBER name="loger"/>
-                    <MEMBER name="mouiller"/>
                     <MEMBER name="accoster"/>
                     <MEMBER name="amerrir"/>
                     <MEMBER name="apponter"/>
                     <MEMBER name="atterrir"/>
+                    <MEMBER name="échouer"/>
+                    <MEMBER name="loger"/>
+                    <MEMBER name="mouiller"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

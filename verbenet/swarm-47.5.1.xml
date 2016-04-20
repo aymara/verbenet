@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="swarm-47.5.1" ladl="34L0" lvf="M1a.3">
      <MEMBERS>
-          <MEMBER name="foisonner"/>
           <MEMBER name="abonder"/>
-          <MEMBER name="regorger"/>
+          <MEMBER name="foisonner"/>
           <MEMBER name="fourmiller"/>
           <MEMBER name="grouiller"/>
           <MEMBER name="pulluler"/>
+          <MEMBER name="regorger"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

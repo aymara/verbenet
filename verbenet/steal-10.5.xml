@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="steal-10.5" ladl="36DT[+N2 détrimentaire]" lvf="D2c">
      <MEMBERS>
-          <MEMBER name="soustraire"/>
-          <MEMBER name="soutirer"/>
-          <MEMBER name="tirer"/>
           <MEMBER name="barboter"/>
           <MEMBER name="calotter"/>
           <MEMBER name="carotter"/>
@@ -17,22 +14,25 @@
           <MEMBER name="dérober"/>
           <MEMBER name="emprunter"/>
           <MEMBER name="enlever"/>
+          <MEMBER name="extirper"/>
           <MEMBER name="extorquer"/>
           <MEMBER name="faucher"/>
+          <MEMBER name="kidnapper"/>
           <MEMBER name="piquer"/>
           <MEMBER name="prendre"/>
           <MEMBER name="rabioter"/>
           <MEMBER name="racheter"/>
+          <MEMBER name="rafler"/>
+          <MEMBER name="ravir"/>
           <MEMBER name="reprendre"/>
           <MEMBER name="resquiller"/>
           <MEMBER name="retirer"/>
           <MEMBER name="souffler"/>
           <MEMBER name="soulever"/>
+          <MEMBER name="soustraire"/>
+          <MEMBER name="soutirer"/>
           <MEMBER name="subtiliser"/>
-          <MEMBER name="kidnapper"/>
-          <MEMBER name="rafler"/>
-          <MEMBER name="ravir"/>
-          <MEMBER name="extirper"/>
+          <MEMBER name="tirer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

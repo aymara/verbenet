@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="turn-26.6.1" ladl="38R[Prép2=en]" lvf="T1a ou T3d[+T13j0 et +P30j0]">
      <MEMBERS>
+          <MEMBER name="aménager"/>
           <MEMBER name="arranger"/>
           <MEMBER name="changer"/>
           <MEMBER name="métamorphoser"/>
+          <MEMBER name="muter"/>
           <MEMBER name="tourner"/>
+          <MEMBER name="traduire"/>
           <MEMBER name="transcrire"/>
           <MEMBER name="transformer"/>
+          <MEMBER name="transformer se"/>
           <MEMBER name="transmuer"/>
           <MEMBER name="transmuter"/>
-          <MEMBER name="aménager"/>
-          <MEMBER name="muter"/>
-          <MEMBER name="traduire"/>
-          <MEMBER name="transformer se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

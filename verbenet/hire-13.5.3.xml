@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="hire-13.5.3" ladl="38R" lvf="S2b">
      <MEMBERS>
+          <MEMBER name="avoir"/>
+          <MEMBER name="dresser"/>
+          <MEMBER name="employer"/>
           <MEMBER name="engager"/>
           <MEMBER name="exercer"/>
           <MEMBER name="gagner"/>
           <MEMBER name="instruire"/>
-          <MEMBER name="prendre"/>
-          <MEMBER name="rétablir"/>
-          <MEMBER name="employer"/>
           <MEMBER name="lever"/>
+          <MEMBER name="prendre"/>
           <MEMBER name="recruter"/>
           <MEMBER name="récupérer"/>
+          <MEMBER name="rétablir"/>
           <MEMBER name="retenir"/>
           <MEMBER name="soustraire"/>
-          <MEMBER name="avoir"/>
-          <MEMBER name="dresser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

@@ -25,7 +25,7 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="de;à"/>
+                              <SELRESTR Value="à;de"/>
                          </SELRESTRS>
                     </PREP>
                     <VINF emptysubjectrole="Agent" value="Theme"/>

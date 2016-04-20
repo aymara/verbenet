@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="pain-40.8.1" ladl="32H" lvf="F1d.1">
      <MEMBERS>
-          <MEMBER name="ronger"/>
-          <MEMBER name="picoter"/>
           <MEMBER name="brûler"/>
           <MEMBER name="démanger"/>
-          <MEMBER name="gratter"/>
-          <MEMBER name="piquer"/>
           <MEMBER name="flamber"/>
+          <MEMBER name="gratter"/>
+          <MEMBER name="picoter"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="ronger"/>
           <MEMBER name="tarabuster"/>
      </MEMBERS>
      <THEMROLES>

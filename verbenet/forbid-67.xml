@@ -43,12 +43,12 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="67-2" ladl="12">
                <MEMBERS>
-                    <MEMBER name="réfreiner"/>
-                    <MEMBER name="freiner"/>
-                    <MEMBER name="stopper"/>
-                    <MEMBER name="empêcher"/>
-                    <MEMBER name="dissuader"/>
                     <MEMBER name="décourager"/>
+                    <MEMBER name="dissuader"/>
+                    <MEMBER name="empêcher"/>
+                    <MEMBER name="freiner"/>
+                    <MEMBER name="réfreiner"/>
+                    <MEMBER name="stopper"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

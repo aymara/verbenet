@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="differ-23.4" ladl="35S" lvf="U2c">
      <MEMBERS>
-          <MEMBER name="écarter s'"/>
-          <MEMBER name="diverger"/>
           <MEMBER name="différencier se"/>
           <MEMBER name="différer"/>
           <MEMBER name="distinguer se"/>
+          <MEMBER name="diverger"/>
+          <MEMBER name="écarter s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

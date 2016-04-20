@@ -3,13 +3,13 @@
      <MEMBERS>
           <MEMBER name="cracher"/>
           <MEMBER name="dégager"/>
-          <MEMBER name="perdre"/>
           <MEMBER name="dégueuler"/>
           <MEMBER name="diffuser"/>
           <MEMBER name="émettre"/>
           <MEMBER name="éructer"/>
           <MEMBER name="exsuder"/>
           <MEMBER name="jeter"/>
+          <MEMBER name="perdre"/>
           <MEMBER name="projeter"/>
      </MEMBERS>
      <THEMROLES>
@@ -65,13 +65,13 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="43.4-2" ladl="38L0[+N0 lieu source de N1 et +N1 V de N0 source]" lvf="E3b[+P3030 et +T3300]">
                <MEMBERS>
-                    <MEMBER name="dégorger"/>
                     <MEMBER name="déborder"/>
+                    <MEMBER name="dégorger"/>
                     <MEMBER name="dégouliner"/>
-                    <MEMBER name="suer"/>
-                    <MEMBER name="suinter"/>
                     <MEMBER name="pisser"/>
                     <MEMBER name="ruisseler"/>
+                    <MEMBER name="suer"/>
+                    <MEMBER name="suinter"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

@@ -11,24 +11,24 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="40.1.3-1" ladl="38L0[+N0 lieu source de N1]" lvf="E1c">
                <MEMBERS>
-                    <MEMBER name="expirer"/>
-                    <MEMBER name="suer"/>
-                    <MEMBER name="dégorger"/>
-                    <MEMBER name="exhaler"/>
-                    <MEMBER name="régurgiter"/>
                     <MEMBER name="baver"/>
                     <MEMBER name="chier"/>
                     <MEMBER name="cracher"/>
                     <MEMBER name="déféquer"/>
                     <MEMBER name="dégobiller"/>
+                    <MEMBER name="dégorger"/>
                     <MEMBER name="dégueuler"/>
+                    <MEMBER name="exhaler"/>
                     <MEMBER name="expectorer"/>
+                    <MEMBER name="expirer"/>
                     <MEMBER name="gerber"/>
                     <MEMBER name="glavioter"/>
                     <MEMBER name="pisser"/>
+                    <MEMBER name="régurgiter"/>
                     <MEMBER name="rendre"/>
                     <MEMBER name="saigner"/>
                     <MEMBER name="saliver"/>
+                    <MEMBER name="suer"/>
                     <MEMBER name="transpirer"/>
                     <MEMBER name="uriner"/>
                     <MEMBER name="vomir"/>
@@ -59,8 +59,8 @@
                     <MEMBER name="avaler"/>
                     <MEMBER name="humer"/>
                     <MEMBER name="inhaler"/>
-                    <MEMBER name="respirer"/>
                     <MEMBER name="inspirer"/>
+                    <MEMBER name="respirer"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

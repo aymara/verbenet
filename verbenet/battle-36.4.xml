@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="battle-36.4" ladl="35S" lvf="C1h ou C1i ou C1f">
      <MEMBERS>
-          <MEMBER name="empoigner s'"/>
-          <MEMBER name="guerroyer"/>
-          <MEMBER name="heurter se"/>
-          <MEMBER name="jouter"/>
-          <MEMBER name="rivaliser"/>
           <MEMBER name="accrocher s'"/>
+          <MEMBER name="bagarrer se"/>
           <MEMBER name="batailler"/>
           <MEMBER name="battre se"/>
           <MEMBER name="chamailler se"/>
-          <MEMBER name="combattre"/>
-          <MEMBER name="ergoter"/>
-          <MEMBER name="disputer se"/>
           <MEMBER name="chicaner se"/>
+          <MEMBER name="combattre"/>
+          <MEMBER name="disputer se"/>
+          <MEMBER name="empoigner s'"/>
+          <MEMBER name="ergoter"/>
+          <MEMBER name="guerroyer"/>
+          <MEMBER name="heurter se"/>
+          <MEMBER name="jouter"/>
           <MEMBER name="quereller se"/>
-          <MEMBER name="bagarrer se"/>
+          <MEMBER name="rivaliser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

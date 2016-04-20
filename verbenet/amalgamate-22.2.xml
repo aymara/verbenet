@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="amalgamate-22.2" ladl="36S[-Prép2 =: de] ou 32PL" lvf="U3a">
      <MEMBERS>
-          <MEMBER name="solidariser"/>
-          <MEMBER name="interconnecter"/>
           <MEMBER name="accoupler"/>
-          <MEMBER name="lier"/>
-          <MEMBER name="relier"/>
+          <MEMBER name="allier"/>
+          <MEMBER name="allier"/>
+          <MEMBER name="alterner"/>
           <MEMBER name="amalgamer"/>
           <MEMBER name="appareiller"/>
           <MEMBER name="apparier"/>
+          <MEMBER name="assortir"/>
           <MEMBER name="brouiller"/>
           <MEMBER name="comparer"/>
+          <MEMBER name="concilier"/>
           <MEMBER name="confondre"/>
           <MEMBER name="confronter"/>
-          <MEMBER name="embrouiller"/>
-          <MEMBER name="totaliser"/>
-          <MEMBER name="allier"/>
-          <MEMBER name="coupler"/>
-          <MEMBER name="joindre"/>
-          <MEMBER name="alterner"/>
-          <MEMBER name="assortir"/>
-          <MEMBER name="concilier"/>
           <MEMBER name="corréler"/>
+          <MEMBER name="coupler"/>
           <MEMBER name="égaler"/>
+          <MEMBER name="embrouiller"/>
           <MEMBER name="entrecroiser"/>
           <MEMBER name="entrelacer"/>
           <MEMBER name="harmoniser"/>
           <MEMBER name="interchanger"/>
+          <MEMBER name="interconnecter"/>
+          <MEMBER name="joindre"/>
+          <MEMBER name="lier"/>
           <MEMBER name="marier"/>
+          <MEMBER name="opposer"/>
+          <MEMBER name="opposer"/>
+          <MEMBER name="présenter"/>
+          <MEMBER name="présenter"/>
           <MEMBER name="rallier"/>
           <MEMBER name="recouper"/>
+          <MEMBER name="relier"/>
+          <MEMBER name="solidariser"/>
+          <MEMBER name="totaliser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -57,7 +62,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="avec;à"/>
+                              <SELRESTR Value="à;avec"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Co-Patient">
@@ -94,12 +99,25 @@
                     <VERB pronominal="true" restr="neutre"/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="avec;à"/>
+                              <SELRESTR Value="à;avec"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Co-Patient">
                          <SYNRESTRS/>
                     </NP>
+               </SYNTAX>
+               <SEMANTICS>together(end(E), physical, Patient, Co-Patient)</SEMANTICS>
+          </FRAME>
+          <FRAME>
+               <DESCRIPTION primary="NP se V"/>
+               <EXAMPLES>
+                    <EXAMPLE>Les deux compagnies se sont associées</EXAMPLE>
+               </EXAMPLES>
+               <SYNTAX>
+                    <NP modifier="+plural" value="Patient">
+                         <SYNRESTRS/>
+                    </NP>
+                    <VERB pronominal="true" restr="neutre"/>
                </SYNTAX>
                <SEMANTICS>together(end(E), physical, Patient, Co-Patient)</SEMANTICS>
           </FRAME>
@@ -125,70 +143,6 @@
                     </THEMROLE>
                </THEMROLES>
                <FRAMES/>
-          </VNSUBCLASS>
-          <VNSUBCLASS ID="22.2-3">
-               <MEMBERS>
-                    <MEMBER name="présenter"/>
-                    <MEMBER name="opposer"/>
-                    <MEMBER name="allier"/>
-                    <MEMBER name="marier"/>
-               </MEMBERS>
-               <THEMROLES/>
-               <FRAMES>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Jean a opposé les deux idées</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP modifier="+plural" value="Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>cause(Agent, E) together(end(E), abstract/physical, Patient_i, Patient_j)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.co-patient"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Jean a opposé une idée à l'autre</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP value="Agent">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB/>
-                              <NP value="Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <PREP>
-                                   <SELRESTRS>
-                                        <SELRESTR Value="à"/>
-                                   </SELRESTRS>
-                              </PREP>
-                              <NP value="Co-Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                         </SYNTAX>
-                         <SEMANTICS>cause(Agent, E) together(end(E), abstract/physical, Patient_i, Patient_j)</SEMANTICS>
-                    </FRAME>
-                    <FRAME>
-                         <DESCRIPTION primary="NP se V"/>
-                         <EXAMPLES>
-                              <EXAMPLE>Les deux idées s'opposent.</EXAMPLE>
-                         </EXAMPLES>
-                         <SYNTAX>
-                              <NP modifier="+plural" value="Patient">
-                                   <SYNRESTRS/>
-                              </NP>
-                              <VERB pronominal="true" restr="neutre"/>
-                         </SYNTAX>
-                         <SEMANTICS>together(end(E), abstract/physical, Patient_i, Patient_j)</SEMANTICS>
-                    </FRAME>
-               </FRAMES>
           </VNSUBCLASS>
      </SUBCLASSES>
 </VNCLASS>

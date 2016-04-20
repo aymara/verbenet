@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="rely-70" ladl="16" lvf="P1f ou P1d">
      <MEMBERS>
-          <MEMBER name="miser"/>
           <MEMBER name="compter"/>
+          <MEMBER name="miser"/>
           <MEMBER name="parier"/>
      </MEMBERS>
      <THEMROLES>

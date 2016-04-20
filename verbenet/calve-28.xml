@@ -2,12 +2,12 @@
 <VNCLASS ID="calve-28" ladl="31H ou 38L0" lvf="H1c.1">
      <MEMBERS>
           <MEMBER name=""/>
-          <MEMBER name="frayer"/>
           <MEMBER name="agneler"/>
           <MEMBER name="engendrer"/>
+          <MEMBER name="frayer"/>
+          <MEMBER name="lapiner"/>
           <MEMBER name="louveter"/>
           <MEMBER name="pondre"/>
-          <MEMBER name="lapiner"/>
           <MEMBER name="pouliner"/>
           <MEMBER name="vêler"/>
      </MEMBERS>

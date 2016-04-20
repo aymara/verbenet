@@ -30,36 +30,36 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="20-1">
                <MEMBERS>
+                    <MEMBER name=""/>
                     <MEMBER name="baiser"/>
                     <MEMBER name="bécoter"/>
                     <MEMBER name="biser"/>
                     <MEMBER name="caresser"/>
-                    <MEMBER name=""/>
                     <MEMBER name="chatouiller"/>
+                    <MEMBER name="effleurer"/>
                     <MEMBER name="embrasser"/>
+                    <MEMBER name="empoigner"/>
                     <MEMBER name="flatter"/>
+                    <MEMBER name="fouetter"/>
+                    <MEMBER name="frapper"/>
+                    <MEMBER name="frictionner"/>
                     <MEMBER name="frôler"/>
                     <MEMBER name="frotter"/>
                     <MEMBER name="lécher"/>
                     <MEMBER name="malaxer"/>
                     <MEMBER name="masser"/>
+                    <MEMBER name="mordre"/>
                     <MEMBER name="peloter"/>
                     <MEMBER name="pétrir"/>
-                    <MEMBER name="tâter"/>
-                    <MEMBER name="titiller"/>
-                    <MEMBER name="toucher"/>
-                    <MEMBER name="tripoter"/>
-                    <MEMBER name="triturer"/>
-                    <MEMBER name="empoigner"/>
-                    <MEMBER name="fouetter"/>
-                    <MEMBER name="frapper"/>
-                    <MEMBER name="frictionner"/>
-                    <MEMBER name="mordre"/>
                     <MEMBER name="saisir"/>
                     <MEMBER name="taper"/>
                     <MEMBER name="tapoter"/>
+                    <MEMBER name="tâter"/>
+                    <MEMBER name="titiller"/>
+                    <MEMBER name="toucher"/>
                     <MEMBER name="tripatouiller"/>
-                    <MEMBER name="effleurer"/>
+                    <MEMBER name="tripoter"/>
+                    <MEMBER name="triturer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Attribute">

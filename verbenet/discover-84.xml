@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="discover-84" ladl="6" lvf="P3c ou P3b">
      <MEMBERS>
+          <MEMBER name=""/>
+          <MEMBER name="déceler"/>
           <MEMBER name="découvrir"/>
+          <MEMBER name="dépister"/>
           <MEMBER name="deviner"/>
           <MEMBER name="discerner"/>
-          <MEMBER name="déceler"/>
+          <MEMBER name="ignorer"/>
           <MEMBER name="observer"/>
           <MEMBER name="percevoir"/>
           <MEMBER name="réaliser"/>
           <MEMBER name="relever"/>
           <MEMBER name="repérer"/>
-          <MEMBER name="retrouver"/>
-          <MEMBER name=""/>
-          <MEMBER name="dépister"/>
           <MEMBER name="trouver"/>
           <MEMBER name="voir"/>
-          <MEMBER name="ignorer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -44,7 +43,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a découvert le cachemire</EXAMPLE>
+                    <EXAMPLE>Luc a découvert la solution</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

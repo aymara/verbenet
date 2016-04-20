@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="break-45.1" ladl="38PL[-N1 V W]" lvf="R3i">
      <MEMBERS>
+          <MEMBER name="atomiser"/>
           <MEMBER name="briser"/>
           <MEMBER name="broyer"/>
           <MEMBER name="concasser"/>
           <MEMBER name="couper"/>
           <MEMBER name="déchiqueter"/>
+          <MEMBER name="déchirer"/>
           <MEMBER name="dédoubler"/>
           <MEMBER name="désintégrer"/>
           <MEMBER name="disloquer"/>
@@ -19,8 +21,6 @@
           <MEMBER name="scinder"/>
           <MEMBER name="sectionner"/>
           <MEMBER name="séparer"/>
-          <MEMBER name="déchirer"/>
-          <MEMBER name="atomiser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -36,9 +36,9 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV"/>
+               <DESCRIPTION primary="NP se V ADV PP.Result"/>
                <EXAMPLES>
-                    <EXAMPLE>Les vases en cristal se cassent facilement</EXAMPLE>
+                    <EXAMPLE>Les vases en cristal se cassent facilement en mille morceaux</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Patient">
@@ -46,6 +46,14 @@
                     </NP>
                     <VERB pronominal="true" restr="middle"/>
                     <ADV/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="en"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Result">
+                         <SYNRESTRS/>
+                    </NP>
                </SYNTAX>
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
@@ -76,7 +84,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.Result PP.instrument"/>
                <EXAMPLES>
-                    <EXAMPLE>Tony a casé la carafe  en mille morceaux avec un marteau</EXAMPLE>
+                    <EXAMPLE>Tony a cassé la carafe  en mille morceaux avec un marteau</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -130,11 +138,11 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="45.1-1" ladl="38PL[+N1 V W]">
                <MEMBERS>
-                    <MEMBER name="fendre"/>
+                    <MEMBER name="casser"/>
                     <MEMBER name="fêler"/>
+                    <MEMBER name="fendre"/>
                     <MEMBER name="péter"/>
                     <MEMBER name="rompre"/>
-                    <MEMBER name="casser"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

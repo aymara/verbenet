@@ -15,16 +15,16 @@
           <VNSUBCLASS ID="29.5-1">
                <MEMBERS>
                     <MEMBER name="pressentir"/>
-                    <MEMBER name="sentir"/>
+                    <MEMBER name="présumer"/>
                     <MEMBER name="présupposer"/>
-                    <MEMBER name="savoir"/>
-                    <MEMBER name="rêver"/>
                     <MEMBER name="ressentir"/>
+                    <MEMBER name="rêver"/>
+                    <MEMBER name="savoir"/>
+                    <MEMBER name="sentir"/>
                     <MEMBER name="soupçonner"/>
                     <MEMBER name="subodorer"/>
-                    <MEMBER name="suspecter"/>
                     <MEMBER name="supposer"/>
-                    <MEMBER name="présumer"/>
+                    <MEMBER name="suspecter"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Attribute"/>
@@ -65,9 +65,9 @@
                <SUBCLASSES>
                     <VNSUBCLASS ID="29.5-1-1">
                          <MEMBERS>
-                              <MEMBER name="estimer"/>
-                              <MEMBER name="espérer"/>
                               <MEMBER name="croire"/>
+                              <MEMBER name="espérer"/>
+                              <MEMBER name="estimer"/>
                               <MEMBER name="penser"/>
                          </MEMBERS>
                          <THEMROLES/>
@@ -114,24 +114,24 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="29.5-2">
                <MEMBERS>
-                    <MEMBER name="préétablir"/>
-                    <MEMBER name="proférer"/>
-                    <MEMBER name="prononcer"/>
-                    <MEMBER name="trouver"/>
+                    <MEMBER name=""/>
+                    <MEMBER name="admettre"/>
                     <MEMBER name="asserter"/>
                     <MEMBER name="avaliser"/>
                     <MEMBER name="constater"/>
-                    <MEMBER name="homologuer"/>
-                    <MEMBER name="proclamer"/>
-                    <MEMBER name="percevoir"/>
-                    <MEMBER name="prétendre"/>
-                    <MEMBER name="admettre"/>
                     <MEMBER name="décréter"/>
-                    <MEMBER name="juger"/>
-                    <MEMBER name="ratifier"/>
                     <MEMBER name="éventer"/>
+                    <MEMBER name="homologuer"/>
                     <MEMBER name="inventer"/>
-                    <MEMBER name=""/>
+                    <MEMBER name="juger"/>
+                    <MEMBER name="percevoir"/>
+                    <MEMBER name="préétablir"/>
+                    <MEMBER name="prétendre"/>
+                    <MEMBER name="proclamer"/>
+                    <MEMBER name="proférer"/>
+                    <MEMBER name="prononcer"/>
+                    <MEMBER name="ratifier"/>
+                    <MEMBER name="trouver"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -186,11 +186,11 @@
                <SUBCLASSES>
                     <VNSUBCLASS ID="29.5-2-1">
                          <MEMBERS>
+                              <MEMBER name="déclarer"/>
                               <MEMBER name="noter"/>
+                              <MEMBER name="postuler"/>
                               <MEMBER name="pronostiquer"/>
                               <MEMBER name="reconnaître"/>
-                              <MEMBER name="déclarer"/>
-                              <MEMBER name="postuler"/>
                          </MEMBERS>
                          <THEMROLES/>
                          <FRAMES>

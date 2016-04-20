@@ -16,15 +16,15 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="26.3-1" ladl="32A" lvf="R3c">
                <MEMBERS>
-                    <MEMBER name="cuire"/>
                     <MEMBER name="apprêter"/>
                     <MEMBER name="brasser"/>
-                    <MEMBER name="cuisiner"/>
-                    <MEMBER name="mijoter"/>
-                    <MEMBER name="préparer"/>
                     <MEMBER name="confectionner"/>
+                    <MEMBER name="cuire"/>
+                    <MEMBER name="cuisiner"/>
                     <MEMBER name="fabriquer"/>
                     <MEMBER name="improviser"/>
+                    <MEMBER name="mijoter"/>
+                    <MEMBER name="préparer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Product">
@@ -60,11 +60,11 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="26.3-2" ladl="32C" lvf="R3c.1 ou R3c.2">
                <MEMBERS>
-                    <MEMBER name="chauffer"/>
-                    <MEMBER name="griller"/>
                     <MEMBER name="blanchir"/>
                     <MEMBER name="bouillir"/>
+                    <MEMBER name="chauffer"/>
                     <MEMBER name="frire"/>
+                    <MEMBER name="griller"/>
                     <MEMBER name="rôtir"/>
                     <MEMBER name="torréfier"/>
                </MEMBERS>

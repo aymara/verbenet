@@ -4,9 +4,9 @@
           <MEMBER name="collaborer"/>
           <MEMBER name="comploter"/>
           <MEMBER name="conspirer"/>
-          <MEMBER name="riposter"/>
           <MEMBER name="protester"/>
           <MEMBER name="rebeller se"/>
+          <MEMBER name="riposter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

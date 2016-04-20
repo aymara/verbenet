@@ -15,14 +15,12 @@
                <MEMBERS>
                     <MEMBER name="becqueter"/>
                     <MEMBER name="brouter"/>
-                    <MEMBER name="grignoter"/>
-                    <MEMBER name="licher"/>
-                    <MEMBER name="picorer"/>
-                    <MEMBER name="picoter"/>
                     <MEMBER name="chiquer"/>
                     <MEMBER name="croquer"/>
+                    <MEMBER name="grignoter"/>
                     <MEMBER name="gruger"/>
                     <MEMBER name="lécher"/>
+                    <MEMBER name="licher"/>
                     <MEMBER name="mâcher"/>
                     <MEMBER name="mâchonner"/>
                     <MEMBER name="mâchouiller"/>
@@ -30,6 +28,8 @@
                     <MEMBER name="mastiquer"/>
                     <MEMBER name="mordiller"/>
                     <MEMBER name="mordre"/>
+                    <MEMBER name="picorer"/>
+                    <MEMBER name="picoter"/>
                     <MEMBER name="ronger"/>
                </MEMBERS>
                <THEMROLES>
@@ -66,9 +66,9 @@
                     <MEMBER name="laper"/>
                     <MEMBER name="pomper"/>
                     <MEMBER name="siroter"/>
-                    <MEMBER name="téter"/>
                     <MEMBER name="sucer"/>
                     <MEMBER name="suçoter"/>
+                    <MEMBER name="téter"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Patient">

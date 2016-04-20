@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="destroy-44" ladl="32D ou 32H" lvf="F3c">
      <MEMBERS>
-          <MEMBER name="ratatiner"/>
-          <MEMBER name="ratiboiser"/>
-          <MEMBER name="ruiner"/>
-          <MEMBER name="souffler"/>
-          <MEMBER name="supprimer"/>
-          <MEMBER name="dégrader"/>
-          <MEMBER name="liquider"/>
-          <MEMBER name="terrasser"/>
-          <MEMBER name="volatiliser"/>
-          <MEMBER name="zigouiller"/>
-          <MEMBER name="araser"/>
-          <MEMBER name="démanteler"/>
-          <MEMBER name="dévaster"/>
-          <MEMBER name="éradiquer"/>
-          <MEMBER name="raser"/>
-          <MEMBER name="rayer"/>
-          <MEMBER name="saccager"/>
           <MEMBER name="abattre"/>
           <MEMBER name="anéantir"/>
+          <MEMBER name="araser"/>
           <MEMBER name="bousiller"/>
           <MEMBER name="brûler"/>
           <MEMBER name="défaire"/>
+          <MEMBER name="dégrader"/>
+          <MEMBER name="démanteler"/>
           <MEMBER name="démolir"/>
           <MEMBER name="détruire"/>
+          <MEMBER name="dévaster"/>
           <MEMBER name="écraser"/>
           <MEMBER name="effacer"/>
           <MEMBER name="enlever"/>
+          <MEMBER name="éradiquer"/>
+          <MEMBER name="liquider"/>
           <MEMBER name="plier"/>
           <MEMBER name="pulvériser"/>
+          <MEMBER name="raser"/>
+          <MEMBER name="ratatiner"/>
+          <MEMBER name="ratiboiser"/>
+          <MEMBER name="rayer"/>
+          <MEMBER name="ruiner"/>
+          <MEMBER name="saccager"/>
+          <MEMBER name="souffler"/>
+          <MEMBER name="supprimer"/>
+          <MEMBER name="terrasser"/>
+          <MEMBER name="volatiliser"/>
+          <MEMBER name="zigouiller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -43,22 +43,6 @@
           </THEMROLE>
      </THEMROLES>
      <FRAMES>
-          <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
-               <EXAMPLES>
-                    <EXAMPLE>Les Romains ont détruit la ville</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>
-                    <NP value="Agent">
-                         <SYNRESTRS/>
-                    </NP>
-                    <VERB/>
-                    <NP value="Patient">
-                         <SYNRESTRS/>
-                    </NP>
-               </SYNTAX>
-               <SEMANTICS>cause(Agent, E) destroyed(result(E), Patient)</SEMANTICS>
-          </FRAME>
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.instrument"/>
                <EXAMPLES>

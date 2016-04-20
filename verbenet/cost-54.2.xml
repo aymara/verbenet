@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cost-54.2" ladl="32NM[-N actif V N0]" lvf="H3f">
      <MEMBERS>
-          <MEMBER name="prendre"/>
           <MEMBER name="coûter"/>
-          <MEMBER name="faire"/>
           <MEMBER name="durer"/>
+          <MEMBER name="faire"/>
+          <MEMBER name="prendre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="pay-68" ladl="39" lvf="D2a ou N2a ou S4b">
      <MEMBERS>
+          <MEMBER name="dépenser"/>
           <MEMBER name="dilapider"/>
           <MEMBER name="gâcher"/>
           <MEMBER name="gaspiller"/>
           <MEMBER name="manger"/>
-          <MEMBER name="dépenser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -48,10 +48,10 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="68-1">
                <MEMBERS>
+                    <MEMBER name="payer"/>
                     <MEMBER name="régler"/>
                     <MEMBER name="rembourser"/>
                     <MEMBER name="verser"/>
-                    <MEMBER name="payer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Recipient"/>

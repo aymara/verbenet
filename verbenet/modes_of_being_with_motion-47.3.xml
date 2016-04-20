@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="modes_of_being_with_motion-47.3" ladl="31R" lvf="M3a">
      <MEMBERS>
-          <MEMBER name="porter"/>
-          <MEMBER name="pousser"/>
-          <MEMBER name="tourbillonner"/>
+          <MEMBER name="agiter s'"/>
+          <MEMBER name="balancer"/>
+          <MEMBER name="ballotter"/>
           <MEMBER name="battre"/>
           <MEMBER name="bouger"/>
           <MEMBER name="branler"/>
+          <MEMBER name="bringuebaler"/>
           <MEMBER name="chanceler"/>
           <MEMBER name="danser"/>
           <MEMBER name="flancher"/>
           <MEMBER name="fléchir"/>
           <MEMBER name="flotter"/>
-          <MEMBER name="tanguer"/>
-          <MEMBER name="virevolter"/>
-          <MEMBER name="agiter s'"/>
-          <MEMBER name="balancer"/>
-          <MEMBER name="ballotter"/>
-          <MEMBER name="bringuebaler"/>
           <MEMBER name="graviter"/>
           <MEMBER name="onduler"/>
           <MEMBER name="osciller"/>
           <MEMBER name="pivoter"/>
           <MEMBER name="planer"/>
           <MEMBER name="ployer"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="tanguer"/>
+          <MEMBER name="tourbillonner"/>
+          <MEMBER name="virevolter"/>
           <MEMBER name="voleter"/>
           <MEMBER name="voltiger"/>
      </MEMBERS>

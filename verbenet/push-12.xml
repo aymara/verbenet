@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="push-12" ladl="32C" lvf="E3f">
      <MEMBERS>
-          <MEMBER name="tordre"/>
-          <MEMBER name="balancer"/>
-          <MEMBER name="enfoncer"/>
-          <MEMBER name="tirer"/>
           <MEMBER name="arracher"/>
+          <MEMBER name="balancer"/>
           <MEMBER name="bousculer"/>
+          <MEMBER name="enfoncer"/>
           <MEMBER name="fouler"/>
           <MEMBER name="resserrer"/>
           <MEMBER name="secouer"/>
+          <MEMBER name="tirer"/>
+          <MEMBER name="tordre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

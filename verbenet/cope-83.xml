@@ -23,7 +23,7 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP modifier="+VAgent-inf" value="Theme">
@@ -36,9 +36,9 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="83-1">
                <MEMBERS>
-                    <MEMBER name="démerder se"/>
-                    <MEMBER name="débrouiller se"/>
                     <MEMBER name="arranger s'"/>
+                    <MEMBER name="débrouiller se"/>
+                    <MEMBER name="démerder se"/>
                     <MEMBER name="se démerder"/>
                </MEMBERS>
                <THEMROLES/>

@@ -3,14 +3,14 @@
      <MEMBERS>
           <MEMBER name="aider"/>
           <MEMBER name="assister"/>
-          <MEMBER name="épauler"/>
-          <MEMBER name="patronner"/>
-          <MEMBER name="seconder"/>
           <MEMBER name="conforter"/>
           <MEMBER name="encourager"/>
           <MEMBER name="entretenir"/>
+          <MEMBER name="épauler"/>
           <MEMBER name="inciter"/>
+          <MEMBER name="patronner"/>
           <MEMBER name="porter"/>
+          <MEMBER name="seconder"/>
           <MEMBER name="soutenir"/>
      </MEMBERS>
      <THEMROLES>

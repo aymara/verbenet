@@ -110,9 +110,9 @@
           <VNSUBCLASS ID="17.1-1" ladl="38L[+à Nhum destination]">
                <MEMBERS>
                     <MEMBER name="balancer"/>
-                    <MEMBER name="lancer"/>
                     <MEMBER name="catapulter"/>
                     <MEMBER name="jeter"/>
+                    <MEMBER name="lancer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Recipient">

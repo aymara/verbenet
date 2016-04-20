@@ -33,19 +33,19 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="41.1.1-1">
                <MEMBERS>
+                    <MEMBER name="appareiller"/>
+                    <MEMBER name="couvrir"/>
+                    <MEMBER name="dénuder"/>
                     <MEMBER name="dépouiller"/>
+                    <MEMBER name="désaper"/>
+                    <MEMBER name="déshabiller"/>
+                    <MEMBER name="fringuer"/>
                     <MEMBER name="habiller"/>
                     <MEMBER name="langer"/>
                     <MEMBER name="parer"/>
+                    <MEMBER name="pomponner"/>
                     <MEMBER name="revêtir"/>
                     <MEMBER name="vêtir"/>
-                    <MEMBER name="dénuder"/>
-                    <MEMBER name="fringuer"/>
-                    <MEMBER name="pomponner"/>
-                    <MEMBER name="désaper"/>
-                    <MEMBER name="déshabiller"/>
-                    <MEMBER name="appareiller"/>
-                    <MEMBER name="couvrir"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Theme"/>

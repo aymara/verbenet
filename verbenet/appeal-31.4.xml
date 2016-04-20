@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="appeal-31.4" ladl="5" lvf="P2b">
      <MEMBERS>
-          <MEMBER name="répugner"/>
-          <MEMBER name="plaire"/>
-          <MEMBER name="déplaire"/>
-          <MEMBER name="botter"/>
-          <MEMBER name="désagréer"/>
-          <MEMBER name="convenir"/>
-          <MEMBER name="peser"/>
-          <MEMBER name="seoir"/>
           <MEMBER name="agréer"/>
           <MEMBER name="aller"/>
+          <MEMBER name="botter"/>
+          <MEMBER name="convenir"/>
+          <MEMBER name="déplaire"/>
+          <MEMBER name="désagréer"/>
+          <MEMBER name="peser"/>
+          <MEMBER name="plaire"/>
+          <MEMBER name="répugner"/>
+          <MEMBER name="seoir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Stimulus"/>

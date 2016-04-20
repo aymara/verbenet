@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="spatial_configuration-47.6" ladl="38LR ou 38LD" lvf="M3b ou M3a ou L3b">
      <MEMBERS>
+          <MEMBER name="accrocher"/>
+          <MEMBER name="appuyer"/>
+          <MEMBER name="arc-bouter"/>
+          <MEMBER name="asseoir"/>
           <MEMBER name="déplier"/>
           <MEMBER name="incliner"/>
           <MEMBER name="installer"/>
@@ -10,12 +14,8 @@
           <MEMBER name="pencher"/>
           <MEMBER name="percher"/>
           <MEMBER name="poser"/>
-          <MEMBER name="tendre"/>
-          <MEMBER name="accrocher"/>
-          <MEMBER name="arc-bouter"/>
           <MEMBER name="suspendre"/>
-          <MEMBER name="appuyer"/>
-          <MEMBER name="asseoir"/>
+          <MEMBER name="tendre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

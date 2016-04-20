@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="fit-54.3" ladl="32NM[-N actif V N0]" lvf="S3k">
      <MEMBERS>
+          <MEMBER name="accepter"/>
+          <MEMBER name="acceuillir"/>
+          <MEMBER name="admettre"/>
+          <MEMBER name="comporter"/>
           <MEMBER name="contenir"/>
           <MEMBER name="tenir"/>
-          <MEMBER name="admettre"/>
-          <MEMBER name="acceuillir"/>
-          <MEMBER name="accepter"/>
           <MEMBER name="valoir"/>
-          <MEMBER name="comporter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Value"/>

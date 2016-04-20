@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="chase-51.6" ladl="38LD ou 38LHR ou 38LH" lvf="M1c">
      <MEMBERS>
+          <MEMBER name="filer"/>
           <MEMBER name="pister"/>
           <MEMBER name="pourchasser"/>
           <MEMBER name="poursuivre"/>
           <MEMBER name="rechercher"/>
           <MEMBER name="suivre"/>
           <MEMBER name="traquer"/>
-          <MEMBER name="filer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

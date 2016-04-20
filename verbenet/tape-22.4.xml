@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="tape-22.4" ladl="36SL[+V-n attache (forme V-n)] ou 32PL" lvf="U3a.1">
      <MEMBERS>
+          <MEMBER name="agrapher"/>
           <MEMBER name="amarrer"/>
           <MEMBER name="boulonner"/>
-          <MEMBER name="clouer"/>
-          <MEMBER name="encorder"/>
-          <MEMBER name="épingler"/>
-          <MEMBER name="ficeler"/>
-          <MEMBER name="goupiller"/>
-          <MEMBER name="lacer"/>
-          <MEMBER name="lier"/>
-          <MEMBER name="river"/>
-          <MEMBER name="riveter"/>
-          <MEMBER name="scotcher"/>
-          <MEMBER name="visser"/>
           <MEMBER name="boutonner"/>
           <MEMBER name="brocher"/>
           <MEMBER name="cadenasser"/>
           <MEMBER name="cheviller"/>
           <MEMBER name="cimenter"/>
-          <MEMBER name="enchaîner"/>
-          <MEMBER name="ligaturer"/>
-          <MEMBER name="pincer"/>
-          <MEMBER name="sangler"/>
+          <MEMBER name="clouer"/>
           <MEMBER name="corder"/>
           <MEMBER name="crocher"/>
+          <MEMBER name="enchaîner"/>
+          <MEMBER name="encorder"/>
+          <MEMBER name="épingler"/>
+          <MEMBER name="ficeler"/>
+          <MEMBER name="goupiller"/>
           <MEMBER name="joindre"/>
+          <MEMBER name="lacer"/>
+          <MEMBER name="lier"/>
+          <MEMBER name="ligaturer"/>
           <MEMBER name="nouer"/>
+          <MEMBER name="pincer"/>
           <MEMBER name="piquer"/>
-          <MEMBER name="agrapher"/>
+          <MEMBER name="river"/>
+          <MEMBER name="riveter"/>
+          <MEMBER name="sangler"/>
+          <MEMBER name="scotcher"/>
+          <MEMBER name="visser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -60,7 +60,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="avec;sur;à"/>
+                              <SELRESTR Value="à;avec;sur"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Co-Patient">
@@ -99,7 +99,7 @@
                     <ADV/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="avec;sur;à"/>
+                              <SELRESTR Value="à;avec;sur"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Co-Patient">
@@ -113,8 +113,8 @@
           <VNSUBCLASS ID="22.4-1" ladl="36SL[+N1 V Loc N2]">
                <MEMBERS>
                     <MEMBER name="accrocher"/>
-                    <MEMBER name="coller"/>
                     <MEMBER name="attacher"/>
+                    <MEMBER name="coller"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

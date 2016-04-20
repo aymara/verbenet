@@ -30,19 +30,19 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="15.1-1">
                <MEMBERS>
-                    <MEMBER name="prendre"/>
-                    <MEMBER name="retenir"/>
-                    <MEMBER name="serrer"/>
-                    <MEMBER name="tirer"/>
                     <MEMBER name="agripper"/>
+                    <MEMBER name="attraper"/>
                     <MEMBER name="empoigner"/>
+                    <MEMBER name="étreindre"/>
                     <MEMBER name="happer"/>
                     <MEMBER name="pincer"/>
+                    <MEMBER name="prendre"/>
+                    <MEMBER name="retenir"/>
                     <MEMBER name="saisir"/>
-                    <MEMBER name="tenir"/>
-                    <MEMBER name="étreindre"/>
+                    <MEMBER name="serrer"/>
                     <MEMBER name="tâter"/>
-                    <MEMBER name="attraper"/>
+                    <MEMBER name="tenir"/>
+                    <MEMBER name="tirer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Attribute">

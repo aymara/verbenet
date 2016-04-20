@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="accept-77" ladl="6[+N1 =: Qu Psubj]" lvf="P1h.1">
      <MEMBERS>
-          <MEMBER name="contester"/>
-          <MEMBER name="démentir"/>
-          <MEMBER name="dénier"/>
-          <MEMBER name="renier"/>
-          <MEMBER name="nier"/>
           <MEMBER name="agréer"/>
           <MEMBER name="assimiler"/>
           <MEMBER name="avaler"/>
+          <MEMBER name="contester"/>
+          <MEMBER name="démentir"/>
+          <MEMBER name="dénier"/>
           <MEMBER name="encourager"/>
           <MEMBER name="entendre"/>
           <MEMBER name="expliquer s'"/>
           <MEMBER name="favoriser"/>
+          <MEMBER name="nier"/>
+          <MEMBER name="renier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -42,12 +42,12 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="77-1">
                <MEMBERS>
-                    <MEMBER name="regretter"/>
-                    <MEMBER name="refuser"/>
                     <MEMBER name="accepter"/>
                     <MEMBER name="admettre"/>
-                    <MEMBER name="rejeter"/>
                     <MEMBER name="exclure"/>
+                    <MEMBER name="refuser"/>
+                    <MEMBER name="regretter"/>
+                    <MEMBER name="rejeter"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Attribute"/>

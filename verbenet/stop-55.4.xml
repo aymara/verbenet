@@ -3,12 +3,12 @@
      <MEMBERS>
           <MEMBER name="achever"/>
           <MEMBER name="arrêter"/>
+          <MEMBER name="arrêter s'"/>
           <MEMBER name="cesser"/>
+          <MEMBER name="finir"/>
           <MEMBER name="sortir"/>
           <MEMBER name="stopper"/>
           <MEMBER name="terminer"/>
-          <MEMBER name="arrêter s'"/>
-          <MEMBER name="finir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

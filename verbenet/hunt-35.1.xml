@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="hunt-35.1" ladl="32H ou 32R3 ou 38LR ou 38LHR" lvf="M1c.1">
      <MEMBERS>
+          <MEMBER name="braconner"/>
+          <MEMBER name="chasser"/>
+          <MEMBER name="chercher"/>
           <MEMBER name="esquinter"/>
           <MEMBER name="pêcher"/>
+          <MEMBER name="pister"/>
           <MEMBER name="pourchasser"/>
+          <MEMBER name="poursuivre"/>
           <MEMBER name="rechercher"/>
           <MEMBER name="traquer"/>
-          <MEMBER name="pister"/>
-          <MEMBER name="poursuivre"/>
-          <MEMBER name="braconner"/>
-          <MEMBER name="chercher"/>
-          <MEMBER name="chasser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

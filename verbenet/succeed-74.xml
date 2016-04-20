@@ -90,8 +90,8 @@
           <VNSUBCLASS ID="74-3">
                <MEMBERS>
                     <MEMBER name="louper"/>
-                    <MEMBER name="rater"/>
                     <MEMBER name="manquer"/>
+                    <MEMBER name="rater"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

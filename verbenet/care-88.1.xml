@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="care-88.1" ladl="8" lvf="P1a">
      <MEMBERS>
-          <MEMBER name="ficher se"/>
-          <MEMBER name="foutre se"/>
-          <MEMBER name="tourmenter se"/>
-          <MEMBER name="tracasser se"/>
-          <MEMBER name="inquiéter s'"/>
-          <MEMBER name="préoccuper se"/>
           <MEMBER name="branler se"/>
           <MEMBER name="contreficher se"/>
           <MEMBER name="contrefoutre se"/>
+          <MEMBER name="ficher se"/>
+          <MEMBER name="foutre se"/>
+          <MEMBER name="inquiéter s'"/>
+          <MEMBER name="préoccuper se"/>
+          <MEMBER name="tourmenter se"/>
+          <MEMBER name="tracasser se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Experiencer">

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="smell_emission-43.3" ladl="32NM" lvf="E1c.1[+A96 et +N1i]">
      <MEMBERS>
-          <MEMBER name="puer"/>
-          <MEMBER name="sentir"/>
           <MEMBER name="chlinguer"/>
-          <MEMBER name="cocotter"/>
-          <MEMBER name="fleurer"/>
           <MEMBER name="cocoter"/>
+          <MEMBER name="cocotter"/>
           <MEMBER name="embaumer"/>
           <MEMBER name="empester"/>
+          <MEMBER name="fleurer"/>
           <MEMBER name="fouetter"/>
+          <MEMBER name="puer"/>
+          <MEMBER name="sentir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="involve-107" ladl="11 ou 38LHD" lvf="E2d.3">
      <MEMBERS>
-          <MEMBER name="impliquer"/>
           <MEMBER name="embringuer"/>
           <MEMBER name="engager"/>
+          <MEMBER name="impliquer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

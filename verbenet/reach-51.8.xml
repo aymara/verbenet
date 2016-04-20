@@ -2,19 +2,19 @@
 <VNCLASS ID="reach-51.8" ladl="38L1[+N1 lieu de destination de N0] ou 2T" lvf="S3g ou E1d ou E3d">
      <MEMBERS>
           <MEMBER name="aborder"/>
-          <MEMBER name="atteindre"/>
-          <MEMBER name="gagner"/>
-          <MEMBER name="rallier"/>
-          <MEMBER name="toucher"/>
-          <MEMBER name="frapper"/>
-          <MEMBER name="heurter"/>
-          <MEMBER name="rencontrer"/>
-          <MEMBER name="diriger se"/>
           <MEMBER name="approcher"/>
+          <MEMBER name="atteindre"/>
+          <MEMBER name="diriger se"/>
           <MEMBER name="envahir"/>
-          <MEMBER name="réintégrer"/>
+          <MEMBER name="frapper"/>
+          <MEMBER name="gagner"/>
+          <MEMBER name="heurter"/>
+          <MEMBER name="rallier"/>
           <MEMBER name="regagner"/>
+          <MEMBER name="réintégrer"/>
           <MEMBER name="rejoindre"/>
+          <MEMBER name="rencontrer"/>
+          <MEMBER name="toucher"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

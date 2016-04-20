@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="roll-51.3.1" ladl="35L" lvf="E3c ou E3d ou E3f ou E1e ou E1d">
      <MEMBERS>
-          <MEMBER name="voguer"/>
-          <MEMBER name="braquer"/>
+          <MEMBER name="baisser"/>
           <MEMBER name="balancer"/>
           <MEMBER name="basculer"/>
           <MEMBER name="bouger"/>
-          <MEMBER name="dériver"/>
-          <MEMBER name="dévier"/>
-          <MEMBER name="glisser"/>
-          <MEMBER name="baisser"/>
-          <MEMBER name="flotter"/>
-          <MEMBER name="glisser se"/>
-          <MEMBER name="tomber"/>
+          <MEMBER name="braquer"/>
           <MEMBER name="choir"/>
           <MEMBER name="chuter"/>
-          <MEMBER name="roulotter"/>
-          <MEMBER name="sauter"/>
-          <MEMBER name="rouler"/>
-          <MEMBER name="voler"/>
+          <MEMBER name="dériver"/>
+          <MEMBER name="dévier"/>
+          <MEMBER name="flotter"/>
+          <MEMBER name="glisser"/>
+          <MEMBER name="glisser se"/>
           <MEMBER name="osciller"/>
           <MEMBER name="rebondir"/>
           <MEMBER name="ricocher"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="roulotter"/>
+          <MEMBER name="sauter"/>
+          <MEMBER name="tomber"/>
+          <MEMBER name="voguer"/>
+          <MEMBER name="voler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

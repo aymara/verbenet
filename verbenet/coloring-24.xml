@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="coloring-24" ladl="37M5 ou 37M6" lvf="N3c">
      <MEMBERS>
+          <MEMBER name="badigeonner"/>
+          <MEMBER name="colorer"/>
+          <MEMBER name="colorier"/>
           <MEMBER name="dorer"/>
           <MEMBER name="émailler"/>
           <MEMBER name="glacer"/>
           <MEMBER name="laquer"/>
           <MEMBER name="peindre"/>
           <MEMBER name="peinturer"/>
+          <MEMBER name="repeindre"/>
+          <MEMBER name="teindre"/>
           <MEMBER name="teinter"/>
           <MEMBER name="vernir"/>
           <MEMBER name="vernisser"/>
-          <MEMBER name="badigeonner"/>
-          <MEMBER name="teindre"/>
-          <MEMBER name="repeindre"/>
-          <MEMBER name="colorer"/>
-          <MEMBER name="colorier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

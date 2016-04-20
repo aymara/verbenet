@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="entity_specific_cos-45.5" ladl="31R" lvf="T3a[+A30] ou H3e">
      <MEMBERS>
-          <MEMBER name="grossir"/>
+          <MEMBER name="bourgeonner"/>
+          <MEMBER name="brûler"/>
+          <MEMBER name="cloquer"/>
           <MEMBER name="croître"/>
           <MEMBER name="croupir"/>
           <MEMBER name="décliner"/>
           <MEMBER name="éclore"/>
-          <MEMBER name="flamber"/>
-          <MEMBER name="piétiner"/>
-          <MEMBER name="poindre"/>
-          <MEMBER name="pousser"/>
-          <MEMBER name="végéter"/>
-          <MEMBER name="cloquer"/>
-          <MEMBER name="ternir"/>
-          <MEMBER name="bourgeonner"/>
-          <MEMBER name="brûler"/>
           <MEMBER name="faiblir"/>
+          <MEMBER name="flamber"/>
           <MEMBER name="fleurir"/>
           <MEMBER name="germer"/>
           <MEMBER name="germiner"/>
+          <MEMBER name="grossir"/>
+          <MEMBER name="piétiner"/>
+          <MEMBER name="poindre"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="ternir"/>
+          <MEMBER name="végéter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Patient">

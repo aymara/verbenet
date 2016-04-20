@@ -30,20 +30,20 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="18.1-1">
                <MEMBERS>
+                    <MEMBER name="botter"/>
+                    <MEMBER name="claquer"/>
                     <MEMBER name="cogner"/>
                     <MEMBER name="frapper"/>
-                    <MEMBER name="gifler"/>
-                    <MEMBER name="taper"/>
-                    <MEMBER name="tapoter"/>
-                    <MEMBER name="toucher"/>
-                    <MEMBER name="claquer"/>
                     <MEMBER name="frotter"/>
+                    <MEMBER name="gifler"/>
                     <MEMBER name="gratter"/>
                     <MEMBER name="mordre"/>
                     <MEMBER name="pincer"/>
                     <MEMBER name="piquer"/>
                     <MEMBER name="saisir"/>
-                    <MEMBER name="botter"/>
+                    <MEMBER name="taper"/>
+                    <MEMBER name="tapoter"/>
+                    <MEMBER name="toucher"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Attribute">

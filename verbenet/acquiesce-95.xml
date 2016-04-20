@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="acquiesce-95" ladl="33 ou 7" lvf="D1b ou P1f">
      <MEMBERS>
-          <MEMBER name="succomber"/>
+          <MEMBER name="céder"/>
           <MEMBER name="rendre se"/>
           <MEMBER name="soumettre se"/>
-          <MEMBER name="céder"/>
+          <MEMBER name="succomber"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

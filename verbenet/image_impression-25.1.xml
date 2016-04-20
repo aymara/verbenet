@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="image_impression-25.1" ladl="(37M2 ou 37M3 ou 37M6) et (38LD ou 10)" lvf="R3f.5 ou N3a">
      <MEMBERS>
-          <MEMBER name="imprimer"/>
-          <MEMBER name="tatouer"/>
           <MEMBER name="annoter"/>
           <MEMBER name="broder"/>
+          <MEMBER name="chiffrer"/>
           <MEMBER name="estampiller"/>
           <MEMBER name="graver"/>
+          <MEMBER name="imprimer"/>
+          <MEMBER name="marquer"/>
           <MEMBER name="ouvrager"/>
           <MEMBER name="parapher"/>
           <MEMBER name="peindre"/>
           <MEMBER name="pointiller"/>
           <MEMBER name="programmer"/>
-          <MEMBER name="timbrer"/>
-          <MEMBER name="chiffrer"/>
-          <MEMBER name="marquer"/>
           <MEMBER name="signer"/>
+          <MEMBER name="tatouer"/>
+          <MEMBER name="timbrer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

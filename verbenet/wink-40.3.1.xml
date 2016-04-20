@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="wink-40.3.1" ladl="31H[+N0 V de N0pc]" lvf="M1a">
      <MEMBERS>
+          <MEMBER name="arquer"/>
+          <MEMBER name="bander"/>
+          <MEMBER name="bigler"/>
+          <MEMBER name="ciller"/>
+          <MEMBER name="cligner"/>
+          <MEMBER name="dodeliner"/>
+          <MEMBER name="frétiller"/>
+          <MEMBER name="gigoter"/>
+          <MEMBER name="loucher"/>
+          <MEMBER name="onduler"/>
+          <MEMBER name="piaffer"/>
+          <MEMBER name="ruer"/>
           <MEMBER name="tortiller"/>
           <MEMBER name="tortiller se"/>
           <MEMBER name="tourner se"/>
-          <MEMBER name="bander"/>
-          <MEMBER name="ciller"/>
-          <MEMBER name="cligner"/>
-          <MEMBER name="frétiller"/>
-          <MEMBER name="bigler"/>
-          <MEMBER name="loucher"/>
-          <MEMBER name="dodeliner"/>
-          <MEMBER name="onduler"/>
-          <MEMBER name="arquer"/>
-          <MEMBER name="gigoter"/>
-          <MEMBER name="piaffer"/>
-          <MEMBER name="ruer"/>
           <MEMBER name="trépigner"/>
      </MEMBERS>
      <THEMROLES>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="pour-9.5" ladl="38LD" lvf="L3b">
      <MEMBERS>
-          <MEMBER name="déverser"/>
           <MEMBER name="couler"/>
+          <MEMBER name="déverser"/>
+          <MEMBER name="renverser"/>
           <MEMBER name="répandre"/>
           <MEMBER name="verser"/>
-          <MEMBER name="renverser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

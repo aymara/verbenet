@@ -42,9 +42,9 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="32.1-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = de V0-inf W]">
                <MEMBERS>
-                    <MEMBER name="programmer"/>
                     <MEMBER name="ambitionner"/>
                     <MEMBER name="convoiter"/>
+                    <MEMBER name="programmer"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -66,9 +66,9 @@
                <SUBCLASSES>
                     <VNSUBCLASS ID="32.1-1-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = de V0-inf W et +N1 = (N) (Adj)]">
                          <MEMBERS>
-                              <MEMBER name="exiger"/>
                               <MEMBER name="apprécier"/>
                               <MEMBER name="attendre"/>
+                              <MEMBER name="exiger"/>
                          </MEMBERS>
                          <THEMROLES>
                               <THEMROLE type="Attribute"/>
@@ -119,14 +119,14 @@
                <SUBCLASSES>
                     <VNSUBCLASS ID="32.1-2-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = V0-inf W et +N1 = (N) (Adj)]">
                          <MEMBERS>
-                              <MEMBER name="tabler"/>
-                              <MEMBER name="escompter"/>
-                              <MEMBER name="vouloir"/>
                               <MEMBER name="aimer"/>
+                              <MEMBER name="compter"/>
                               <MEMBER name="désirer"/>
+                              <MEMBER name="escompter"/>
                               <MEMBER name="préférer"/>
                               <MEMBER name="souhaiter"/>
-                              <MEMBER name="compter"/>
+                              <MEMBER name="tabler"/>
+                              <MEMBER name="vouloir"/>
                          </MEMBERS>
                          <THEMROLES>
                               <THEMROLE type="Attribute"/>

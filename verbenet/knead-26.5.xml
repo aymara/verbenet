@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="knead-26.5" ladl="32C" lvf="T3d[+T13j0 ou +T13j8]">
      <MEMBERS>
-          <MEMBER name="repétrir"/>
           <MEMBER name="pétrir"/>
+          <MEMBER name="repétrir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

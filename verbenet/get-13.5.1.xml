@@ -3,26 +3,26 @@
      <MEMBERS>
           <MEMBER name="acheter"/>
           <MEMBER name="affréter"/>
+          <MEMBER name="arracher"/>
           <MEMBER name="chiper"/>
           <MEMBER name="choper"/>
+          <MEMBER name="commander"/>
           <MEMBER name="dérober"/>
           <MEMBER name="enlever"/>
           <MEMBER name="fréter"/>
+          <MEMBER name="gagner"/>
           <MEMBER name="louer"/>
+          <MEMBER name="ôter"/>
           <MEMBER name="piquer"/>
           <MEMBER name="prendre"/>
           <MEMBER name="racheter"/>
-          <MEMBER name="reprendre"/>
-          <MEMBER name="voler"/>
-          <MEMBER name="commander"/>
-          <MEMBER name="gagner"/>
           <MEMBER name="ravir"/>
+          <MEMBER name="reprendre"/>
           <MEMBER name="réserver"/>
           <MEMBER name="saisir"/>
-          <MEMBER name="suspendre"/>
-          <MEMBER name="arracher"/>
-          <MEMBER name="ôter"/>
           <MEMBER name="subtiliser"/>
+          <MEMBER name="suspendre"/>
+          <MEMBER name="voler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -64,7 +64,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Beneficiary">

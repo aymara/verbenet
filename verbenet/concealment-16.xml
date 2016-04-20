@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="concealment-16" ladl="38LD ou 38LR" lvf="L3b ou L1b">
      <MEMBERS>
-          <MEMBER name="retenir"/>
-          <MEMBER name="verrouiller"/>
           <MEMBER name="bloquer"/>
-          <MEMBER name="séquestrer"/>
           <MEMBER name="recueillir"/>
+          <MEMBER name="retenir"/>
+          <MEMBER name="séquestrer"/>
+          <MEMBER name="verrouiller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -48,15 +48,15 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="16-1">
                <MEMBERS>
-                    <MEMBER name="camoufler"/>
-                    <MEMBER name="dissimuler"/>
-                    <MEMBER name="ensevelir"/>
-                    <MEMBER name="cloîtrer"/>
-                    <MEMBER name="planquer"/>
                     <MEMBER name="abriter"/>
-                    <MEMBER name="enfermer"/>
-                    <MEMBER name="murer"/>
                     <MEMBER name="cacher"/>
+                    <MEMBER name="camoufler"/>
+                    <MEMBER name="cloîtrer"/>
+                    <MEMBER name="dissimuler"/>
+                    <MEMBER name="enfermer"/>
+                    <MEMBER name="ensevelir"/>
+                    <MEMBER name="murer"/>
+                    <MEMBER name="planquer"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

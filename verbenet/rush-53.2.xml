@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="rush-53.2" ladl="1" lvf="M4a ou M4b">
      <MEMBERS>
-          <MEMBER name="presser se"/>
           <MEMBER name="dégrouiller se"/>
           <MEMBER name="dépêcher se"/>
           <MEMBER name="empresser s'"/>
           <MEMBER name="hâter se"/>
+          <MEMBER name="presser se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

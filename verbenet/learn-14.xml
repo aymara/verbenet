@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="learn-14" ladl="10" lvf="P3c[-T1400]">
      <MEMBERS>
-          <MEMBER name="glaner"/>
           <MEMBER name="apprendre"/>
           <MEMBER name="comprendre"/>
+          <MEMBER name="glaner"/>
           <MEMBER name="lire"/>
           <MEMBER name="voir"/>
      </MEMBERS>

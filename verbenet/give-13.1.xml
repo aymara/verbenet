@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="give-13.1" ladl="36DT[+N2 bénéficiaire]" lvf="D2a">
      <MEMBERS>
+          <MEMBER name="abandonner"/>
           <MEMBER name="administrer"/>
+          <MEMBER name="adresser"/>
           <MEMBER name="allonger"/>
           <MEMBER name="allouer"/>
           <MEMBER name="assigner"/>
+          <MEMBER name="assurer"/>
           <MEMBER name="attribuer"/>
           <MEMBER name="avancer"/>
-          <MEMBER name="consentir"/>
-          <MEMBER name="distribuer"/>
-          <MEMBER name="envoyer"/>
-          <MEMBER name="filer"/>
-          <MEMBER name="laisser"/>
-          <MEMBER name="léguer"/>
-          <MEMBER name="redonner"/>
-          <MEMBER name="rembourser"/>
-          <MEMBER name="remettre"/>
-          <MEMBER name="rendre"/>
-          <MEMBER name="restituer"/>
-          <MEMBER name="reverser"/>
-          <MEMBER name="ristourner"/>
-          <MEMBER name="servir"/>
-          <MEMBER name="transmettre"/>
-          <MEMBER name="adresser"/>
           <MEMBER name="concéder"/>
+          <MEMBER name="consentir"/>
+          <MEMBER name="dealer"/>
           <MEMBER name="débourser"/>
+          <MEMBER name="décaisser"/>
           <MEMBER name="déléguer"/>
           <MEMBER name="destiner"/>
           <MEMBER name="devoir"/>
           <MEMBER name="dispenser"/>
+          <MEMBER name="distribuer"/>
+          <MEMBER name="envoyer"/>
+          <MEMBER name="filer"/>
+          <MEMBER name="lâcher"/>
+          <MEMBER name="laisser"/>
+          <MEMBER name="lancer"/>
+          <MEMBER name="léguer"/>
           <MEMBER name="promettre"/>
           <MEMBER name="proposer"/>
-          <MEMBER name="redistribuer"/>
-          <MEMBER name="soumettre"/>
-          <MEMBER name="abandonner"/>
-          <MEMBER name="assurer"/>
-          <MEMBER name="dealer"/>
-          <MEMBER name="décaisser"/>
-          <MEMBER name="lâcher"/>
-          <MEMBER name="lancer"/>
           <MEMBER name="réallouer"/>
           <MEMBER name="réattribuer"/>
+          <MEMBER name="redistribuer"/>
+          <MEMBER name="redonner"/>
+          <MEMBER name="rembourser"/>
+          <MEMBER name="remettre"/>
+          <MEMBER name="rendre"/>
           <MEMBER name="répartir"/>
           <MEMBER name="repasser"/>
+          <MEMBER name="restituer"/>
           <MEMBER name="retourner"/>
+          <MEMBER name="reverser"/>
+          <MEMBER name="ristourner"/>
           <MEMBER name="sacrifier"/>
+          <MEMBER name="servir"/>
+          <MEMBER name="soumettre"/>
+          <MEMBER name="transmettre"/>
           <MEMBER name="verser"/>
           <MEMBER name="virer"/>
      </MEMBERS>
@@ -92,18 +92,18 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="13.1-1" ladl="36DT[+N2 bénéficiaire et +N0 V N1 à N2 Dnum Nmonnaie]">
                <MEMBERS>
-                    <MEMBER name="louer"/>
-                    <MEMBER name="payer"/>
-                    <MEMBER name="revendre"/>
-                    <MEMBER name="vendre"/>
-                    <MEMBER name="écouler"/>
-                    <MEMBER name="passer"/>
-                    <MEMBER name="prêter"/>
-                    <MEMBER name="brader"/>
-                    <MEMBER name="refiler"/>
                     <MEMBER name="adjuger"/>
                     <MEMBER name="affermer"/>
+                    <MEMBER name="brader"/>
                     <MEMBER name="céder"/>
+                    <MEMBER name="écouler"/>
+                    <MEMBER name="louer"/>
+                    <MEMBER name="passer"/>
+                    <MEMBER name="payer"/>
+                    <MEMBER name="prêter"/>
+                    <MEMBER name="refiler"/>
+                    <MEMBER name="revendre"/>
+                    <MEMBER name="vendre"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Asset"/>

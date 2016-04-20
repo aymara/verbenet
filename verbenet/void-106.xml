@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="void-106" ladl="32RA" lvf="F4b">
      <MEMBERS>
-          <MEMBER name="annuler"/>
-          <MEMBER name="invalider"/>
           <MEMBER name="abolir"/>
           <MEMBER name="abroger"/>
+          <MEMBER name="annuler"/>
           <MEMBER name="casser"/>
           <MEMBER name="infirmer"/>
+          <MEMBER name="invalider"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

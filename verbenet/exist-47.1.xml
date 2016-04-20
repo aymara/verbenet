@@ -36,19 +36,19 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="47.1-1" ladl="35ST[+N0 V] ou 35R">
                <MEMBERS>
+                    <MEMBER name="abriter s'"/>
+                    <MEMBER name="cacher se"/>
+                    <MEMBER name="culminer"/>
+                    <MEMBER name="demeurer"/>
+                    <MEMBER name="étendre s'"/>
+                    <MEMBER name="exister"/>
+                    <MEMBER name="languir"/>
+                    <MEMBER name="loger"/>
                     <MEMBER name="régner"/>
                     <MEMBER name="subsister"/>
                     <MEMBER name="survivre"/>
                     <MEMBER name="traîner"/>
                     <MEMBER name="vivre"/>
-                    <MEMBER name="culminer"/>
-                    <MEMBER name="demeurer"/>
-                    <MEMBER name="exister"/>
-                    <MEMBER name="loger"/>
-                    <MEMBER name="étendre s'"/>
-                    <MEMBER name="abriter s'"/>
-                    <MEMBER name="cacher se"/>
-                    <MEMBER name="languir"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

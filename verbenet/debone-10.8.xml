@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="debone-10.8" ladl="37E" lvf="N1d ou N1b ou N3b">
      <MEMBERS>
-          <MEMBER name="décorner"/>
-          <MEMBER name="dégazer"/>
-          <MEMBER name="dégermer"/>
-          <MEMBER name="désosser"/>
-          <MEMBER name="détartrer"/>
-          <MEMBER name="épouiller"/>
-          <MEMBER name="étriper"/>
-          <MEMBER name="désinsectiser"/>
           <MEMBER name="déboiser"/>
+          <MEMBER name="décorner"/>
+          <MEMBER name="décortiquer"/>
           <MEMBER name="défleurir"/>
           <MEMBER name="déflorer"/>
+          <MEMBER name="dégazer"/>
+          <MEMBER name="dégermer"/>
           <MEMBER name="déglacer"/>
-          <MEMBER name="éviscérer"/>
-          <MEMBER name="décortiquer"/>
           <MEMBER name="dénoyauter"/>
           <MEMBER name="dépiauter"/>
           <MEMBER name="dépouiller"/>
           <MEMBER name="désherber"/>
+          <MEMBER name="désinsectiser"/>
+          <MEMBER name="désosser"/>
+          <MEMBER name="détartrer"/>
           <MEMBER name="écailler"/>
           <MEMBER name="écaler"/>
           <MEMBER name="écimer"/>
           <MEMBER name="écorcer"/>
           <MEMBER name="écorcher"/>
+          <MEMBER name="écosser"/>
           <MEMBER name="égrapper"/>
           <MEMBER name="égrener"/>
+          <MEMBER name="éjointer"/>
           <MEMBER name="émonder"/>
+          <MEMBER name="énouer"/>
+          <MEMBER name="énucléer"/>
           <MEMBER name="épépiner"/>
           <MEMBER name="éplucher"/>
+          <MEMBER name="épouiller"/>
           <MEMBER name="équeuter"/>
           <MEMBER name="étêter"/>
+          <MEMBER name="étriper"/>
+          <MEMBER name="évider"/>
+          <MEMBER name="éviscérer"/>
           <MEMBER name="peler"/>
           <MEMBER name="plumer"/>
           <MEMBER name="ratiboiser"/>
-          <MEMBER name="traire"/>
-          <MEMBER name="évider"/>
           <MEMBER name="scalper"/>
-          <MEMBER name="écosser"/>
-          <MEMBER name="éjointer"/>
-          <MEMBER name="énouer"/>
-          <MEMBER name="énucléer"/>
+          <MEMBER name="traire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

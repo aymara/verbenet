@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="build-26.1" ladl="32A[+N0 V N1 de N2 matériau]" lvf="R3a.1 ou R3a.2">
      <MEMBERS>
+          <MEMBER name="assembler"/>
           <MEMBER name="bâtir"/>
+          <MEMBER name="compiler"/>
           <MEMBER name="composer"/>
           <MEMBER name="confectionner"/>
           <MEMBER name="constituer"/>
           <MEMBER name="construire"/>
-          <MEMBER name="fabriquer"/>
-          <MEMBER name="faire"/>
-          <MEMBER name="forger"/>
-          <MEMBER name="former"/>
-          <MEMBER name="monter"/>
-          <MEMBER name="tricoter"/>
-          <MEMBER name="compiler"/>
-          <MEMBER name="reconstituer"/>
-          <MEMBER name="assembler"/>
           <MEMBER name="couper"/>
           <MEMBER name="créer"/>
           <MEMBER name="édifier"/>
           <MEMBER name="élever"/>
+          <MEMBER name="fabriquer"/>
           <MEMBER name="façonner"/>
+          <MEMBER name="faire"/>
           <MEMBER name="filer"/>
+          <MEMBER name="forger"/>
+          <MEMBER name="former"/>
           <MEMBER name="maçonner"/>
           <MEMBER name="modeler"/>
+          <MEMBER name="monter"/>
           <MEMBER name="mouler"/>
           <MEMBER name="produire"/>
           <MEMBER name="rebâtir"/>
+          <MEMBER name="reconstituer"/>
           <MEMBER name="reconstruire"/>
           <MEMBER name="réédifier"/>
           <MEMBER name="refaire"/>
@@ -35,6 +34,7 @@
           <MEMBER name="tailler"/>
           <MEMBER name="tisser"/>
           <MEMBER name="tresser"/>
+          <MEMBER name="tricoter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -73,7 +73,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="de;à_partir_de"/>
+                              <SELRESTR Value="à_partir_de;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Material">
@@ -105,7 +105,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="de;à_partir_de"/>
+                              <SELRESTR Value="à_partir_de;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Material">

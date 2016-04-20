@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cut-21.1" ladl="38PL" lvf="R3f ou R3i">
-     <MEMBERS/>
+     <MEMBERS>
+          <MEMBER name="biseauter"/>
+          <MEMBER name="cisailler"/>
+          <MEMBER name="cliver"/>
+          <MEMBER name="concasser"/>
+          <MEMBER name="déchirer"/>
+          <MEMBER name="découper"/>
+          <MEMBER name="déliter"/>
+          <MEMBER name="disloquer"/>
+          <MEMBER name="ébrécher"/>
+          <MEMBER name="effriter"/>
+          <MEMBER name="émietter"/>
+          <MEMBER name="émincer"/>
+          <MEMBER name="fendre"/>
+          <MEMBER name="fracasser"/>
+          <MEMBER name="hacher"/>
+          <MEMBER name="lacérer"/>
+          <MEMBER name="massicoter"/>
+          <MEMBER name="moudre"/>
+          <MEMBER name="mouliner"/>
+          <MEMBER name="piler"/>
+          <MEMBER name="pulvériser"/>
+          <MEMBER name="râper"/>
+          <MEMBER name="réduire"/>
+          <MEMBER name="saucissonner"/>
+          <MEMBER name="scier"/>
+          <MEMBER name="tailler"/>
+          <MEMBER name="trancher"/>
+          <MEMBER name="tronçonner"/>
+     </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
                <SELRESTR Value="+" type="int_control"/>
@@ -99,52 +128,13 @@
                </SYNTAX>
                <SEMANTICS>manner(during(E), Motion, ?Agent) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) Pred(result(E), Patient)</SEMANTICS>
           </FRAME>
-          <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source PP.instrument"/>
-               <EXAMPLES>
-                    <EXAMPLE>Luc a découpé la photo dans le journal avec des ciseaux</EXAMPLE>
-               </EXAMPLES>
-               <SYNTAX>
-                    <NP value="Agent">
-                         <SYNRESTRS/>
-                    </NP>
-                    <VERB/>
-                    <NP value="Patient">
-                         <SYNRESTRS/>
-                    </NP>
-                    <PREP>
-                         <SELRESTRS>
-                              <SELRESTR Value="{+loc"/>
-                         </SELRESTRS>
-                    </PREP>
-                    <NP value="Source">
-                         <SYNRESTRS/>
-                    </NP>
-                    <PREP>
-                         <SELRESTRS>
-                              <SELRESTR Value="avec"/>
-                         </SELRESTRS>
-                    </PREP>
-                    <NP value="Instrument">
-                         <SYNRESTRS/>
-                    </NP>
-               </SYNTAX>
-               <SEMANTICS>manner(during(E), Motion, Agent) contact(during(E), Instrument, Patient) use(during(E), Agent, Instrument) degradation_material_integrity(result(E), Patient) cause(E, Agent) Prep(E, Patient, Source)</SEMANTICS>
-          </FRAME>
      </FRAMES>
      <SUBCLASSES>
           <VNSUBCLASS ID="21.1-1" ladl="38PL[+N0 lui V N1pc W]">
                <MEMBERS>
-                    <MEMBER name="tondre"/>
-                    <MEMBER name="casser"/>
-                    <MEMBER name="couper"/>
-                    <MEMBER name="déchirer"/>
-                    <MEMBER name="découper"/>
-                    <MEMBER name="fendre"/>
-                    <MEMBER name="réduire"/>
-                    <MEMBER name="sectionner"/>
-                    <MEMBER name="trancher"/>
-                    <MEMBER name="tronçonner"/>
+                    <MEMBER name="briser"/>
+                    <MEMBER name="couper casser saucissonner fendre"/>
+                    <MEMBER name="scier"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Attribute">

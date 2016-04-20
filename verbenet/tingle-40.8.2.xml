@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="tingle-40.8.2" ladl="31R " lvf="H1b.1">
      <MEMBERS>
-          <MEMBER name="tournoyer"/>
           <MEMBER name="battre"/>
           <MEMBER name="ronronner"/>
+          <MEMBER name="tournoyer"/>
           <MEMBER name="vibrer"/>
      </MEMBERS>
      <THEMROLES>

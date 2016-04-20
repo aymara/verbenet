@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="drive-11.5" ladl="38L[+V-n transport (forme V-n)]" lvf="E3f">
      <MEMBERS>
+          <MEMBER name="brouetter"/>
           <MEMBER name="camionner"/>
           <MEMBER name="charrier"/>
-          <MEMBER name="brouetter"/>
           <MEMBER name="véhiculer"/>
      </MEMBERS>
      <THEMROLES>

@@ -102,10 +102,10 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="23.1-1" ladl="36SL[-Prép2 =: d'avec] ou 36S[-Prép2 =: d'avec]">
                <MEMBERS>
-                    <MEMBER name="isoler"/>
-                    <MEMBER name="séparer"/>
                     <MEMBER name="débrouiller"/>
                     <MEMBER name="démêler"/>
+                    <MEMBER name="isoler"/>
+                    <MEMBER name="séparer"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -134,14 +134,14 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="23.1-2" ladl="36SL[+Prép2 =: d'avec] ou 36S[+Prép2 =: d'avec]">
                <MEMBERS>
-                    <MEMBER name="écarter"/>
                     <MEMBER name="départager"/>
-                    <MEMBER name="dissocier"/>
-                    <MEMBER name="trier"/>
                     <MEMBER name="désaccoupler"/>
                     <MEMBER name="désolidariser"/>
                     <MEMBER name="désunir"/>
                     <MEMBER name="détacher"/>
+                    <MEMBER name="dissocier"/>
+                    <MEMBER name="écarter"/>
+                    <MEMBER name="trier"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

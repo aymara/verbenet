@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="spray-9.7" ladl="38LD[+N0 V N2 (E+de N1)]" lvf="L3b et N3c">
      <MEMBERS>
+          <MEMBER name="barbouiller"/>
           <MEMBER name="charger"/>
+          <MEMBER name="enfiler"/>
+          <MEMBER name="infiltrer"/>
           <MEMBER name="piquer"/>
           <MEMBER name="planter"/>
+          <MEMBER name="pulvériser"/>
           <MEMBER name="saupoudrer"/>
           <MEMBER name="semer"/>
-          <MEMBER name="barbouiller"/>
-          <MEMBER name="enfiler"/>
-          <MEMBER name="pulvériser"/>
           <MEMBER name="vaporiser"/>
-          <MEMBER name="infiltrer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

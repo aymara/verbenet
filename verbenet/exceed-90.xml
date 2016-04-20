@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="exceed-90" ladl="32R2 ou 32R1" lvf="E4d">
      <MEMBERS>
-          <MEMBER name="surpasser"/>
           <MEMBER name="dépasser"/>
           <MEMBER name="devancer"/>
           <MEMBER name="excéder"/>
           <MEMBER name="outrepasser"/>
+          <MEMBER name="surpasser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

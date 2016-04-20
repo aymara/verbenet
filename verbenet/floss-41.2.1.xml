@@ -2,9 +2,9 @@
 <VNCLASS ID="floss-41.2.1" ladl="32R3" lvf="R1a.1">
      <MEMBERS>
           <MEMBER name="brosser"/>
-          <MEMBER name="raser"/>
           <MEMBER name="détartrer"/>
           <MEMBER name="laver"/>
+          <MEMBER name="raser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

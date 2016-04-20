@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="nonverbal_expression-40.2" ladl="31H" lvf="C1f ou C1a">
      <MEMBERS>
+          <MEMBER name="brailler"/>
+          <MEMBER name="caqueter"/>
+          <MEMBER name="clabauder"/>
+          <MEMBER name="esclaffer s'"/>
+          <MEMBER name="exclamer s'"/>
+          <MEMBER name="feuler"/>
+          <MEMBER name="gargouiller"/>
           <MEMBER name="gémir"/>
           <MEMBER name="glousser"/>
+          <MEMBER name="grimacer"/>
           <MEMBER name="grogner"/>
           <MEMBER name="grommeler"/>
           <MEMBER name="gronder"/>
@@ -12,30 +20,22 @@
           <MEMBER name="jacasser"/>
           <MEMBER name="larmoyer"/>
           <MEMBER name="maugréer"/>
+          <MEMBER name="minauder"/>
           <MEMBER name="mugir"/>
           <MEMBER name="pleurer"/>
           <MEMBER name="pleurnicher"/>
-          <MEMBER name="exclamer s'"/>
           <MEMBER name="rauquer"/>
           <MEMBER name="ricaner"/>
+          <MEMBER name="rigoler"/>
+          <MEMBER name="rire"/>
           <MEMBER name="ronchonner"/>
           <MEMBER name="rugir"/>
           <MEMBER name="sangloter"/>
+          <MEMBER name="siffler"/>
+          <MEMBER name="siffloter"/>
           <MEMBER name="soupirer"/>
           <MEMBER name="tonner"/>
           <MEMBER name="vagir"/>
-          <MEMBER name="gargouiller"/>
-          <MEMBER name="grimacer"/>
-          <MEMBER name="minauder"/>
-          <MEMBER name="rigoler"/>
-          <MEMBER name="rire"/>
-          <MEMBER name="siffler"/>
-          <MEMBER name="siffloter"/>
-          <MEMBER name="esclaffer s'"/>
-          <MEMBER name="brailler"/>
-          <MEMBER name="caqueter"/>
-          <MEMBER name="clabauder"/>
-          <MEMBER name="feuler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

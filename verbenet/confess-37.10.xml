@@ -3,10 +3,10 @@
      <MEMBERS>
           <MEMBER name="avouer"/>
           <MEMBER name="confesser"/>
-          <MEMBER name="reconnaître"/>
           <MEMBER name="déclarer"/>
           <MEMBER name="dire"/>
           <MEMBER name="prétendre"/>
+          <MEMBER name="reconnaître"/>
           <MEMBER name="révéler"/>
      </MEMBERS>
      <THEMROLES>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="weather-57" ladl="C_31i" lvf="H3b">
      <MEMBERS>
-          <MEMBER name="dégeler"/>
           <MEMBER name="brouillasser"/>
           <MEMBER name="bruiner"/>
           <MEMBER name="crachiner"/>
+          <MEMBER name="dégeler"/>
           <MEMBER name="flotter"/>
           <MEMBER name="geler"/>
           <MEMBER name="givrer"/>

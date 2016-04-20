@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="murder-42.1" ladl="32H[-N0 =: Nnr]" lvf="F1b">
      <MEMBERS>
-          <MEMBER name="liquider"/>
-          <MEMBER name="euthanasier"/>
           <MEMBER name="assassiner"/>
-          <MEMBER name="supprimer"/>
           <MEMBER name="buter"/>
           <MEMBER name="égorger"/>
+          <MEMBER name="éliminer"/>
+          <MEMBER name="euthanasier"/>
           <MEMBER name="exécuter"/>
           <MEMBER name="exterminer"/>
-          <MEMBER name="lyncher"/>
-          <MEMBER name="occire"/>
-          <MEMBER name="éliminer"/>
           <MEMBER name="immoler"/>
+          <MEMBER name="liquider"/>
+          <MEMBER name="lyncher"/>
           <MEMBER name="massacrer"/>
+          <MEMBER name="occire"/>
+          <MEMBER name="supprimer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

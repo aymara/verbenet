@@ -3,9 +3,9 @@
      <MEMBERS>
           <MEMBER name="afficher"/>
           <MEMBER name="arborer"/>
-          <MEMBER name="porter"/>
           <MEMBER name="ceindre"/>
           <MEMBER name="mettre"/>
+          <MEMBER name="porter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

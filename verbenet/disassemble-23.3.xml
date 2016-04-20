@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="disassemble-23.3" ladl="38LS" lvf="U3d">
      <MEMBERS>
-          <MEMBER name="décrocher"/>
-          <MEMBER name="défaire"/>
-          <MEMBER name="détacher"/>
-          <MEMBER name="dételer"/>
-          <MEMBER name="dégager"/>
-          <MEMBER name="désaxer"/>
           <MEMBER name="déboulonner"/>
           <MEMBER name="débrancher"/>
           <MEMBER name="déconnecter"/>
           <MEMBER name="découpler"/>
+          <MEMBER name="décrocher"/>
+          <MEMBER name="défaire"/>
           <MEMBER name="déficeler"/>
+          <MEMBER name="dégager"/>
           <MEMBER name="dégrafer"/>
           <MEMBER name="délacer"/>
           <MEMBER name="délier"/>
           <MEMBER name="dénouer"/>
           <MEMBER name="désassembler"/>
+          <MEMBER name="désaxer"/>
+          <MEMBER name="détacher"/>
+          <MEMBER name="dételer"/>
           <MEMBER name="dévisser"/>
           <MEMBER name="disjoindre"/>
           <MEMBER name="disjoncter"/>

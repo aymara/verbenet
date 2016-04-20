@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="illustrate-25.3" ladl="37M1[-N0 V N2 (E+Loc N1 destination)] ou 37M2[-N0 V N2 (E+Loc N1 destination)] ou 37M3[-N0 V N2 (E+Loc N1 destination)] ou 37M4[-N0 V N2 (E+Loc N1 destination)] ou 37M5[-N0 V N2 (E+Loc N1 destination)] ou 37M6[-N0 V N2 (E+Loc N1 destination)]" lvf="N3a.1">
      <MEMBERS>
+          <MEMBER name="adorner"/>
+          <MEMBER name="agrémenter"/>
+          <MEMBER name="baliser"/>
           <MEMBER name="chamarrer"/>
           <MEMBER name="dater"/>
+          <MEMBER name="décorer"/>
           <MEMBER name="dorer"/>
           <MEMBER name="éclairer"/>
           <MEMBER name="émarger"/>
           <MEMBER name="endosser"/>
-          <MEMBER name="habiller"/>
-          <MEMBER name="illuminer"/>
-          <MEMBER name="médailler"/>
-          <MEMBER name="revêtir"/>
-          <MEMBER name="tapisser"/>
-          <MEMBER name="parafer"/>
-          <MEMBER name="adorner"/>
-          <MEMBER name="agrémenter"/>
-          <MEMBER name="baliser"/>
-          <MEMBER name="décorer"/>
           <MEMBER name="enluminer"/>
           <MEMBER name="étiqueter"/>
           <MEMBER name="ferrer"/>
           <MEMBER name="garnir"/>
+          <MEMBER name="habiller"/>
+          <MEMBER name="illuminer"/>
           <MEMBER name="illustrer"/>
+          <MEMBER name="médailler"/>
           <MEMBER name="ornementer"/>
           <MEMBER name="orner"/>
+          <MEMBER name="parafer"/>
           <MEMBER name="parer"/>
           <MEMBER name="rehausser"/>
+          <MEMBER name="revêtir"/>
+          <MEMBER name="tapisser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

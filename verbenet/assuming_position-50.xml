@@ -6,8 +6,8 @@
           <MEMBER name="adosser s'"/>
           <MEMBER name="affaisser s'"/>
           <MEMBER name="affaler s'"/>
-          <MEMBER name="étendre se"/>
           <MEMBER name="agenouiller s'"/>
+          <MEMBER name="allonger se"/>
           <MEMBER name="appuyer s'"/>
           <MEMBER name="asseoir s'"/>
           <MEMBER name="baisser se"/>
@@ -16,12 +16,12 @@
           <MEMBER name="écrouler s'"/>
           <MEMBER name="effondrer s'"/>
           <MEMBER name="étaler s'"/>
+          <MEMBER name="étendre se"/>
           <MEMBER name="incliner s'"/>
           <MEMBER name="lever se"/>
           <MEMBER name="pencher se"/>
           <MEMBER name="ramasser se"/>
           <MEMBER name="soulever se"/>
-          <MEMBER name="allonger se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

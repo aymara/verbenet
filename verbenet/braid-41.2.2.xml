@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="braid-41.2.2" ladl="32C" lvf="N1c.3 ou N1a ou R1a ou T3d">
      <MEMBERS>
+          <MEMBER name="boucler"/>
+          <MEMBER name="brosser"/>
+          <MEMBER name="coiffer"/>
+          <MEMBER name="crêper"/>
+          <MEMBER name="friser"/>
           <MEMBER name="gélifier"/>
+          <MEMBER name="manucurer"/>
           <MEMBER name="maquiller"/>
+          <MEMBER name="moucher"/>
           <MEMBER name="natter"/>
+          <MEMBER name="nouer"/>
           <MEMBER name="ondoyer"/>
           <MEMBER name="onduler"/>
           <MEMBER name="parer"/>
-          <MEMBER name="shampooiner"/>
-          <MEMBER name="tondre"/>
-          <MEMBER name="coiffer"/>
-          <MEMBER name="crêper"/>
-          <MEMBER name="manucurer"/>
-          <MEMBER name="nouer"/>
-          <MEMBER name="rafraîchir"/>
-          <MEMBER name="shampouiner"/>
-          <MEMBER name="moucher"/>
           <MEMBER name="peigner"/>
-          <MEMBER name="boucler"/>
-          <MEMBER name="brosser"/>
-          <MEMBER name="friser"/>
+          <MEMBER name="rafraîchir"/>
+          <MEMBER name="shampooiner"/>
+          <MEMBER name="shampouiner"/>
+          <MEMBER name="tondre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

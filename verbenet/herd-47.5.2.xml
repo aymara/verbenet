@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="herd-47.5.2" ladl="32PL" lvf="U1a">
      <MEMBERS>
+          <MEMBER name="accumuler"/>
+          <MEMBER name="agglomérer"/>
+          <MEMBER name="amasser"/>
+          <MEMBER name="ameuter"/>
+          <MEMBER name="amonceler"/>
           <MEMBER name="assembler"/>
+          <MEMBER name="attrouper"/>
+          <MEMBER name="collecter"/>
+          <MEMBER name="collectionner"/>
+          <MEMBER name="cumuler"/>
           <MEMBER name="entasser"/>
           <MEMBER name="grouper"/>
           <MEMBER name="masser"/>
           <MEMBER name="rassembler"/>
           <MEMBER name="regrouper"/>
           <MEMBER name="réunir"/>
-          <MEMBER name="accumuler"/>
-          <MEMBER name="amasser"/>
-          <MEMBER name="amonceler"/>
-          <MEMBER name="ameuter"/>
-          <MEMBER name="collecter"/>
-          <MEMBER name="collectionner"/>
-          <MEMBER name="cumuler"/>
-          <MEMBER name="agglomérer"/>
-          <MEMBER name="attrouper"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -36,7 +36,7 @@
                     <EXAMPLE>Les enfants se rassemblent</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
-                    <NP value="Theme">
+                    <NP modifier="+plural" value="Theme">
                          <SYNRESTRS/>
                     </NP>
                     <VERB pronominal="true" restr="neutre"/>
@@ -53,7 +53,7 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <NP value="Theme">
+                    <NP modifier="+plural" value="Theme">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>

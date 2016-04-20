@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="contiguous_location-47.8" ladl="38L1[+V statique]" lvf="F3d ou L3b.5">
      <MEMBERS>
+          <MEMBER name="arroser"/>
+          <MEMBER name="avoisiner"/>
+          <MEMBER name="border"/>
+          <MEMBER name="borner"/>
+          <MEMBER name="cerner"/>
           <MEMBER name="côtoyer"/>
-          <MEMBER name="pénétrer"/>
-          <MEMBER name="recouvrir"/>
           <MEMBER name="couronner"/>
           <MEMBER name="encadrer"/>
           <MEMBER name="encercler"/>
@@ -11,17 +14,14 @@
           <MEMBER name="enjamber"/>
           <MEMBER name="enlacer"/>
           <MEMBER name="entourer"/>
-          <MEMBER name="longer"/>
-          <MEMBER name="suivre"/>
           <MEMBER name="environner"/>
-          <MEMBER name="limiter"/>
-          <MEMBER name="surplomber"/>
           <MEMBER name="intersecter"/>
-          <MEMBER name="arroser"/>
-          <MEMBER name="avoisiner"/>
-          <MEMBER name="border"/>
-          <MEMBER name="borner"/>
-          <MEMBER name="cerner"/>
+          <MEMBER name="limiter"/>
+          <MEMBER name="longer"/>
+          <MEMBER name="pénétrer"/>
+          <MEMBER name="recouvrir"/>
+          <MEMBER name="suivre"/>
+          <MEMBER name="surplomber"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">
@@ -53,11 +53,11 @@
           <VNSUBCLASS ID="47.8-1">
                <MEMBERS>
                     <MEMBER name="chevaucher"/>
-                    <MEMBER name="jouxter"/>
-                    <MEMBER name="toucher"/>
                     <MEMBER name="couper"/>
                     <MEMBER name="croiser"/>
                     <MEMBER name="effleurer"/>
+                    <MEMBER name="jouxter"/>
+                    <MEMBER name="toucher"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

@@ -37,10 +37,10 @@
                <SUBCLASSES>
                     <VNSUBCLASS ID="108-4-1">
                          <MEMBERS>
-                              <MEMBER name="sommer"/>
-                              <MEMBER name="rajouter"/>
-                              <MEMBER name="ajouter"/>
                               <MEMBER name="additionner"/>
+                              <MEMBER name="ajouter"/>
+                              <MEMBER name="rajouter"/>
+                              <MEMBER name="sommer"/>
                          </MEMBERS>
                          <THEMROLES/>
                          <FRAMES>
@@ -72,8 +72,8 @@
                     </VNSUBCLASS>
                     <VNSUBCLASS ID="108-4-2">
                          <MEMBERS>
-                              <MEMBER name="multiplier"/>
                               <MEMBER name="diviser"/>
+                              <MEMBER name="multiplier"/>
                          </MEMBERS>
                          <THEMROLES/>
                          <FRAMES>

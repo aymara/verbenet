@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="spank-18.3" ladl="32CL[+V-n instrument (forme V-n)]" lvf="F1a">
      <MEMBERS>
-          <MEMBER name="sabrer"/>
-          <MEMBER name="piquer"/>
-          <MEMBER name="poignarder"/>
           <MEMBER name="bâtonner"/>
           <MEMBER name="cravacher"/>
           <MEMBER name="flageller"/>
           <MEMBER name="fouetter"/>
           <MEMBER name="matraquer"/>
+          <MEMBER name="piquer"/>
+          <MEMBER name="poignarder"/>
+          <MEMBER name="sabrer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

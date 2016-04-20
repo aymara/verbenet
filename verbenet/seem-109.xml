@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="seem-109" ladl="1" lvf="X2a">
      <MEMBERS>
-          <MEMBER name="sembler"/>
           <MEMBER name="paraître"/>
+          <MEMBER name="sembler"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

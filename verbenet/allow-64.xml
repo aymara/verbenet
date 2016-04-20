@@ -3,8 +3,8 @@
      <MEMBERS>
           <MEMBER name="approuver"/>
           <MEMBER name="autoriser"/>
-          <MEMBER name="tolérer"/>
           <MEMBER name="supporter"/>
+          <MEMBER name="tolérer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

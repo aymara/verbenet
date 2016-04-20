@@ -2,20 +2,20 @@
 <VNCLASS ID="lecture-37.11" ladl="35R" lvf="C1f ou C1e">
      <MEMBERS>
           <MEMBER name=""/>
+          <MEMBER name="broder"/>
+          <MEMBER name="délirer"/>
+          <MEMBER name="discourir"/>
           <MEMBER name="divaguer"/>
+          <MEMBER name="écrire"/>
+          <MEMBER name="étendre s'"/>
+          <MEMBER name="jaser"/>
           <MEMBER name="moraliser"/>
+          <MEMBER name="pester"/>
+          <MEMBER name="plancher"/>
+          <MEMBER name="pontifier"/>
           <MEMBER name="prêcher"/>
           <MEMBER name="témoigner"/>
-          <MEMBER name="étendre s'"/>
           <MEMBER name="théoriser"/>
-          <MEMBER name="pester"/>
-          <MEMBER name="délirer"/>
-          <MEMBER name="plancher"/>
-          <MEMBER name="broder"/>
-          <MEMBER name="discourir"/>
-          <MEMBER name="jaser"/>
-          <MEMBER name="écrire"/>
-          <MEMBER name="pontifier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

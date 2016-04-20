@@ -2,16 +2,16 @@
 <VNCLASS ID="assessment-34.1" ladl="6[-N1 =: Qu Pind et -N1 =: Qu Psubj]" lvf="H3f ou P3b">
      <MEMBERS>
           <MEMBER name="apprécier"/>
+          <MEMBER name="auditer"/>
+          <MEMBER name="chiffrer"/>
           <MEMBER name="étudier"/>
+          <MEMBER name="examiner"/>
           <MEMBER name="expertiser"/>
           <MEMBER name="explorer"/>
           <MEMBER name="inspecter"/>
-          <MEMBER name="peser"/>
-          <MEMBER name="examiner"/>
-          <MEMBER name="auditer"/>
-          <MEMBER name="chiffrer"/>
-          <MEMBER name="mesurer"/>
           <MEMBER name="méjuger"/>
+          <MEMBER name="mesurer"/>
+          <MEMBER name="peser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

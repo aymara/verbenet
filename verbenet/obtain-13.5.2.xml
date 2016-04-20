@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="obtain-13.5.2" ladl="36DT[+N2 détrimentaire et +N0 V N1 de N2 source]" lvf="D2e">
      <MEMBERS>
-          <MEMBER name="acquérir"/>
-          <MEMBER name="hériter"/>
-          <MEMBER name="percevoir"/>
-          <MEMBER name="obtenir"/>
-          <MEMBER name="prendre"/>
-          <MEMBER name="collecter"/>
-          <MEMBER name="tirer"/>
           <MEMBER name="accepter"/>
+          <MEMBER name="acquérir"/>
           <MEMBER name="capter"/>
+          <MEMBER name="collecter"/>
+          <MEMBER name="hériter"/>
+          <MEMBER name="obtenir"/>
+          <MEMBER name="percevoir"/>
+          <MEMBER name="prendre"/>
           <MEMBER name="ramasser"/>
           <MEMBER name="réceptionner"/>
           <MEMBER name="recevoir"/>
+          <MEMBER name="tirer"/>
           <MEMBER name="toucher"/>
      </MEMBERS>
      <THEMROLES>

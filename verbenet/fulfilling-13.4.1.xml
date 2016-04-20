@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="fulfilling-13.4.1" ladl="36DT[+N2 bénéficiaire] et 37M1[+N0 V N2 (E+Loc N1 destination)]" lvf="N1a">
      <MEMBERS>
-          <MEMBER name="livrer"/>
           <MEMBER name="fournir"/>
+          <MEMBER name="livrer"/>
           <MEMBER name="servir"/>
      </MEMBERS>
      <THEMROLES>

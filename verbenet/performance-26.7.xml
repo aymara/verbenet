@@ -14,18 +14,18 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="26.7-1">
                <MEMBERS>
-                    <MEMBER name="psalmodier"/>
-                    <MEMBER name="chantonner"/>
                     <MEMBER name="chanter"/>
+                    <MEMBER name="chantonner"/>
                     <MEMBER name="entonner"/>
                     <MEMBER name="exécuter"/>
+                    <MEMBER name="fredonner"/>
                     <MEMBER name="interpréter"/>
                     <MEMBER name="jouer"/>
                     <MEMBER name="monter"/>
+                    <MEMBER name="psalmodier"/>
                     <MEMBER name="siffler"/>
-                    <MEMBER name="talonner"/>
-                    <MEMBER name="fredonner"/>
                     <MEMBER name="siffloter"/>
+                    <MEMBER name="talonner"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -58,19 +58,19 @@
           <VNSUBCLASS ID="26.7-2" ladl="32A">
                <MEMBERS>
                     <MEMBER name="brosser"/>
-                    <MEMBER name="dessiner"/>
                     <MEMBER name="chorégraphier"/>
+                    <MEMBER name="composer"/>
+                    <MEMBER name="concevoir"/>
+                    <MEMBER name="décrire"/>
+                    <MEMBER name="dessiner"/>
+                    <MEMBER name="écrire"/>
                     <MEMBER name="exécuter"/>
                     <MEMBER name="inventer"/>
                     <MEMBER name="peindre"/>
-                    <MEMBER name="tracer"/>
                     <MEMBER name="rédiger"/>
-                    <MEMBER name="tourner"/>
-                    <MEMBER name="décrire"/>
-                    <MEMBER name="composer"/>
                     <MEMBER name="tisser"/>
-                    <MEMBER name="écrire"/>
-                    <MEMBER name="concevoir"/>
+                    <MEMBER name="tourner"/>
+                    <MEMBER name="tracer"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

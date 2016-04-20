@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="scribble-25.2" ladl="32A[-N0 V N2 destination]  ou 38LD[-N0 V N2 (E+de N1)]" lvf="R3a.2 ou L3b.2 ou C2f.1">
      <MEMBERS>
-          <MEMBER name="crayonner"/>
-          <MEMBER name="gribouiller"/>
-          <MEMBER name="griffonner"/>
-          <MEMBER name="peindre"/>
+          <MEMBER name="barbouiller"/>
           <MEMBER name="brosser"/>
-          <MEMBER name="dessiner"/>
-          <MEMBER name="esquisser"/>
           <MEMBER name="composer"/>
+          <MEMBER name="crayonner"/>
           <MEMBER name="découper"/>
+          <MEMBER name="dessiner"/>
           <MEMBER name="ébaucher"/>
           <MEMBER name="écrivailler"/>
           <MEMBER name="écrivasser"/>
+          <MEMBER name="esquisser"/>
           <MEMBER name="exécuter"/>
           <MEMBER name="fabriquer"/>
           <MEMBER name="faire"/>
           <MEMBER name="forger"/>
           <MEMBER name="former"/>
+          <MEMBER name="gribouiller"/>
+          <MEMBER name="griffonner"/>
+          <MEMBER name="peindre"/>
           <MEMBER name="produire"/>
           <MEMBER name="représenter"/>
           <MEMBER name="tailler"/>
           <MEMBER name="tracer"/>
-          <MEMBER name="barbouiller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

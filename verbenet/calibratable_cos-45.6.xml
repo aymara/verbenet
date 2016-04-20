@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="calibratable_cos-45.6" ladl="31R" lvf="M4b.1 ou M4a.4">
      <MEMBERS>
-          <MEMBER name="choir"/>
-          <MEMBER name="chuter"/>
-          <MEMBER name="décroître"/>
-          <MEMBER name="dégonfler"/>
-          <MEMBER name="démultiplier"/>
-          <MEMBER name="diminuer"/>
-          <MEMBER name="enfler"/>
-          <MEMBER name="gonfler"/>
-          <MEMBER name="hausser"/>
-          <MEMBER name="rabaisser"/>
-          <MEMBER name="réduire"/>
-          <MEMBER name="remonter"/>
-          <MEMBER name="avancer"/>
-          <MEMBER name="croître"/>
-          <MEMBER name="décliner"/>
-          <MEMBER name="dégringoler"/>
-          <MEMBER name="descendre"/>
-          <MEMBER name="exploser"/>
-          <MEMBER name="flamber"/>
-          <MEMBER name="fléchir"/>
-          <MEMBER name="forcer"/>
-          <MEMBER name="grandir"/>
-          <MEMBER name="grimper"/>
-          <MEMBER name="monter"/>
-          <MEMBER name="pousser"/>
-          <MEMBER name="reculer"/>
-          <MEMBER name="régresser"/>
-          <MEMBER name="retomber"/>
-          <MEMBER name="tomber"/>
           <MEMBER name="affaisser s'"/>
+          <MEMBER name="avancer"/>
           <MEMBER name="avancer s'"/>
           <MEMBER name="basculer"/>
+          <MEMBER name="choir"/>
+          <MEMBER name="chuter"/>
           <MEMBER name="couler"/>
           <MEMBER name="couvrir se"/>
+          <MEMBER name="croître"/>
+          <MEMBER name="décliner"/>
+          <MEMBER name="décroître"/>
+          <MEMBER name="dégonfler"/>
+          <MEMBER name="dégringoler"/>
+          <MEMBER name="démultiplier"/>
           <MEMBER name="déraper"/>
+          <MEMBER name="descendre"/>
+          <MEMBER name="diminuer"/>
           <MEMBER name="écrouler s'"/>
+          <MEMBER name="enfler"/>
           <MEMBER name="envoler s'"/>
           <MEMBER name="évoluer"/>
+          <MEMBER name="exploser"/>
           <MEMBER name="faiblir"/>
+          <MEMBER name="flamber"/>
+          <MEMBER name="fléchir"/>
           <MEMBER name="fluctuer"/>
+          <MEMBER name="forcer"/>
           <MEMBER name="former se"/>
+          <MEMBER name="gonfler"/>
+          <MEMBER name="grandir"/>
+          <MEMBER name="grimper"/>
+          <MEMBER name="hausser"/>
           <MEMBER name="maigrir"/>
+          <MEMBER name="monter"/>
           <MEMBER name="plonger"/>
+          <MEMBER name="pousser"/>
           <MEMBER name="progresser"/>
+          <MEMBER name="rabaisser"/>
+          <MEMBER name="reculer"/>
+          <MEMBER name="réduire"/>
+          <MEMBER name="régresser"/>
+          <MEMBER name="remonter"/>
+          <MEMBER name="retomber"/>
+          <MEMBER name="tomber"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Patient"/>
@@ -108,13 +108,13 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="45.6-2" ladl="37M4[+N1 V W] ou 37M1[+N1 V W]">
                <MEMBERS>
-                    <MEMBER name="rehausser"/>
-                    <MEMBER name="augmenter"/>
                     <MEMBER name="abaisser"/>
-                    <MEMBER name="bouger"/>
-                    <MEMBER name="changer"/>
                     <MEMBER name="accroître"/>
                     <MEMBER name="amplifer"/>
+                    <MEMBER name="augmenter"/>
+                    <MEMBER name="bouger"/>
+                    <MEMBER name="changer"/>
+                    <MEMBER name="rehausser"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Cause"/>

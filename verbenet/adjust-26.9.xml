@@ -3,8 +3,9 @@
      <MEMBERS>
           <MEMBER name="acclimater"/>
           <MEMBER name="adapter"/>
-          <MEMBER name="réadapter"/>
           <MEMBER name="ajuster"/>
+          <MEMBER name="habituer"/>
+          <MEMBER name="réadapter"/>
           <MEMBER name="réajuster"/>
      </MEMBERS>
      <THEMROLES>

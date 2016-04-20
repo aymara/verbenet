@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="marvel-31.3" ladl="8" lvf="P1a ou P1c">
      <MEMBERS>
-          <MEMBER name="préoccuper se"/>
-          <MEMBER name="rêver"/>
-          <MEMBER name="souffrir"/>
-          <MEMBER name="exulter"/>
-          <MEMBER name="jubiler"/>
-          <MEMBER name="pavoiser"/>
-          <MEMBER name="rager"/>
-          <MEMBER name="triompher"/>
-          <MEMBER name="angoisser"/>
-          <MEMBER name="déraisonner"/>
-          <MEMBER name="désespérer"/>
-          <MEMBER name="frissonner"/>
           <MEMBER name="affliger s'"/>
           <MEMBER name="amuser s'"/>
+          <MEMBER name="angoisser"/>
+          <MEMBER name="angoisser s'"/>
           <MEMBER name="bander"/>
+          <MEMBER name="baver"/>
+          <MEMBER name="bouillonner"/>
           <MEMBER name="délecter se"/>
+          <MEMBER name="délirer"/>
+          <MEMBER name="déraisonner"/>
+          <MEMBER name="désespérer"/>
           <MEMBER name="désespérer se"/>
           <MEMBER name="désoler se"/>
           <MEMBER name="divertir se"/>
@@ -26,24 +21,29 @@
           <MEMBER name="emporter s'"/>
           <MEMBER name="enchanter s'"/>
           <MEMBER name="étonner s'"/>
-          <MEMBER name="fatiguer se"/>
-          <MEMBER name="halluciner"/>
-          <MEMBER name="lasser se"/>
-          <MEMBER name="pleurer"/>
-          <MEMBER name="réjouir se"/>
-          <MEMBER name="saigner"/>
-          <MEMBER name="saliver"/>
-          <MEMBER name="tourmenter se"/>
-          <MEMBER name="tracasser se"/>
-          <MEMBER name="vibrer"/>
-          <MEMBER name="angoisser s'"/>
-          <MEMBER name="baver"/>
-          <MEMBER name="bouillonner"/>
-          <MEMBER name="délirer"/>
           <MEMBER name="extasier s'"/>
+          <MEMBER name="exulter"/>
+          <MEMBER name="fatiguer se"/>
+          <MEMBER name="frissonner"/>
+          <MEMBER name="halluciner"/>
           <MEMBER name="inquiéter s'"/>
+          <MEMBER name="jubiler"/>
+          <MEMBER name="lasser se"/>
           <MEMBER name="morfondre se"/>
           <MEMBER name="pâtir"/>
+          <MEMBER name="pavoiser"/>
+          <MEMBER name="pleurer"/>
+          <MEMBER name="préoccuper se"/>
+          <MEMBER name="rager"/>
+          <MEMBER name="réjouir se"/>
+          <MEMBER name="rêver"/>
+          <MEMBER name="saigner"/>
+          <MEMBER name="saliver"/>
+          <MEMBER name="souffrir"/>
+          <MEMBER name="tourmenter se"/>
+          <MEMBER name="tracasser se"/>
+          <MEMBER name="triompher"/>
+          <MEMBER name="vibrer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Experiencer">
@@ -95,8 +95,8 @@
           <VNSUBCLASS ID="31.3-1">
                <MEMBERS>
                     <MEMBER name="bondir"/>
-                    <MEMBER name="pâmer se"/>
                     <MEMBER name="extasier s'"/>
+                    <MEMBER name="pâmer se"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

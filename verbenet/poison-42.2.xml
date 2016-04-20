@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="poison-42.2" ladl="32H" lvf="F1b">
      <MEMBERS>
-          <MEMBER name="empoisonner"/>
-          <MEMBER name="étriper"/>
-          <MEMBER name="noyer"/>
-          <MEMBER name="pendre"/>
-          <MEMBER name="poignarder"/>
           <MEMBER name="abattre"/>
           <MEMBER name="asphyxier"/>
           <MEMBER name="décapiter"/>
           <MEMBER name="descendre"/>
           <MEMBER name="électrocuter"/>
+          <MEMBER name="empoisonner"/>
           <MEMBER name="étouffer"/>
           <MEMBER name="étrangler"/>
+          <MEMBER name="étriper"/>
           <MEMBER name="éventrer"/>
           <MEMBER name="frapper"/>
           <MEMBER name="fusiller"/>
           <MEMBER name="intoxiquer"/>
           <MEMBER name="lapider"/>
+          <MEMBER name="noyer"/>
+          <MEMBER name="pendre"/>
           <MEMBER name="piquer"/>
+          <MEMBER name="poignarder"/>
           <MEMBER name="raccourcir"/>
           <MEMBER name="stranguler"/>
           <MEMBER name="suriner"/>

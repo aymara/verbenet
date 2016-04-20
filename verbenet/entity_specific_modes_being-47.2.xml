@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="entity_specific_modes_being-47.2" ladl="35ST ou 31R" lvf="H3e">
      <MEMBERS>
+          <MEMBER name="bouillonner"/>
+          <MEMBER name="bourgeonner"/>
           <MEMBER name="brûler"/>
           <MEMBER name="germer"/>
           <MEMBER name="mousser"/>
-          <MEMBER name="bourgeonner"/>
-          <MEMBER name="bouillonner"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

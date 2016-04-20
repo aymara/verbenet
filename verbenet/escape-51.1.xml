@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="escape-51.1" ladl="2" lvf="E1a ou E1d">
      <MEMBERS>
-          <MEMBER name="approcher s'"/>
-          <MEMBER name="avancer s'"/>
-          <MEMBER name="écouler s'"/>
-          <MEMBER name="lever se"/>
-          <MEMBER name="relever se"/>
-          <MEMBER name="déboucher"/>
-          <MEMBER name="barrer se"/>
-          <MEMBER name="écarter s'"/>
-          <MEMBER name="parvenir"/>
-          <MEMBER name="progresser"/>
-          <MEMBER name="tomber"/>
-          <MEMBER name="transporter se"/>
+          <MEMBER name="abouler s'"/>
           <MEMBER name="aller"/>
+          <MEMBER name="approcher s'"/>
           <MEMBER name="arriver"/>
           <MEMBER name="avancer"/>
+          <MEMBER name="avancer s'"/>
+          <MEMBER name="barrer se"/>
           <MEMBER name="carapater se"/>
           <MEMBER name="cavaler se"/>
           <MEMBER name="débarquer"/>
+          <MEMBER name="déboucher"/>
           <MEMBER name="débouler"/>
           <MEMBER name="décamper"/>
           <MEMBER name="dégager se"/>
@@ -28,7 +21,9 @@
           <MEMBER name="descendre"/>
           <MEMBER name="détaler"/>
           <MEMBER name="disparaître"/>
+          <MEMBER name="écarter s'"/>
           <MEMBER name="échapper s'"/>
+          <MEMBER name="écouler s'"/>
           <MEMBER name="éloigner s'"/>
           <MEMBER name="émerger"/>
           <MEMBER name="émigrer"/>
@@ -42,15 +37,19 @@
           <MEMBER name="foncer"/>
           <MEMBER name="fuir"/>
           <MEMBER name="jeter se"/>
+          <MEMBER name="lever se"/>
           <MEMBER name="monter"/>
           <MEMBER name="partir"/>
+          <MEMBER name="parvenir"/>
           <MEMBER name="passer"/>
           <MEMBER name="plonger"/>
           <MEMBER name="porter se"/>
           <MEMBER name="précipiter se"/>
+          <MEMBER name="progresser"/>
           <MEMBER name="rapprocher se"/>
           <MEMBER name="reculer"/>
           <MEMBER name="réfugier se"/>
+          <MEMBER name="relever se"/>
           <MEMBER name="remonter"/>
           <MEMBER name="rendre se"/>
           <MEMBER name="rentrer"/>
@@ -63,9 +62,10 @@
           <MEMBER name="sauver se"/>
           <MEMBER name="sortir"/>
           <MEMBER name="surgir"/>
+          <MEMBER name="tomber"/>
+          <MEMBER name="transporter se"/>
           <MEMBER name="trisser se"/>
           <MEMBER name="venir"/>
-          <MEMBER name="abouler s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

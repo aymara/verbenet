@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="dub-29.3" ladl="39[-N0 V N1 comme N2]" lvf="N4a ou N2a">
      <MEMBERS>
-          <MEMBER name="labelliser"/>
-          <MEMBER name="rebaptiser"/>
+          <MEMBER name="adouber"/>
           <MEMBER name="appeler"/>
+          <MEMBER name="baptiser"/>
+          <MEMBER name="consacrer"/>
           <MEMBER name="couronner"/>
           <MEMBER name="dénommer"/>
           <MEMBER name="intituler"/>
+          <MEMBER name="labelliser"/>
+          <MEMBER name="millésimer"/>
           <MEMBER name="prénommer"/>
+          <MEMBER name="rebaptiser"/>
           <MEMBER name="sacrer"/>
           <MEMBER name="surnommer"/>
-          <MEMBER name="adouber"/>
-          <MEMBER name="consacrer"/>
-          <MEMBER name="millésimer"/>
-          <MEMBER name="baptiser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

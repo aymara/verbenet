@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cooperate-73" ladl="14" lvf="U2b">
      <MEMBERS>
-          <MEMBER name="coopérer"/>
           <MEMBER name="associer se"/>
-          <MEMBER name="réunir se"/>
           <MEMBER name="collaborer"/>
+          <MEMBER name="coopérer"/>
           <MEMBER name="joindre se"/>
           <MEMBER name="participer"/>
+          <MEMBER name="réunir se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -94,7 +94,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP modifier="+Qu Psubj" value="Theme">
@@ -115,7 +115,7 @@
                     <VERB/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP modifier="+Qu Psubj" value="Theme">

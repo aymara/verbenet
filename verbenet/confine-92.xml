@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="confine-92" ladl="38LHD" lvf="L1b">
      <MEMBERS>
+          <MEMBER name="chambrer"/>
+          <MEMBER name="coffrer"/>
+          <MEMBER name="consigner"/>
+          <MEMBER name="écrouer"/>
+          <MEMBER name="embastiller"/>
+          <MEMBER name="emmurer"/>
+          <MEMBER name="emprisonner"/>
           <MEMBER name="enfermer"/>
           <MEMBER name="hospitaliser"/>
           <MEMBER name="incarcérer"/>
-          <MEMBER name="chambrer"/>
-          <MEMBER name="consigner"/>
-          <MEMBER name="emmurer"/>
           <MEMBER name="séquestrer"/>
-          <MEMBER name="coffrer"/>
-          <MEMBER name="écrouer"/>
-          <MEMBER name="embastiller"/>
-          <MEMBER name="emprisonner"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

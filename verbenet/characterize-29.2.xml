@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="characterize-29.2" ladl="6" lvf="C3e ou C2c">
      <MEMBERS>
-          <MEMBER name="sélectionner"/>
-          <MEMBER name="vanter"/>
-          <MEMBER name="maquiller"/>
           <MEMBER name="adopter"/>
-          <MEMBER name="dénoncer"/>
-          <MEMBER name="compter"/>
-          <MEMBER name="discerner"/>
-          <MEMBER name="authentifier"/>
           <MEMBER name="afficher"/>
-          <MEMBER name="tenir"/>
+          <MEMBER name="authentifier"/>
+          <MEMBER name="compter"/>
+          <MEMBER name="dénoncer"/>
+          <MEMBER name="discerner"/>
+          <MEMBER name="maquiller"/>
           <MEMBER name="marquer"/>
           <MEMBER name="préfigurer"/>
+          <MEMBER name="sélectionner"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="vanter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -58,28 +58,28 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="29.2-1">
                <MEMBERS>
-                    <MEMBER name="représenter"/>
-                    <MEMBER name="dépeindre"/>
-                    <MEMBER name="signaler"/>
+                    <MEMBER name="caractériser"/>
+                    <MEMBER name="comprendre"/>
                     <MEMBER name="conceptualiser"/>
+                    <MEMBER name="décrire"/>
                     <MEMBER name="décrypter"/>
+                    <MEMBER name="définir"/>
+                    <MEMBER name="dépeindre"/>
                     <MEMBER name="détailler"/>
                     <MEMBER name="évoquer"/>
-                    <MEMBER name="interpréter"/>
-                    <MEMBER name="comprendre"/>
                     <MEMBER name="fixer"/>
                     <MEMBER name="identifier"/>
                     <MEMBER name="imaginer"/>
                     <MEMBER name="imaginer s'"/>
-                    <MEMBER name="regarder"/>
-                    <MEMBER name="remarquer"/>
-                    <MEMBER name="trouver"/>
-                    <MEMBER name="visualiser"/>
-                    <MEMBER name="caractériser"/>
-                    <MEMBER name="décrire"/>
-                    <MEMBER name="définir"/>
+                    <MEMBER name="interpréter"/>
                     <MEMBER name="peindre"/>
                     <MEMBER name="présenter"/>
+                    <MEMBER name="regarder"/>
+                    <MEMBER name="remarquer"/>
+                    <MEMBER name="représenter"/>
+                    <MEMBER name="signaler"/>
+                    <MEMBER name="trouver"/>
+                    <MEMBER name="visualiser"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="comprehend-87.2" ladl="6" lvf="P3c">
      <MEMBERS>
-          <MEMBER name="saisir"/>
-          <MEMBER name="concevoir"/>
-          <MEMBER name="démêler"/>
-          <MEMBER name="mésestimer"/>
           <MEMBER name="appréhender"/>
           <MEMBER name="comprendre"/>
+          <MEMBER name="concevoir"/>
           <MEMBER name="déchiffrer"/>
           <MEMBER name="décoder"/>
+          <MEMBER name="démêler"/>
           <MEMBER name="entendre"/>
           <MEMBER name="méconnaître"/>
+          <MEMBER name="mésestimer"/>
+          <MEMBER name="saisir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Stimulus"/>

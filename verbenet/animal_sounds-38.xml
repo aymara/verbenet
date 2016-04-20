@@ -7,6 +7,7 @@
           <MEMBER name="bêler"/>
           <MEMBER name="beugler"/>
           <MEMBER name="blatérer"/>
+          <MEMBER name="boubouler"/>
           <MEMBER name="braire"/>
           <MEMBER name="bramer"/>
           <MEMBER name="cacarder"/>
@@ -16,6 +17,7 @@
           <MEMBER name="clabauder"/>
           <MEMBER name="coasser"/>
           <MEMBER name="couiner"/>
+          <MEMBER name="craquer"/>
           <MEMBER name="craqueter"/>
           <MEMBER name="criailler"/>
           <MEMBER name="crier"/>
@@ -31,10 +33,12 @@
           <MEMBER name="grommeler"/>
           <MEMBER name="gronder"/>
           <MEMBER name="hennir"/>
+          <MEMBER name="huer"/>
           <MEMBER name="hululer"/>
           <MEMBER name="hurler"/>
           <MEMBER name="jacasser"/>
           <MEMBER name="japper"/>
+          <MEMBER name="jaser"/>
           <MEMBER name="meugler"/>
           <MEMBER name="miauler"/>
           <MEMBER name="mugir"/>
@@ -44,17 +48,13 @@
           <MEMBER name="piauler"/>
           <MEMBER name="ramager"/>
           <MEMBER name="rappeler"/>
+          <MEMBER name="rauquer"/>
           <MEMBER name="ronronner"/>
           <MEMBER name="roucouler"/>
           <MEMBER name="rugir"/>
           <MEMBER name="trompeter"/>
           <MEMBER name="ululer"/>
           <MEMBER name="vagir"/>
-          <MEMBER name="boubouler"/>
-          <MEMBER name="craquer"/>
-          <MEMBER name="huer"/>
-          <MEMBER name="jaser"/>
-          <MEMBER name="rauquer"/>
           <MEMBER name="zinzinuler"/>
      </MEMBERS>
      <THEMROLES>

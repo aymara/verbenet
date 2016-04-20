@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="linger-53.1" ladl="7" lvf="E4d ou M2a ou X1a">
      <MEMBERS>
-          <MEMBER name="tarder"/>
-          <MEMBER name="traînasser"/>
           <MEMBER name="éterniser s'"/>
-          <MEMBER name="tergiverser"/>
-          <MEMBER name="traîner"/>
           <MEMBER name="lambiner"/>
           <MEMBER name="procrastiner"/>
+          <MEMBER name="tarder"/>
+          <MEMBER name="tergiverser"/>
+          <MEMBER name="traînasser"/>
+          <MEMBER name="traîner"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

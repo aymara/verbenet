@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="consider-29.9" ladl="6[+N1 =: Qu Pind] et 6[+N1 =: si P ou si P]" lvf="P1g">
      <MEMBERS>
-          <MEMBER name="rappeler se"/>
           <MEMBER name="appréhender"/>
+          <MEMBER name="rappeler se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -47,11 +47,11 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="29.9-1">
                <MEMBERS>
+                    <MEMBER name="considérer"/>
                     <MEMBER name="envisager"/>
-                    <MEMBER name="voir"/>
                     <MEMBER name="figurer se"/>
                     <MEMBER name="représenter se"/>
-                    <MEMBER name="considérer"/>
+                    <MEMBER name="voir"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -100,8 +100,8 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="29.9-2">
                <MEMBERS>
-                    <MEMBER name="préméditer"/>
                     <MEMBER name="décider"/>
+                    <MEMBER name="préméditer"/>
                     <MEMBER name="projeter"/>
                </MEMBERS>
                <THEMROLES/>
@@ -124,9 +124,9 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="29.9-3">
                <MEMBERS>
+                    <MEMBER name="penser"/>
                     <MEMBER name="réfléchir"/>
                     <MEMBER name="songer"/>
-                    <MEMBER name="penser"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
@@ -155,8 +155,8 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="29.9-4">
                <MEMBERS>
-                    <MEMBER name="souvenir se"/>
                     <MEMBER name="remémorer se"/>
+                    <MEMBER name="souvenir se"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

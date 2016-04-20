@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="complete-55.2" ladl="38R" lvf="X1a ou X4a ou M4b">
      <MEMBERS>
+          <MEMBER name="boucler"/>
           <MEMBER name="compléter"/>
           <MEMBER name="interrompre"/>
-          <MEMBER name="réaliser"/>
-          <MEMBER name="boucler"/>
           <MEMBER name="parfaire"/>
+          <MEMBER name="réaliser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="disappearance-48.2" ladl="35LS ou 35L" lvf="X4a ou F4b">
      <MEMBERS>
-          <MEMBER name="évaporer s'"/>
           <MEMBER name="disparaître"/>
           <MEMBER name="évanouir s'"/>
+          <MEMBER name="évaporer s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Patient"/>

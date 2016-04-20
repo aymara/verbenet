@@ -2,9 +2,9 @@
 <VNCLASS ID="complain-37.8" ladl="15[Prép2=auprès de]" lvf="C1f ou C1j">
      <MEMBERS>
           <MEMBER name="geindre"/>
-          <MEMBER name="plaindre se"/>
           <MEMBER name="glorifier se"/>
           <MEMBER name="lamenter se"/>
+          <MEMBER name="plaindre se"/>
           <MEMBER name="râler"/>
           <MEMBER name="rouscailler"/>
           <MEMBER name="rouspéter"/>

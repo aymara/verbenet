@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="put_spatial-9.2" ladl="38LD" lvf="L3b">
      <MEMBERS>
+          <MEMBER name="adosser"/>
+          <MEMBER name="appuyer"/>
+          <MEMBER name="asseoir"/>
           <MEMBER name="coucher"/>
           <MEMBER name="disposer"/>
           <MEMBER name="étendre"/>
           <MEMBER name="installer"/>
-          <MEMBER name="adosser"/>
           <MEMBER name="jucher"/>
           <MEMBER name="pendre"/>
           <MEMBER name="percher"/>
+          <MEMBER name="porter"/>
           <MEMBER name="poser"/>
           <MEMBER name="reposer"/>
-          <MEMBER name="tendre"/>
-          <MEMBER name="porter"/>
           <MEMBER name="suspendre"/>
-          <MEMBER name="appuyer"/>
-          <MEMBER name="asseoir"/>
+          <MEMBER name="tendre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

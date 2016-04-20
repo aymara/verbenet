@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="deduce-97.2" ladl="16" lvf="E4b">
      <MEMBERS>
-          <MEMBER name="tirer"/>
-          <MEMBER name="dériver"/>
           <MEMBER name="conclure"/>
           <MEMBER name="déduire"/>
+          <MEMBER name="dériver"/>
           <MEMBER name="induire"/>
           <MEMBER name="inférer"/>
+          <MEMBER name="tirer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

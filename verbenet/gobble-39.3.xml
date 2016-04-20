@@ -10,18 +10,18 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="39.3-1">
                <MEMBERS>
+                    <MEMBER name="avaler"/>
+                    <MEMBER name="bâfrer"/>
+                    <MEMBER name="bouffer"/>
+                    <MEMBER name="consommer"/>
+                    <MEMBER name="dévorer"/>
+                    <MEMBER name="enfourner"/>
+                    <MEMBER name="engloutir"/>
+                    <MEMBER name="engouffrer"/>
+                    <MEMBER name="fumer"/>
                     <MEMBER name="ingérer"/>
                     <MEMBER name="ingurgiter"/>
                     <MEMBER name="prendre"/>
-                    <MEMBER name="avaler"/>
-                    <MEMBER name="bouffer"/>
-                    <MEMBER name="enfourner"/>
-                    <MEMBER name="fumer"/>
-                    <MEMBER name="bâfrer"/>
-                    <MEMBER name="engloutir"/>
-                    <MEMBER name="engouffrer"/>
-                    <MEMBER name="consommer"/>
-                    <MEMBER name="dévorer"/>
                </MEMBERS>
                <THEMROLES>
                     <THEMROLE type="Patient">
@@ -52,14 +52,14 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="39.3-2">
                <MEMBERS>
-                    <MEMBER name="picoler"/>
+                    <MEMBER name="assimiler"/>
+                    <MEMBER name="avaler"/>
+                    <MEMBER name="déglutir"/>
+                    <MEMBER name="descendre"/>
                     <MEMBER name="écluser"/>
                     <MEMBER name="gober"/>
-                    <MEMBER name="avaler"/>
-                    <MEMBER name="descendre"/>
-                    <MEMBER name="déglutir"/>
-                    <MEMBER name="assimiler"/>
                     <MEMBER name="lamper"/>
+                    <MEMBER name="picoler"/>
                     <MEMBER name="siffler"/>
                </MEMBERS>
                <THEMROLES>

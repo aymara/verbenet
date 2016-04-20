@@ -7,12 +7,12 @@
           <MEMBER name="garder"/>
           <MEMBER name="maintenir"/>
           <MEMBER name="pérenniser"/>
+          <MEMBER name="perpétuer"/>
           <MEMBER name="porter"/>
+          <MEMBER name="poursuivre"/>
           <MEMBER name="prolonger"/>
           <MEMBER name="reprendre"/>
           <MEMBER name="retenir"/>
-          <MEMBER name="perpétuer"/>
-          <MEMBER name="poursuivre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

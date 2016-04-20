@@ -2,10 +2,10 @@
 <VNCLASS ID="rummage-35.5" ladl="35LR" lvf="M1b">
      <MEMBERS>
           <MEMBER name=""/>
-          <MEMBER name="fourrager"/>
           <MEMBER name="farfouiller"/>
-          <MEMBER name="fureter"/>
           <MEMBER name="fouiller"/>
+          <MEMBER name="fourrager"/>
+          <MEMBER name="fureter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="snooze-40.4" ladl="31H" lvf="H1a">
      <MEMBERS>
+          <MEMBER name="dormir"/>
+          <MEMBER name="pioncer"/>
           <MEMBER name="roupiller"/>
           <MEMBER name="sommeiller"/>
           <MEMBER name="somnoler"/>
-          <MEMBER name="dormir"/>
-          <MEMBER name="pioncer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

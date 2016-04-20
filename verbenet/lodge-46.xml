@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="lodge-46" ladl="35ST" lvf="L1a">
      <MEMBERS>
+          <MEMBER name="arrêter"/>
           <MEMBER name="bivouaquer"/>
           <MEMBER name="camper"/>
+          <MEMBER name="caserner"/>
           <MEMBER name="demeurer"/>
           <MEMBER name="enraciner s'"/>
           <MEMBER name="fixer se"/>
           <MEMBER name="gîter"/>
           <MEMBER name="habiter"/>
+          <MEMBER name="installer s'"/>
           <MEMBER name="loger"/>
           <MEMBER name="percher"/>
           <MEMBER name="résider"/>
@@ -16,9 +19,6 @@
           <MEMBER name="stationner"/>
           <MEMBER name="tapir se"/>
           <MEMBER name="vivre"/>
-          <MEMBER name="arrêter"/>
-          <MEMBER name="caserner"/>
-          <MEMBER name="installer s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

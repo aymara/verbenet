@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="consume-66" ladl="11[+N2 =: V0-inf W]" lvf="P1h">
      <MEMBERS>
-          <MEMBER name="dépenser"/>
           <MEMBER name="consommer"/>
+          <MEMBER name="dépenser"/>
           <MEMBER name="gâcher"/>
           <MEMBER name="gaspiller"/>
           <MEMBER name="user"/>

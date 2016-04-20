@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="bend-45.2" ladl="32C[-N1 V]" lvf="T3b ou T3c">
      <MEMBERS>
-          <MEMBER name="incurver"/>
+          <MEMBER name="allonger"/>
+          <MEMBER name="arquer"/>
+          <MEMBER name="arrondir"/>
           <MEMBER name="cambrer"/>
           <MEMBER name="crisper"/>
           <MEMBER name="cylindrer"/>
           <MEMBER name="damer"/>
           <MEMBER name="déformer"/>
           <MEMBER name="distendre"/>
+          <MEMBER name="étaler"/>
           <MEMBER name="étirer"/>
           <MEMBER name="évaser"/>
           <MEMBER name="fausser"/>
           <MEMBER name="forcer"/>
           <MEMBER name="friper"/>
-          <MEMBER name="rajuster"/>
-          <MEMBER name="ratatiner"/>
-          <MEMBER name="rectifier"/>
-          <MEMBER name="rouler"/>
-          <MEMBER name="tordre"/>
-          <MEMBER name="allonger"/>
-          <MEMBER name="arquer"/>
-          <MEMBER name="arrondir"/>
-          <MEMBER name="étaler"/>
+          <MEMBER name="incurver"/>
           <MEMBER name="moutonner"/>
           <MEMBER name="plisser"/>
           <MEMBER name="raidir"/>
+          <MEMBER name="rajuster"/>
+          <MEMBER name="ratatiner"/>
+          <MEMBER name="rectifier"/>
           <MEMBER name="redresser"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="tordre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

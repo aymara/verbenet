@@ -4,10 +4,10 @@
           <MEMBER name="appeler"/>
           <MEMBER name="engager"/>
           <MEMBER name="exhorter"/>
-          <MEMBER name="inviter"/>
-          <MEMBER name="solliciter"/>
           <MEMBER name="inciter"/>
+          <MEMBER name="inviter"/>
           <MEMBER name="pousser"/>
+          <MEMBER name="solliciter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

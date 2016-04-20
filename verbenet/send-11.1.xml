@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="send-11.1" ladl="38L[-N1 V W]" lvf="E3f">
      <MEMBERS>
-          <MEMBER name="importer"/>
           <MEMBER name="acheminer"/>
+          <MEMBER name="aiguiller"/>
           <MEMBER name="amener"/>
           <MEMBER name="apporter"/>
           <MEMBER name="balancer"/>
@@ -14,6 +14,8 @@
           <MEMBER name="entraîner"/>
           <MEMBER name="envoyer"/>
           <MEMBER name="expédier"/>
+          <MEMBER name="exporter"/>
+          <MEMBER name="importer"/>
           <MEMBER name="lancer"/>
           <MEMBER name="passer"/>
           <MEMBER name="porter"/>
@@ -22,18 +24,16 @@
           <MEMBER name="rapporter"/>
           <MEMBER name="réexpédier"/>
           <MEMBER name="rejeter"/>
+          <MEMBER name="remporter"/>
+          <MEMBER name="renvoyer"/>
+          <MEMBER name="retourner"/>
           <MEMBER name="tirer"/>
           <MEMBER name="traîner"/>
           <MEMBER name="transbahuter"/>
           <MEMBER name="transborder"/>
           <MEMBER name="transférer"/>
-          <MEMBER name="transporter"/>
-          <MEMBER name="remporter"/>
-          <MEMBER name="renvoyer"/>
           <MEMBER name="transmettre"/>
-          <MEMBER name="retourner"/>
-          <MEMBER name="aiguiller"/>
-          <MEMBER name="exporter"/>
+          <MEMBER name="transporter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

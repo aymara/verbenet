@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="engender-27" ladl="6[+N0 =: Nnr]" lvf="E4f">
      <MEMBERS>
-          <MEMBER name="causer"/>
-          <MEMBER name="engendrer"/>
-          <MEMBER name="produire"/>
-          <MEMBER name="provoquer"/>
           <MEMBER name="amener"/>
+          <MEMBER name="causer"/>
           <MEMBER name="déchaîner"/>
           <MEMBER name="déclencher"/>
-          <MEMBER name="faire"/>
           <MEMBER name="déterminer"/>
-          <MEMBER name="susciter"/>
+          <MEMBER name="engendrer"/>
+          <MEMBER name="faire"/>
           <MEMBER name="permettre"/>
+          <MEMBER name="produire"/>
+          <MEMBER name="provoquer"/>
+          <MEMBER name="susciter"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Cause">

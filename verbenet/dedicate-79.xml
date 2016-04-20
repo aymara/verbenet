@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="dedicate-79" ladl="11" lvf="D2a ou P1h">
      <MEMBERS>
-          <MEMBER name="dédier"/>
           <MEMBER name="consacrer"/>
+          <MEMBER name="dédier"/>
           <MEMBER name="dévouer"/>
           <MEMBER name="vouer"/>
      </MEMBERS>
@@ -29,7 +29,7 @@
                     <VERB pronominal="true"/>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP modifier="+VAgent-inf" value="Goal">
@@ -53,7 +53,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="pour;à"/>
+                              <SELRESTR Value="à;pour"/>
                          </SELRESTRS>
                     </PREP>
                     <NP modifier="+VAgent-inf" value="Goal">

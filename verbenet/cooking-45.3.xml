@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cooking-45.3" ladl="32C[-N1 V]" lvf="R3c.1">
      <MEMBERS>
-          <MEMBER name="torréfier"/>
-          <MEMBER name="réchauffer"/>
           <MEMBER name="cautériser"/>
+          <MEMBER name="cuisiner"/>
           <MEMBER name="ébouillanter"/>
           <MEMBER name="enflammer"/>
           <MEMBER name="flétrir"/>
-          <MEMBER name="saisir"/>
-          <MEMBER name="tremper"/>
-          <MEMBER name="cuisiner"/>
           <MEMBER name="frire"/>
           <MEMBER name="fumer"/>
+          <MEMBER name="réchauffer"/>
+          <MEMBER name="saisir"/>
           <MEMBER name="surcuire"/>
+          <MEMBER name="torréfier"/>
+          <MEMBER name="tremper"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -41,7 +41,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="avec;dans;à"/>
+                              <SELRESTR Value="à;avec;dans"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Instrument">
@@ -84,12 +84,12 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="45.3-1" ladl="32C[+N1 V]" lvf="R3c.1">
                <MEMBERS>
+                    <MEMBER name="blanchir bouillir braiser brûler"/>
                     <MEMBER name="cuire"/>
+                    <MEMBER name="gratiner griller infuser"/>
                     <MEMBER name="mijoter"/>
                     <MEMBER name="mitonner"/>
-                    <MEMBER name="gratiner griller infuser"/>
                     <MEMBER name="monter rissoler rôtir"/>
-                    <MEMBER name="blanchir bouillir braiser brûler"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="shake-22.3" ladl="36SL[-V-n attache (forme V-n)] ou 32PL" lvf="U3b">
      <MEMBERS>
+          <MEMBER name="agglutiner s'"/>
+          <MEMBER name="agrafer"/>
+          <MEMBER name="arrimer"/>
+          <MEMBER name="botteler"/>
+          <MEMBER name="brasser"/>
+          <MEMBER name="brouiller"/>
+          <MEMBER name="concaténer"/>
+          <MEMBER name="coudre"/>
           <MEMBER name="emmêler"/>
+          <MEMBER name="enliasser"/>
           <MEMBER name="épisser"/>
+          <MEMBER name="fondre"/>
+          <MEMBER name="joindre"/>
+          <MEMBER name="ligoter"/>
+          <MEMBER name="masser"/>
           <MEMBER name="rassembler"/>
+          <MEMBER name="rattacher"/>
           <MEMBER name="regrouper"/>
           <MEMBER name="réunir"/>
           <MEMBER name="souder"/>
-          <MEMBER name="arrimer"/>
-          <MEMBER name="botteler"/>
-          <MEMBER name="coudre"/>
-          <MEMBER name="enliasser"/>
-          <MEMBER name="fondre"/>
-          <MEMBER name="ligoter"/>
-          <MEMBER name="masser"/>
-          <MEMBER name="agglutiner s'"/>
-          <MEMBER name="agrafer"/>
-          <MEMBER name="concaténer"/>
-          <MEMBER name="joindre"/>
-          <MEMBER name="rattacher"/>
           <MEMBER name="touiller"/>
-          <MEMBER name="brasser"/>
-          <MEMBER name="brouiller"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -60,7 +60,7 @@
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>cause(Agnt, E) degradation_material-integrity(result(E), Patient) degradation_material_integrity(result(E), Co_Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
+               <SEMANTICS>cause(Agent, E) degradation_material-integrity(result(E), Patient) degradation_material_integrity(result(E), Co_Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
                <DESCRIPTION primary="NP V NP ensemble"/>

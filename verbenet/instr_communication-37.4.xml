@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="instr_communication-37.4" ladl="9" lvf="C2a ou C2d ">
      <MEMBERS>
-          <MEMBER name="télégraphier"/>
-          <MEMBER name="téléphoner"/>
-          <MEMBER name="télexer"/>
-          <MEMBER name="radiodiffuser"/>
-          <MEMBER name="télécopier"/>
-          <MEMBER name="téléviser"/>
           <MEMBER name="câbler"/>
           <MEMBER name="carillonner"/>
           <MEMBER name="faxer"/>
+          <MEMBER name="radiodiffuser"/>
+          <MEMBER name="télécopier"/>
+          <MEMBER name="télégraphier"/>
+          <MEMBER name="téléphoner"/>
+          <MEMBER name="téléviser"/>
+          <MEMBER name="télexer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

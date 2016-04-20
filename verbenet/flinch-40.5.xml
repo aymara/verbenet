@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="flinch-40.5" ladl="31H ou 8" lvf="M1a.1 ou M1a.2 ou M1a.4">
      <MEMBERS>
-          <MEMBER name="trembloter"/>
-          <MEMBER name="tressaillir"/>
+          <MEMBER name="blêmir"/>
+          <MEMBER name="défaillir"/>
           <MEMBER name="frémir"/>
           <MEMBER name="frissonner"/>
-          <MEMBER name="défaillir"/>
           <MEMBER name="pâlir"/>
-          <MEMBER name="verdir"/>
-          <MEMBER name="vibrer"/>
           <MEMBER name="ratatiner se"/>
           <MEMBER name="recroqueviller se"/>
-          <MEMBER name="vaciller"/>
-          <MEMBER name="blêmir"/>
           <MEMBER name="tordre se"/>
           <MEMBER name="trembler"/>
+          <MEMBER name="trembloter"/>
+          <MEMBER name="tressaillir"/>
+          <MEMBER name="vaciller"/>
+          <MEMBER name="verdir"/>
+          <MEMBER name="vibrer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Experiencer">

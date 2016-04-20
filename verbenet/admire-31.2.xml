@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="admire-31.2" ladl="12" lvf="P1j">
      <MEMBERS>
+          <MEMBER name="acclamer"/>
+          <MEMBER name="admirer"/>
+          <MEMBER name="applaudir"/>
+          <MEMBER name="apprécier"/>
+          <MEMBER name="approuver"/>
+          <MEMBER name="appuyer"/>
+          <MEMBER name="chérir"/>
+          <MEMBER name="choyer"/>
+          <MEMBER name="envier"/>
           <MEMBER name="estimer"/>
+          <MEMBER name="exalter"/>
           <MEMBER name="idolâtrer"/>
+          <MEMBER name="maudire"/>
           <MEMBER name="priser"/>
           <MEMBER name="respecter"/>
           <MEMBER name="révérer"/>
-          <MEMBER name="vénérer"/>
-          <MEMBER name="vomir"/>
-          <MEMBER name="choyer"/>
-          <MEMBER name="maudire"/>
-          <MEMBER name="apprécier"/>
-          <MEMBER name="acclamer"/>
-          <MEMBER name="applaudir"/>
-          <MEMBER name="approuver"/>
-          <MEMBER name="appuyer"/>
-          <MEMBER name="exalter"/>
           <MEMBER name="soutenir"/>
           <MEMBER name="vanter"/>
-          <MEMBER name="admirer"/>
-          <MEMBER name="chérir"/>
-          <MEMBER name="envier"/>
+          <MEMBER name="vénérer"/>
+          <MEMBER name="vomir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Stimulus"/>
@@ -106,10 +106,10 @@
                <MEMBERS>
                     <MEMBER name="abhorrer"/>
                     <MEMBER name="abominer"/>
-                    <MEMBER name="exécrer"/>
                     <MEMBER name="adorer"/>
                     <MEMBER name="aimer"/>
                     <MEMBER name="détester"/>
+                    <MEMBER name="exécrer"/>
                     <MEMBER name="haïr"/>
                     <MEMBER name="souhaiter"/>
                </MEMBERS>
@@ -133,11 +133,10 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="31.2-2" ladl="12[+Qu Psubj = de V0-inf W]">
                <MEMBERS>
+                    <MEMBER name="abhorrer"/>
+                    <MEMBER name="abominer"/>
                     <MEMBER name="craindre"/>
                     <MEMBER name="exécrer"/>
-                    <MEMBER name="abominer"/>
-                    <MEMBER name="abhorrer"/>
-                    <MEMBER name="adorer"/>
                     <MEMBER name="réprouver"/>
                </MEMBERS>
                <THEMROLES/>

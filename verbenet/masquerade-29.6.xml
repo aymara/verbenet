@@ -2,11 +2,11 @@
 <VNCLASS ID="masquerade-29.6" ladl="31R" lvf="H2a ou H2b ou H3f ou X1a ou P1g ou L2b">
      <MEMBERS>
           <MEMBER name="agir"/>
-          <MEMBER name="fonctionner"/>
-          <MEMBER name="tenir se"/>
-          <MEMBER name="officier"/>
           <MEMBER name="comporter se"/>
           <MEMBER name="conduire se"/>
+          <MEMBER name="fonctionner"/>
+          <MEMBER name="officier"/>
+          <MEMBER name="tenir se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

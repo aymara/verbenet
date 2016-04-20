@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="estimate-34.2" ladl="6[+N1 =: Qu Pind]" lvf="H3f">
      <MEMBERS>
+          <MEMBER name="analyser"/>
+          <MEMBER name="approximer"/>
           <MEMBER name="calculer"/>
           <MEMBER name="compter"/>
+          <MEMBER name="diagnostiquer"/>
           <MEMBER name="estimer"/>
-          <MEMBER name="noter"/>
-          <MEMBER name="juger"/>
-          <MEMBER name="supputer"/>
-          <MEMBER name="approximer"/>
-          <MEMBER name="analyser"/>
           <MEMBER name="évaluer"/>
           <MEMBER name="jauger"/>
-          <MEMBER name="diagnostiquer"/>
+          <MEMBER name="juger"/>
+          <MEMBER name="noter"/>
+          <MEMBER name="supputer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

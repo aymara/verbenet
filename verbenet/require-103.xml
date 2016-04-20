@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="require-103" ladl="10[+N0 =: Nnr]" lvf="C2k">
      <MEMBERS>
-          <MEMBER name="supposer"/>
-          <MEMBER name="exiger"/>
-          <MEMBER name="nécessiter"/>
           <MEMBER name="demander"/>
-          <MEMBER name="requérir"/>
-          <MEMBER name="réclamer"/>
+          <MEMBER name="exiger"/>
           <MEMBER name="impliquer"/>
+          <MEMBER name="nécessiter"/>
+          <MEMBER name="réclamer"/>
+          <MEMBER name="requérir"/>
+          <MEMBER name="supposer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Pivot"/>

@@ -13,9 +13,9 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="36.3-1">
                <MEMBERS>
+                    <MEMBER name="flirter"/>
                     <MEMBER name="marier se"/>
                     <MEMBER name="réunir se"/>
-                    <MEMBER name="flirter"/>
                     <MEMBER name="voir se"/>
                </MEMBERS>
                <THEMROLES/>
@@ -59,8 +59,8 @@
           <VNSUBCLASS ID="36.3-2">
                <MEMBERS>
                     <MEMBER name="boxer"/>
-                    <MEMBER name="lutter"/>
                     <MEMBER name="catcher"/>
+                    <MEMBER name="lutter"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

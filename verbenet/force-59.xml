@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="force-59" ladl="11[+N2 =: V1-inf W]" lvf="H2j">
      <MEMBERS>
-          <MEMBER name="entraîner"/>
-          <MEMBER name="éveiller"/>
-          <MEMBER name="commissionner"/>
-          <MEMBER name="forcer"/>
-          <MEMBER name="fourvoyer"/>
-          <MEMBER name="induire"/>
-          <MEMBER name="porter"/>
-          <MEMBER name="pousser"/>
-          <MEMBER name="réduire"/>
-          <MEMBER name="obliger"/>
           <MEMBER name="amener"/>
+          <MEMBER name="commissionner"/>
           <MEMBER name="conduire"/>
           <MEMBER name="contraindre"/>
           <MEMBER name="décider"/>
           <MEMBER name="déterminer"/>
           <MEMBER name="disposer"/>
+          <MEMBER name="entraîner"/>
+          <MEMBER name="éveiller"/>
+          <MEMBER name="forcer"/>
+          <MEMBER name="fourvoyer"/>
+          <MEMBER name="induire"/>
+          <MEMBER name="obliger"/>
+          <MEMBER name="porter"/>
+          <MEMBER name="pousser"/>
+          <MEMBER name="réduire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

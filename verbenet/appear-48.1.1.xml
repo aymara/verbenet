@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="appear-48.1.1" ladl="35L ou 35LS ou 35LD" lvf="L1a ou E3a">
      <MEMBERS>
-          <MEMBER name="réapparaître"/>
           <MEMBER name="apparaître"/>
-          <MEMBER name="reparaître"/>
-          <MEMBER name="ressortir"/>
+          <MEMBER name="déboucher"/>
+          <MEMBER name="dégager se"/>
           <MEMBER name="dériver"/>
-          <MEMBER name="tenir"/>
-          <MEMBER name="trouver se"/>
           <MEMBER name="échapper s'"/>
+          <MEMBER name="écouler s'"/>
+          <MEMBER name="élever s'"/>
           <MEMBER name="émaner"/>
+          <MEMBER name="fondre se"/>
+          <MEMBER name="former se"/>
           <MEMBER name="installer s'"/>
           <MEMBER name="jaillir"/>
+          <MEMBER name="jeter se"/>
+          <MEMBER name="propager se"/>
+          <MEMBER name="réapparaître"/>
+          <MEMBER name="répandre se"/>
+          <MEMBER name="reparaître"/>
+          <MEMBER name="ressortir"/>
+          <MEMBER name="ressurgir"/>
           <MEMBER name="sortir"/>
           <MEMBER name="sourdre"/>
           <MEMBER name="surgir"/>
-          <MEMBER name="déboucher"/>
-          <MEMBER name="dégager se"/>
-          <MEMBER name="écouler s'"/>
-          <MEMBER name="élever s'"/>
-          <MEMBER name="fondre se"/>
-          <MEMBER name="former se"/>
-          <MEMBER name="jeter se"/>
-          <MEMBER name="propager se"/>
-          <MEMBER name="répandre se"/>
-          <MEMBER name="ressurgir"/>
           <MEMBER name="survenir"/>
+          <MEMBER name="tenir"/>
+          <MEMBER name="trouver se"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

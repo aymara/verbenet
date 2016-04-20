@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="occurrence-48.3" ladl="31R ou 35R ou 5" lvf="L4a ou M4a">
      <MEMBERS>
+          <MEMBER name="advenir"/>
           <MEMBER name="arriver"/>
           <MEMBER name="déclarer se"/>
+          <MEMBER name="dérouler se"/>
+          <MEMBER name="ensuivre s'"/>
+          <MEMBER name="établir s'"/>
           <MEMBER name="former se"/>
           <MEMBER name="intervenir"/>
           <MEMBER name="passer se"/>
           <MEMBER name="présenter se"/>
           <MEMBER name="produire se"/>
+          <MEMBER name="renouveler se"/>
+          <MEMBER name="répéter se"/>
           <MEMBER name="reproduire se"/>
           <MEMBER name="revenir"/>
           <MEMBER name="survenir"/>
-          <MEMBER name="advenir"/>
-          <MEMBER name="ensuivre s'"/>
-          <MEMBER name="renouveler se"/>
-          <MEMBER name="répéter se"/>
           <MEMBER name="tenir se"/>
-          <MEMBER name="dérouler se"/>
-          <MEMBER name="établir s'"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme"/>

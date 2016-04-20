@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="accompany-51.7" ladl="3" lvf="E1e">
      <MEMBERS>
+          <MEMBER name="accompagner"/>
+          <MEMBER name="amener"/>
+          <MEMBER name="conduire"/>
+          <MEMBER name="convoyer"/>
           <MEMBER name="emmener"/>
           <MEMBER name="entraîner"/>
           <MEMBER name="escorter"/>
           <MEMBER name="guider"/>
           <MEMBER name="mener"/>
           <MEMBER name="piloter"/>
+          <MEMBER name="raccompagner"/>
           <MEMBER name="suivre"/>
-          <MEMBER name="convoyer"/>
-          <MEMBER name="accompagner"/>
-          <MEMBER name="amener"/>
-          <MEMBER name="conduire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

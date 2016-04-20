@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="indicate-78" ladl="9[+N0 =: Nnr]" lvf="C4b">
      <MEMBERS>
-          <MEMBER name="expliquer"/>
-          <MEMBER name="indiquer"/>
-          <MEMBER name="montrer"/>
-          <MEMBER name="prouver"/>
-          <MEMBER name="révéler"/>
+          <MEMBER name="annoncer"/>
           <MEMBER name="certifier"/>
           <MEMBER name="confirmer"/>
-          <MEMBER name="enseigner"/>
-          <MEMBER name="expliciter"/>
-          <MEMBER name="prédire"/>
-          <MEMBER name="signaler"/>
-          <MEMBER name="suggérer"/>
-          <MEMBER name="annoncer"/>
           <MEMBER name="démontrer"/>
           <MEMBER name="dénoncer"/>
           <MEMBER name="dire"/>
+          <MEMBER name="enseigner"/>
+          <MEMBER name="expliciter"/>
+          <MEMBER name="expliquer"/>
+          <MEMBER name="indiquer"/>
+          <MEMBER name="montrer"/>
+          <MEMBER name="prédire"/>
+          <MEMBER name="prouver"/>
+          <MEMBER name="révéler"/>
+          <MEMBER name="signaler"/>
+          <MEMBER name="suggérer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Recipient">

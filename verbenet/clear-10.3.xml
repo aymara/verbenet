@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="clear-10.3" ladl="37E et 38LS" lvf="N3d">
      <MEMBERS>
-          <MEMBER name="vider"/>
-          <MEMBER name="déménager drainer"/>
-          <MEMBER name="évacuer"/>
-          <MEMBER name="détacher"/>
           <MEMBER name=""/>
+          <MEMBER name="déménager drainer"/>
+          <MEMBER name="détacher"/>
+          <MEMBER name="évacuer"/>
+          <MEMBER name="vider"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -71,8 +71,8 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="10.3-1">
                <MEMBERS>
-                    <MEMBER name="dégager"/>
                     <MEMBER name="déblayer"/>
+                    <MEMBER name="dégager"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

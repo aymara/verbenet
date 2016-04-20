@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="admit-65" ladl="38LHD[+N0 lieu de destination de N1]" lvf="S2f ou E1f">
      <MEMBERS>
+          <MEMBER name="accepter"/>
           <MEMBER name="accueillir"/>
           <MEMBER name="admettre"/>
-          <MEMBER name="recevoir"/>
-          <MEMBER name="recueillir"/>
-          <MEMBER name="accepter"/>
           <MEMBER name="agréer"/>
           <MEMBER name="réceptionner"/>
+          <MEMBER name="recevoir"/>
+          <MEMBER name="recueillir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

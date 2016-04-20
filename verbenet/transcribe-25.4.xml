@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="transcribe-25.4" ladl="10 ou 38L ou 38LD[-N0 V N2 (E+de N1)]" lvf="R3a">
      <MEMBERS>
-          <MEMBER name="photographier"/>
-          <MEMBER name="polycopier"/>
-          <MEMBER name="redoubler"/>
-          <MEMBER name="refaire"/>
-          <MEMBER name="reprographier"/>
-          <MEMBER name="ronéoter"/>
-          <MEMBER name="taper"/>
-          <MEMBER name="consigner"/>
-          <MEMBER name="inscrire"/>
-          <MEMBER name="copier"/>
-          <MEMBER name="enregistrer"/>
-          <MEMBER name="reproduire"/>
-          <MEMBER name="établir"/>
-          <MEMBER name="répertorier"/>
-          <MEMBER name="repiquer"/>
-          <MEMBER name="transcrire"/>
           <MEMBER name="cinématographier"/>
+          <MEMBER name="consigner"/>
+          <MEMBER name="copier"/>
           <MEMBER name="dactylographier"/>
           <MEMBER name="décalquer"/>
           <MEMBER name="décrire"/>
           <MEMBER name="dupliquer"/>
+          <MEMBER name="enregistrer"/>
+          <MEMBER name="établir"/>
           <MEMBER name="filmer"/>
           <MEMBER name="imiter"/>
+          <MEMBER name="inscrire"/>
           <MEMBER name="microfilmer"/>
           <MEMBER name="photocopier"/>
+          <MEMBER name="photographier"/>
+          <MEMBER name="polycopier"/>
+          <MEMBER name="redoubler"/>
+          <MEMBER name="refaire"/>
+          <MEMBER name="répertorier"/>
+          <MEMBER name="repiquer"/>
+          <MEMBER name="reproduire"/>
+          <MEMBER name="reprographier"/>
+          <MEMBER name="ronéoter"/>
+          <MEMBER name="taper"/>
+          <MEMBER name="transcrire"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

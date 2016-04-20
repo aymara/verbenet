@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="order-60.2" ladl="13">
      <MEMBERS>
-          <MEMBER name="prier"/>
+          <MEMBER name="conjurer"/>
           <MEMBER name="enjoindre"/>
           <MEMBER name="implorer"/>
+          <MEMBER name="prier"/>
           <MEMBER name="supplier"/>
-          <MEMBER name="conjurer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent"/>

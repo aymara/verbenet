@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="overstate-37.12" ladl="6 ou 9" lvf="C2c">
      <MEMBERS>
+          <MEMBER name="exagérer"/>
           <MEMBER name="grossir"/>
           <MEMBER name="magnifier"/>
-          <MEMBER name="exagérer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

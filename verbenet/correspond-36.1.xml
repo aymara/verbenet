@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="correspond-36.1" ladl="35S" lvf="C1h ou U2a">
      <MEMBERS>
-          <MEMBER name="correspondre"/>
-          <MEMBER name="marcher"/>
           <MEMBER name="accorder s'"/>
-          <MEMBER name="coopérer"/>
-          <MEMBER name="concerter se"/>
+          <MEMBER name="badiner"/>
           <MEMBER name="bavarder"/>
           <MEMBER name="causer"/>
-          <MEMBER name="marchander"/>
-          <MEMBER name="discuter"/>
+          <MEMBER name="collaborer"/>
+          <MEMBER name="communier"/>
           <MEMBER name="communiquer"/>
           <MEMBER name="composer"/>
-          <MEMBER name="entendre s'"/>
+          <MEMBER name="concerter se"/>
           <MEMBER name="conjurer se"/>
+          <MEMBER name="converger"/>
           <MEMBER name="converser"/>
+          <MEMBER name="coopérer"/>
+          <MEMBER name="correspondre"/>
           <MEMBER name="délibérer"/>
           <MEMBER name="deviser"/>
           <MEMBER name="dialoguer"/>
+          <MEMBER name="entendre s'"/>
           <MEMBER name="entretenir s'"/>
           <MEMBER name="flirter"/>
+          <MEMBER name="interagir"/>
+          <MEMBER name="marchander"/>
+          <MEMBER name="marcher"/>
           <MEMBER name="négocier"/>
           <MEMBER name="parlementer"/>
+          <MEMBER name="plaisanter"/>
           <MEMBER name="traiter"/>
           <MEMBER name="transiger"/>
-          <MEMBER name="badiner"/>
-          <MEMBER name="converger"/>
-          <MEMBER name="interagir"/>
-          <MEMBER name="plaisanter"/>
-          <MEMBER name="collaborer"/>
-          <MEMBER name="communier"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

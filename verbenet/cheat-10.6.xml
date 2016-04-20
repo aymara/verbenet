@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="cheat-10.6" ladl="37E" lvf="N1b ou N2b ou N3d">
      <MEMBERS>
+          <MEMBER name="blouser"/>
           <MEMBER name="débarrasser"/>
           <MEMBER name="décharger"/>
           <MEMBER name="défaire"/>
+          <MEMBER name="dégarnir"/>
           <MEMBER name="déposséder"/>
           <MEMBER name="déshériter"/>
-          <MEMBER name="blouser"/>
-          <MEMBER name="dégarnir"/>
+          <MEMBER name="frauder"/>
           <MEMBER name="gruger"/>
-          <MEMBER name="rouler"/>
           <MEMBER name="plumer"/>
+          <MEMBER name="priver"/>
           <MEMBER name="rançonner"/>
+          <MEMBER name="rouler"/>
           <MEMBER name="saigner"/>
           <MEMBER name="sevrer"/>
           <MEMBER name="spolier"/>
-          <MEMBER name="frauder"/>
-          <MEMBER name="priver"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
@@ -65,19 +65,19 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="10.6-1" ladl="36DT et 37E">
                <MEMBERS>
-                    <MEMBER name="entôler"/>
-                    <MEMBER name="entuber"/>
-                    <MEMBER name="piller"/>
-                    <MEMBER name="purger"/>
-                    <MEMBER name="razzier"/>
-                    <MEMBER name="filouter"/>
-                    <MEMBER name="voler"/>
-                    <MEMBER name="escroquer"/>
-                    <MEMBER name="estamper"/>
-                    <MEMBER name="truander"/>
                     <MEMBER name="arnaquer"/>
                     <MEMBER name="dépouiller"/>
                     <MEMBER name="dévaliser"/>
+                    <MEMBER name="entôler"/>
+                    <MEMBER name="entuber"/>
+                    <MEMBER name="escroquer"/>
+                    <MEMBER name="estamper"/>
+                    <MEMBER name="filouter"/>
+                    <MEMBER name="piller"/>
+                    <MEMBER name="purger"/>
+                    <MEMBER name="razzier"/>
+                    <MEMBER name="truander"/>
+                    <MEMBER name="voler"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

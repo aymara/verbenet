@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="sound_emission-43.2" ladl="34L0" lvf="H3d">
      <MEMBERS>
-          <MEMBER name="ronfler"/>
-          <MEMBER name="ronronner"/>
-          <MEMBER name="rouler"/>
-          <MEMBER name="siffler"/>
-          <MEMBER name="sonner"/>
-          <MEMBER name="tictaquer"/>
-          <MEMBER name="tinter"/>
-          <MEMBER name="tintinnabuler"/>
-          <MEMBER name="tonner"/>
-          <MEMBER name="vrombir"/>
           <MEMBER name="bouillonner"/>
-          <MEMBER name="bruire"/>
-          <MEMBER name="palpiter"/>
-          <MEMBER name="résonner"/>
           <MEMBER name="bourdonner"/>
+          <MEMBER name="bruire"/>
           <MEMBER name="carillonner"/>
           <MEMBER name="chanter"/>
           <MEMBER name="claquer"/>
@@ -33,8 +21,20 @@
           <MEMBER name="grincer"/>
           <MEMBER name="gronder"/>
           <MEMBER name="hoqueter"/>
+          <MEMBER name="palpiter"/>
           <MEMBER name="pétiller"/>
+          <MEMBER name="résonner"/>
           <MEMBER name="retentir"/>
+          <MEMBER name="ronfler"/>
+          <MEMBER name="ronronner"/>
+          <MEMBER name="rouler"/>
+          <MEMBER name="siffler"/>
+          <MEMBER name="sonner"/>
+          <MEMBER name="tictaquer"/>
+          <MEMBER name="tinter"/>
+          <MEMBER name="tintinnabuler"/>
+          <MEMBER name="tonner"/>
+          <MEMBER name="vrombir"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Theme">

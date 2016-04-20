@@ -13,15 +13,15 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="29.8-1" ladl="37M1[+N2 V N1] ou 32R1">
                <MEMBERS>
-                    <MEMBER name="sponsoriser"/>
-                    <MEMBER name="entraîner"/>
-                    <MEMBER name="régenter"/>
                     <MEMBER name="assister"/>
                     <MEMBER name="chaperonner"/>
                     <MEMBER name="doubler"/>
+                    <MEMBER name="entraîner"/>
                     <MEMBER name="escorter"/>
                     <MEMBER name="parrainer"/>
                     <MEMBER name="patronner"/>
+                    <MEMBER name="régenter"/>
+                    <MEMBER name="sponsoriser"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>

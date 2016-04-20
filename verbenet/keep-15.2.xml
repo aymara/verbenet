@@ -3,16 +3,16 @@
      <MEMBERS>
           <MEMBER name="conserver"/>
           <MEMBER name="disposer"/>
+          <MEMBER name="emmagasiner"/>
+          <MEMBER name="entreposer"/>
           <MEMBER name="garder"/>
           <MEMBER name="laisser"/>
           <MEMBER name="maintenir"/>
           <MEMBER name="mettre"/>
-          <MEMBER name="stocker"/>
-          <MEMBER name="thésauriser"/>
           <MEMBER name="retenir"/>
           <MEMBER name="serrer"/>
-          <MEMBER name="emmagasiner"/>
-          <MEMBER name="entreposer"/>
+          <MEMBER name="stocker"/>
+          <MEMBER name="thésauriser"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

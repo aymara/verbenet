@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="suffocate-40.7" ladl="32H ou 4" lvf="F1b">
      <MEMBERS>
+          <MEMBER name="asphyxier"/>
+          <MEMBER name="étouffer"/>
           <MEMBER name="étrangler"/>
           <MEMBER name="noyer"/>
           <MEMBER name="suffoquer"/>
-          <MEMBER name="asphyxier"/>
-          <MEMBER name="étouffer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

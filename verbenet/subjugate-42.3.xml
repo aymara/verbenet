@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="subjugate-42.3" ladl="32H" lvf="F4b">
      <MEMBERS>
-          <MEMBER name="juguler"/>
-          <MEMBER name="piétiner"/>
-          <MEMBER name="réprimer"/>
-          <MEMBER name="torpiller"/>
+          <MEMBER name="amortir"/>
+          <MEMBER name="anéantir"/>
+          <MEMBER name="battre"/>
+          <MEMBER name="briser"/>
+          <MEMBER name="conquérir"/>
+          <MEMBER name="démolir"/>
+          <MEMBER name="détruire"/>
+          <MEMBER name="dominer"/>
           <MEMBER name="dompter"/>
           <MEMBER name="écraser"/>
           <MEMBER name="étouffer"/>
-          <MEMBER name="mater"/>
-          <MEMBER name="supprimer"/>
-          <MEMBER name="vaincre"/>
-          <MEMBER name="battre"/>
-          <MEMBER name="conquérir"/>
-          <MEMBER name="dominer"/>
+          <MEMBER name="juguler"/>
           <MEMBER name="maîtriser"/>
+          <MEMBER name="mater"/>
           <MEMBER name="nettoyer"/>
+          <MEMBER name="piétiner"/>
           <MEMBER name="piler"/>
           <MEMBER name="refroidir"/>
+          <MEMBER name="réprimer"/>
           <MEMBER name="soumettre"/>
-          <MEMBER name="amortir"/>
-          <MEMBER name="anéantir"/>
-          <MEMBER name="briser"/>
-          <MEMBER name="démolir"/>
-          <MEMBER name="détruire"/>
+          <MEMBER name="supprimer"/>
+          <MEMBER name="torpiller"/>
+          <MEMBER name="vaincre"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

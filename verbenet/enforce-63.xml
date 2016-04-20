@@ -16,15 +16,23 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V PP.recipient NP"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a imposé son opinion.</EXAMPLE>
+                    <EXAMPLE>Luc a imposé  à l'assemblée son opinion libertaire</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
                     <NP value="Theme">
                          <SYNRESTRS/>
                     </NP>
@@ -32,15 +40,23 @@
                <SEMANTICS>enforce(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Psubj"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a  imposé que tout le monde lui obéisse.</EXAMPLE>
+                    <EXAMPLE>Luc a  imposé à l'assemblée que tout le monde lui obéisse</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
+                    <PREP>
+                         <SELRESTRS>
+                              <SELRESTR Value="à"/>
+                         </SELRESTRS>
+                    </PREP>
+                    <NP value="Recipient">
+                         <SYNRESTRS/>
+                    </NP>
                     <PSUBJ value="Theme"/>
                </SYNTAX>
                <SEMANTICS>enforce(during(E), Agent, Theme)</SEMANTICS>

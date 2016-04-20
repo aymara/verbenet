@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="dine-39.5" ladl="35R[Prép1=de]" lvf="S3j">
      <MEMBERS>
+          <MEMBER name="banqueter"/>
           <MEMBER name="bouffer"/>
           <MEMBER name="boulotter"/>
           <MEMBER name="croûter"/>
           <MEMBER name="déjeuner"/>
           <MEMBER name="dîner"/>
-          <MEMBER name="souper"/>
-          <MEMBER name="banqueter"/>
           <MEMBER name="festoyer"/>
           <MEMBER name="petit-déjeuner"/>
           <MEMBER name="saucissonner"/>
+          <MEMBER name="souper"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">

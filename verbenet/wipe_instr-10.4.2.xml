@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="wipe_instr-10.4.2" ladl="37E et 38LS" lvf="E3c">
      <MEMBERS>
+          <MEMBER name="balayer"/>
+          <MEMBER name="brosser"/>
           <MEMBER name="éponger"/>
+          <MEMBER name="essuyer"/>
+          <MEMBER name="filtrer"/>
+          <MEMBER name="gommer"/>
+          <MEMBER name="limer"/>
+          <MEMBER name="pomper"/>
+          <MEMBER name="poncer"/>
           <MEMBER name="racler"/>
           <MEMBER name="râteler"/>
           <MEMBER name="siphonner"/>
-          <MEMBER name="brosser"/>
-          <MEMBER name="essuyer"/>
-          <MEMBER name="filtrer"/>
-          <MEMBER name="limer"/>
-          <MEMBER name="poncer"/>
-          <MEMBER name="gommer"/>
-          <MEMBER name="pomper"/>
-          <MEMBER name="balayer"/>
      </MEMBERS>
      <THEMROLES>
           <THEMROLE type="Agent">
