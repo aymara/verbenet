@@ -18,7 +18,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+                         <DESCRIPTION primary="NP V PP.recipient de V-inf" syntax="Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc interdit à Marie de fumer</EXAMPLE>
                          </EXAMPLES>
@@ -53,7 +53,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP de V-inf"/>
+                         <DESCRIPTION primary="NP V NP de V-inf" syntax="Agent V  Recipient {de} Topic&lt;+VRecipient-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc empêche Marie de fumer</EXAMPLE>
                          </EXAMPLES>
@@ -75,7 +75,7 @@
                          <SEMANTICS>forbid(during(E), Agent, Recipient, Topic)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V Qu Psubj"/>
+                         <DESCRIPTION primary="NP V Qu Psubj" syntax="Agent V Topic&lt;+Qu Psubj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc empêche que Marie fume</EXAMPLE>
                          </EXAMPLES>

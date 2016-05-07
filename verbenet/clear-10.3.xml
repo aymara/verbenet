@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme PP.location"/>
+               <DESCRIPTION primary="NP V NP.theme PP.location" syntax="Agent V Theme {de} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Le vent a dégagé les nuages du ciel.</EXAMPLE>
                </EXAMPLES>
@@ -44,7 +44,7 @@
                <SEMANTICS>cause(Agent, E) location(start(E), Theme, Location) not(location(end(E), Theme, Location))</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.location PP.theme"/>
+               <DESCRIPTION primary="NP V NP.location PP.theme" syntax="Agent V Location {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Le vent a dégagé le ciel de ses nuages.</EXAMPLE>
                </EXAMPLES>
@@ -77,7 +77,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.location"/>
+                         <DESCRIPTION primary="NP V PP.location" syntax="Theme V {de} Location"/>
                          <EXAMPLES>
                               <EXAMPLE>Les nuages ont dégagé du ciel.</EXAMPLE>
                          </EXAMPLES>
@@ -98,7 +98,7 @@
                          <SEMANTICS>location(start(E), Theme, Location) not(location(end(E), Theme, Location))</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP.location se V"/>
+                         <DESCRIPTION primary="NP.location se V" syntax="Location  se V&lt;+neutre&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Le ciel s'est dégagé.</EXAMPLE>
                          </EXAMPLES>

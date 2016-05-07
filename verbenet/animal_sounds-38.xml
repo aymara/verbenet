@@ -65,7 +65,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient"/>
+               <DESCRIPTION primary="NP V PP.recipient" syntax="Agent V {après} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Le chien a aboyé après un chat.</EXAMPLE>
                </EXAMPLES>

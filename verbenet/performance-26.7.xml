@@ -30,7 +30,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.beneficiary"/>
+                         <DESCRIPTION primary="NP V NP PP.beneficiary" syntax="Agent V Theme {pour} Beneficiary"/>
                          <EXAMPLES>
                               <EXAMPLE>Max chante une chanson pour moi</EXAMPLE>
                          </EXAMPLES>
@@ -75,7 +75,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.Beneficiary"/>
+                         <DESCRIPTION primary="NP V NP PP.Beneficiary" syntax="Agent V Theme {pour} Beneficiary"/>
                          <EXAMPLES>
                               <EXAMPLE>Chopin a composé un oratorio pour Marie</EXAMPLE>
                          </EXAMPLES>

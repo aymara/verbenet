@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Cause V Source {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>L'incident a débarrassé Max de sa culpabilité</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>cause(Cause, E) not(free(stard(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Cause V Source {de} Theme&lt;+VSource-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>L'incident a débarrassé Max de se sentir coupable</EXAMPLE>
                </EXAMPLES>

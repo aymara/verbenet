@@ -17,7 +17,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.attribute"/>
+               <DESCRIPTION primary="NP V NP.attribute" syntax="Agent V Attribute&lt;+genitive(Patient)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le dentiste a lavé les dents de Marie</EXAMPLE>
                </EXAMPLES>
@@ -33,7 +33,7 @@
                <SEMANTICS>take_care_of(during(E), Agent, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP LUI V NP.attribute"/>
+               <DESCRIPTION primary="NP LUI V NP.attribute" syntax="Agent LUI&lt;+Patient&gt; V Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Le dentiste lui a lavé les dents</EXAMPLE>
                </EXAMPLES>

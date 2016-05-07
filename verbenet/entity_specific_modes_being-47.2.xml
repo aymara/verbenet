@@ -18,7 +18,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V"/>
+               <DESCRIPTION primary="NP V" syntax="Theme V"/>
                <EXAMPLES>
                     <EXAMPLE>L'arbuste bourgeonne</EXAMPLE>
                </EXAMPLES>
@@ -31,7 +31,7 @@
                <SEMANTICS>exist(during(E), Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Un feu flambait dans la forêt</EXAMPLE>
                </EXAMPLES>
@@ -60,7 +60,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.location V PP.theme"/>
+                         <DESCRIPTION primary="NP.location V PP.theme" syntax="Location V {de} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Le pommier fleurit de petites fleurs</EXAMPLE>
                          </EXAMPLES>

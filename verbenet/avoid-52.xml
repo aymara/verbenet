@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme"/>
+               <DESCRIPTION primary="NP V NP.theme" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a évité la balle</EXAMPLE>
                </EXAMPLES>
@@ -30,7 +30,7 @@
                <SEMANTICS>avoid(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V de V-inf"/>
+               <DESCRIPTION primary="NP V de V-inf" syntax="Agent V Theme&lt;+de VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a évité d'aller dans cette zone</EXAMPLE>
                </EXAMPLES>

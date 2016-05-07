@@ -397,7 +397,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Patient {avec} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a séché les draps avec ce séchoir à cheveux</EXAMPLE>
                </EXAMPLES>
@@ -421,7 +421,7 @@
                <SEMANTICS>cause(Agent, E) state(result(E), Endstate, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV"/>
+               <DESCRIPTION primary="NP se V ADV" syntax="Patient se V&lt;+middle&gt; ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Le coton se sèche facilement</EXAMPLE>
                </EXAMPLES>
@@ -435,7 +435,7 @@
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.instrument V NP"/>
+               <DESCRIPTION primary="NP.instrument V NP" syntax="Instrument V Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Ce séchoir à cheveux a séché les draps</EXAMPLE>
                </EXAMPLES>
@@ -459,7 +459,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.Patient se V"/>
+                         <DESCRIPTION primary="NP.Patient se V" syntax="Patient se V&lt;+neutre&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Les cerises s'amollissent</EXAMPLE>
                          </EXAMPLES>
@@ -480,7 +480,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP.Patient V"/>
+                                   <DESCRIPTION primary="NP.Patient V" syntax="Patient V"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Les draps sèchent</EXAMPLE>
                                    </EXAMPLES>

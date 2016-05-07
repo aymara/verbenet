@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient NP"/>
+               <DESCRIPTION primary="NP V PP.recipient NP" syntax="Agent V {à} Recipient Topic"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai promis à Léa un billet à l'opéra</EXAMPLE>
                </EXAMPLES>
@@ -47,7 +47,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient Qu Psubj"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Psubj" syntax="Agent V {à} Recipient Topic&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai promis à Léa qu'on irait au cinéma.</EXAMPLE>
                </EXAMPLES>
@@ -69,7 +69,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf" syntax="Agent V {à} Recipient Topic&lt;+de VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai promis à ma femme de rentrer tôt.</EXAMPLE>
                </EXAMPLES>

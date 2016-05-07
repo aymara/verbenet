@@ -48,7 +48,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <DESCRIPTION primary="NP V NP PP.co-patient" syntax="Agent V Patient {à/avec} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a associé la compagnie A avec/à la compagnie B</EXAMPLE>
                </EXAMPLES>
@@ -72,7 +72,7 @@
                <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient_i, Patient_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Patient&lt;+plural&gt;  "/>
                <EXAMPLES>
                     <EXAMPLE>Luc a associé les deux compagnies.</EXAMPLE>
                </EXAMPLES>
@@ -88,7 +88,7 @@
                <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient_i, Patient_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V PP.co-patient"/>
+               <DESCRIPTION primary="NP se V PP.co-patient" syntax="Patient se V&lt;+neutre&gt; {avec/à} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>La compagnie A s'est associée à/avec la compagnie B</EXAMPLE>
                </EXAMPLES>
@@ -109,7 +109,7 @@
                <SEMANTICS>together(end(E), physical, Patient, Co-Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V"/>
+               <DESCRIPTION primary="NP se V" syntax="Patient&lt;+plural&gt; se V&lt;+neutre&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Les deux compagnies se sont associées</EXAMPLE>
                </EXAMPLES>

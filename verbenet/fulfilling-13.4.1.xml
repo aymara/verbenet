@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.recipient"/>
+               <DESCRIPTION primary="NP V NP PP.recipient" syntax="Agent V Theme {à} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc fournit du lait à Max</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>has_possession(start(E), Agent, Theme) has_possession(end(E), Recipient, Theme) transfer(during(E), Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Recipient {de/en} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc fournit Max de/en lait.</EXAMPLE>
                </EXAMPLES>

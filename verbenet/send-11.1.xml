@@ -60,7 +60,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a envoyé le livre à Londres.</EXAMPLE>
                </EXAMPLES>
@@ -84,7 +84,7 @@
                <SEMANTICS>motion(during(E), Theme) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination" syntax="Agent V Theme {de/depuis} Initial_Location {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a envoyé le livre de Paris à Londres.</EXAMPLE>
                </EXAMPLES>
@@ -122,7 +122,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.initial_location"/>
+                         <DESCRIPTION primary="NP V NP PP.initial_location" syntax="Agent V Theme {de/depuis} Initial_Location"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a envoyé le livre de Paris.</EXAMPLE>
                          </EXAMPLES>

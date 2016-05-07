@@ -25,7 +25,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Un accident s'est produit devant eux</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>occur(during(E), Theme) Prep(during(E), Theme, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="IL V Qu Pind"/>
+               <DESCRIPTION primary="IL V Qu Pind" syntax="IL V Theme&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il s'est produit que Max a eu un accident</EXAMPLE>
                </EXAMPLES>

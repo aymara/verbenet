@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.Recipient Qu Psubj"/>
+               <DESCRIPTION primary="NP V PP.Recipient Qu Psubj" syntax="Agent V {à} Recipient Topic&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il a demandé à Jean que son fils vienne ce soir</EXAMPLE>
                </EXAMPLES>
@@ -53,7 +53,7 @@
                <SEMANTICS>command(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.Recipient de V-inf"/>
+               <DESCRIPTION primary="NP V PP.Recipient de V-inf" syntax="Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il a demandé à Jean de venir</EXAMPLE>
                </EXAMPLES>

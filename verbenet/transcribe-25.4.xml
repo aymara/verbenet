@@ -38,7 +38,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{+loc}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a copié un fichier sur sa clef USB.</EXAMPLE>
                </EXAMPLES>

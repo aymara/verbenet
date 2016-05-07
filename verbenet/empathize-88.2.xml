@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.stimulus"/>
+               <DESCRIPTION primary="NP V PP.stimulus" syntax="Experiencer V {à} Stimulus"/>
                <EXAMPLES>
                     <EXAMPLE>Luc compatit aux malheurs de Marie</EXAMPLE>
                </EXAMPLES>
@@ -35,7 +35,7 @@
                <SEMANTICS>emotional_state(E, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V à ce Qu Psubj"/>
+               <DESCRIPTION primary="NP V à ce Qu Psubj" syntax="Experiencer V {à} Stimulus&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc compatit à ce que Marie soit au chômage</EXAMPLE>
                </EXAMPLES>

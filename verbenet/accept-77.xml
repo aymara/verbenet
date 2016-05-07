@@ -25,7 +25,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <DESCRIPTION primary="NP V Qu Psubj" syntax="Agent V Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a accepté que son fils devienne écrivain</EXAMPLE>
                </EXAMPLES>
@@ -54,7 +54,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <DESCRIPTION primary="NP V NP ADJ" syntax="Agent V Theme Attribute&lt;+Adj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc accepte sa femme végétarienne.</EXAMPLE>
                          </EXAMPLES>
@@ -71,7 +71,7 @@
                          <SEMANTICS>approve(during(E), Agent, Theme, Predicate)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf" syntax="Agent V Theme&lt;+de VAgent-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc accepte de partir</EXAMPLE>
                          </EXAMPLES>

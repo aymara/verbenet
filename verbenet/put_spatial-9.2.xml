@@ -33,7 +33,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{+loc}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Max a couché la pendule sur le tapis.</EXAMPLE>
                </EXAMPLES>

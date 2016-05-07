@@ -28,7 +28,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {chez/dans} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Marie réside chez Luc</EXAMPLE>
                </EXAMPLES>

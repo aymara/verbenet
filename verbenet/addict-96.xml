@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.stimulus"/>
+               <DESCRIPTION primary="NP V NP PP.stimulus" syntax="Agent V Patient {à} Stimulus"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a prédisposé sa fille à la musique.</EXAMPLE>
                </EXAMPLES>
@@ -45,7 +45,7 @@
                <SEMANTICS>cause(Agent, E) desire(result(E), Patient, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <DESCRIPTION primary="NP V NP à V-inf" syntax="Agent V Patient {à} Stimulus&lt;+VPatient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a prédisposé sa fille à faire de la musique.</EXAMPLE>
                </EXAMPLES>

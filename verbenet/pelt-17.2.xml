@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Destination {de/avec} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Les manifestants ont bombardé la mairie d'oeufs pourris.</EXAMPLE>
                </EXAMPLES>

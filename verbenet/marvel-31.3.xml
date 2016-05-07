@@ -53,7 +53,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V de ce Qu Psubj"/>
+               <DESCRIPTION primary="NP V de ce Qu Psubj" syntax="Experiencer V {de} Stimulus&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc enrage de ce que Max parte</EXAMPLE>
                </EXAMPLES>
@@ -72,7 +72,7 @@
                <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V de V-inf"/>
+               <DESCRIPTION primary="NP V de V-inf" syntax="Experiencer V {de} Stimulus&lt;+VExperiencer-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc enrage de partir demain</EXAMPLE>
                </EXAMPLES>
@@ -101,7 +101,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.stimulus"/>
+                         <DESCRIPTION primary="NP V PP.stimulus" syntax="Experiencer V {devant} Stimulus"/>
                          <EXAMPLES>
                               <EXAMPLE>Megan exulte devant ce tableau.</EXAMPLE>
                          </EXAMPLES>

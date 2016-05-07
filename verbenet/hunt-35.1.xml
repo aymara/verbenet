@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.location"/>
+               <DESCRIPTION primary="NP V NP PP.location" syntax="Agent V Theme {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc chasse le gibier dans les bois</EXAMPLE>
                </EXAMPLES>

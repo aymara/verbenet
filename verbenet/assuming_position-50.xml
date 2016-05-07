@@ -36,7 +36,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Agent V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est affalé sur le fauteuil</EXAMPLE>
                </EXAMPLES>

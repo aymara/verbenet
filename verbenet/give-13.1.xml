@@ -65,7 +65,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.recipient"/>
+               <DESCRIPTION primary="NP V NP PP.recipient" syntax="Agent V Theme {à} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a donné une bicyclette à Max</EXAMPLE>
                </EXAMPLES>
@@ -110,7 +110,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.recipient PP.asset"/>
+                         <DESCRIPTION primary="NP V NP PP.recipient PP.asset" syntax="Agent V Theme {à} Recipient {pour} Asset"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a vendu sa bicyclette à Max pour 200€</EXAMPLE>
                          </EXAMPLES>
@@ -142,7 +142,7 @@
                          <SEMANTICS>has_possession(start(E), Agent, Theme) has_possession(end(E), ?Recipient, Theme) has_possession(start(E), ?Recipient, Asset) has_possession(end(E), Agent, Asset) transfer(during(E), Theme)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.recipient NP.asset"/>
+                         <DESCRIPTION primary="NP V NP PP.recipient NP.asset" syntax="Agent V Theme {à} Recipient  Asset"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a vendu sa bicyclette à Max  200€</EXAMPLE>
                          </EXAMPLES>

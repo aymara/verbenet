@@ -44,7 +44,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
+               <DESCRIPTION primary="NP V NP PP.source" syntax="Agent V Theme {de} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Le roi a banni le général de son pays</EXAMPLE>
                </EXAMPLES>
@@ -81,7 +81,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.destination"/>
+                         <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                          <EXAMPLES>
                               <EXAMPLE>Le roi a déporté le général dans une île</EXAMPLE>
                          </EXAMPLES>

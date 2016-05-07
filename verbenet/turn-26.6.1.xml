@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.patient PP.result"/>
+               <DESCRIPTION primary="NP V NP.patient PP.result" syntax="Agent V Patient {en} Result"/>
                <EXAMPLES>
                     <EXAMPLE>La sorcière a transformé Paul en grenouille</EXAMPLE>
                </EXAMPLES>

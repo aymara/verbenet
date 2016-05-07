@@ -10,7 +10,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <DESCRIPTION primary="NP V NP PP.co-patient" syntax="Agent V Patient {de} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc sépare les pions noirs des pions blancs.</EXAMPLE>
                </EXAMPLES>
@@ -34,7 +34,7 @@
                <SEMANTICS>cause(Agent, E) together(start(E), physical/abstract, Patient, Co-Patient) apart(end(E), physical/abstract, Patient, Co-Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Patient&lt;+plural&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc sépare les pions noirs et les pions blancs.</EXAMPLE>
                </EXAMPLES>
@@ -50,7 +50,7 @@
                <SEMANTICS>cause(Agent, E) together(start(E), physical/abstract, Patient_i, Patient_j) apart(end(E), physical/abstract, Patient_i, Patient_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V"/>
+               <DESCRIPTION primary="NP se V" syntax="Patient&lt;+plural&gt; se V&lt;+neutre&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>L'eau et l'huile se sont séparées.</EXAMPLE>
                </EXAMPLES>
@@ -63,7 +63,7 @@
                <SEMANTICS>together(start(E), physical/abstract, Patient_i, Patient_j) apart(end(E), physical/abstract, Patient_i, Patient_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV PP"/>
+               <DESCRIPTION primary="NP se V ADV PP" syntax="Patient se V&lt;+middle&gt; ADV {de} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>La crème se sépare facilement du lait.</EXAMPLE>
                </EXAMPLES>
@@ -85,7 +85,7 @@
                <SEMANTICS>property(Patient+Co-Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV"/>
+               <DESCRIPTION primary="NP se V ADV" syntax="Patient&lt;+plural&gt; se V&lt;+middle&gt; ADV"/>
                <EXAMPLES>
                     <EXAMPLE>L'eau et l'huile se séparent facilement.</EXAMPLE>
                </EXAMPLES>
@@ -110,7 +110,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V PP.co-patient"/>
+                         <DESCRIPTION primary="NP se V PP.co-patient" syntax="Patient se V&lt;+neutre&gt; {de} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>L'eau s'est séparée du lait.</EXAMPLE>
                          </EXAMPLES>
@@ -146,7 +146,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V PP.co-patient"/>
+                         <DESCRIPTION primary="NP se V PP.co-patient" syntax="Patient se V&lt;+neutre&gt; {d'avec} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>Le blanc s'est détaché d'avec le vert</EXAMPLE>
                          </EXAMPLES>
@@ -167,7 +167,7 @@
                          <SEMANTICS>together(start(E), physical/abstract, Patient, Co-Patient) apart(end(E), physical/abstract, Patient, Co-Patient)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.co-patient"/>
+                         <DESCRIPTION primary="NP V NP PP.co-patient" syntax="Agent V Patient {d'avec} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a détaché le blanc d'avec le vert</EXAMPLE>
                          </EXAMPLES>

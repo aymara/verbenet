@@ -18,7 +18,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Agent V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Sarah s'est éternisée devant le miroir/à table.</EXAMPLE>
                </EXAMPLES>
@@ -39,7 +39,7 @@
                <SEMANTICS>linger(during(E), Agent, ?Theme) Prep(E, Agent, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V à V-inf"/>
+               <DESCRIPTION primary="NP V à V-inf" syntax="Agent V {à} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Max s'éternise à mettre tout en ordre.</EXAMPLE>
                </EXAMPLES>

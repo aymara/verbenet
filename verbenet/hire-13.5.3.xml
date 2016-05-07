@@ -33,7 +33,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai recruté deux secrétaires.</EXAMPLE>
                </EXAMPLES>
@@ -49,7 +49,7 @@
                <SEMANTICS>cause(Agent, E) not(location(start(E), Theme)) location(end(E), Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {comme} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Max a recruté Luc comme lecteur.</EXAMPLE>
                </EXAMPLES>

@@ -109,7 +109,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Destination {de/avec} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a équipé le magasin d'un nouveau système de protection</EXAMPLE>
                </EXAMPLES>
@@ -133,7 +133,7 @@
                <SEMANTICS>motion(during(E), Theme) not(location(start(E), Theme, Destination)) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Destination {en} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a équipé le magasin en systèmes de protection.</EXAMPLE>
                </EXAMPLES>
@@ -157,7 +157,7 @@
                <SEMANTICS>motion(during(E), Theme) not(location(start(E), Theme, Destination)) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Theme V Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Un nouveau système de protection équipe le magasin.</EXAMPLE>
                </EXAMPLES>

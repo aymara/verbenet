@@ -26,7 +26,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
+                         <DESCRIPTION primary="NP V NP" syntax="Agent V Beneficiary"/>
                          <EXAMPLES>
                               <EXAMPLE>Max escorte son frère</EXAMPLE>
                          </EXAMPLES>

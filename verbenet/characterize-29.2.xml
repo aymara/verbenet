@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {comme} Attribute&lt;+Adj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a décrit Léa comme acerbe</EXAMPLE>
                </EXAMPLES>
@@ -84,7 +84,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V comment P"/>
+                         <DESCRIPTION primary="NP V comment P" syntax="Agent V Theme&lt;+comment P&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a décrit comment le processus fonctionne.</EXAMPLE>
                          </EXAMPLES>

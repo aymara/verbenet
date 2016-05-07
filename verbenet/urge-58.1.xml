@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.Topic"/>
+               <DESCRIPTION primary="NP V NP PP.Topic" syntax="Agent V Recipient {à} Topic&lt;+VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a poussé Marie à faire la vaiselle</EXAMPLE>
                </EXAMPLES>
@@ -50,7 +50,7 @@
                <SEMANTICS>urge(during(E), Agent, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à ce Qu Psubj"/>
+               <DESCRIPTION primary="NP V NP à ce Qu Psubj" syntax="Agent V Recipient {à} Topic&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a poussé Marie à ce que son mari démissionne</EXAMPLE>
                </EXAMPLES>

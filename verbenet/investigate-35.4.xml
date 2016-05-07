@@ -19,7 +19,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.location"/>
+               <DESCRIPTION primary="NP V NP.location" syntax="Agent V Location"/>
                <EXAMPLES>
                     <EXAMPLE>Lus a inspecté la région</EXAMPLE>
                </EXAMPLES>

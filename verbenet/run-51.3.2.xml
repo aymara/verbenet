@@ -96,7 +96,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Agent V {jusqu'à/vers} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Le cheval a galopé vers la barrière</EXAMPLE>
                </EXAMPLES>

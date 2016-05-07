@@ -41,7 +41,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Destination {avec/de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc décorait la bague de/avec son nom.</EXAMPLE>
                </EXAMPLES>

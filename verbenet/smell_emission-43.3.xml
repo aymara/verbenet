@@ -19,7 +19,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V"/>
+               <DESCRIPTION primary="NP V" syntax="Theme V"/>
                <EXAMPLES>
                     <EXAMPLE>Le tabac pue.</EXAMPLE>
                </EXAMPLES>
@@ -32,7 +32,7 @@
                <SEMANTICS>emit(during(E), Theme, Odor)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme"/>
+               <DESCRIPTION primary="NP V NP.theme" syntax="Location V  Theme"/>
                <EXAMPLES>
                     <EXAMPLE>La salle pue le tabac.</EXAMPLE>
                </EXAMPLES>

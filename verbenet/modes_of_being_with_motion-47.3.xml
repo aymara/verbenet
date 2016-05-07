@@ -43,7 +43,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Un drapeau flottait au-dessus du fort</EXAMPLE>
                </EXAMPLES>
@@ -72,7 +72,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.agent V NP.theme"/>
+                         <DESCRIPTION primary="NP.agent V NP.theme" syntax="Agent V Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Max remue son écharpe</EXAMPLE>
                          </EXAMPLES>
@@ -105,7 +105,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.location V PP.theme"/>
+                         <DESCRIPTION primary="NP.location V PP.theme" syntax="Location V {de} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>La surface frémit de petites ondes</EXAMPLE>
                          </EXAMPLES>

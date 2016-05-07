@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP"/>
+               <DESCRIPTION primary="NP V NP PP" syntax="Agent V Patient {de} Material"/>
                <EXAMPLES>
                     <EXAMPLE>Max a colorié son dessin d'une couleur très jolie</EXAMPLE>
                </EXAMPLES>
@@ -51,7 +51,7 @@
                <SEMANTICS>cause(Agent, E) apply_material(during(E), Material, Patient) covered(result(E), Material, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.result"/>
+               <DESCRIPTION primary="NP V NP PP.result" syntax="Agent V Patient {en} Result"/>
                <EXAMPLES>
                     <EXAMPLE>Mac a colorié son dessin en bleu</EXAMPLE>
                </EXAMPLES>

@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Max camionne les colis  à Dax</EXAMPLE>
                </EXAMPLES>
@@ -55,7 +55,7 @@
                <SEMANTICS>motion(during(E0), Theme) location(end(E0), Theme, Destination) equals(E0, E1) motion(during(E1), Agent) location(end(E1), Agent, Destination) cause(Agent, E0)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location" syntax="Agent V Theme {de/depuis} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Max camionne les colis de Gap</EXAMPLE>
                </EXAMPLES>
@@ -79,7 +79,7 @@
                <SEMANTICS>motion(during(E0), Theme) location(start(E0), Theme, Initial_Location) equals(E0, E1) motion(during(E1), Agent) location(start(E1), Agent, Initial_Location) cause(Agent, E0)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination" syntax="Agent V Theme {de} Initial_Location {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Max camionne les colis de Gap à Dax</EXAMPLE>
                </EXAMPLES>

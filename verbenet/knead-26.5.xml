@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.material PP.product"/>
+               <DESCRIPTION primary="NP V NP.material PP.product" syntax="Agent V Material {en} Product"/>
                <EXAMPLES>
                     <EXAMPLE>Max a pétri l'argile en boule</EXAMPLE>
                </EXAMPLES>

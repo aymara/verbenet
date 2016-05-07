@@ -10,7 +10,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V ADJ"/>
+               <DESCRIPTION primary="NP V ADJ" syntax="Theme V Attribute&lt;+Adj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Léa semble fatiguée</EXAMPLE>
                </EXAMPLES>
@@ -24,7 +24,7 @@
                <SEMANTICS>seem(E, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V V-inf"/>
+               <DESCRIPTION primary="NP V V-inf" syntax="Theme V Attribute&lt;+VTheme-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Léa semble avoir compris.</EXAMPLE>
                </EXAMPLES>

@@ -113,7 +113,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient comment P"/>
+               <DESCRIPTION primary="NP V PP.recipient comment P" syntax="Agent V {à} Recipient Topic&lt;+comment P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai expliqué à Marie comment cela peut être fait.</EXAMPLE>
                </EXAMPLES>
@@ -135,7 +135,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient comment V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient comment V-inf" syntax="Agent V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai expliqué à Marie comment le faire.</EXAMPLE>
                </EXAMPLES>
@@ -157,7 +157,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient NP"/>
+               <DESCRIPTION primary="NP V PP.recipient NP" syntax="Agent V  {à} Recipient Topic"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai expliqué le problème à Marie.</EXAMPLE>
                </EXAMPLES>
@@ -181,7 +181,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf" syntax="Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Wanda a indiqué à Léa de faire cela.</EXAMPLE>
                </EXAMPLES>
@@ -203,7 +203,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient Qu Pind"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Pind" syntax="Agent V {à} Recipient Topic&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Wanda a indiqué à Léa qu'il n'irait pas</EXAMPLE>
                </EXAMPLES>

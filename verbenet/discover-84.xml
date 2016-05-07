@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Pind"/>
+               <DESCRIPTION primary="NP V Qu Pind" syntax="Agent V Theme&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a découvert que sa démarche n'a pas abouti.</EXAMPLE>
                </EXAMPLES>
@@ -41,7 +41,7 @@
                <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a découvert la solution</EXAMPLE>
                </EXAMPLES>
@@ -57,7 +57,7 @@
                <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V comment V-inf"/>
+               <DESCRIPTION primary="NP V comment V-inf" syntax="Agent V Theme&lt;+comment VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a découvert comment réduire l'émission de CO2.</EXAMPLE>
                </EXAMPLES>
@@ -71,7 +71,7 @@
                <SEMANTICS>discover(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V comment P"/>
+               <DESCRIPTION primary="NP V comment P" syntax="Agent V Theme&lt;+comment P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a découvert comment l'émission de CO2 se réduit.</EXAMPLE>
                </EXAMPLES>

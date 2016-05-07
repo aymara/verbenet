@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
+               <DESCRIPTION primary="NP V NP PP.source" syntax="Agent V Theme {sur} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a basé sa théorie sur ces observations.</EXAMPLE>
                </EXAMPLES>

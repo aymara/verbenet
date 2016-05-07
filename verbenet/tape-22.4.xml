@@ -46,7 +46,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <DESCRIPTION primary="NP V NP PP.co-patient" syntax="Agent V Patient {à/sur/avec} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Max a scotché la feuille sur le mur</EXAMPLE>
                </EXAMPLES>
@@ -70,7 +70,7 @@
                <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient, Co-Patient) attached(end(E), Patient, Instrument) attached(end(E), Co-Patient, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP ensemble"/>
+               <DESCRIPTION primary="NP V NP ensemble" syntax="Agent V Patient&lt;+plural&gt; ensemble"/>
                <EXAMPLES>
                     <EXAMPLE>Max a scotché la feuille rouge et la feuille noire ensemble</EXAMPLE>
                </EXAMPLES>
@@ -87,7 +87,7 @@
                <SEMANTICS>cause(Agent, E) together(end(E), physical, Patient_i, Patient_j) attached(end(E), Patient_i, Instrument) attached(end(E), Patient_j, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV PP.co-patient"/>
+               <DESCRIPTION primary="NP se V ADV PP.co-patient" syntax="Patient se V&lt;+middle&gt; ADV {à/sur/avec} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Les étiquettes se scotchent facilement sur le mur</EXAMPLE>
                </EXAMPLES>
@@ -119,7 +119,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.co-patient"/>
+                         <DESCRIPTION primary="NP V PP.co-patient" syntax="Patient V {à} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>La feuille rouge colle à la feuille noire</EXAMPLE>
                          </EXAMPLES>

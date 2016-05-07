@@ -9,7 +9,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Pivot V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Dorothy convoite l'héritage.</EXAMPLE>
                </EXAMPLES>
@@ -25,7 +25,7 @@
                <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <DESCRIPTION primary="NP V Qu Psubj" syntax="Pivot V Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc ambitionne que son fils soit polytechnicien.</EXAMPLE>
                </EXAMPLES>
@@ -49,7 +49,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf" syntax="Pivot V Theme&lt;+de VPivot-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc ambitionne de devenir président</EXAMPLE>
                          </EXAMPLES>
@@ -75,7 +75,7 @@
                          </THEMROLES>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP ADJ"/>
+                                   <DESCRIPTION primary="NP V NP ADJ" syntax="Pivot V Theme Attribute&lt;+Adj&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc accepte sa femme végétarienne</EXAMPLE>
                                    </EXAMPLES>
@@ -102,7 +102,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V V-inf"/>
+                         <DESCRIPTION primary="NP V V-inf" syntax="Pivot V Theme&lt;+VPivot-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc voudrait devenir président.</EXAMPLE>
                          </EXAMPLES>
@@ -133,7 +133,7 @@
                          </THEMROLES>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP ADJ"/>
+                                   <DESCRIPTION primary="NP V NP ADJ" syntax="Pivot V Theme Attribute&lt;+Adj&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc veut sa viande bleue</EXAMPLE>
                                    </EXAMPLES>

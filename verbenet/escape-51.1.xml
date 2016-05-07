@@ -83,7 +83,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.initial_location"/>
+               <DESCRIPTION primary="NP V PP.initial_location" syntax="Theme V {de} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc est venu de France</EXAMPLE>
                </EXAMPLES>
@@ -104,7 +104,7 @@
                <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, Initial_Location, ?Trajectory, ?Destination)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.destination"/>
+               <DESCRIPTION primary="NP V PP.destination" syntax="Theme V {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc est venu à Paris (retrouver Marie) </EXAMPLE>
                </EXAMPLES>
@@ -125,7 +125,7 @@
                <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, ?Initial_Location, ?Trajectory, Destination)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.trajectory"/>
+               <DESCRIPTION primary="NP V PP.trajectory" syntax="Theme V {par} Trajectory"/>
                <EXAMPLES>
                     <EXAMPLE>Luc est venu par le couloir</EXAMPLE>
                </EXAMPLES>
@@ -146,7 +146,7 @@
                <SEMANTICS>motion(during(E), Theme) path(during(E), Theme, ?Initial_Location, Trajectory, ?Destination)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.initial_location PP.destination"/>
+               <DESCRIPTION primary="NP V PP.initial_location PP.destination" syntax="Theme V {de} Initial_Location {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc est venu de Gap à Dax</EXAMPLE>
                </EXAMPLES>

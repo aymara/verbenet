@@ -333,7 +333,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Attribute&lt;+genitive (Stimulus)&gt; V Experiencer"/>
                <EXAMPLES>
                     <EXAMPLE>Les grimaces du clown amusent les enfants</EXAMPLE>
                </EXAMPLES>
@@ -349,7 +349,7 @@
                <SEMANTICS>cause(Stimulus, E) emotional_state(result(E), Emotion, Experiencer)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Stimulus V Experiencer {par/avec} Attribute&lt;+genitive (Stimulus)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le clown amuse les enfants par ses grimaces.</EXAMPLE>
                </EXAMPLES>
@@ -373,7 +373,7 @@
                <SEMANTICS>cause(Stimulus, E) emotional_state(result(E), Emotion, Experiencer)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Stimulus V Experiencer"/>
                <EXAMPLES>
                     <EXAMPLE>Ce film amuse les enfants</EXAMPLE>
                </EXAMPLES>

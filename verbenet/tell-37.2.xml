@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.topic"/>
+               <DESCRIPTION primary="NP V NP PP.topic" syntax="Agent V Recipient {de} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a informé Marie de la situation</EXAMPLE>
                </EXAMPLES>
@@ -51,7 +51,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.topic"/>
+               <DESCRIPTION primary="NP V NP PP.topic" syntax="Agent V Recipient {de} Topic&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a informé Marie (de ce) que la réunion était annulée</EXAMPLE>
                </EXAMPLES>

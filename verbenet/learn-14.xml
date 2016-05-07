@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
+               <DESCRIPTION primary="NP V NP PP.source" syntax="Agent V Topic&lt;+Qu Pind&gt; {par/de} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a appris que Marie était malade  (par/de) Luc.</EXAMPLE>
                </EXAMPLES>
@@ -40,7 +40,7 @@
                <SEMANTICS>transfer_info(during(E), Source, Agent, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
+               <DESCRIPTION primary="NP V NP PP.source" syntax="Agent V Topic {par/de} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a appris l'anglais (par/de) Luc.</EXAMPLE>
                </EXAMPLES>

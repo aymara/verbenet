@@ -48,7 +48,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Paul a grogné son mécontentement.</EXAMPLE>
                </EXAMPLES>
@@ -64,7 +64,7 @@
                <SEMANTICS>cause(Agent, E) express(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient"/>
+               <DESCRIPTION primary="NP V PP.recipient" syntax="Agent V {sur/après/contre} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Paul a crié sur/après/contre Max.</EXAMPLE>
                </EXAMPLES>

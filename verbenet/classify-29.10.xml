@@ -19,7 +19,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {comme} Attribute&lt;+Adj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Max a classifié le dossier comme dangereux</EXAMPLE>
                </EXAMPLES>

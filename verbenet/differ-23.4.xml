@@ -13,7 +13,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-theme"/>
+               <DESCRIPTION primary="NP V PP.co-theme" syntax="Theme V {de/d'avec} Co-Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Mon avis diverge de/d'avec le sien.</EXAMPLE>
                </EXAMPLES>
@@ -34,7 +34,7 @@
                <SEMANTICS>different(Theme, Co-Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V"/>
+               <DESCRIPTION primary="NP V" syntax="Theme&lt;+plural&gt; V"/>
                <EXAMPLES>
                     <EXAMPLE>Nos avis divergent.</EXAMPLE>
                </EXAMPLES>

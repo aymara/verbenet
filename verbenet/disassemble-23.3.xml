@@ -37,7 +37,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location" syntax="Agent V Patient {de} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a détaché la poignée de la porte</EXAMPLE>
                </EXAMPLES>

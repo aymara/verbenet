@@ -32,7 +32,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP NP.attribute"/>
+               <DESCRIPTION primary="NP V NP NP.attribute" syntax="Agent V Theme Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Max a baptisé son fils Thierry</EXAMPLE>
                </EXAMPLES>

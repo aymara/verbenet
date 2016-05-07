@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.location"/>
+               <DESCRIPTION primary="NP V NP PP.location" syntax="Agent V Theme {autour} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a enroulé un journal autour du bâton.</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>rotational_motion(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(E, Theme, Location) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V PP.location"/>
+               <DESCRIPTION primary="NP se V PP.location" syntax="Theme se V&lt;+neutre&gt; {autour} Location"/>
                <EXAMPLES>
                     <EXAMPLE>La liane s'est enroulée autour d'un arbre.</EXAMPLE>
                </EXAMPLES>
@@ -67,7 +67,7 @@
                <SEMANTICS>rotational_motion(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(E, Theme, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV PP.location"/>
+               <DESCRIPTION primary="NP se V ADV PP.location" syntax="Theme se V&lt;+middle&gt;  ADV {autour} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Ce type de papier s'enroule facilement autour d'un bâton.</EXAMPLE>
                </EXAMPLES>

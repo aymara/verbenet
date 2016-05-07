@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <DESCRIPTION primary="NP V NP à V-inf" syntax="Agent V Asset {à} Goal&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai consommé beaucoup de temps à réfléchir.</EXAMPLE>
                </EXAMPLES>
@@ -48,7 +48,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP pour V-inf"/>
+                         <DESCRIPTION primary="NP V NP pour V-inf" syntax="Agent V Asset {pour} Goal&lt;+VAgent-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>J'ai gâché deux jours pour finir ce travail</EXAMPLE>
                          </EXAMPLES>

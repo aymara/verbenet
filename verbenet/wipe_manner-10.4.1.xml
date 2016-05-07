@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location" syntax="Agent V Theme {de} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a nettoyé les traces de doigt du comptoir.</EXAMPLE>
                </EXAMPLES>
@@ -55,7 +55,7 @@
                <SEMANTICS>cause(Agent, E) location(start(E), Theme, Initial_Location) not(location(end(E), Theme, Initial_Location))</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Initial_Location {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a nettoyé le comptoir de ses traces de doigt</EXAMPLE>
                </EXAMPLES>

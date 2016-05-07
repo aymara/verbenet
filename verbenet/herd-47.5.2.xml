@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V"/>
+               <DESCRIPTION primary="NP se V" syntax="Theme&lt;+plural&gt; se V&lt;+neutre&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Les enfants se rassemblent</EXAMPLE>
                </EXAMPLES>
@@ -44,7 +44,7 @@
                <SEMANTICS>not(together(start(E), physical, Theme_i, Theme_j)) together(end(E), physical, Theme_i, Theme_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme"/>
+               <DESCRIPTION primary="NP V NP.theme" syntax="Agent V Theme&lt;+plural&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le professeur rassemble les enfants</EXAMPLE>
                </EXAMPLES>

@@ -33,7 +33,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme PP.location"/>
+               <DESCRIPTION primary="NP V NP.theme PP.location" syntax="Agent V Theme {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Max dresse le mât dans la cour</EXAMPLE>
                </EXAMPLES>
@@ -65,7 +65,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.theme se V PP.location"/>
+                         <DESCRIPTION primary="NP.theme se V PP.location" syntax="Theme se V&lt;+neutre&gt; {{+loc}} Location"/>
                          <EXAMPLES>
                               <EXAMPLE>Le mât se dresse dans la cour</EXAMPLE>
                          </EXAMPLES>
@@ -94,7 +94,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.theme V PP.location"/>
+                         <DESCRIPTION primary="NP.theme V PP.location" syntax="Theme V {{+loc}} Location"/>
                          <EXAMPLES>
                               <EXAMPLE>Le jambon pend à la poutre</EXAMPLE>
                          </EXAMPLES>

@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.goal"/>
+               <DESCRIPTION primary="NP V NP PP.goal" syntax="Agent V Theme {dans} Goal"/>
                <EXAMPLES>
                     <EXAMPLE>Luc et Léa a embringué Max dans leur complot.</EXAMPLE>
                </EXAMPLES>

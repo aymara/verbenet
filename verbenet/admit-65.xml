@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.location"/>
+               <DESCRIPTION primary="NP V NP PP.location" syntax="Agent V Theme {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>On admet les chiens dans la salle.</EXAMPLE>
                </EXAMPLES>

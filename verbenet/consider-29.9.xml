@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Pind"/>
+               <DESCRIPTION primary="NP V Qu Pind" syntax="Agent V Theme&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc considère que Marie est stupide.</EXAMPLE>
                </EXAMPLES>
@@ -30,7 +30,7 @@
                <SEMANTICS>consider(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V si P"/>
+               <DESCRIPTION primary="NP V si P" syntax="Agent V Theme&lt;+si P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc considère si le problème peut être résolu.</EXAMPLE>
                </EXAMPLES>
@@ -56,7 +56,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <DESCRIPTION primary="NP V NP ADJ" syntax="Agent V Theme Attribute&lt;+Adj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc considère Marie stupide.</EXAMPLE>
                          </EXAMPLES>
@@ -73,7 +73,7 @@
                          <SEMANTICS>consider(during(E), Agent, Theme, Attribute)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.attribute"/>
+                         <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {comme} Attribute&lt;+Adj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc considère Marie comme stupide</EXAMPLE>
                          </EXAMPLES>
@@ -107,7 +107,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf" syntax="Agent V Theme&lt;+de VAgent-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc prémédite de partir.</EXAMPLE>
                          </EXAMPLES>
@@ -131,7 +131,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <DESCRIPTION primary="NP V PP.theme" syntax="Agent V {à} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc réfléchit à ce problème.</EXAMPLE>
                          </EXAMPLES>
@@ -161,7 +161,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <DESCRIPTION primary="NP V PP.theme" syntax="Agent V {de} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc se souvient de son code.</EXAMPLE>
                          </EXAMPLES>

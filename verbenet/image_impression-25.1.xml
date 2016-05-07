@@ -28,7 +28,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme PP.destination"/>
+               <DESCRIPTION primary="NP V NP.theme PP.destination" syntax="Agent V Theme {{+loc}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc gravait son prénom sur la gourmette</EXAMPLE>
                </EXAMPLES>
@@ -52,7 +52,7 @@
                <SEMANTICS>created_image(result(E), Theme) Prep(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.destination PP.theme"/>
+               <DESCRIPTION primary="NP V NP.destination PP.theme" syntax="Agent V Destination {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc gravait la gourmette de son prénom</EXAMPLE>
                </EXAMPLES>

@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.location"/>
+               <DESCRIPTION primary="NP V NP PP.location" syntax="Agent V Theme {{+loc} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Jackie a poursuivi le voleur dans la rue.</EXAMPLE>
                </EXAMPLES>

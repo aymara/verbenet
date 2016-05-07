@@ -18,7 +18,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.source"/>
+               <DESCRIPTION primary="NP V PP.source" syntax="Agent V {de} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Max s'est retiré de la scène</EXAMPLE>
                </EXAMPLES>

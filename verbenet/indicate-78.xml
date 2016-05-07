@@ -30,7 +30,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient Qu Pind"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Pind" syntax="Cause V {à} Recipient Topic&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde que l'auteur du crime est Max.</EXAMPLE>
                </EXAMPLES>
@@ -52,7 +52,7 @@
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient si P"/>
+               <DESCRIPTION primary="NP V PP.recipient si P" syntax="Cause V {à} Recipient Topic&lt;+si P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde si Max a commis un crime ou non.</EXAMPLE>
                </EXAMPLES>
@@ -74,7 +74,7 @@
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient comment P"/>
+               <DESCRIPTION primary="NP V PP.recipient comment P" syntax="Cause V {à} Recipient Topic&lt;+comment P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde comment les choses se sont passées.</EXAMPLE>
                </EXAMPLES>
@@ -96,7 +96,7 @@
                <SEMANTICS>indicate(during(E), Cause, Recipient, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient comment V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient comment V-inf" syntax="Cause V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Cela indique à tout le monde comment résoudre le problème</EXAMPLE>
                </EXAMPLES>

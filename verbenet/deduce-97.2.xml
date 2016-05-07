@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source"/>
+               <DESCRIPTION primary="NP V NP PP.source" syntax="Agent V Theme {de} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a déduit cette affirmation de ce fait.</EXAMPLE>
                </EXAMPLES>
@@ -44,7 +44,7 @@
                <SEMANTICS>conclude(during(E), Agent, Theme, Source)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Pind PP.source"/>
+               <DESCRIPTION primary="NP V Qu Pind PP.source" syntax="Agent V Theme&lt;+Qu Pind&gt; {de} Source"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a déduit que Léa était un espion de ce fait.</EXAMPLE>
                </EXAMPLES>

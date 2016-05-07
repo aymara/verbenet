@@ -30,7 +30,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <DESCRIPTION primary="NP V NP à V-inf" syntax="Agent V Beneficiary {à} Theme&lt;+VBeneficiary-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Max a aidé Luc à finir ce travail</EXAMPLE>
                </EXAMPLES>
@@ -52,7 +52,7 @@
                <SEMANTICS>help(during(E), Agent, Beneficiary, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Beneficiary {dans} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Max aide Luc dans son travail</EXAMPLE>
                </EXAMPLES>

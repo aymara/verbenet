@@ -19,7 +19,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location" syntax="Agent V Theme {de} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Les hommes ont déterré le corps de la terre.</EXAMPLE>
                </EXAMPLES>

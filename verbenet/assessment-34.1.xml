@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {pour} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur a évalué les planchers pour leur solidité</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>assess(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.attribute"/>
+               <DESCRIPTION primary="NP V NP.attribute" syntax="Agent V Attribute&lt;+genitive(Theme)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur a évalué la résistance du bâtiment.</EXAMPLE>
                </EXAMPLES>
@@ -62,7 +62,7 @@
                <SEMANTICS>assess(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V si P"/>
+               <DESCRIPTION primary="NP V si P" syntax="Agent V Theme&lt;+si P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>L'inspecteur a évalué si le bâtiment allait s'écrouler</EXAMPLE>
                </EXAMPLES>

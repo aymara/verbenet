@@ -59,7 +59,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.material PP.beneficiary"/>
+               <DESCRIPTION primary="NP V NP PP.material PP.beneficiary" syntax="Agent V Product {à_partir_de/de} Material {pour} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Martha a fabriqué un jouet (à partir) d'un morceau de métal pour l'enfant.</EXAMPLE>
                </EXAMPLES>
@@ -91,7 +91,7 @@
                <SEMANTICS>not(exist(start(E), Product)) exist(result(E), Product) made_of(result(E), Product, Material) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.material PP.asset"/>
+               <DESCRIPTION primary="NP V NP PP.material PP.asset" syntax="Agent V Product {à_partir_de/de} Material {pour} Asset"/>
                <EXAMPLES>
                     <EXAMPLE>Martha fabrique un jouet (à partir) d'un morceau de bois pour 50 euros.</EXAMPLE>
                </EXAMPLES>

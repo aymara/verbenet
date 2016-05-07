@@ -17,7 +17,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP"/>
+               <DESCRIPTION primary="NP V PP" syntax="Agent V {à} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Le criminel s'est rendu à la police.</EXAMPLE>
                </EXAMPLES>

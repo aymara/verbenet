@@ -25,7 +25,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Jacques a accompagné Marie à la maison.</EXAMPLE>
                </EXAMPLES>

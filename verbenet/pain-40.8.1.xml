@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP LUI V"/>
+               <DESCRIPTION primary="NP LUI V" syntax="Attribute LUI&lt;+Experiencer&gt; V"/>
                <EXAMPLES>
                     <EXAMPLE>Les yeux lui piquent</EXAMPLE>
                </EXAMPLES>
@@ -35,7 +35,7 @@
                <SEMANTICS>discompfrt(during(E), Attribute) experience(E, Experiencer) in_reaction_to(E, ?Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Stimulus V Attribute&lt;+genitive(Experiencer)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>La fatigue pique les yeux de Luc</EXAMPLE>
                </EXAMPLES>
@@ -51,7 +51,7 @@
                <SEMANTICS>discompfrt(during(E), Attribute) experience(E, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP LUI V NP.attribute"/>
+               <DESCRIPTION primary="NP LUI V NP.attribute" syntax="Stimulus LUI&lt;+Experiencer&gt; V Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>La fatigue lui pique les yeux</EXAMPLE>
                </EXAMPLES>

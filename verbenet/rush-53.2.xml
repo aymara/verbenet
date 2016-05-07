@@ -15,7 +15,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V de V-inf"/>
+               <DESCRIPTION primary="NP V de V-inf" syntax="Agent V {de} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Marie s'est dépêchée de finir sa thèse.</EXAMPLE>
                </EXAMPLES>

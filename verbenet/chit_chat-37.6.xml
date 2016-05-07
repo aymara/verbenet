@@ -44,7 +44,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.topic"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP.topic" syntax="Agent V {avec} Co-Agent {de} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Susan a bavardé avec Marie du problème.</EXAMPLE>
                </EXAMPLES>
@@ -73,7 +73,7 @@
                <SEMANTICS>transfer_info(during(E), Agent_i, Agent_j, Topic) transfer_info(during(E), Agent_j, Agent_i, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.topic"/>
+               <DESCRIPTION primary="NP V PP.topic" syntax="Agent&lt;+plural&gt; V {de} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Susie et Marie ont bavardé du problème.</EXAMPLE>
                </EXAMPLES>

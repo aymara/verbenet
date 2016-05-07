@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Beneficiary {contre} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a protégé ses soldats contre une attaque ennemie.</EXAMPLE>
                </EXAMPLES>

@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V de comment P"/>
+               <DESCRIPTION primary="NP V de comment P" syntax="Experiencer V {de} Stimulus&lt;+comment P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc se fiche de comment Marie vient</EXAMPLE>
                </EXAMPLES>
@@ -41,7 +41,7 @@
                <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V de ce Qu Psubj"/>
+               <DESCRIPTION primary="NP V de ce Qu Psubj" syntax="Experiencer V {de} Stimulus&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc se fiche (de ce) que Léa soit morte</EXAMPLE>
                </EXAMPLES>
@@ -60,7 +60,7 @@
                <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.stimulus"/>
+               <DESCRIPTION primary="NP V PP.stimulus" syntax="Experiencer V {de} Stimulus"/>
                <EXAMPLES>
                     <EXAMPLE>Luc se fiche de la santé de Marie</EXAMPLE>
                </EXAMPLES>
@@ -81,7 +81,7 @@
                <SEMANTICS>emotional_state(result(E), Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V de si P"/>
+               <DESCRIPTION primary="NP V de si P" syntax="Experiencer V {de} Stimulus&lt;+si P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc se fiche de si Marie vient ou non</EXAMPLE>
                </EXAMPLES>

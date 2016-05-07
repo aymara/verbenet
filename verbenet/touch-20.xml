@@ -11,7 +11,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a caressé le chat</EXAMPLE>
                </EXAMPLES>
@@ -68,7 +68,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
+                         <DESCRIPTION primary="NP V NP" syntax="Agent V Attribute&lt;+genitive(Theme)&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a caressé son bras</EXAMPLE>
                          </EXAMPLES>
@@ -84,7 +84,7 @@
                          <SEMANTICS>contact(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.attribute"/>
+                         <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {{+loc}} Attribute"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a carressé Max sur le bras</EXAMPLE>
                          </EXAMPLES>
@@ -108,7 +108,7 @@
                          <SEMANTICS>contact(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP LUI V NP"/>
+                         <DESCRIPTION primary="NP LUI V NP" syntax="Agent LUI&lt;+Theme&gt; V Attribute"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc lui a caressé le bras</EXAMPLE>
                          </EXAMPLES>
@@ -125,7 +125,7 @@
                          <SEMANTICS>contact(end(E), Agent, Theme) cause(Agent, E)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V"/>
+                         <DESCRIPTION primary="NP se V" syntax="Agent&lt;+plural&gt; se V&lt;+reciproque&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc et Max se sont caressés</EXAMPLE>
                          </EXAMPLES>

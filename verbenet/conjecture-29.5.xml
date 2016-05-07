@@ -31,7 +31,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V Qu Pind"/>
+                         <DESCRIPTION primary="NP V Qu Pind" syntax="Agent V Theme&lt;+Qu Pind&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Les gens croient que le projet est faisable.</EXAMPLE>
                          </EXAMPLES>
@@ -45,7 +45,7 @@
                          <SEMANTICS>believe(during(E), Agent, Theme, ?Predicate)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <DESCRIPTION primary="NP V NP ADJ" syntax="Agent V Theme Attribute&lt;+Adj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Les experts croient ce projet faisable.</EXAMPLE>
                          </EXAMPLES>
@@ -73,7 +73,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V V-inf"/>
+                                   <DESCRIPTION primary="NP V V-inf" syntax="Agent V Theme&lt;+VAgent-inf&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc pense partir demain.</EXAMPLE>
                                    </EXAMPLES>
@@ -95,7 +95,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V de V-inf"/>
+                                   <DESCRIPTION primary="NP V de V-inf" syntax="Agent V Theme&lt;+de VAgent-inf&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc prévoit de partir demain.</EXAMPLE>
                                    </EXAMPLES>
@@ -136,7 +136,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V Qu Pind"/>
+                         <DESCRIPTION primary="NP V Qu Pind" syntax="Agent V Theme&lt;+Qu Pind&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Le président a reconnu que le problème était grave.</EXAMPLE>
                          </EXAMPLES>
@@ -150,7 +150,7 @@
                          <SEMANTICS>declare(during(E), Agent, Theme, ?Predicate)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
+                         <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Le coupable a reconnu sa culpabilité.</EXAMPLE>
                          </EXAMPLES>
@@ -166,7 +166,7 @@
                          <SEMANTICS>declare(during(E), Agent, Theme, ?Predicate)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP ADJ"/>
+                         <DESCRIPTION primary="NP V NP ADJ" syntax="Agent V Theme Attribute&lt;+Adj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Le président a reconnu Luc coupable.</EXAMPLE>
                          </EXAMPLES>
@@ -195,7 +195,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP PP.attribute"/>
+                                   <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {comme} Attribute"/>
                                    <EXAMPLES>
                                         <EXAMPLE>On a reconnu le français comme langue officielle.</EXAMPLE>
                                    </EXAMPLES>

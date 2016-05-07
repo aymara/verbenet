@@ -13,7 +13,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.beneficiary NP.theme"/>
+               <DESCRIPTION primary="NP V PP.beneficiary NP.theme" syntax="Cause V {à} Beneficiary Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Nos actions assure à Paul un bon résultat.</EXAMPLE>
                </EXAMPLES>
@@ -37,7 +37,7 @@
                <SEMANTICS>cause(Cause, E) ensure(Theme, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.beneficiary Qu Pind"/>
+               <DESCRIPTION primary="NP V PP.beneficiary Qu Pind" syntax="Cause V {à} Beneficiary Theme&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Nos actions assurent à Paul qu'il va réussir.</EXAMPLE>
                </EXAMPLES>

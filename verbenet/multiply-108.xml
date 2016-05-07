@@ -18,7 +18,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
+                         <DESCRIPTION primary="NP V NP" syntax="Agent V Theme&lt;+plural&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a additionné ces nombres.</EXAMPLE>
                          </EXAMPLES>
@@ -45,7 +45,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP.theme PP.co-theme"/>
+                                   <DESCRIPTION primary="NP V NP.theme PP.co-theme" syntax="Agent V Theme {à} Co-Theme"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc a additionné x à y.</EXAMPLE>
                                    </EXAMPLES>
@@ -78,7 +78,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP.theme PP.co-theme"/>
+                                   <DESCRIPTION primary="NP V NP.theme PP.co-theme" syntax="Agent V Theme {par} Co-Theme"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc a multiplié x par y.</EXAMPLE>
                                    </EXAMPLES>
@@ -102,7 +102,7 @@
                                    <SEMANTICS>calculate(during(E), Agent, Theme, Co-Theme)</SEMANTICS>
                               </FRAME>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP"/>
+                                   <DESCRIPTION primary="NP V NP" syntax="Agent V Theme&lt;+plural&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc a multiplié ces deux nombres</EXAMPLE>
                                    </EXAMPLES>
@@ -128,7 +128,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.co-theme"/>
+                         <DESCRIPTION primary="NP V NP PP.co-theme" syntax="Agent V Theme {de} Co-Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a soustrait x de y.</EXAMPLE>
                          </EXAMPLES>

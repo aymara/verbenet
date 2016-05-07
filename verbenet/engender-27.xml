@@ -24,7 +24,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.beneficiary"/>
+               <DESCRIPTION primary="NP V NP PP.beneficiary" syntax="Cause V Theme {pour chez} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>L'inégalité engendre des conflits chez les Africains</EXAMPLE>
                </EXAMPLES>
@@ -48,7 +48,7 @@
                <SEMANTICS>not(exist(start(E), Theme)) exist(result(E), Theme) nonagentive_cause(Cause, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <DESCRIPTION primary="NP V Qu Psubj" syntax="Cause V Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>La crise a provoqué que le chomage augmente</EXAMPLE>
                </EXAMPLES>

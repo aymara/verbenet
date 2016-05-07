@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient PP.topic"/>
+               <DESCRIPTION primary="NP V PP.recipient PP.topic" syntax="Agent V {à} Recipient {de} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Susan a parlé à Marie du problème.</EXAMPLE>
                </EXAMPLES>
@@ -52,7 +52,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient de ce Qu Pind"/>
+               <DESCRIPTION primary="NP V PP.recipient de ce Qu Pind" syntax="Agent V {à} Recipient {de} Topic&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a parlé à Léa de ce que rien n'allait pour lui.</EXAMPLE>
                </EXAMPLES>

@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{+loc}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a chargé les colis sur le camion.</EXAMPLE>
                </EXAMPLES>
@@ -50,7 +50,7 @@
                <SEMANTICS>motion(during(E), Theme) not(Prep(start(E), Theme, Destination)) Prep(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.destination PP.theme"/>
+               <DESCRIPTION primary="NP V NP.destination PP.theme" syntax="Agent V Destination {avec/de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a chargé le camion (avec des, de) caisses.</EXAMPLE>
                </EXAMPLES>

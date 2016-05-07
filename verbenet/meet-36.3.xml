@@ -21,7 +21,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.co-agent"/>
+                         <DESCRIPTION primary="NP V PP.co-agent" syntax="Agent V {avec} Co-Agent"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc flirte avec Marie</EXAMPLE>
                          </EXAMPLES>
@@ -42,7 +42,7 @@
                          <SEMANTICS>social_interaction(during(E), Agent, Co-Agent)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V"/>
+                         <DESCRIPTION primary="NP V" syntax="Agent&lt;+plural&gt; V"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc et Marie flirtent</EXAMPLE>
                          </EXAMPLES>
@@ -65,7 +65,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.co-agent"/>
+                         <DESCRIPTION primary="NP V PP.co-agent" syntax="Agent V {avec} Co-Agent"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc boxe avec Marie</EXAMPLE>
                          </EXAMPLES>
@@ -98,7 +98,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP  V"/>
+                                   <DESCRIPTION primary="NP  V" syntax="Agent&lt;+plural&gt; V"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc et Marie combattent</EXAMPLE>
                                    </EXAMPLES>

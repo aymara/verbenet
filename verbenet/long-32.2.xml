@@ -9,7 +9,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V à V-inf"/>
+               <DESCRIPTION primary="NP V à V-inf" syntax="Pivot V {à} Theme&lt;+VPivot-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean aspire à devenir président</EXAMPLE>
                </EXAMPLES>
@@ -28,7 +28,7 @@
                <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V à ce Qu Psubj"/>
+               <DESCRIPTION primary="NP V à ce Qu Psubj" syntax="Pivot V {à} Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean aspire à ce que son fils devienne président</EXAMPLE>
                </EXAMPLES>
@@ -47,7 +47,7 @@
                <SEMANTICS>desire(E, Pivot, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V PP.theme" syntax="Pivot V {à} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Jean aspire à ce poste</EXAMPLE>
                </EXAMPLES>

@@ -39,7 +39,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.co-patient"/>
+               <DESCRIPTION primary="NP V NP PP.co-patient" syntax="Agent V Patient {avec/dans} Co-Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a fouetté le sucre dans les oeufs</EXAMPLE>
                </EXAMPLES>
@@ -63,7 +63,7 @@
                <SEMANTICS>cause(Agent, E) degradation_material-integrity(result(E), Patient) degradation_material_integrity(result(E), Co_Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP ensemble"/>
+               <DESCRIPTION primary="NP V NP ensemble" syntax="Agent V Patient&lt;+plural&gt; ensemble"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a fouetté le sucre et les oeufs ensemble</EXAMPLE>
                </EXAMPLES>

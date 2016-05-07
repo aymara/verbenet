@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.experiencer"/>
+               <DESCRIPTION primary="NP V PP.experiencer" syntax="Stimulus V {pour} Experiencer"/>
                <EXAMPLES>
                     <EXAMPLE>La venue du président compte pour Max.</EXAMPLE>
                </EXAMPLES>
@@ -35,7 +35,7 @@
                <SEMANTICS>emotional_state(E, Emotion, ?Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="IL V PP.experiencer Qu Psubj"/>
+               <DESCRIPTION primary="IL V PP.experiencer Qu Psubj" syntax="IL V {pour} Experiencer Stimulus&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il importe pour Max que le président vienne.</EXAMPLE>
                </EXAMPLES>
@@ -63,7 +63,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="IL V PP.experiencer Qu Psubj"/>
+                         <DESCRIPTION primary="IL V PP.experiencer Qu Psubj" syntax="IL V {à} Experiencer Stimulus&lt;+Qu Psubj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Il importe à Max que le président vienne.</EXAMPLE>
                          </EXAMPLES>

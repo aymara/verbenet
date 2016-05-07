@@ -45,7 +45,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV"/>
+               <DESCRIPTION primary="NP se V ADV" syntax="Patient se V&lt;+middle&gt;  ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Le pain se coupe facilement</EXAMPLE>
                </EXAMPLES>
@@ -59,7 +59,7 @@
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.instrument V ADV"/>
+               <DESCRIPTION primary="NP.instrument V ADV" syntax="Instrument V ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Le couteau coupe bien</EXAMPLE>
                </EXAMPLES>
@@ -73,7 +73,7 @@
                <SEMANTICS>property(Instrument, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.result PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.result PP.instrument" syntax="Agent V Patient {en} Result&lt;+plural&gt; {avec} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a coupé le pain en deux morceaux avec un couteau</EXAMPLE>
                </EXAMPLES>
@@ -105,7 +105,7 @@
                <SEMANTICS>cause(Agent, E) manner(during(E), Motion, Agent) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) Pred(result(E), Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.instrument V NP PP.result"/>
+               <DESCRIPTION primary="NP.instrument V NP PP.result" syntax="Instrument V Patient {en} Result&lt;+plural&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le couteau a coupé le pain en deux morceaux</EXAMPLE>
                </EXAMPLES>
@@ -144,7 +144,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP LUI V NP.attribute"/>
+                         <DESCRIPTION primary="NP LUI V NP.attribute" syntax="Agent LUI&lt;+Patient&gt; V Attribute"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc lui a coupé l'annulaire</EXAMPLE>
                          </EXAMPLES>
@@ -161,7 +161,7 @@
                          <SEMANTICS>manner(during(E), Motion, Agent) contact(during(E), ?Instrument, Patient) degradation_material_integrity(result(E), Patient)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP"/>
+                         <DESCRIPTION primary="NP V NP" syntax="Agent V Attribute&lt;+genitive(Patient)&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a coupé l'annulaire de Marie</EXAMPLE>
                          </EXAMPLES>

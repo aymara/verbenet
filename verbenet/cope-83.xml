@@ -12,7 +12,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V PP.theme" syntax="Agent V {à/pour} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est débrouillé à/pour réserver une place.</EXAMPLE>
                </EXAMPLES>
@@ -44,7 +44,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <DESCRIPTION primary="NP V PP.theme" syntax="Agent V {pour} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc s'est débrouillé pour la réservation</EXAMPLE>
                          </EXAMPLES>
@@ -73,7 +73,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP.theme"/>
+                         <DESCRIPTION primary="NP V NP.theme" syntax="Agent  V Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a réussi la réservation</EXAMPLE>
                          </EXAMPLES>
@@ -97,7 +97,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.Theme"/>
+                         <DESCRIPTION primary="NP V PP.Theme" syntax="Agent V {à} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc est parvenu à la gloire</EXAMPLE>
                          </EXAMPLES>

@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP"/>
+               <DESCRIPTION primary="NP V NP PP" syntax="Agent V Patient {{+loc}} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a fouetté Max sur le dos</EXAMPLE>
                </EXAMPLES>
@@ -45,7 +45,7 @@
                <SEMANTICS>cause(Agent, E) manner(during(E), directedmotion, Agent) not(contact(during(E), Agent, Patient)) manner(end(E), forceful, Agent) contact(end(E), Agent, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Attribute&lt;+genitive(Patient)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a fouetté le dos de Max</EXAMPLE>
                </EXAMPLES>
@@ -61,7 +61,7 @@
                <SEMANTICS>cause(Agent, E) manner(during(E), directedmotion, Agent) not(contact(during(E), Agent, Patient)) manner(end(E), forceful, Agent) contact(end(E), Agent, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP LUI V NP"/>
+               <DESCRIPTION primary="NP LUI V NP" syntax="Agent LUI&lt;+Patient&gt; V Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Luc lui a fouetté le dos</EXAMPLE>
                </EXAMPLES>

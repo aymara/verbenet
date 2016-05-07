@@ -17,7 +17,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme pour V-inf"/>
+               <DESCRIPTION primary="NP V PP.theme pour V-inf" syntax="Agent V {sur} Theme {pour} Topic&lt;+VTheme-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Max compte sur Luc (l'aide de Luc)  pour finir ce travail</EXAMPLE>
                </EXAMPLES>

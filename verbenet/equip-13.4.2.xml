@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Recipient {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Brown a armé Jones d'un fusil.</EXAMPLE>
                </EXAMPLES>

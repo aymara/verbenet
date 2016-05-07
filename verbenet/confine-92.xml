@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme PP.destination"/>
+               <DESCRIPTION primary="NP V NP.theme PP.destination" syntax="Agent V Theme {dans} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Les gens ont enfermé Luc dans une chambre.</EXAMPLE>
                </EXAMPLES>

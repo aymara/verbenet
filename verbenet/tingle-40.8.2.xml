@@ -17,7 +17,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.stimulus"/>
+               <DESCRIPTION primary="NP V PP.stimulus" syntax="Attribute&lt;+genitive(Experiencer)&gt; V {de} Stimulus"/>
                <EXAMPLES>
                     <EXAMPLE>Mon coeur bat de peur.</EXAMPLE>
                </EXAMPLES>

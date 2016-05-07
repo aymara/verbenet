@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP NP.attribute"/>
+               <DESCRIPTION primary="NP V NP NP.attribute" syntax="Agent V Theme Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Nous avons nommé Max président</EXAMPLE>
                </EXAMPLES>
@@ -42,7 +42,7 @@
                <SEMANTICS>designated(result(E), Theme, Attribute) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {comme} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Nous avons nommé Max comme président</EXAMPLE>
                </EXAMPLES>

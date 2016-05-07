@@ -28,7 +28,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Des étoiles brillent  dans le ciel</EXAMPLE>
                </EXAMPLES>
@@ -49,7 +49,7 @@
                <SEMANTICS>emit(during(E), Theme, Prop) Prep(during(E), Prop, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.location V PP.theme"/>
+               <DESCRIPTION primary="NP.location V PP.theme" syntax="Location V {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Le ciel brille d'étoiles</EXAMPLE>
                </EXAMPLES>
@@ -70,7 +70,7 @@
                <SEMANTICS>emit(during(E), Theme, Prop) location(during(E), Prop, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="IL V NP PP.location"/>
+               <DESCRIPTION primary="IL V NP PP.location" syntax="IL V Theme {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Il brille une étoile dans le ciel</EXAMPLE>
                </EXAMPLES>

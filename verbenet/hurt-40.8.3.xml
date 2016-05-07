@@ -33,7 +33,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V NP.attribute"/>
+               <DESCRIPTION primary="NP se V NP.attribute" syntax="Experiencer se V&lt;+neutre&gt; Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Max s'est fracturé la jambe.</EXAMPLE>
                </EXAMPLES>
@@ -49,7 +49,7 @@
                <SEMANTICS>harmed(during(E), Attribute) experience(E, Experiencer)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V"/>
+               <DESCRIPTION primary="NP se V" syntax="Attribute&lt;+genitive(Experiencer)&gt; se V&lt;+neutre&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>La jambe de Max s'est fracturée.</EXAMPLE>
                </EXAMPLES>
@@ -62,7 +62,7 @@
                <SEMANTICS>harmed(during(E), Patient) experiencer(E, Experiencer)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Stimulus V Attribute&lt;+genitive(Experiencer)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le choc a fracturé la jambe de Max</EXAMPLE>
                </EXAMPLES>
@@ -78,7 +78,7 @@
                <SEMANTICS>harmed(during(E), Attribute) experiencer(E, Experiencer)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP LUI V NP"/>
+               <DESCRIPTION primary="NP LUI V NP" syntax="Stimulus LUI&lt;+Experiencer&gt; V Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Le choc lui a fracturé la jambe.</EXAMPLE>
                </EXAMPLES>

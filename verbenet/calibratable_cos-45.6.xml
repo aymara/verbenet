@@ -55,7 +55,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP.patient V PP.attribute PP.extent"/>
+               <DESCRIPTION primary="NP.patient V PP.attribute PP.extent" syntax="Patient V {en} Attribute {de} Extent"/>
                <EXAMPLES>
                     <EXAMPLE>L'huile a chuté en prix de 10%</EXAMPLE>
                </EXAMPLES>
@@ -84,7 +84,7 @@
                <SEMANTICS>change_value(during(E), Direction, Attribute, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.attribute V PP.extent"/>
+               <DESCRIPTION primary="NP.attribute V PP.extent" syntax="Attribute&lt;+genitive(Patient)&gt; V {de} Extent"/>
                <EXAMPLES>
                     <EXAMPLE>Le prix de l'huile a  chuté de 10%</EXAMPLE>
                </EXAMPLES>
@@ -121,7 +121,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.Cause V NP.attribute PP.extent"/>
+                         <DESCRIPTION primary="NP.Cause V NP.attribute PP.extent" syntax="Cause V Attribute&lt;+genitive(Patient)&gt; {de} Extent"/>
                          <EXAMPLES>
                               <EXAMPLE>La guerre en Irak a augmenté le prix de l'huile de 10% </EXAMPLE>
                          </EXAMPLES>

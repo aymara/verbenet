@@ -65,7 +65,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.Theme PP.attribute"/>
+               <DESCRIPTION primary="NP V NP.Theme PP.attribute" syntax="Agent V Theme {pour} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont loué les volontaires pour leur courage.</EXAMPLE>
                </EXAMPLES>
@@ -89,7 +89,7 @@
                <SEMANTICS>judge(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.Attribute"/>
+               <DESCRIPTION primary="NP V NP.Attribute" syntax="Agent V Attribute&lt;+genitive(Theme)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont loué le courage des volontaires.</EXAMPLE>
                </EXAMPLES>
@@ -105,7 +105,7 @@
                <SEMANTICS>judge(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.Theme PP.Attribute"/>
+               <DESCRIPTION primary="NP V NP.Theme PP.Attribute" syntax="Agent V Theme {de/pour} Attribute&lt;+VTheme-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont loué les volontaires d'avoir secouru les naufragés.</EXAMPLE>
                </EXAMPLES>
@@ -152,7 +152,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V Qu Psubj"/>
+                         <DESCRIPTION primary="NP V Qu Psubj" syntax="Agent V Theme&lt;+Qu Psubj&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc critique que Marie porte des talons hauts</EXAMPLE>
                          </EXAMPLES>

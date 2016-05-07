@@ -19,7 +19,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V"/>
+               <DESCRIPTION primary="NP V" syntax="Agent V"/>
                <EXAMPLES>
                     <EXAMPLE>Paul a bâillé.</EXAMPLE>
                </EXAMPLES>

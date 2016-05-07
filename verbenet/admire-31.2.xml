@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Experiencer V Stimulus"/>
                <EXAMPLES>
                     <EXAMPLE>Max admire la chasteté</EXAMPLE>
                </EXAMPLES>
@@ -47,7 +47,7 @@
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Experiencer V Stimulus {pour} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>J'admire Luc pour son honnêteté</EXAMPLE>
                </EXAMPLES>
@@ -71,7 +71,7 @@
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.attribute"/>
+               <DESCRIPTION primary="NP V NP.attribute" syntax="Experiencer V Attribute&lt;+genitive (Stimulus)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'admire l'honnêteté de Luc</EXAMPLE>
                </EXAMPLES>
@@ -87,7 +87,7 @@
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V Qu Psubj"/>
+               <DESCRIPTION primary="NP V Qu Psubj" syntax="Experiencer V Stimulus&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'admire qu'on puisse travailler autant</EXAMPLE>
                </EXAMPLES>
@@ -116,7 +116,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V V-inf"/>
+                         <DESCRIPTION primary="NP V V-inf" syntax="Experiencer V Stimulus&lt;+VExperiencer-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>J'aime écrire.</EXAMPLE>
                          </EXAMPLES>
@@ -142,7 +142,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf" syntax="Experiencer V Stimulus&lt;+de VExperiencer-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc exècre d'être dérangé au milieu de la nuit.</EXAMPLE>
                          </EXAMPLES>

@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a secoué le shaker</EXAMPLE>
                </EXAMPLES>

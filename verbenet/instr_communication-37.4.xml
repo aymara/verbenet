@@ -30,7 +30,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient NP.topic"/>
+               <DESCRIPTION primary="NP V PP.recipient NP.topic" syntax="Agent V {à} Recipient Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé la nouvelle à Léa.</EXAMPLE>
                </EXAMPLES>
@@ -54,7 +54,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient PP.topic"/>
+               <DESCRIPTION primary="NP V PP.recipient PP.topic" syntax="Agent V {à} Recipient {sur} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé à Léa sur la situation en Moyen-Orient.</EXAMPLE>
                </EXAMPLES>
@@ -83,7 +83,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient Qu Pind"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Pind" syntax="Agent V {à} Recipient Topic&lt;+Qu Pind&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé à Sara que rien n'allait.</EXAMPLE>
                </EXAMPLES>
@@ -105,7 +105,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient comment V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient comment V-inf" syntax="Agent V {à} Recipient Topic&lt;+comment VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé à Sara comment envoyer le paquet.</EXAMPLE>
                </EXAMPLES>
@@ -127,7 +127,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf" syntax="Agent V {à} Recipient Topic&lt;+de VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé à Sara de venir immédiatement.</EXAMPLE>
                </EXAMPLES>

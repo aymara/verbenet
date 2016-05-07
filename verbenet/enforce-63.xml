@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient NP"/>
+               <DESCRIPTION primary="NP V PP.recipient NP" syntax="Agent V {à} Recipient Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a imposé  à l'assemblée son opinion libertaire</EXAMPLE>
                </EXAMPLES>
@@ -40,7 +40,7 @@
                <SEMANTICS>enforce(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient Qu Psubj"/>
+               <DESCRIPTION primary="NP V PP.recipient Qu Psubj" syntax="Agent V {à} Recipient Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a  imposé à l'assemblée que tout le monde lui obéisse</EXAMPLE>
                </EXAMPLES>
@@ -62,7 +62,7 @@
                <SEMANTICS>enforce(during(E), Agent, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient de V-inf"/>
+               <DESCRIPTION primary="NP V PP.recipient de V-inf" syntax="Agent V {à} Recipient Theme&lt;+de VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a imposé à Marie de partir</EXAMPLE>
                </EXAMPLES>

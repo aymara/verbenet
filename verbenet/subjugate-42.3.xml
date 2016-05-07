@@ -42,7 +42,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Patient {avec} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>La Russie a écrasé la Mongolie avec un armement lourd</EXAMPLE>
                </EXAMPLES>

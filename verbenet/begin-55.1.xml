@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V à V-inf"/>
+               <DESCRIPTION primary="NP V à V-inf" syntax="Agent V Theme&lt;+à VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il a commencé à lire ce livre</EXAMPLE>
                </EXAMPLES>
@@ -30,7 +30,7 @@
                <SEMANTICS>begin(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.theme V"/>
+               <DESCRIPTION primary="NP.theme V" syntax="Theme V"/>
                <EXAMPLES>
                     <EXAMPLE>L'orage a commencé.</EXAMPLE>
                </EXAMPLES>
@@ -43,7 +43,7 @@
                <SEMANTICS>begin(E, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Il a commencé le livre</EXAMPLE>
                </EXAMPLES>
@@ -59,7 +59,7 @@
                <SEMANTICS>begin(E, Theme) cause (Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.instrument"/>
+               <DESCRIPTION primary="NP V PP.instrument" syntax="Theme V {par} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Son discours a commencé par une plaisanterie.</EXAMPLE>
                </EXAMPLES>
@@ -80,7 +80,7 @@
                <SEMANTICS>begin(E, Theme) use(during(E), ?Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Theme {par} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Il a commencé son discours par une plaisanterie</EXAMPLE>
                </EXAMPLES>
@@ -104,7 +104,7 @@
                <SEMANTICS>begin(E, Theme) use(during(E), Agent, Instrument) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V de V-inf"/>
+               <DESCRIPTION primary="NP V de V-inf" syntax="Agent V Theme&lt;+de VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a commencé de lire ce livre</EXAMPLE>
                </EXAMPLES>

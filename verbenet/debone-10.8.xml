@@ -56,7 +56,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.Theme"/>
+               <DESCRIPTION primary="NP V NP PP.Theme" syntax="Agent V Source {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a épouillé (la tête de) Max de ses lentes</EXAMPLE>
                </EXAMPLES>

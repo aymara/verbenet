@@ -47,7 +47,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Les abeilles bourdonnent dans les arbres.</EXAMPLE>
                </EXAMPLES>
@@ -68,7 +68,7 @@
                <SEMANTICS>emit(during(E), Theme, Sound) Prep(during(E), Sound, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.location V PP.attribute"/>
+               <DESCRIPTION primary="NP.location V PP.attribute" syntax="Location V {de} Attribute&lt;+genitive(Theme)&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le grenier couine de cris de souris</EXAMPLE>
                </EXAMPLES>
@@ -89,7 +89,7 @@
                <SEMANTICS>emit(during(E), Theme, Sound) location(during(E), Sound, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="IL V NP PP"/>
+               <DESCRIPTION primary="IL V NP PP" syntax="IL V Theme {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Il carillone une cloche dans l'air glacé</EXAMPLE>
                </EXAMPLES>

@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP de V-inf"/>
+               <DESCRIPTION primary="NP V NP de V-inf" syntax="Agent V Recipient {de} Topic&lt;+VRecipient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a prié Jean de venir</EXAMPLE>
                </EXAMPLES>

@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.Theme"/>
+               <DESCRIPTION primary="NP V NP PP.Theme" syntax="Agent V Recipient {de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Léa gave le bébé de lait</EXAMPLE>
                </EXAMPLES>

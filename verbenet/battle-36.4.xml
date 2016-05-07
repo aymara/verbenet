@@ -34,7 +34,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP PP.topic"/>
+               <DESCRIPTION primary="NP V PP PP.topic" syntax="Agent V {avec} Co-Agent {sur} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc bataille avec Marie sur ce point</EXAMPLE>
                </EXAMPLES>
@@ -63,7 +63,7 @@
                <SEMANTICS>social_interaction(during(E), Agent, Co-Agent) conflict(during(E), Agent, Co-Agent) about(E, Topic)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V PP.topic"/>
+               <DESCRIPTION primary="NP se V PP.topic" syntax="Agent&lt;+plural&gt; se V&lt;+reciproque&gt;  {sur} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc et Marie se bataillent sur ce point</EXAMPLE>
                </EXAMPLES>

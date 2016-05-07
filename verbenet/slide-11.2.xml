@@ -29,7 +29,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.initial_location"/>
+               <DESCRIPTION primary="NP V PP.initial_location" syntax="Theme V {de} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Max a glissé de sa chaise.</EXAMPLE>
                </EXAMPLES>
@@ -50,7 +50,7 @@
                <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.destination"/>
+               <DESCRIPTION primary="NP V PP.destination" syntax="Theme V {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>La voiture a glissé dans le fossé</EXAMPLE>
                </EXAMPLES>
@@ -71,7 +71,7 @@
                <SEMANTICS>motion(during(E), Theme) location(end(E), Theme, Destination)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.initial_location PP.destination"/>
+               <DESCRIPTION primary="NP V PP.initial_location PP.destination" syntax="Theme V {de} Initial_Location {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>La valise a glissé du salon au corridor</EXAMPLE>
                </EXAMPLES>
@@ -100,7 +100,7 @@
                <SEMANTICS>motion(during(E), Theme) location(start(E), Theme, Initial_Location) location(end(E), Theme, Destination)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Max glisse le buffet dans le couloir</EXAMPLE>
                </EXAMPLES>
@@ -124,7 +124,7 @@
                <SEMANTICS>motion(during(E), Theme) location(end(E), Theme, Destination) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination" syntax="Agent V Theme {de} Initial_Location {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Max glisse le buffet du salon dans le couloir</EXAMPLE>
                </EXAMPLES>

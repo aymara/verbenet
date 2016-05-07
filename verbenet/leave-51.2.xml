@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.initial_location"/>
+               <DESCRIPTION primary="NP V NP.initial_location" syntax="Theme V Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a quiité la pièce</EXAMPLE>
                </EXAMPLES>

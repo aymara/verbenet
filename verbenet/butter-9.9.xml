@@ -137,7 +137,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Destination {avec/de} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Lora a beurré les tartines avec du beurre salé.</EXAMPLE>
                </EXAMPLES>

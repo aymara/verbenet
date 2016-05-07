@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.value"/>
+               <DESCRIPTION primary="NP V NP PP.value" syntax="Agent V Theme {à} Value"/>
                <EXAMPLES>
                     <EXAMPLE>Le vendeur a évalué le livre à 40 euros.</EXAMPLE>
                </EXAMPLES>

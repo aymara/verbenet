@@ -17,7 +17,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.patient"/>
+               <DESCRIPTION primary="NP V NP.patient" syntax="Agent V Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a  noyé un chaton</EXAMPLE>
                </EXAMPLES>
@@ -33,7 +33,7 @@
                <SEMANTICS>cause(Agent, E) suffocate(during(E), Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.patient se V"/>
+               <DESCRIPTION primary="NP.patient se V" syntax="Patient se V&lt;+neutre&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Un chaton s'est noyé</EXAMPLE>
                </EXAMPLES>

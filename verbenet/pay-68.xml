@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.theme"/>
+               <DESCRIPTION primary="NP V NP PP.theme" syntax="Agent V Asset {pour} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Max a payé 500€ pour sa voiture</EXAMPLE>
                </EXAMPLES>
@@ -58,7 +58,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP PP"/>
+                         <DESCRIPTION primary="NP V NP PP PP" syntax="Agent V Asset {pour} Theme {à} Recipient"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a payé 4000 euros pour sa voiture à Marie.</EXAMPLE>
                          </EXAMPLES>

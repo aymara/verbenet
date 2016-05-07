@@ -19,7 +19,7 @@
      <THEMROLES/>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="IL V"/>
+               <DESCRIPTION primary="IL V" syntax="IL V"/>
                <EXAMPLES>
                     <EXAMPLE>Il pleut</EXAMPLE>
                </EXAMPLES>

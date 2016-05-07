@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP.patient V"/>
+               <DESCRIPTION primary="NP.patient V" syntax="Patient V"/>
                <EXAMPLES>
                     <EXAMPLE>Les roses fleurissent</EXAMPLE>
                </EXAMPLES>

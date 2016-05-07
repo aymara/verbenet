@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.location"/>
+               <DESCRIPTION primary="NP V NP PP.location" syntax="Agent V Patient {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a caché les cadeaux dans le placard</EXAMPLE>
                </EXAMPLES>
@@ -61,7 +61,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V PP.location"/>
+                         <DESCRIPTION primary="NP se V PP.location" syntax="Agent se V&lt;+reflexive&gt;  {{+loc}} Location"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc s'est caché dans le placard</EXAMPLE>
                          </EXAMPLES>

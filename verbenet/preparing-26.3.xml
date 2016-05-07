@@ -33,7 +33,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.beneficiary"/>
+                         <DESCRIPTION primary="NP V NP PP.beneficiary" syntax="Agent V Product {pour} Beneficiary"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a préparé un sandwich pour moi</EXAMPLE>
                          </EXAMPLES>
@@ -75,7 +75,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.beneficiary"/>
+                         <DESCRIPTION primary="NP V NP PP.beneficiary" syntax="Agent V Patient {pour} Beneficiary"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a grillé des steaks pour Léa</EXAMPLE>
                          </EXAMPLES>

@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Patient {dans/à/avec} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a cuit les pommes de terre au four</EXAMPLE>
                </EXAMPLES>
@@ -51,7 +51,7 @@
                <SEMANTICS>cause(Agent, E) apply_heat(during(E), Instrument, Patient) cooked(result(E), Form, Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV"/>
+               <DESCRIPTION primary="NP se V ADV" syntax="Patient se V&lt;+middle&gt; ADV"/>
                <EXAMPLES>
                     <EXAMPLE>Les pommes de terre bretonnes se cuisent facilement</EXAMPLE>
                </EXAMPLES>
@@ -65,7 +65,7 @@
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.instrument V NP"/>
+               <DESCRIPTION primary="NP.instrument V NP" syntax="Instrument V Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Ce four a cuit les pommes de terre</EXAMPLE>
                </EXAMPLES>
@@ -94,7 +94,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V"/>
+                         <DESCRIPTION primary="NP V" syntax="Patient V"/>
                          <EXAMPLES>
                               <EXAMPLE>Les pommes de terre ont cuit</EXAMPLE>
                          </EXAMPLES>

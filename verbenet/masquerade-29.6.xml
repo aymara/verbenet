@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.attribute"/>
+               <DESCRIPTION primary="NP V PP.attribute" syntax="Agent V {comme} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Max agit comme un idiot</EXAMPLE>
                </EXAMPLES>

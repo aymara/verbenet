@@ -53,7 +53,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.co-patient"/>
+                         <DESCRIPTION primary="NP V NP PP.co-patient" syntax="Agent V Patient {à/avec} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a mélangé les oeufs à/avec la crème</EXAMPLE>
                          </EXAMPLES>
@@ -77,7 +77,7 @@
                          <SEMANTICS>cause(Agent, E) degradation_material_integrity(result(E), Patient) degradation_material_integrity(result(E), Co-Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP ensemble"/>
+                         <DESCRIPTION primary="NP V NP ensemble" syntax="Agent V Patient&lt;+plural&gt; ensemble"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a mélangé les oeufs et la crème ensemble</EXAMPLE>
                          </EXAMPLES>
@@ -94,7 +94,7 @@
                          <SEMANTICS>cause(Agent, E) degradation_material_integrity(result(E), Patient_i) degradation_material_integrity(result(E), Patient_j) mingled(result(E), physical, Patient_i, Patient_j)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V PP.co-patient"/>
+                         <DESCRIPTION primary="NP se V PP.co-patient" syntax="Patient se V&lt;+neutre&gt; {avec/à} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>Les oeufs se sont mélangés avec la crème</EXAMPLE>
                          </EXAMPLES>
@@ -115,7 +115,7 @@
                          <SEMANTICS>degradation_material_integrity(result(E), Patient) degradation_material_integrity(result(E), Co-Patient) mingled(result(E), physical, Patient, Co-Patient)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V ADV PP.co-patient"/>
+                         <DESCRIPTION primary="NP se V ADV PP.co-patient" syntax="Patient se V&lt;+middle&gt; ADV {à/avec} Co-Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>Les oeufs se mélangent bien à la crème</EXAMPLE>
                          </EXAMPLES>
@@ -137,7 +137,7 @@
                          <SEMANTICS>property(Patient+Co-Patient, Prop) Adv(Prop)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V ADV"/>
+                         <DESCRIPTION primary="NP se V ADV" syntax="Patient&lt;+plural&gt; se V&lt;+middle&gt; ADV"/>
                          <EXAMPLES>
                               <EXAMPLE>Les oeufs et la crème se mélangent bien</EXAMPLE>
                          </EXAMPLES>
@@ -151,7 +151,7 @@
                          <SEMANTICS>property(Patient_i+Patient_j, Prop) Adv(Prop)</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP se V"/>
+                         <DESCRIPTION primary="NP se V" syntax="Patient&lt;+plural&gt; se V&lt;+neutre&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Les oeufs et la crème se sont mélangés</EXAMPLE>
                          </EXAMPLES>

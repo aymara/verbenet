@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V"/>
+               <DESCRIPTION primary="NP se V" syntax="Agent&lt;+plural&gt; se V&lt;+reciproque&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc et Léa se sont embrassés.</EXAMPLE>
                </EXAMPLES>
@@ -36,7 +36,7 @@
                <SEMANTICS>social_interaction(during(E), Agent_i, Agent_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Co-Agent"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a embrassé Léa.</EXAMPLE>
                </EXAMPLES>

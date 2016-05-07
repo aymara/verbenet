@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V à/de V-inf"/>
+               <DESCRIPTION primary="NP V à/de V-inf" syntax="Agent V {à/de} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il a continué de travailer</EXAMPLE>
                </EXAMPLES>
@@ -33,7 +33,7 @@
                <SEMANTICS>continue(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.theme V"/>
+               <DESCRIPTION primary="NP.theme V" syntax="Theme V"/>
                <EXAMPLES>
                     <EXAMPLE>L'orage a continué</EXAMPLE>
                </EXAMPLES>

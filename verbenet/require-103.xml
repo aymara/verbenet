@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.source NP"/>
+               <DESCRIPTION primary="NP V PP.source NP" syntax="Pivot V {pour/de la part de} Source Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Le succès exige beaucoup de travail pour/de la part de Paul.</EXAMPLE>
                </EXAMPLES>
@@ -40,7 +40,7 @@
                <SEMANTICS>necessitate(E, Pivot, Theme, Source)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.source Qu Psubj"/>
+               <DESCRIPTION primary="NP V PP.source Qu Psubj" syntax="Pivot V {pour/de la part de} Source Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le succès exige pour/de la part de Paul qu'il travaille beaucoup.</EXAMPLE>
                </EXAMPLES>
@@ -62,7 +62,7 @@
                <SEMANTICS>necessitate(E, Pivot, Theme, Source)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.source de V-inf"/>
+               <DESCRIPTION primary="NP V PP.source de V-inf" syntax="Pivot V {pour/de la part de} Source Theme&lt;+de VSource-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Le succès exige pour/de la part de Paul de travailler beaucoup</EXAMPLE>
                </EXAMPLES>

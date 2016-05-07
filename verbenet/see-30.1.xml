@@ -36,7 +36,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Experiencer V Stimulus"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai vu le match</EXAMPLE>
                </EXAMPLES>
@@ -52,7 +52,7 @@
                <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V si P"/>
+               <DESCRIPTION primary="NP V si P" syntax="Experiencer V Stimulus&lt;+si P&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai vu s'il avait vidé les poubelles</EXAMPLE>
                </EXAMPLES>
@@ -77,7 +77,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V Qu Pind"/>
+                         <DESCRIPTION primary="NP V Qu Pind" syntax="Experiencer V Stimulus&lt;+Qu Pind&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a vu qu'il pleuvait beaucoup.</EXAMPLE>
                          </EXAMPLES>
@@ -103,7 +103,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP V-inf"/>
+                                   <DESCRIPTION primary="NP V NP V-inf" syntax="Experiencer V Stimulus&lt;+NP V-inf&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc a vu Marie traverser la rue.</EXAMPLE>
                                    </EXAMPLES>
@@ -117,7 +117,7 @@
                                    <SEMANTICS>perceive(during(E), Experiencer, Stimulus) in_reaction_to(E, Stimulus)</SEMANTICS>
                               </FRAME>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP V-ant"/>
+                                   <DESCRIPTION primary="NP V NP V-ant" syntax="Experiencer V Stimulus&lt;+NP V-ant&gt;"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Luc a vu Marie traversant la rue.</EXAMPLE>
                                    </EXAMPLES>

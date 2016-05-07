@@ -50,7 +50,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.beneficiary"/>
+               <DESCRIPTION primary="NP V NP PP.beneficiary" syntax="Agent V Theme {à/pour} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Max achète une bague à Ida</EXAMPLE>
                </EXAMPLES>
@@ -74,7 +74,7 @@
                <SEMANTICS>has_possession(start(E), ?Source, Theme) transfer(during(E), Theme) has_possession(end(E), Agent, Theme) cause(Agent, E) benefit(E, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Asset V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>$50, ça n'achète pas une voiture.</EXAMPLE>
                </EXAMPLES>
@@ -90,7 +90,7 @@
                <SEMANTICS>has_possession(start(E), ?Source, Theme) transfer(during(E), Theme) has_possession(end(E), ?Agent, Theme) cause(?Agent, E) cost(E, Asset)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary PP.asset"/>
+               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary PP.asset" syntax="Agent V Theme {à} Source {pour} Beneficiary {pour} Asset"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a acheté une belle bague à un bijoutier pour sa femme pour 300 euros.</EXAMPLE>
                </EXAMPLES>
@@ -130,7 +130,7 @@
                <SEMANTICS>has_possession(start(E), Source, Theme) transfer(during(E), Theme) has_possession(end(E), Agent, Theme) cause(Agent, E) benefit(E, Beneficiary) cost(E, Asset)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary NP.asset"/>
+               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary NP.asset" syntax="Agent V Theme {à} Source {pour} Beneficiary Asset"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a acheté une belle bague à un bijoutier du quartier pour sa femme 300 euros</EXAMPLE>
                </EXAMPLES>

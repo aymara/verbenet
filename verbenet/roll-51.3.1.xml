@@ -33,7 +33,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP.theme V PP.location"/>
+               <DESCRIPTION primary="NP.theme V PP.location" syntax="Theme V {jusqu'à/vers} Location"/>
                <EXAMPLES>
                     <EXAMPLE>La balle a roulé (vers + jusqu'à) la porte.</EXAMPLE>
                </EXAMPLES>

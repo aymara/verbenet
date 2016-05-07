@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent pour V-inf"/>
+               <DESCRIPTION primary="NP V PP.co-agent pour V-inf" syntax="Agent V {avec} Co-Agent {pour} Goal&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est entendu avec Marie pour proposer un projet</EXAMPLE>
                </EXAMPLES>
@@ -50,7 +50,7 @@
                <SEMANTICS>agree(result(E), Agent, Co-Agent, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP" syntax="Agent V {avec} Co-Agent {sur} Goal"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est entendu avec Marie sur le prix.</EXAMPLE>
                </EXAMPLES>
@@ -79,7 +79,7 @@
                <SEMANTICS>agree(result(E), Agent, Co-Agent, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V pour V-inf"/>
+               <DESCRIPTION primary="NP V pour V-inf" syntax="Agent&lt;+plural&gt; V {pour} Goal&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc et Marie se sont entendus pour proposer un projet</EXAMPLE>
                </EXAMPLES>
@@ -98,7 +98,7 @@
                <SEMANTICS>agree(result(E), Agent, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP"/>
+               <DESCRIPTION primary="NP V PP" syntax="Agent&lt;+plural&gt; V {sur} Goal"/>
                <EXAMPLES>
                     <EXAMPLE>Luc et Marie se sont entendus sur le prix</EXAMPLE>
                </EXAMPLES>

@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent pour V-inf"/>
+               <DESCRIPTION primary="NP V PP.co-agent pour V-inf" syntax="Agent V {avec} Co-Agent {pour} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean conspire avec Marie pour prendre le pouvoir</EXAMPLE>
                </EXAMPLES>
@@ -53,7 +53,7 @@
                <SEMANTICS>conspire(during(E), Agent_i, Agent_j, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.beneficiary"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP.beneficiary" syntax="Agent V {avec} Co-Agent {contre} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Jean conspire avec Marie contre Max</EXAMPLE>
                </EXAMPLES>
@@ -82,7 +82,7 @@
                <SEMANTICS>conspire(during(E), Agent, Co-Agent, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.beneficiary"/>
+               <DESCRIPTION primary="NP V PP.beneficiary" syntax="Agent&lt;+plural&gt; V {contre} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Jean et Marie conspirent contre Max</EXAMPLE>
                </EXAMPLES>
@@ -103,7 +103,7 @@
                <SEMANTICS>conspire(during(E), Agent, Beneficiary)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V pour V-inf"/>
+               <DESCRIPTION primary="NP V pour V-inf" syntax="Agent&lt;+plural&gt; V {pour} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean et Marie conspirent pour prendre le pouvoir</EXAMPLE>
                </EXAMPLES>

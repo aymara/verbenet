@@ -31,7 +31,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme PP.destination"/>
+               <DESCRIPTION primary="NP V NP.theme PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a embouteillé le vin dans des bouteilles de verre</EXAMPLE>
                </EXAMPLES>
@@ -69,7 +69,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.destination"/>
+                         <DESCRIPTION primary="NP V PP.destination" syntax="Theme V {{Loc-Dest}} Destination"/>
                          <EXAMPLES>
                               <EXAMPLE>Le bateau a accosté au quai</EXAMPLE>
                          </EXAMPLES>

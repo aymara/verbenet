@@ -18,7 +18,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à/pour V-inf"/>
+               <DESCRIPTION primary="NP V NP à/pour V-inf" syntax="Agent V Theme {à/pour} Goal&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Léa a utilisé le panier à/pour stocker de la nourriture.</EXAMPLE>
                </EXAMPLES>

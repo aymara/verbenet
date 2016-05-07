@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a lancé la botte dans le camion.</EXAMPLE>
                </EXAMPLES>
@@ -50,7 +50,7 @@
                <SEMANTICS>exert_force(during(E0), Agent, Theme) contact(end(E0), Agent, Theme) motion(during(E1), Theme) not(contact(during(E1), Agent, Theme)) not(location(start(E1), Theme, Destination)) location(end(E1), Theme, Destination) cause(Agent, E1) meets(E0, E1)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location" syntax="Agent V Theme {de/depuis} Initial_Location"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a lancé la botte du grenier.</EXAMPLE>
                </EXAMPLES>
@@ -74,7 +74,7 @@
                <SEMANTICS>exert_force(during(E0), Agent, Theme) contact(end(E0), Agent, Theme) motion(during(E1), Theme) not(contact(during(E1), Agent, Theme)) location(start(E1), Theme, Initial_Location) cause(Agent, E1) meets(E0, E1)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.initial_location PP.destination" syntax="Agent V Theme {de} Initial_Location {{Loc-Dest}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a lancé la botte du grenier dans le camion.</EXAMPLE>
                </EXAMPLES>
@@ -121,7 +121,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.recipient"/>
+                         <DESCRIPTION primary="NP V NP PP.recipient" syntax="Agent V  Theme {à} Recipient"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a lancé la botte à Ida</EXAMPLE>
                          </EXAMPLES>

@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.co-theme"/>
+               <DESCRIPTION primary="NP V NP PP.co-theme" syntax="Agent V Theme {contre} Co-Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Marie a échangé sa robe contre une chemise.</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>has_possession(start(E), Agent, Theme) not(has_possession(start(E), Agent, Co-Theme)) has_possession(end(E), Agent, Co-Theme) not(has_possession(end(E), Agent, Theme)) transfer(during(E), Theme) transfer(during(E), Co-Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V NP"/>
+               <DESCRIPTION primary="NP se V NP" syntax="Agent&lt;+plural&gt; se V&lt;+reciproque&gt; Theme&lt;+plural&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Air France et KLM  se sont échangés des parts</EXAMPLE>
                </EXAMPLES>
@@ -62,7 +62,7 @@
                <SEMANTICS>has_possession(start(E), Agent_i, Theme_i) has_possession(end(E), Agent_j, Theme_i) has_possession(start(E), Agent_j, Theme_j) has_possession(end(E), Agent_i, Theme_j) transfer(during(E), Theme_i) transfer(during(E), Theme_j) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.co-agent"/>
+               <DESCRIPTION primary="NP V NP PP.co-agent" syntax="Agent V Theme&lt;+plural&gt; {avec} Co-Agent"/>
                <EXAMPLES>
                     <EXAMPLE>Air France échange des parts avec KLM.</EXAMPLE>
                </EXAMPLES>
@@ -86,7 +86,7 @@
                <SEMANTICS>has_possession(start(E), Agent, Theme_i) has_possession(end(E), Co-Agent, Theme_i) has_possession(start(E), Co-Agent, Theme_j) has_possession(end(E), Agent, Theme_j) transfer(during(E), Theme_i) transfer(during(E), Theme_j)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP se V PP.co-theme"/>
+               <DESCRIPTION primary="NP se V PP.co-theme" syntax="Theme se V&lt;+neutre&gt; {contre} Co-Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Les robes s'échangent contre des chemises</EXAMPLE>
                </EXAMPLES>

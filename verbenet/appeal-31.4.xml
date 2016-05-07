@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.experiencer"/>
+               <DESCRIPTION primary="NP V PP.experiencer" syntax="Stimulus V {à} Experiencer"/>
                <EXAMPLES>
                     <EXAMPLE>Ce tableau plaît à Marie.</EXAMPLE>
                </EXAMPLES>
@@ -41,7 +41,7 @@
                <SEMANTICS>emotional_state(E, Emotion, Experiencer) cause(Stimulus, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="IL V PP.experiencer Qu Psubj"/>
+               <DESCRIPTION primary="IL V PP.experiencer Qu Psubj" syntax="IL  V {à} Experiencer Stimulus&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Il plaît à Marie qu'on fasse cela</EXAMPLE>
                </EXAMPLES>
@@ -69,7 +69,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V"/>
+                         <DESCRIPTION primary="NP V" syntax="Stimulus V"/>
                          <EXAMPLES>
                               <EXAMPLE>L'argent compte.</EXAMPLE>
                          </EXAMPLES>

@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP"/>
+               <DESCRIPTION primary="NP V NP PP" syntax="Agent V Patient {à} Goal"/>
                <EXAMPLES>
                     <EXAMPLE>Max a adapté Luc à la situation.</EXAMPLE>
                </EXAMPLES>
@@ -44,7 +44,7 @@
                <SEMANTICS>adjust(during(E), Patient, Goal)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <DESCRIPTION primary="NP V NP à V-inf" syntax="Agent V Patient {à} Goal&lt;+VPatient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Max a acclimaté Luc à se lever tôt.</EXAMPLE>
                </EXAMPLES>

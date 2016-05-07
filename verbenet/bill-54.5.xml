@@ -27,7 +27,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP NP PP.recipient"/>
+               <DESCRIPTION primary="NP V NP NP PP.recipient" syntax="Agent V Theme Asset {à} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Le restaurant a facturé ce plat 100 euros à Luc</EXAMPLE>
                </EXAMPLES>

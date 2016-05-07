@@ -33,7 +33,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.location"/>
+               <DESCRIPTION primary="NP V PP.location" syntax="Theme V {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Un bateau est apparu à l'horizon</EXAMPLE>
                </EXAMPLES>
@@ -54,7 +54,7 @@
                <SEMANTICS>appear(during(E), Theme) not(Prep(start(E), Theme, Location)) Prep(end(E), Theme, Location)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="IL V NP.theme PP.location"/>
+               <DESCRIPTION primary="IL V NP.theme PP.location" syntax="IL V Theme {{+loc}} Location"/>
                <EXAMPLES>
                     <EXAMPLE>Il est apparu un bateau à l'horizon</EXAMPLE>
                </EXAMPLES>

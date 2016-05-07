@@ -21,7 +21,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V de V-inf"/>
+               <DESCRIPTION primary="NP V de V-inf" syntax="Agent V  Theme&lt;+de VAgent-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a stoppé de faire des conneries</EXAMPLE>
                </EXAMPLES>
@@ -35,7 +35,7 @@
                <SEMANTICS>end(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme"/>
+               <DESCRIPTION primary="NP V NP.theme" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a stoppé les conneries de Luc</EXAMPLE>
                </EXAMPLES>
@@ -51,7 +51,7 @@
                <SEMANTICS>end(E, Theme) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.instrument"/>
+               <DESCRIPTION primary="NP V PP.instrument" syntax="Theme V {par} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Son discours a fini par une plaisanterie</EXAMPLE>
                </EXAMPLES>
@@ -72,7 +72,7 @@
                <SEMANTICS>end(E, Theme) use(during(E), ?Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP.theme PP.instrument"/>
+               <DESCRIPTION primary="NP V NP.theme PP.instrument" syntax="Agent V Theme {par} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a fini son discours par une plaisanterie</EXAMPLE>
                </EXAMPLES>

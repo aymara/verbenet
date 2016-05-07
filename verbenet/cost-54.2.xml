@@ -20,7 +20,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP"/>
+               <DESCRIPTION primary="NP V NP PP" syntax="Theme V Value {à} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Ce voyage coûtera 100€ à Luc</EXAMPLE>
                </EXAMPLES>

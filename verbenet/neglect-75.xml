@@ -21,7 +21,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V de V-inf"/>
+                         <DESCRIPTION primary="NP V de V-inf" syntax="Agent V Theme&lt;+de VAgent-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>J'ai négligé de faire ce travail</EXAMPLE>
                          </EXAMPLES>
@@ -44,7 +44,7 @@
                          <THEMROLES/>
                          <FRAMES>
                               <FRAME>
-                                   <DESCRIPTION primary="NP V NP"/>
+                                   <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                                    <EXAMPLES>
                                         <EXAMPLE>Léa a négligé son travail.</EXAMPLE>
                                    </EXAMPLES>

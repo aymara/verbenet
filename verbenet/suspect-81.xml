@@ -17,7 +17,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {de} Attribute"/>
                <EXAMPLES>
                     <EXAMPLE>Luc suspecte sa femme d'infidélité</EXAMPLE>
                </EXAMPLES>
@@ -41,7 +41,7 @@
                <SEMANTICS>suspect(during(E), Agent, Theme, Attribute)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.attribute"/>
+               <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {de} Attribute&lt;+VTheme-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc suspecte sa femme d'être infidèle</EXAMPLE>
                </EXAMPLES>

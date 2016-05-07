@@ -36,7 +36,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP se V ADV PP.Result"/>
+               <DESCRIPTION primary="NP se V ADV PP.Result" syntax="Patient se V&lt;+middle&gt; ADV {en} Result"/>
                <EXAMPLES>
                     <EXAMPLE>Les vases en cristal se cassent facilement en mille morceaux</EXAMPLE>
                </EXAMPLES>
@@ -58,7 +58,7 @@
                <SEMANTICS>property(Patient, Prop) Adv(Prop)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.instrument V NP PP.Result"/>
+               <DESCRIPTION primary="NP.instrument V NP PP.Result" syntax="Instrument V Patient {en} Result"/>
                <EXAMPLES>
                     <EXAMPLE>Le marteau a cassé la fenêtre en mille morceaux</EXAMPLE>
                </EXAMPLES>
@@ -82,7 +82,7 @@
                <SEMANTICS>contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.Result PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.Result PP.instrument" syntax="Agent V Patient  {en} Result {avec} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Tony a cassé la carafe  en mille morceaux avec un marteau</EXAMPLE>
                </EXAMPLES>
@@ -114,7 +114,7 @@
                <SEMANTICS>cause(Agent, E) contact(during(E), Instrument, Patient) degradation_material_integrity(result(E), Patient) physical_form(result(E), Form, Patient) Pred(result(E), Patient) use(during(E), Agent, Instrument)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP.Patient se V PP.Result"/>
+               <DESCRIPTION primary="NP.Patient se V PP.Result" syntax="Patient se V&lt;+neutre&gt; {en} Result"/>
                <EXAMPLES>
                     <EXAMPLE>Le vase s'est cassé en mille morceaux</EXAMPLE>
                </EXAMPLES>
@@ -147,7 +147,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.patient V PP.Result"/>
+                         <DESCRIPTION primary="NP.patient V PP.Result" syntax="Patient V {en} Result"/>
                          <EXAMPLES>
                               <EXAMPLE>La carafe a cassé en mille morceux</EXAMPLE>
                          </EXAMPLES>

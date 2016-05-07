@@ -26,7 +26,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.instrument"/>
+               <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Patient {avec} Instrument"/>
                <EXAMPLES>
                     <EXAMPLE>Brutus a assasiné Julius César avec un couteau</EXAMPLE>
                </EXAMPLES>
@@ -63,7 +63,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP.instrument V NP"/>
+                         <DESCRIPTION primary="NP.instrument V NP" syntax="Instrument V Patient"/>
                          <EXAMPLES>
                               <EXAMPLE>Les gaz ont tué le bébé</EXAMPLE>
                          </EXAMPLES>

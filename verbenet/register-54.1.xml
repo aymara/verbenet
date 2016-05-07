@@ -12,7 +12,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP"/>
+               <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a chronomété les coureurs</EXAMPLE>
                </EXAMPLES>
@@ -41,7 +41,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP.value"/>
+                         <DESCRIPTION primary="NP V NP.value" syntax="Theme V Value"/>
                          <EXAMPLES>
                               <EXAMPLE>La valise pèse 5 kilos</EXAMPLE>
                          </EXAMPLES>

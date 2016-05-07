@@ -30,7 +30,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient de ce Qu Psubj"/>
+               <DESCRIPTION primary="NP V PP.recipient de ce Qu Psubj" syntax="Agent V {auprès_de} Recipient {de} Topic&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est plaint auprès de Léa (de ce) qu'on l'ait calomnié.  .</EXAMPLE>
                </EXAMPLES>
@@ -57,7 +57,7 @@
                <SEMANTICS>transfer_info(during(E), Agent, Recipient, Topic) cause(Agent, E)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient PP.topic"/>
+               <DESCRIPTION primary="NP V PP.recipient PP.topic" syntax="Agent V {auprès_de} Recipient {de} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est plaint auprès de Léa de sa situation.</EXAMPLE>
                </EXAMPLES>

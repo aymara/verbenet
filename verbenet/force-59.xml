@@ -35,7 +35,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP à V-inf"/>
+               <DESCRIPTION primary="NP V NP à V-inf" syntax="Agent V Patient {à} Result&lt;+VPatient-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>J'ai forcé Luc à manger</EXAMPLE>
                </EXAMPLES>
@@ -66,7 +66,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP PP.result"/>
+                         <DESCRIPTION primary="NP V NP PP.result" syntax="Agent V Patient {à} Result"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a assigné Léa à la lessive</EXAMPLE>
                          </EXAMPLES>

@@ -25,7 +25,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V PP.theme" syntax="Agent&lt;+plural&gt; V {sur/dans} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont collaboré {sur/dans} ce projet</EXAMPLE>
                </EXAMPLES>
@@ -46,7 +46,7 @@
                <SEMANTICS>cooperate(during(E), Agent_i, Agent_j, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.theme"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP.theme" syntax="Agent V {avec} Co-Agent {sur/dans} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a collaboré avec Luc {sur/dans} ce projet</EXAMPLE>
                </EXAMPLES>
@@ -75,7 +75,7 @@
                <SEMANTICS>cooperate(during(E), Agent_i, Agent_j, Theme</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.co-agent PP.theme"/>
+               <DESCRIPTION primary="NP V PP.co-agent PP.theme" syntax="Agent V {avec} Co-Agent {à/pour} Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Jean a collaboré avec Luc à ce/pour que tout soit en ordre</EXAMPLE>
                </EXAMPLES>
@@ -104,7 +104,7 @@
                <SEMANTICS>cooperate(during(E), Agent_i, Agent_j, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.Theme"/>
+               <DESCRIPTION primary="NP V PP.Theme" syntax="Agent&lt;+plural&gt; V {à/pour} Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Ils ont collaboré à ce/pour que tout soit en ordre</EXAMPLE>
                </EXAMPLES>

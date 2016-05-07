@@ -22,7 +22,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.patient"/>
+               <DESCRIPTION primary="NP V PP.patient" syntax="Agent V {de} Patient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a dîné d'une pizza</EXAMPLE>
                </EXAMPLES>

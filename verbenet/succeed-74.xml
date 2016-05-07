@@ -19,7 +19,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V à V-inf"/>
+                         <DESCRIPTION primary="NP V à V-inf" syntax="Agent V {à} Theme&lt;+VAgent-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a réussi à escalader la montagne</EXAMPLE>
                          </EXAMPLES>
@@ -46,7 +46,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.theme"/>
+                         <DESCRIPTION primary="NP V PP.theme" syntax="Agent V {à} Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a échoué à l'examen</EXAMPLE>
                          </EXAMPLES>
@@ -67,7 +67,7 @@
                          <SEMANTICS>not(successful_in(E, Agent, Theme))</SEMANTICS>
                     </FRAME>
                     <FRAME>
-                         <DESCRIPTION primary="NP V à V-inf"/>
+                         <DESCRIPTION primary="NP V à V-inf" syntax="Agent V {à}  Theme&lt;+VAgent-inf&gt;"/>
                          <EXAMPLES>
                               <EXAMPLE>Max a échoué à passer le test</EXAMPLE>
                          </EXAMPLES>
@@ -96,7 +96,7 @@
                <THEMROLES/>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V NP.theme"/>
+                         <DESCRIPTION primary="NP V NP.theme" syntax="Agent V Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Luc a raté son examen</EXAMPLE>
                          </EXAMPLES>

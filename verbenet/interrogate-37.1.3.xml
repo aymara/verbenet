@@ -23,7 +23,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.topic"/>
+               <DESCRIPTION primary="NP V NP PP.topic" syntax="Agent V Recipient {sur} Topic"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a interrogé Max sur cette question </EXAMPLE>
                </EXAMPLES>

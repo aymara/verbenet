@@ -16,7 +16,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V PP.theme" syntax="Experiencer V {sur} Theme"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est concentré sur l'affaire.</EXAMPLE>
                </EXAMPLES>
@@ -37,7 +37,7 @@
                <SEMANTICS>concentrate(during(E), Experiencer, Theme) cause(E, Theme)</SEMANTICS>
           </FRAME>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.theme"/>
+               <DESCRIPTION primary="NP V PP.theme" syntax="Experiencer V {à/pour} Theme&lt;+VExperiencer-inf&gt;"/>
                <EXAMPLES>
                     <EXAMPLE>Luc s'est concentré à/pour résoudre le problème</EXAMPLE>
                </EXAMPLES>

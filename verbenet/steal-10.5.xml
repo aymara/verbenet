@@ -57,7 +57,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary"/>
+               <DESCRIPTION primary="NP V NP PP.source PP.beneficiary" syntax="Agent V Theme {à} Source {pour} Beneficiary"/>
                <EXAMPLES>
                     <EXAMPLE>Le bandit a chipé le tableau à Jean pour Marie.</EXAMPLE>
                </EXAMPLES>

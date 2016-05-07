@@ -44,7 +44,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V NP PP.destination"/>
+               <DESCRIPTION primary="NP V NP PP.destination" syntax="Agent V Theme {{+loc}} Destination"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a posé des livres sur la table </EXAMPLE>
                </EXAMPLES>
@@ -84,7 +84,7 @@
                </THEMROLES>
                <FRAMES>
                     <FRAME>
-                         <DESCRIPTION primary="NP V PP.destination NP"/>
+                         <DESCRIPTION primary="NP V PP.destination NP" syntax="Agent V {sur} Destination Theme"/>
                          <EXAMPLES>
                               <EXAMPLE>Ils ont placé sur moi une grande responsabilité.</EXAMPLE>
                          </EXAMPLES>
