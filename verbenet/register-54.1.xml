@@ -29,7 +29,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="54.1-1" ladl="32NM[+N1 =: Dnum Nmes]">
+          <VNSUBCLASS ID="register-54.1-1" ladl="32NM[+N1 =: Dnum Nmes]">
                <MEMBERS>
                     <MEMBER name="jauger"/>
                     <MEMBER name="mesurer"/>

@@ -58,7 +58,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="47.6-1">
+          <VNSUBCLASS ID="spatial_configuration-47.6-1">
                <MEMBERS>
                     <MEMBER name="dresser"/>
                </MEMBERS>
@@ -87,7 +87,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="47.6-2" ladl="38LR[+N1 V W] ou 38LD[+N1 V W]">
+          <VNSUBCLASS ID="spatial_configuration-47.6-2" ladl="38LR[+N1 V W] ou 38LD[+N1 V W]">
                <MEMBERS>
                     <MEMBER name="pendre"/>
                </MEMBERS>

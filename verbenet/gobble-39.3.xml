@@ -8,7 +8,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="39.3-1">
+          <VNSUBCLASS ID="gobble-39.3-1">
                <MEMBERS>
                     <MEMBER name="avaler"/>
                     <MEMBER name="bâfrer"/>
@@ -50,7 +50,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="39.3-2">
+          <VNSUBCLASS ID="gobble-39.3-2">
                <MEMBERS>
                     <MEMBER name="assimiler"/>
                     <MEMBER name="avaler"/>

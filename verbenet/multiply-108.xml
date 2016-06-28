@@ -13,7 +13,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="108-4">
+          <VNSUBCLASS ID="multiply-108-4">
                <MEMBERS/>
                <THEMROLES/>
                <FRAMES>
@@ -35,7 +35,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="108-4-1">
+                    <VNSUBCLASS ID="multiply-108-4-1">
                          <MEMBERS>
                               <MEMBER name="additionner"/>
                               <MEMBER name="ajouter"/>
@@ -70,7 +70,7 @@
                               </FRAME>
                          </FRAMES>
                     </VNSUBCLASS>
-                    <VNSUBCLASS ID="108-4-2">
+                    <VNSUBCLASS ID="multiply-108-4-2">
                          <MEMBERS>
                               <MEMBER name="diviser"/>
                               <MEMBER name="multiplier"/>
@@ -121,7 +121,7 @@
                     </VNSUBCLASS>
                </SUBCLASSES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="108-5" ladl="38R" lvf="E4b.1">
+          <VNSUBCLASS ID="multiply-108-5" ladl="38R" lvf="E4b.1">
                <MEMBERS>
                     <MEMBER name="soustraire"/>
                </MEMBERS>

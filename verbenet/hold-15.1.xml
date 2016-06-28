@@ -28,7 +28,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="15.1-1">
+          <VNSUBCLASS ID="hold-15.1-1">
                <MEMBERS>
                     <MEMBER name="agripper"/>
                     <MEMBER name="attraper"/>

@@ -100,7 +100,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="23.1-1" ladl="36SL[-Prép2 =: d'avec] ou 36S[-Prép2 =: d'avec]">
+          <VNSUBCLASS ID="separate-23.1-1" ladl="36SL[-Prép2 =: d'avec] ou 36S[-Prép2 =: d'avec]">
                <MEMBERS>
                     <MEMBER name="débrouiller"/>
                     <MEMBER name="démêler"/>
@@ -132,7 +132,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="23.1-2" ladl="36SL[+Prép2 =: d'avec] ou 36S[+Prép2 =: d'avec]">
+          <VNSUBCLASS ID="separate-23.1-2" ladl="36SL[+Prép2 =: d'avec] ou 36S[+Prép2 =: d'avec]">
                <MEMBERS>
                     <MEMBER name="départager"/>
                     <MEMBER name="désaccoupler"/>

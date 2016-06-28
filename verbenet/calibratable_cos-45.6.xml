@@ -106,7 +106,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="45.6-2" ladl="37M4[+N1 V W] ou 37M1[+N1 V W]">
+          <VNSUBCLASS ID="calibratable_cos-45.6-2" ladl="37M4[+N1 V W] ou 37M1[+N1 V W]">
                <MEMBERS>
                     <MEMBER name="abaisser"/>
                     <MEMBER name="accroître"/>

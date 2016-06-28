@@ -45,7 +45,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="29.9-1">
+          <VNSUBCLASS ID="consider-29.9-1">
                <MEMBERS>
                     <MEMBER name="considérer"/>
                     <MEMBER name="envisager"/>
@@ -98,7 +98,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="29.9-2">
+          <VNSUBCLASS ID="consider-29.9-2">
                <MEMBERS>
                     <MEMBER name="décider"/>
                     <MEMBER name="préméditer"/>
@@ -122,7 +122,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="29.9-3">
+          <VNSUBCLASS ID="consider-29.9-3">
                <MEMBERS>
                     <MEMBER name="penser"/>
                     <MEMBER name="réfléchir"/>
@@ -153,7 +153,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="29.9-4">
+          <VNSUBCLASS ID="consider-29.9-4">
                <MEMBERS>
                     <MEMBER name="remémorer se"/>
                     <MEMBER name="souvenir se"/>

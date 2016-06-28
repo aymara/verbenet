@@ -65,7 +65,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="47.3-1" ladl="32C">
+          <VNSUBCLASS ID="modes_of_being_with_motion-47.3-1" ladl="32C">
                <MEMBERS>
                     <MEMBER name="remuer"/>
                </MEMBERS>
@@ -89,7 +89,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="47.3-2" ladl="34L0">
+          <VNSUBCLASS ID="modes_of_being_with_motion-47.3-2" ladl="34L0">
                <MEMBERS>
                     <MEMBER name="frémir"/>
                     <MEMBER name="ondoyer"/>

@@ -9,7 +9,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="39.1-1">
+          <VNSUBCLASS ID="eat-39.1-1">
                <MEMBERS>
                     <MEMBER name="manger"/>
                </MEMBERS>
@@ -40,7 +40,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="39.1-2">
+          <VNSUBCLASS ID="eat-39.1-2">
                <MEMBERS>
                     <MEMBER name="boire"/>
                </MEMBERS>

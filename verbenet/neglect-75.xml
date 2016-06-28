@@ -14,7 +14,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="75-1" ladl="1 ou 6" lvf="P1g.1">
+          <VNSUBCLASS ID="neglect-75-1" ladl="1 ou 6" lvf="P1g.1">
                <MEMBERS>
                     <MEMBER name="omettre"/>
                </MEMBERS>
@@ -36,7 +36,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="75-1-1">
+                    <VNSUBCLASS ID="neglect-75-1-1">
                          <MEMBERS>
                               <MEMBER name="négliger"/>
                               <MEMBER name="oublier"/>

@@ -40,7 +40,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="77-1">
+          <VNSUBCLASS ID="accept-77-1">
                <MEMBERS>
                     <MEMBER name="accepter"/>
                     <MEMBER name="admettre"/>

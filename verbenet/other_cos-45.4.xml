@@ -452,7 +452,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="45.4-1" ladl="32C[-N1 V et +N1 se V (neutre)] ou 32CL[-N1 V] ou 32CV[-N1 V] ou 32RA[-N1 V et +N1 se V (neutre)] ">
+          <VNSUBCLASS ID="other_cos-45.4-1" ladl="32C[-N1 V et +N1 se V (neutre)] ou 32CL[-N1 V] ou 32CV[-N1 V] ou 32RA[-N1 V et +N1 se V (neutre)] ">
                <MEMBERS>
                     <MEMBER name="amollir se"/>
                </MEMBERS>
@@ -473,7 +473,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="45.4-1-1" ladl="32C[+N1 V et +N1 se V (neutre)] ou 32CL[+N1 V] ou 32CV[+N1 V] ou 32RA[+N1 V et +N1 se V (neutre)]">
+                    <VNSUBCLASS ID="other_cos-45.4-1-1" ladl="32C[+N1 V et +N1 se V (neutre)] ou 32CL[+N1 V] ou 32CV[+N1 V] ou 32RA[+N1 V et +N1 se V (neutre)]">
                          <MEMBERS>
                               <MEMBER name="sécher"/>
                          </MEMBERS>

@@ -11,7 +11,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="36.3-1">
+          <VNSUBCLASS ID="meet-36.3-1">
                <MEMBERS>
                     <MEMBER name="flirter"/>
                     <MEMBER name="marier se"/>
@@ -56,7 +56,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="36.3-2">
+          <VNSUBCLASS ID="meet-36.3-2">
                <MEMBERS>
                     <MEMBER name="boxer"/>
                     <MEMBER name="catcher"/>
@@ -87,7 +87,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="36.3-2-1">
+                    <VNSUBCLASS ID="meet-36.3-2-1">
                          <MEMBERS>
                               <MEMBER name="bagarrer se"/>
                               <MEMBER name="batailler"/>

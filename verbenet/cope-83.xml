@@ -34,7 +34,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="83-1">
+          <VNSUBCLASS ID="cope-83-1">
                <MEMBERS>
                     <MEMBER name="arranger s'"/>
                     <MEMBER name="débrouiller se"/>
@@ -66,7 +66,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="83-2">
+          <VNSUBCLASS ID="cope-83-2">
                <MEMBERS>
                     <MEMBER name="réussir"/>
                </MEMBERS>
@@ -90,7 +90,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="83-3">
+          <VNSUBCLASS ID="cope-83-3">
                <MEMBERS>
                     <MEMBER name="parvenir"/>
                </MEMBERS>

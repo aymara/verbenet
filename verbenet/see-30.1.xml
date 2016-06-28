@@ -67,7 +67,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="30.1-1" ladl="6[+N1 =: Qu Pind]">
+          <VNSUBCLASS ID="see-30.1-1" ladl="6[+N1 =: Qu Pind]">
                <MEMBERS>
                     <MEMBER name="constater"/>
                     <MEMBER name="reconnaître"/>
@@ -92,7 +92,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="30.1-1-1" ladl="6[+N1 = (N) (V-inf W) ou +N1 = (N) (V-ant W)]">
+                    <VNSUBCLASS ID="see-30.1-1-1" ladl="6[+N1 = (N) (V-inf W) ou +N1 = (N) (V-ant W)]">
                          <MEMBERS>
                               <MEMBER name="apercevoir"/>
                               <MEMBER name="entendre"/>

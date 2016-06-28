@@ -29,7 +29,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="61-1">
+          <VNSUBCLASS ID="try-61-1">
                <MEMBERS>
                     <MEMBER name="essayer"/>
                     <MEMBER name="tenter"/>

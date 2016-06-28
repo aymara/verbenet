@@ -12,7 +12,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="74-1">
+          <VNSUBCLASS ID="succeed-74-1">
                <MEMBERS>
                     <MEMBER name="arriver"/>
                </MEMBERS>
@@ -39,7 +39,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="74-2">
+          <VNSUBCLASS ID="succeed-74-2">
                <MEMBERS>
                     <MEMBER name="échouer"/>
                </MEMBERS>
@@ -87,7 +87,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="74-3">
+          <VNSUBCLASS ID="succeed-74-3">
                <MEMBERS>
                     <MEMBER name="louper"/>
                     <MEMBER name="manquer"/>

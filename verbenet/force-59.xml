@@ -58,7 +58,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="59-1">
+          <VNSUBCLASS ID="force-59-1">
                <MEMBERS>
                     <MEMBER name="assigner"/>
                     <MEMBER name="astreindre"/>

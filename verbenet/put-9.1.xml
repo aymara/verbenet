@@ -69,7 +69,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="9.1-2" ladl="38LD" lvf="L4b.3">
+          <VNSUBCLASS ID="put-9.1-2" ladl="38LD" lvf="L4b.3">
                <MEMBERS>
                     <MEMBER name="mettre"/>
                     <MEMBER name="placer"/>

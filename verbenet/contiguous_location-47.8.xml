@@ -50,7 +50,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="47.8-1">
+          <VNSUBCLASS ID="contiguous_location-47.8-1">
                <MEMBERS>
                     <MEMBER name="chevaucher"/>
                     <MEMBER name="couper"/>

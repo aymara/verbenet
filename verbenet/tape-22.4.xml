@@ -110,7 +110,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="22.4-1" ladl="36SL[+N1 V Loc N2]">
+          <VNSUBCLASS ID="tape-22.4-1" ladl="36SL[+N1 V Loc N2]">
                <MEMBERS>
                     <MEMBER name="accrocher"/>
                     <MEMBER name="attacher"/>

@@ -40,7 +40,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="32.1-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = de V0-inf W]">
+          <VNSUBCLASS ID="want-32.1-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = de V0-inf W]">
                <MEMBERS>
                     <MEMBER name="ambitionner"/>
                     <MEMBER name="convoiter"/>
@@ -64,7 +64,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="32.1-1-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = de V0-inf W et +N1 = (N) (Adj)]">
+                    <VNSUBCLASS ID="want-32.1-1-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = de V0-inf W et +N1 = (N) (Adj)]">
                          <MEMBERS>
                               <MEMBER name="apprécier"/>
                               <MEMBER name="attendre"/>
@@ -95,7 +95,7 @@
                     </VNSUBCLASS>
                </SUBCLASSES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="32.1-2" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = V0-inf W]">
+          <VNSUBCLASS ID="want-32.1-2" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = V0-inf W]">
                <MEMBERS>
                     <MEMBER name="entendre"/>
                </MEMBERS>
@@ -117,7 +117,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="32.1-2-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = V0-inf W et +N1 = (N) (Adj)]">
+                    <VNSUBCLASS ID="want-32.1-2-1" ladl="6[+N1 =: Qu Psubj et +Qu Psubj = V0-inf W et +N1 = (N) (Adj)]">
                          <MEMBERS>
                               <MEMBER name="aimer"/>
                               <MEMBER name="compter"/>

@@ -11,7 +11,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="39.2-1">
+          <VNSUBCLASS ID="chew-39.2-1">
                <MEMBERS>
                     <MEMBER name="becqueter"/>
                     <MEMBER name="brouter"/>
@@ -59,7 +59,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="39.2-2">
+          <VNSUBCLASS ID="chew-39.2-2">
                <MEMBERS>
                     <MEMBER name="absorber"/>
                     <MEMBER name="aspirer"/>

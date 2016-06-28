@@ -82,7 +82,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="45.3-1" ladl="32C[+N1 V]" lvf="R3c.1">
+          <VNSUBCLASS ID="cooking-45.3-1" ladl="32C[+N1 V]" lvf="R3c.1">
                <MEMBERS>
                     <MEMBER name="blanchir bouillir braiser brûler"/>
                     <MEMBER name="cuire"/>

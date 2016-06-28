@@ -25,7 +25,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="22.1-1">
+          <VNSUBCLASS ID="mix-22.1-1">
                <MEMBERS>
                     <MEMBER name="agencer"/>
                     <MEMBER name="agglomérer"/>

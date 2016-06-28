@@ -46,7 +46,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="68-1">
+          <VNSUBCLASS ID="pay-68-1">
                <MEMBERS>
                     <MEMBER name="payer"/>
                     <MEMBER name="régler"/>

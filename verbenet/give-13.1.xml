@@ -90,7 +90,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="13.1-1" ladl="36DT[+N2 bénéficiaire et +N0 V N1 à N2 Dnum Nmonnaie]">
+          <VNSUBCLASS ID="give-13.1-1" ladl="36DT[+N2 bénéficiaire et +N0 V N1 à N2 Dnum Nmonnaie]">
                <MEMBERS>
                     <MEMBER name="adjuger"/>
                     <MEMBER name="affermer"/>

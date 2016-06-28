@@ -37,7 +37,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="43.4-1">
+          <VNSUBCLASS ID="substance_emission-43.4-1">
                <MEMBERS>
                     <MEMBER name="saigner"/>
                </MEMBERS>
@@ -63,7 +63,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="43.4-2" ladl="38L0[+N0 lieu source de N1 et +N1 V de N0 source]" lvf="E3b[+P3030 et +T3300]">
+          <VNSUBCLASS ID="substance_emission-43.4-2" ladl="38L0[+N0 lieu source de N1 et +N1 V de N0 source]" lvf="E3b[+P3030 et +T3300]">
                <MEMBERS>
                     <MEMBER name="déborder"/>
                     <MEMBER name="dégorger"/>

@@ -8,7 +8,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="67-1" ladl="9" lvf="C2b">
+          <VNSUBCLASS ID="forbid-67-1" ladl="9" lvf="C2b">
                <MEMBERS>
                     <MEMBER name="déconseiller"/>
                     <MEMBER name="défendre"/>
@@ -41,7 +41,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="67-2" ladl="12">
+          <VNSUBCLASS ID="forbid-67-2" ladl="12">
                <MEMBERS>
                     <MEMBER name="décourager"/>
                     <MEMBER name="dissuader"/>

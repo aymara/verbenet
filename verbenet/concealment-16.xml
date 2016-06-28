@@ -46,7 +46,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="16-1">
+          <VNSUBCLASS ID="concealment-16-1">
                <MEMBERS>
                     <MEMBER name="abriter"/>
                     <MEMBER name="cacher"/>

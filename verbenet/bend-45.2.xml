@@ -108,7 +108,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="45.2-1" ladl="32C[+N1 V]">
+          <VNSUBCLASS ID="bend-45.2-1" ladl="32C[+N1 V]">
                <MEMBERS>
                     <MEMBER name="dilater"/>
                     <MEMBER name="plier"/>

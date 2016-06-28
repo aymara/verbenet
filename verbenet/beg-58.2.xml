@@ -48,7 +48,7 @@
           </FRAME>
      </FRAMES>
      <SUBCLASSES>
-          <VNSUBCLASS ID="58.2-1" ladl="12">
+          <VNSUBCLASS ID="beg-58.2-1" ladl="12">
                <MEMBERS/>
                <THEMROLES/>
                <FRAMES>
@@ -82,7 +82,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="58.2-2" ladl="13">
+          <VNSUBCLASS ID="beg-58.2-2" ladl="13">
                <MEMBERS/>
                <THEMROLES/>
                <FRAMES>

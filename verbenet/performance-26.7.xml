@@ -12,7 +12,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="26.7-1">
+          <VNSUBCLASS ID="performance-26.7-1">
                <MEMBERS>
                     <MEMBER name="chanter"/>
                     <MEMBER name="chantonner"/>
@@ -55,7 +55,7 @@
                     </FRAME>
                </FRAMES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="26.7-2" ladl="32A">
+          <VNSUBCLASS ID="performance-26.7-2" ladl="32A">
                <MEMBERS>
                     <MEMBER name="brosser"/>
                     <MEMBER name="chorégraphier"/>

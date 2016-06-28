@@ -12,7 +12,7 @@
      </THEMROLES>
      <FRAMES/>
      <SUBCLASSES>
-          <VNSUBCLASS ID="29.5-1">
+          <VNSUBCLASS ID="conjecture-29.5-1">
                <MEMBERS>
                     <MEMBER name="pressentir"/>
                     <MEMBER name="présumer"/>
@@ -63,7 +63,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="29.5-1-1">
+                    <VNSUBCLASS ID="conjecture-29.5-1-1">
                          <MEMBERS>
                               <MEMBER name="croire"/>
                               <MEMBER name="espérer"/>
@@ -88,7 +88,7 @@
                               </FRAME>
                          </FRAMES>
                     </VNSUBCLASS>
-                    <VNSUBCLASS ID="29.5-1-2">
+                    <VNSUBCLASS ID="conjecture-29.5-1-2">
                          <MEMBERS>
                               <MEMBER name="prévoir"/>
                          </MEMBERS>
@@ -112,7 +112,7 @@
                     </VNSUBCLASS>
                </SUBCLASSES>
           </VNSUBCLASS>
-          <VNSUBCLASS ID="29.5-2">
+          <VNSUBCLASS ID="conjecture-29.5-2">
                <MEMBERS>
                     <MEMBER name=""/>
                     <MEMBER name="admettre"/>
@@ -184,7 +184,7 @@
                     </FRAME>
                </FRAMES>
                <SUBCLASSES>
-                    <VNSUBCLASS ID="29.5-2-1">
+                    <VNSUBCLASS ID="conjecture-29.5-2-1">
                          <MEMBERS>
                               <MEMBER name="déclarer"/>
                               <MEMBER name="noter"/>
