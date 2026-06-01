@@ -114,7 +114,7 @@
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>motion(during(E), Agent) Près-de(End(E), Agent, Location)</SEMANTICS>
+               <SEMANTICS>motion(during(E), Agent) Près-de(end(E), Agent, Location)</SEMANTICS>
           </FRAME>
      </FRAMES>
 </VNCLASS>

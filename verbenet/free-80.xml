@@ -43,7 +43,7 @@
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>cause(Cause, E) not(free(stard(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
+               <SEMANTICS>cause(Cause, E) not(free(start(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
           </FRAME>
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.theme" syntax="Cause V Source {de} Theme&lt;+VSource-inf&gt;"/>
@@ -67,7 +67,7 @@
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>
-               <SEMANTICS>cause(Cause, E) not(free(stard(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
+               <SEMANTICS>cause(Cause, E) not(free(start(E), Theme, Source)) free(end(E), Theme, Source)</SEMANTICS>
           </FRAME>
      </FRAMES>
 </VNCLASS>
