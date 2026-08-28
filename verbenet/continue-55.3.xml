@@ -16,7 +16,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V à/de V-inf" syntax="Agent V {à/de} Theme&lt;+VAgent-inf&gt;"/>
                <EXAMPLES>
-                    <EXAMPLE>Il a continué de travailer</EXAMPLE>
+                    <EXAMPLE>Il a continué de travailler</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

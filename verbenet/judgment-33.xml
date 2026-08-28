@@ -140,13 +140,21 @@
                     <MEMBER name="censurer"/>
                     <MEMBER name="châtier"/>
                     <MEMBER name="condamner"/>
-                    <MEMBER name="critiquer débiner décrier dénigrer désapprouver désavouer exalter"/>
-                    <MEMBER name="fêter fustiger"/>
+                    <MEMBER name="critiquer"/>
+                    <MEMBER name="débiner"/>
+                    <MEMBER name="décrier"/>
+                    <MEMBER name="dénigrer"/>
+                    <MEMBER name="désapprouver"/>
+                    <MEMBER name="désavouer"/>
+                    <MEMBER name="exalter"/>
+                    <MEMBER name="fêter"/>
+                    <MEMBER name="fustiger"/>
                     <MEMBER name="louanger"/>
                     <MEMBER name="louer"/>
                     <MEMBER name="maudire"/>
                     <MEMBER name="réprimer"/>
-                    <MEMBER name="réprouver sanctionner"/>
+                    <MEMBER name="réprouver"/>
+                    <MEMBER name="sanctionner"/>
                     <MEMBER name="vanter"/>
                </MEMBERS>
                <THEMROLES/>

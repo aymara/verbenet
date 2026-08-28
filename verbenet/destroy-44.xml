@@ -46,7 +46,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Patient {avec} Instrument"/>
                <EXAMPLES>
-                    <EXAMPLE>Les ouvriers ont détrui l'insatallation avec des explosifs</EXAMPLE>
+                    <EXAMPLE>Les ouvriers ont détruit l'installation avec des explosifs</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">
@@ -70,7 +70,7 @@
           <FRAME>
                <DESCRIPTION primary="NP.instrument V NP" syntax="Instrument V Patient"/>
                <EXAMPLES>
-                    <EXAMPLE>Les explosifs ont détruit l'insallation</EXAMPLE>
+                    <EXAMPLE>Les explosifs ont détruit l'installation</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Instrument">

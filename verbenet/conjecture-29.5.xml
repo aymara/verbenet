@@ -114,7 +114,6 @@
           </VNSUBCLASS>
           <VNSUBCLASS ID="conjecture-29.5-2">
                <MEMBERS>
-                    <MEMBER name=""/>
                     <MEMBER name="admettre"/>
                     <MEMBER name="asserter"/>
                     <MEMBER name="avaliser"/>

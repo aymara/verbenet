@@ -42,7 +42,7 @@
           </THEMROLE>
           <THEMROLE type="Location"/>
           <THEMROLE type="Attribute">
-               <SELRESTR Value="+" type="son"/>
+               <SELRESTR Value="+" type="sound"/>
           </THEMROLE>
      </THEMROLES>
      <FRAMES>
@@ -91,7 +91,7 @@
           <FRAME>
                <DESCRIPTION primary="IL V NP PP" syntax="IL V Theme {{+loc}} Location"/>
                <EXAMPLES>
-                    <EXAMPLE>Il carillone une cloche dans l'air glacé</EXAMPLE>
+                    <EXAMPLE>Il carillonne une cloche dans l'air glacé</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <IL/>

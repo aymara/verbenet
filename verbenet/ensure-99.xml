@@ -15,7 +15,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V PP.beneficiary NP.theme" syntax="Cause V {à} Beneficiary Theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Nos actions assure à Paul un bon résultat.</EXAMPLE>
+                    <EXAMPLE>Nos actions assurent à Paul un bon résultat.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Cause">

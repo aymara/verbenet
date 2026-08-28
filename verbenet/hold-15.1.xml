@@ -53,7 +53,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP V NP" syntax="Agent V Attribute&lt;+genitive(Theme)&gt;"/>
                          <EXAMPLES>
-                              <EXAMPLE>Luc a aggrippé le bras de Luc</EXAMPLE>
+                              <EXAMPLE>Luc a agrippé le bras de Luc</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">
@@ -69,7 +69,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP" syntax="Agent V Theme {{+loc}} Attribute"/>
                          <EXAMPLES>
-                              <EXAMPLE>Luc a aggrippé Luc par le bras</EXAMPLE>
+                              <EXAMPLE>Luc a agrippé Luc par le bras</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">

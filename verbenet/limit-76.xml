@@ -44,7 +44,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP" syntax="Cause V Patient"/>
                <EXAMPLES>
-                    <EXAMPLE>Le manque d'argent restreint l'aide médical</EXAMPLE>
+                    <EXAMPLE>Le manque d'argent restreint l'aide médicale</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Cause">

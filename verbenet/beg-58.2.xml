@@ -27,7 +27,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP de V-inf" syntax="Agent V Recipient {de} Topic&lt;+VRecipient-inf&gt;"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a prié Léa de faire la vaiselle.</EXAMPLE>
+                    <EXAMPLE>Luc a prié Léa de faire la vaisselle.</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

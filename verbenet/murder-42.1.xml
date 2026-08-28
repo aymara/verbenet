@@ -28,7 +28,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.instrument" syntax="Agent V Patient {avec} Instrument"/>
                <EXAMPLES>
-                    <EXAMPLE>Brutus a assasiné Julius César avec un couteau</EXAMPLE>
+                    <EXAMPLE>Brutus a assassiné Julius César avec un couteau</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

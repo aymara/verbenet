@@ -84,7 +84,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.source" syntax="Agent V Theme {à} Source"/>
                          <EXAMPLES>
-                              <EXAMPLE>Luc a arnarqué 10€ à  Max.</EXAMPLE>
+                              <EXAMPLE>Luc a arnaqué 10€ à  Max.</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">

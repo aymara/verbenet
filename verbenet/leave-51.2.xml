@@ -22,7 +22,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP.initial_location" syntax="Theme V Initial_Location"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a quiité la pièce</EXAMPLE>
+                    <EXAMPLE>Luc a quitté la pièce</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Theme">

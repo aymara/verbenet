@@ -149,7 +149,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP.patient V PP.Result" syntax="Patient V {en} Result"/>
                          <EXAMPLES>
-                              <EXAMPLE>La carafe a cassé en mille morceux</EXAMPLE>
+                              <EXAMPLE>La carafe a cassé en mille morceaux</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Patient">

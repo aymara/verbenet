@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="discover-84" ladl="6" lvf="P3c ou P3b">
      <MEMBERS>
-          <MEMBER name=""/>
           <MEMBER name="déceler"/>
           <MEMBER name="découvrir"/>
           <MEMBER name="dépister"/>

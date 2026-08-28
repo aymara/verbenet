@@ -16,7 +16,7 @@
           <FRAME>
                <DESCRIPTION primary="NP se V PP.goal" syntax="Patient se V {à} Goal"/>
                <EXAMPLES>
-                    <EXAMPLE>Il s'est converti au boudhisme</EXAMPLE>
+                    <EXAMPLE>Il s'est converti au bouddhisme</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Patient">
@@ -37,7 +37,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.goal" syntax="Agent V Patient {à} Goal"/>
                <EXAMPLES>
-                    <EXAMPLE>Max a converti Luc au boudhisme</EXAMPLE>
+                    <EXAMPLE>Max a converti Luc au bouddhisme</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

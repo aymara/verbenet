@@ -28,7 +28,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP PP.Topic" syntax="Agent V Recipient {à} Topic&lt;+VRecipient-inf&gt;"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a poussé Marie à faire la vaiselle</EXAMPLE>
+                    <EXAMPLE>Luc a poussé Marie à faire la vaisselle</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

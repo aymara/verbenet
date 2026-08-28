@@ -84,12 +84,19 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="cooking-45.3-1" ladl="32C[+N1 V]" lvf="R3c.1">
                <MEMBERS>
-                    <MEMBER name="blanchir bouillir braiser brûler"/>
+                    <MEMBER name="blanchir"/>
+                    <MEMBER name="bouillir"/>
+                    <MEMBER name="braiser"/>
+                    <MEMBER name="brûler"/>
                     <MEMBER name="cuire"/>
-                    <MEMBER name="gratiner griller infuser"/>
+                    <MEMBER name="gratiner"/>
+                    <MEMBER name="griller"/>
+                    <MEMBER name="infuser"/>
                     <MEMBER name="mijoter"/>
                     <MEMBER name="mitonner"/>
-                    <MEMBER name="monter rissoler rôtir"/>
+                    <MEMBER name="monter"/>
+                    <MEMBER name="rissoler"/>
+                    <MEMBER name="rôtir"/>
                </MEMBERS>
                <THEMROLES/>
                <FRAMES>
