@@ -1,7 +1,7 @@
 Verb∋Net - révision
 ========
 
-Cette version dérivée de la [version originale](https://github.com/aymara/verbenet) a été développée lors de la rédaction d'un article (à soumettre) par Marie-Claude l'Homme et Guy Lapalme sur l'utilisation de Verb∋Net pour la génération de texte.
+Cette version dérivée de la [version originale](https://github.com/aymara/verbenet) a été développée lors de la rédaction d'un article soumis par Marie-Claude l'Homme et Guy Lapalme sur l'utilisation de Verb∋Net pour la génération de texte.
 
 Cette version apporte les modifications suivantes:
 
