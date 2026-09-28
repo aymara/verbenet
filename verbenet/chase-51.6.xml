@@ -34,7 +34,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="{+loc"/>
+                              <SELRESTR Value="+" type="loc"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Location">

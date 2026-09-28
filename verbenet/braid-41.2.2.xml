@@ -36,7 +36,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP" syntax="Agent V Attribute&lt;+genitive(Patient)&gt;"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a shapouiné les cheveux de Bébé</EXAMPLE>
+                    <EXAMPLE>Luc a shampouiné les cheveux de Bébé</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

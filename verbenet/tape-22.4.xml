@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="tape-22.4" ladl="36SL[+V-n attache (forme V-n)] ou 32PL" lvf="U3a.1">
      <MEMBERS>
-          <MEMBER name="agrapher"/>
+          <MEMBER name="agrafer"/>
           <MEMBER name="amarrer"/>
           <MEMBER name="boulonner"/>
           <MEMBER name="boutonner"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="clear-10.3" ladl="37E et 38LS" lvf="N3d">
      <MEMBERS>
-          <MEMBER name=""/>
-          <MEMBER name="déménager drainer"/>
+          <MEMBER name="déménager"/>
+          <MEMBER name="drainer"/>
           <MEMBER name="détacher"/>
           <MEMBER name="évacuer"/>
           <MEMBER name="vider"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VNCLASS ID="put-9.1" ladl="38LD" lvf="L3b">
      <MEMBERS>
-          <MEMBER name=""/>
           <MEMBER name="cacher"/>
           <MEMBER name="consigner"/>
           <MEMBER name="déposer"/>

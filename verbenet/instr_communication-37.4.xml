@@ -30,7 +30,7 @@
      </THEMROLES>
      <FRAMES>
           <FRAME>
-               <DESCRIPTION primary="NP V PP.recipient NP.topic" syntax="Agent V {à} Recipient Topic"/>
+               <DESCRIPTION primary="NP V NP.topic PP.recipient" syntax="Agent V Topic {à} Recipient"/>
                <EXAMPLES>
                     <EXAMPLE>Luc a câblé la nouvelle à Léa.</EXAMPLE>
                </EXAMPLES>
@@ -39,15 +39,15 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
+                    <NP value="Topic">
+                         <SYNRESTRS/>
+                    </NP>
                     <PREP>
                          <SELRESTRS>
                               <SELRESTR Value="à"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Recipient">
-                         <SYNRESTRS/>
-                    </NP>
-                    <NP value="Topic">
                          <SYNRESTRS/>
                     </NP>
                </SYNTAX>

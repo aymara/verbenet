@@ -32,7 +32,9 @@
           <THEMROLE type="Instrument">
                <SELRESTR Value="+" type="solid"/>
           </THEMROLE>
-          <THEMROLE type="Result"/>
+          <THEMROLE type="Result">
+               <SELRESTR Value="+" type="plural"/>
+          </THEMROLE>
      </THEMROLES>
      <FRAMES>
           <FRAME>
@@ -149,7 +151,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP.patient V PP.Result" syntax="Patient V {en} Result"/>
                          <EXAMPLES>
-                              <EXAMPLE>La carafe a cassé en mille morceux</EXAMPLE>
+                              <EXAMPLE>La carafe a cassé en mille morceaux</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Patient">

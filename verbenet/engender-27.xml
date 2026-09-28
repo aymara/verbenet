@@ -20,7 +20,9 @@
           <THEMROLE type="Theme">
                <SELRESTR Value="+" type="abstract"/>
           </THEMROLE>
-          <THEMROLE type="Beneficiary[+human]"/>
+          <THEMROLE type="Beneficiary">
+               <SELRESTR Value="+" type="human"/>
+          </THEMROLE>
      </THEMROLES>
      <FRAMES>
           <FRAME>
@@ -50,7 +52,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V Qu Psubj" syntax="Cause V Theme&lt;+Qu Psubj&gt;"/>
                <EXAMPLES>
-                    <EXAMPLE>La crise a provoqué que le chomage augmente</EXAMPLE>
+                    <EXAMPLE>La crise a provoqué que le chômage augmente</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Cause">

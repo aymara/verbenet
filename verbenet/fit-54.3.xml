@@ -2,7 +2,7 @@
 <VNCLASS ID="fit-54.3" ladl="32NM[-N actif V N0]" lvf="S3k">
      <MEMBERS>
           <MEMBER name="accepter"/>
-          <MEMBER name="acceuillir"/>
+          <MEMBER name="accueillir"/>
           <MEMBER name="admettre"/>
           <MEMBER name="comporter"/>
           <MEMBER name="contenir"/>

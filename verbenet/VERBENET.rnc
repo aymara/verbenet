@@ -1,0 +1,160 @@
+#  Schema pour VerbeNet
+
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+#  validation de toute la base ou d'un seul fichier
+start = element VERBENET {VNCLASS+} | VNCLASS
+
+VNCLASS = element VNCLASS {
+    class_content
+}
+
+class_content = (
+    attribute xml:base{xsd:string}?, # inséré par le xi:include
+    attribute ID {xsd:ID},
+    attribute ladl {xsd:string}?,
+    attribute lvf {xsd:string}?,
+    MEMBERS,
+    THEMROLES,
+    FRAMES,
+    SUBCLASSES?
+)
+
+SUBCLASSES = element SUBCLASSES{
+    element VNSUBCLASS {
+        class_content
+    }+
+}
+
+# lemme des verbes
+MEMBERS = element MEMBERS {
+    element MEMBER {
+        attribute name {xsd:string}
+    }*
+}
+
+SRLRESTR =  element SELRESTR {
+                attribute Value {"+"|"-"},
+                attribute type {restriction}
+            }
+            
+SRLRESTRS =  element SELRESTRS {
+                attribute logic {"and"|"or"}?,
+                (SRLRESTR | SRLRESTRS)?, SRLRESTR
+            }
+
+
+THEMROLES = element THEMROLES {
+    element THEMROLE {
+        attribute type {role},
+        (SRLRESTR | SRLRESTRS)? 
+    }*
+}
+
+FRAMES = element FRAMES {
+    element FRAME {
+         element DESCRIPTION {
+            attribute primary {xsd:string},
+            attribute syntax {xsd:string}
+         },
+         element EXAMPLES {
+            element EXAMPLE {xsd:string}
+         },
+         SYNTAX,
+         element SEMANTICS {xsd:string}            
+    }*
+}
+
+# version qui ne gère pas l'ordre des éléments
+#syntax = element SYNTAX {(NP | VERB | VINF | PREP | P | PSUBJ | PIND | ADJ | ADV | IL | LUI | ensemble)+}
+
+# version qui gère l'ordre des constituents
+SYNTAX = element SYNTAX {
+    (IL | (NP , LUI?) ),
+    VERB,
+    (ADV | PIND)?,
+    (NP | (PREP, (NP | P | PIND | PSUBJ | VINF)))*,
+    (ADJ| P | PIND | PSUBJ | VINF | ensemble)?
+}
+
+VERB = element VERB {
+       attribute pronominal{"true"}?,
+       attribute restr{"middle"|"neutre"|"reciproque"|"reflexive"}?
+}
+
+NP = element NP {
+        attribute value {role},
+        attribute modifier {np_modifier}?,
+        element SYNRESTRS {empty} # utile?
+   }
+
+ADJ = element ADJ {empty}
+ADV = element ADV {empty}
+
+P = element P {
+        attribute value {role},
+        attribute introduced_by {"si"|"comment"|"combien"}
+}
+
+PIND = element PIND {
+        attribute value {role},
+        attribute introduced_by {"de"|"si"}?
+}
+
+PSUBJ = element PSUBJ {
+        attribute value {role},
+        attribute introduced_by {preposition}?
+}
+
+VINF = element VINF {
+        attribute value {role},
+        attribute emptysubjectrole {role}?,
+        attribute introduced_by {"de"|"à"|"comment"}?
+}
+
+# éléments "bizarres"...
+IL   = element IL {empty}
+LUI  = element LUI {empty}
+ensemble = element ensemble {empty}
+
+PREP = element PREP {
+            element SELRESTRS {
+                element SELRESTR {
+                    (attribute Value {"+"},attribute type {"loc"})
+                     | attribute Value {preposition}
+                }
+            }?
+       }
+
+
+role = ("Agent" | "Asset" | "Attribute" | "Beneficiary" | "Cause" | "Co-Agent" | "Co-Patient" |
+        "Co-Theme" | "Destination" | "Experiencer" | "Extent" | "Goal" | "Initial_Location" |
+        "Instrument" | "Location" | "Material" | "Patient" | "Pivot" | "Product" | "Recipient" |
+        "Result" | "Source" | "Stimulus" | "Theme" | "Topic" | "Trajectory" | "Value"
+)
+
+restriction = ("abstract" | "animal" | "animate" | "body_part" | "comestible" | "communication" |
+               "concrete" | "currency" | "elongated" | "garment" | "human" | "int_control" | "loc" |
+               "location" | "machine" | "nonrigid" | "organization" | "plural" | "region" | "scalar" |
+               "solid" | "sound" | "substance" | "vehicle"
+             )
+
+preposition = ( "à partir de;de" | "à;avec;dans"  | "à;avec;sur" | "à;avec" |  
+                "à;de" |  "à;pour"  |  "à" |  "après;contre;sur"  | "après"  |  "auprès_de"  | "autour" | 
+                "avec;dans"  | "avec;de"  | "avec;par"  |  "avec" |  "chez;dans"  | "chez;pour"  | "comme"  |
+                "contre" | "d'avec;de" | "d'avec" | "dans;sur" |  "dans" | "de la part de;pour" | "de;depuis" |
+                "de;en"  | "de;par" | "de;pour"  | "de" | "devant"  | "en" | "jusqu'à;vers"  | "Loc-Dest"  |
+                "par" | "pour" | "sur" 
+                )
+
+#np_modifier = ("+genitive (Stimulus)" | "+plural" |  "+genitive(Theme)" | "+Qu Psubj" | "+genitive(Patient)" |
+#                "+Adj" |  "+VAgent-inf" | "+genitive(Agent)" |  "+genitive(Co-Theme)" | "+VExperiencer-inf" |
+#                "+VSource-inf" | "+genitive(Experiencer)" | "+VTheme-inf" | "+Qu Pind" | "+VRecipient-inf")
+
+# version avec une expression régulière
+np_modifier = xsd:string{pattern = "\+(Adj"
+                                     ~"|genitive ?\((Stimulus|Agent|Co-Theme|Experiencer|Patient|Theme)\)" 
+                                     ~"|plural"
+                                     ~"|Qu P(ind|subj)"
+                                     ~"|V(Agent|Experiencer|Recipient|Source|Theme)-inf)"
+                          }

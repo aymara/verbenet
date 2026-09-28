@@ -71,7 +71,7 @@
                          <SYNRESTRS/>
                     </NP>
                     <VERB/>
-                    <P introduced_by="si" value="Theme"/>
+                    <PIND introduced_by="si" value="Theme"/>
                </SYNTAX>
                <SEMANTICS>assess(during(E), Agent, Theme, ?Attribute)</SEMANTICS>
           </FRAME>

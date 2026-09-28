@@ -30,7 +30,6 @@
      <SUBCLASSES>
           <VNSUBCLASS ID="touch-20-1">
                <MEMBERS>
-                    <MEMBER name=""/>
                     <MEMBER name="baiser"/>
                     <MEMBER name="bécoter"/>
                     <MEMBER name="biser"/>
@@ -86,7 +85,7 @@
                     <FRAME>
                          <DESCRIPTION primary="NP V NP PP.attribute" syntax="Agent V Theme {{+loc}} Attribute"/>
                          <EXAMPLES>
-                              <EXAMPLE>Luc a carressé Max sur le bras</EXAMPLE>
+                              <EXAMPLE>Luc a caressé Max sur le bras</EXAMPLE>
                          </EXAMPLES>
                          <SYNTAX>
                               <NP value="Agent">

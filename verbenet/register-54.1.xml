@@ -14,7 +14,7 @@
           <FRAME>
                <DESCRIPTION primary="NP V NP" syntax="Agent V Theme"/>
                <EXAMPLES>
-                    <EXAMPLE>Luc a chronomété les coureurs</EXAMPLE>
+                    <EXAMPLE>Luc a chronométré les coureurs</EXAMPLE>
                </EXAMPLES>
                <SYNTAX>
                     <NP value="Agent">

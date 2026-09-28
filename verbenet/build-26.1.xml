@@ -73,7 +73,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="à_partir_de;de"/>
+                              <SELRESTR Value="à partir de;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Material">
@@ -105,7 +105,7 @@
                     </NP>
                     <PREP>
                          <SELRESTRS>
-                              <SELRESTR Value="à_partir_de;de"/>
+                              <SELRESTR Value="à partir de;de"/>
                          </SELRESTRS>
                     </PREP>
                     <NP value="Material">
