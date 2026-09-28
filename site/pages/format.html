@@ -1,0 +1,138 @@
+<!-- title: Data format · Verb∋Net -->
+<h1>Data format</h1>
+<p class="lede">Verb∋Net uses VerbNet's XML format, with a few French-specific syntactic elements. The RELAX NG schema
+<a href="data/VERBENET.rnc"><code>VERBENET.rnc</code></a> describes it formally, and every file in the repository
+validates against it.</p>
+
+<h2>Files</h2>
+<dl class="ref">
+  <dt>verbenet/&lt;name&gt;-&lt;number&gt;.xml</dt>
+  <dd>One file per top-level class, e.g. <code>put-9.1.xml</code>. The root element is <code>VNCLASS</code>, and its
+  <code>ID</code> is the file name without the extension. Names and numbers come from VerbNet and Levin (1993).
+  A few classes, like <a href="classes/dévaler-51.9.html">dévaler-51.9</a>, have French names because they have
+  no English counterpart.</dd>
+  <dt>verbenet/VERBENET.xml</dt>
+  <dd>A <code>VERBENET</code> root element that includes every class file with <code>&lt;xi:include&gt;</code>.
+  Run your XInclude processor on it (<code>xmllint --xinclude</code>, <code>lxml</code>'s <code>xinclude()</code>, …)
+  to get the whole lexicon as a single document.</dd>
+  <dt>verbenet/VERBENET.rnc</dt>
+  <dd>The RELAX NG compact schema. It accepts either a single <code>VNCLASS</code> or the <code>VERBENET</code> aggregate.</dd>
+</dl>
+<pre><code># validate one class, or all of them (jing: https://relaxng.org/jclark/jing.html)
+jing -c verbenet/VERBENET.rnc verbenet/put-9.1.xml
+cd verbenet &amp;&amp; jing -c VERBENET.rnc $(ls *.xml | grep -vx VERBENET.xml)</code></pre>
+
+<h2>A class, annotated</h2>
+<pre><code>&lt;VNCLASS ID="accept-77" ladl="6[+N1 =: Qu Psubj]" lvf="P1h.1"&gt;   <span class="note">← class id, LG table(s), LVF class(es)</span>
+  &lt;MEMBERS&gt;
+    &lt;MEMBER name="nier"/&gt;                         <span class="note">← one verb per MEMBER</span>
+    &lt;MEMBER name="expliquer s'"/&gt;                 <span class="note">← pronominal verbs: clitic after the verb</span>
+  &lt;/MEMBERS&gt;
+  &lt;THEMROLES&gt;
+    &lt;THEMROLE type="Agent"&gt;
+      &lt;SELRESTRS logic="or"&gt;                      <span class="note">← +organization or +animate</span>
+        &lt;SELRESTR Value="+" type="organization"/&gt;
+        &lt;SELRESTR Value="+" type="animate"/&gt;
+      &lt;/SELRESTRS&gt;
+    &lt;/THEMROLE&gt;
+    &lt;THEMROLE type="Theme"/&gt;
+  &lt;/THEMROLES&gt;
+  &lt;FRAMES&gt;
+    &lt;FRAME&gt;
+      &lt;DESCRIPTION primary="NP V Qu Psubj" syntax="Agent V Theme&amp;lt;+Qu Psubj&amp;gt;"/&gt;
+      &lt;EXAMPLES&gt;&lt;EXAMPLE&gt;Luc a accepté que son fils devienne écrivain&lt;/EXAMPLE&gt;&lt;/EXAMPLES&gt;
+      &lt;SYNTAX&gt;
+        &lt;NP value="Agent"&gt;&lt;SYNRESTRS/&gt;&lt;/NP&gt;
+        &lt;VERB/&gt;
+        &lt;PSUBJ value="Theme"/&gt;
+      &lt;/SYNTAX&gt;
+      &lt;SEMANTICS&gt;approve(during(E), Agent, Theme)&lt;/SEMANTICS&gt;
+    &lt;/FRAME&gt;
+  &lt;/FRAMES&gt;
+  &lt;SUBCLASSES&gt;
+    &lt;VNSUBCLASS ID="accept-77-1"&gt; … same content model, recursively … &lt;/VNSUBCLASS&gt;
+  &lt;/SUBCLASSES&gt;
+&lt;/VNCLASS&gt;</code></pre>
+
+<h2>Elements</h2>
+<dl class="ref">
+  <dt>VNCLASS, VNSUBCLASS</dt>
+  <dd>Contain, in this order: <code>MEMBERS</code>, <code>THEMROLES</code>, <code>FRAMES</code> and an optional
+  <code>SUBCLASSES</code>. Subclass IDs extend the parent ID (<code>accept-77-1</code>, <code>accept-77-1-1</code>).
+  As in VerbNet, the members of a subclass also take the roles and frames of the classes above it, so a subclass only
+  lists what it adds.</dd>
+  <dt>@ladl, @lvf</dt>
+  <dd>The Lexique-Grammaire tables and Les Verbes Français classes that were linked to the class when it was built.
+  Alternatives are separated by <code>ou</code>. LG tables may have column constraints in brackets, e.g.
+  <code>6[+N1 =: Qu Psubj]</code>. A few top-level classes lack one of the two, and about half of the subclasses have their own.</dd>
+  <dt>MEMBER/@name</dt>
+  <dd>A verb lemma, one per element. For a pronominal verb, the clitic comes after the verb: <code>expliquer s'</code>.</dd>
+  <dt>THEMROLE/@type</dt>
+  <dd>A thematic role from a closed list (see below). It can have a <code>SELRESTR</code> restriction, or a
+  <code>SELRESTRS</code> group of them combined with <code>logic="and"</code> (the default) or <code>"or"</code>.</dd>
+  <dt>DESCRIPTION</dt>
+  <dd><code>@primary</code> is the frame in constituent notation (<code>NP V NP PP</code>). <code>@syntax</code>
+  names the role of each constituent, e.g. <code>Agent V Theme&lt;+Qu Psubj&gt;</code>.</dd>
+  <dt>EXAMPLE</dt>
+  <dd>A French sentence illustrating the frame. Its constituents and roles should match the <code>SYNTAX</code>.</dd>
+  <dt>SYNTAX</dt>
+  <dd>The ordered constituents of the frame (see below).</dd>
+  <dt>SEMANTICS</dt>
+  <dd>The semantic formula, a conjunction of predicates over the event <code>E</code> and the roles. It is taken from
+  VerbNet and stored as plain text, e.g. <code>cause(Agent, E) desire(result(E), Patient, Stimulus)</code>.</dd>
+</dl>
+
+<h2>Syntactic constituents</h2>
+<p>The schema requires this order: a subject (<code>NP</code> with an optional <code>LUI</code>, or impersonal
+<code>IL</code>), then <code>VERB</code>, then an optional <code>ADV</code>/<code>PIND</code>. After that come any
+number of <code>NP</code>s or <code>PREP</code> + complement pairs, and finally an optional <code>ADJ</code>,
+<code>P</code>, <code>PIND</code>, <code>PSUBJ</code>, <code>VINF</code> or <code>ensemble</code>.
+Class pages show frames with this colour code:</p>
+<p class="legend">
+  <span class="tok np"><b>NP</b><i>Agent</i></span>
+  <span class="tok verb"><b>V</b></span>
+  <span class="tok prep"><b>sur | dans</b></span>
+  <span class="tok psubj"><b>PSUBJ</b><i>Theme</i></span>
+  <span class="tok adj"><b>ADJ</b></span>
+</p>
+<dl class="ref">
+  <dt>NP @value @modifier?</dt>
+  <dd>A noun phrase with its role. It always contains an empty <code>SYNRESTRS</code>. <code>@modifier</code> is
+  one of <code>+plural</code>, <code>+Adj</code>, <code>+genitive(Role)</code>, <code>+Qu Pind</code>,
+  <code>+Qu Psubj</code> or <code>+VRole-inf</code>.</dd>
+  <dt>VERB @pronominal? @restr?</dt>
+  <dd>The verb. <code>pronominal="true"</code> marks a pronominal use, and <code>@restr</code> gives its kind:
+  <code>neutre</code> (<em lang="fr">La compagnie A s'est associée à la compagnie B</em>),
+  <code>middle</code> (<em lang="fr">Les branches de pin se plient facilement</em>),
+  <code>reflexive</code> (<em lang="fr">Luc s'est caché dans le placard</em>) or
+  <code>reciproque</code> (<em lang="fr">Luc et Marie se bataillent sur ce point</em>).</dd>
+  <dt>PREP</dt>
+  <dd>A preposition. The possible prepositions are listed in <code>SELRESTRS/SELRESTR/@Value</code>, separated by
+  <code>;</code> (e.g. <code>à;avec;dans</code>). <code>Value="+" type="loc"</code> stands for any locative preposition.</dd>
+  <dt>PSUBJ, PIND @value @introduced_by?</dt>
+  <dd>A finite clause in the subjunctive or the indicative (<em lang="fr">que…</em>). <code>@introduced_by</code> adds a preposition
+  (<em lang="fr">Luc compatit à ce que Marie soit au chômage</em>) or, for <code>PIND</code>, <em lang="fr">si</em>
+  (<em lang="fr">L'inspecteur a évalué si le bâtiment allait s'écrouler</em>).</dd>
+  <dt>P @value @introduced_by</dt>
+  <dd>An interrogative clause introduced by <em lang="fr">si</em>, <em lang="fr">comment</em> or
+  <em lang="fr">combien</em>: <em lang="fr">L'inspecteur estime combien ça peut coûter</em>.</dd>
+  <dt>VINF @value @introduced_by? @emptysubjectrole?</dt>
+  <dd>An infinitive clause, possibly introduced by <em lang="fr">de</em>, <em lang="fr">à</em> or
+  <em lang="fr">comment</em>. <code>@emptysubjectrole</code> names the role that controls its implicit subject
+  (<em lang="fr">Luc accepte de partir</em>: the Agent is the one who leaves).</dd>
+  <dt>ADJ, ADV</dt>
+  <dd>An adjective (attribute) or an adverb.</dd>
+  <dt>IL, LUI, ensemble</dt>
+  <dd>The impersonal subject <em lang="fr">il</em> (<em lang="fr">Il plaît à Marie qu'on fasse cela</em>), the dative
+  clitic <em lang="fr">lui</em> (<em lang="fr">Luc lui a shampouiné les cheveux</em>) and the adverb
+  <em lang="fr">ensemble</em> (<em lang="fr">Max a mélangé les oeufs et la crème ensemble</em>).</dd>
+</dl>
+
+<h2>Inventories</h2>
+<p>These lists are computed from the current data. The schema lists every allowed value.</p>
+<div class="columns">
+  <div><h3>Thematic roles</h3>{{roles_table}}</div>
+  <div><h3>Selectional restrictions</h3>{{restrictions_table}}</div>
+  <div><h3>Syntactic elements</h3>{{constituents_table}}</div>
+  <div><h3>Prepositions</h3>{{prepositions_table}}</div>
+</div>

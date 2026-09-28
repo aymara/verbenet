@@ -1,0 +1,136 @@
+<!-- title: Verb∋Net · a VerbNet for French -->
+<section class="hero">
+  <h1>Verb<span>∋</span>Net</h1>
+  <p class="lede">A lexicon of French verbs organised in the same way as the English
+  <a href="https://verbs.colorado.edu/verbnet/">VerbNet</a>. Verbs are grouped into classes that share
+  thematic roles and syntactic frames, and each frame has an example and a semantic formula.</p>
+  <div class="figures">
+    <div><b>{{n_classes}}</b><span>classes</span></div>
+    <div><b>{{n_subclasses}}</b><span>subclasses</span></div>
+    <div><b>{{n_frames}}</b><span>frames</span></div>
+    <div><b>{{n_verbs}}</b><span>distinct verbs</span></div>
+    <div><b>{{n_members}}</b><span>verb–class pairs</span></div>
+  </div>
+  <div class="cta">
+    <a class="primary" href="classes.html">Browse the classes</a>
+    <a href="verbs.html">Look up a verb</a>
+    <a href="format.html">Data format</a>
+    <a href="https://github.com/aymara/verbenet/releases/latest">Download</a>
+  </div>
+</section>
+
+<h2 id="what-is-in-a-class">What is in a class</h2>
+<p>VerbNet (Kipper-Schuler, 2005) builds on Levin's (1993) verb classes, in which verbs are grouped
+by meaning and by the syntactic alternations they allow. For each class and subclass, Verb∋Net gives:</p>
+<ul>
+  <li>the <strong>members</strong>, the French verbs belonging to the class;</li>
+  <li>the <strong>thematic roles</strong> (Agent, Theme, Destination…), optionally with
+  <strong>selectional restrictions</strong> such as <code>+animate</code> or <code>+concrete</code>;</li>
+  <li>the <strong>frames</strong>. Each frame has an example sentence, a syntactic formula that maps syntactic
+  arguments to thematic roles, and a semantic formula built from predicates over the event and its participants.</li>
+</ul>
+<p>For example, class <a href="classes/accept-77.html">accept-77</a> contains <em lang="fr">accepter, admettre,
+refuser…</em>, with the frame <code>NP.Agent V que&nbsp;Psubj.Theme</code> illustrated by
+<em lang="fr">Luc a accepté que son fils devienne écrivain</em>, and the semantics
+<code>approve(during(E), Agent, Theme)</code>.</p>
+
+<h2 id="how-it-was-built">How it was built</h2>
+<p>Verb∋Net was built at CEA LIST and Université Paris Diderot as part of the ANR
+<a href="https://sites.google.com/site/anrasfalda/">ASFALDA</a> project, whose goals also included a French FrameNet.
+The method, described in <a href="#cite">Pradet, Danlos &amp; de Chalendar (2014)</a>, keeps VerbNet's class
+hierarchy and semantics wherever possible. French verbs and frames come from two existing French lexicons:</p>
+<ul>
+  <li><strong>Les Verbes Français</strong> (LVF, Dubois &amp; Dubois-Charlier, 1997), a semantic lexicon of about
+  25,000 entries in 14 classes, 54 subclasses and 248 sub-subclasses;</li>
+  <li>the <strong>Lexique-Grammaire</strong> (LG, Gross 1975; Boons et al. 1976), a syntactic lexicon of about
+  14,000 entries in 67 tables, where each table groups verbs with the same frames.</li>
+</ul>
+<ol class="steps">
+  <li><strong>Translating the members.</strong> Each VerbNet class was manually linked to the LVF classes and LG
+  tables that match its meaning. These links are kept in the <code>lvf</code> and <code>ladl</code>
+  attributes of each class. The English members were translated with two bilingual dictionaries
+  (SCI-FRAN-EURADIC and the French Wiktionary). A translation was kept only if it belongs to both the LVF classes
+  and the LG tables, or to whichever of the two was non-empty. In the original study, this produced 4,058
+  verb–class pairs (2,128 distinct verbs) that were precise and coherent.</li>
+  <li><strong>Adapting the frames.</strong> Lexicographers then reviewed every class in a collaborative web editor.
+  They split verbs into subclasses, kept the frames valid in French, and adjusted roles, restrictions and
+  prepositions. Some general principles were applied:
+    <ul>
+      <li>no <em>sub-frames</em>: a frame that differs from another only by a missing complement is not
+      recorded, because it can be inferred;</li>
+      <li>a single order of complements: <em lang="fr">Nora a apporté le livre au meeting</em> is recorded, while
+      the variant with the complements swapped is left implicit;</li>
+      <li>no conative, dative or benefactive alternations, since they do not exist in French;</li>
+      <li>the hierarchy is revised where the two languages differ. Examples are verbs of sending and carrying
+      (no equivalent of classes 11.3 and 11.4) and verbs of change of possession (e.g. <em>with</em> becomes
+      <em lang="fr">en</em> or <em lang="fr">de</em> depending on the verb).</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="this-revision">This revision</h2>
+<p>This repository contains a revised version of the resource. Guy Lapalme and Marie-Claude L'Homme prepared it
+while studying the use of Verb∋Net for text generation. The revision:</p>
+<ul>
+  <li>adds <code>VERBENET.xml</code>, which includes every class file through XInclude so that XPath queries
+  can run over the whole lexicon;</li>
+  <li>adds a RELAX NG schema, <code>VERBENET.rnc</code>, to validate the files;</li>
+  <li>fixes typos in some examples and member verbs;</li>
+  <li>makes sure each <code>MEMBER</code> element contains exactly one verb;</li>
+  <li>corrects some frames and roles so that they match their examples.</li>
+</ul>
+
+<h2 id="using-the-data">Using the data</h2>
+<p>The reference data is one XML file per class in the
+<a href="https://github.com/aymara/verbenet/tree/master/verbenet"><code>verbenet/</code></a> directory.
+The files follow VerbNet's format, with French-specific syntactic elements (see <a href="format.html">Format</a>).
+Each release (<a href="https://github.com/aymara/verbenet/releases/latest">latest: {{version}}</a>) is also
+available in these forms:</p>
+<ul>
+  <li><strong>Zip archive</strong> on the <a href="https://github.com/aymara/verbenet/releases/latest">release page</a>:
+  XML files, schema, and two JSON Lines tables (one row per frame, one row per verb–class pair). Every release is
+  also archived on Zenodo with a DOI;</li>
+  <li><strong>Python package</strong>: <code>pip install verbenet</code>, which contains the XML files and a small loader;</li>
+  <li><strong>Hugging Face dataset</strong> <a href="https://huggingface.co/datasets/aymaralima/verbenet">aymaralima/verbenet</a>: <code>load_dataset("aymaralima/verbenet", "frames")</code>;</li>
+  <li>the files of the current version, published with this site under <a href="data/VERBENET.xml"><code>data/</code></a>.</li>
+</ul>
+<pre><code>import verbenet
+
+for row in verbenet.frame_rows():       # roles and members already inherited from parent classes
+    if "manger" in row["members"]:
+        print(row["class_id"], row["primary"], "|", row["examples"][0])</code></pre>
+<pre><code># every verb of the lexicon, through the aggregate file
+xmllint --xinclude --xpath '//MEMBER/@name' verbenet/VERBENET.xml
+
+# the classes a given verb belongs to
+xmllint --xinclude --xpath '//MEMBER[@name="manger"]/ancestor::*[@ID][1]/@ID' verbenet/VERBENET.xml</code></pre>
+<pre><code>from lxml import etree
+
+lexicon = etree.parse("verbenet/VERBENET.xml")
+lexicon.xinclude()
+for frame in lexicon.iterfind(".//VNCLASS[@ID='put-9.1']//FRAME"):
+    print(frame.find("DESCRIPTION").get("primary"), "|", frame.findtext("EXAMPLES/EXAMPLE"))</code></pre>
+
+<h2 id="cite">Citing</h2>
+<p>If you use Verb∋Net, please cite:</p>
+<p>Quentin Pradet, Laurence Danlos and Gaël de Chalendar. 2014.
+<a href="https://aclanthology.org/L14-1204/">Adapting VerbNet to French using existing resources</a>.
+In <em>Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14)</em>,
+pages 1122–1126, Reykjavik, Iceland. ELRA.
+(<a href="http://www.lrec-conf.org/proceedings/lrec2014/pdf/203_Paper.pdf">PDF</a>)</p>
+<pre><code>@inproceedings{pradet-etal-2014-adapting,
+    title = "Adapting {V}erb{N}et to {F}rench using existing resources",
+    author = {Pradet, Quentin and Danlos, Laurence and de Chalendar, Ga{\"e}l},
+    booktitle = "Proceedings of the Ninth International Conference on Language Resources and Evaluation ({LREC}'14)",
+    month = may,
+    year = "2014",
+    address = "Reykjavik, Iceland",
+    publisher = "European Language Resources Association (ELRA)",
+    pages = "1122--1126"
+}</code></pre>
+
+<h2 id="license">License</h2>
+<p>Like the original Verb∋Net release, this version is distributed under the
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a>
+license. The original work was funded by the French national research agency (ANR) through the ASFALDA project,
+reference ANR-12-CORD-0023.</p>

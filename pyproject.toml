@@ -1,0 +1,62 @@
+[project]
+name = "verbenet"
+version = "1.0.0"
+description = "Verb∋Net, a VerbNet-style lexicon of French verbs (XML data and a small loader)"
+readme = "README.md"
+license = "CC-BY-SA-4.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [
+    { name = "Quentin Pradet" },
+    { name = "Laurence Danlos" },
+    { name = "Gaël de Chalendar" },
+    { name = "Guy Lapalme" },
+    { name = "Marie-Claude L'Homme" },
+]
+keywords = ["VerbNet", "French", "lexicon", "verbs", "semantic roles", "NLP"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Natural Language :: French",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://aymara.github.io/verbenet/"
+Repository = "https://github.com/aymara/verbenet"
+Changelog = "https://github.com/aymara/verbenet/blob/master/CHANGELOG.md"
+Paper = "https://aclanthology.org/L14-1204/"
+
+[dependency-groups]
+dev = ["bumpver", "lxml", "rnc2rng"]
+release = ["huggingface_hub"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/verbenet"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"verbenet" = "verbenet/data"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/", "verbenet/", "scripts/", "site/", "hf/", "README.md", "CHANGELOG.md", "CITATION.cff", "LICENSE"]
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Release {new_version}"
+tag_message = "Verb∋Net {new_version}"
+commit = true
+tag = true
+push = false
+pre_commit_hook = "scripts/bumpver_hook.py"
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', '^version = "{version}"']
+"CITATION.cff" = ['^version: {version}$']
+"verbenet/VERBENET.xml" = ['<VERBENET version="{version}"']

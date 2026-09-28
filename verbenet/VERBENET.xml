@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?oxygen RNGSchema="VERBENET.rnc" type="compact"?>
-<VERBENET xmlns:xi="http://www.w3.org/2001/XInclude">
+<VERBENET version="1.0.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="accept-77.xml" parse="xml" />
   <xi:include href="accompany-51.7.xml" parse="xml" />
   <xi:include href="acquiesce-95.xml" parse="xml" />
@@ -79,7 +79,7 @@
   <xi:include href="dress-41.1.1.xml" parse="xml" />
   <xi:include href="drive-11.5.xml" parse="xml" />
   <xi:include href="dub-29.3.xml" parse="xml" />
-  <xi:include href="dévaler-51.9.xml" parse="xml" />
+  <xi:include href="d%C3%A9valer-51.9.xml" parse="xml" />
   <xi:include href="eat-39.1.xml" parse="xml" />
   <xi:include href="empathize-88.2.xml" parse="xml" />
   <xi:include href="enforce-63.xml" parse="xml" />

@@ -1,0 +1,88 @@
+name: Release
+
+# Runs when bumpver pushes a version tag (e.g. 1.2.0). Creates the GitHub Release (archived by Zenodo
+# when its GitHub integration is on), then publishes to PyPI and Hugging Face if they are configured:
+#   - PyPI: repository variable PUBLISH_PYPI=true, and a trusted publisher for this workflow on pypi.org
+#   - Hugging Face: repository variable HF_DATASET (e.g. aymaralima/verbenet) and secret HF_TOKEN
+
+on:
+  push:
+    tags: ["[0-9]+.[0-9]+.[0-9]+"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Check that the tag matches the version
+        run: |
+          version=$(uv version --short)
+          [ "$version" = "$GITHUB_REF_NAME" ] || { echo "tag $GITHUB_REF_NAME != version $version"; exit 1; }
+
+      - run: uv run scripts/validate.py
+      - run: uv build
+      - run: uv run scripts/release_assets.py --repo-id "${{ vars.HF_DATASET || 'aymaralima/verbenet' }}"
+
+      - name: Extract the release notes from CHANGELOG.md
+        run: |
+          awk -v v="## $GITHUB_REF_NAME" '$0==v{f=1;next} /^## /{f=0} f' CHANGELOG.md | sed '/./,$!d' > dist/notes.md
+          cat dist/notes.md
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  github-release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - name: Create the GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s dist/notes.md ]; then notes=(--notes-file dist/notes.md); else notes=(--generate-notes); fi
+          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --title "Verb∋Net $GITHUB_REF_NAME" \
+            "${notes[@]}" dist/*.whl dist/*.tar.gz dist/verbenet-data-*.zip
+
+  pypi:
+    needs: build
+    if: vars.PUBLISH_PYPI == 'true'
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - uses: astral-sh/setup-uv@v6
+      - run: uv publish --trusted-publishing always dist/*.whl dist/*.tar.gz
+
+  huggingface:
+    needs: build
+    if: vars.HF_DATASET != ''
+    runs-on: ubuntu-latest
+    environment: huggingface
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run --group release scripts/publish_hf.py "${{ vars.HF_DATASET }}" --folder dist/hf
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}

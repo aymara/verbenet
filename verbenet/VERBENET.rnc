@@ -3,7 +3,10 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 #  validation de toute la base ou d'un seul fichier
-start = element VERBENET {VNCLASS+} | VNCLASS
+start = element VERBENET {
+            attribute version {xsd:string}, # version sémantique, gérée par bumpver
+            VNCLASS+
+        } | VNCLASS
 
 VNCLASS = element VNCLASS {
     class_content

@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use Verb∋Net, please cite the paper below."
+type: dataset
+title: "Verb∋Net: a VerbNet-style lexicon of French verbs"
+version: 1.0.0
+license: CC-BY-SA-4.0
+url: "https://aymara.github.io/verbenet/"
+repository-code: "https://github.com/aymara/verbenet"
+abstract: >-
+  Verb∋Net is a French adaptation of VerbNet. Verbs are grouped into classes that share
+  thematic roles with selectional restrictions and syntactic frames; each frame has an example
+  and a semantic formula. It was built semi-automatically from VerbNet, Les Verbes Français and
+  the Lexique-Grammaire, then revised by hand.
+keywords:
+  - VerbNet
+  - French
+  - lexicon
+  - verb classes
+  - semantic role labeling
+authors:
+  - family-names: Pradet
+    given-names: Quentin
+    affiliation: "CEA, LIST"
+  - family-names: Danlos
+    given-names: Laurence
+    affiliation: "Université Paris Diderot"
+  - family-names: de Chalendar
+    given-names: Gaël
+    affiliation: "CEA, LIST"
+  - family-names: Lapalme
+    given-names: Guy
+    affiliation: "Université de Montréal"
+  - family-names: L'Homme
+    given-names: Marie-Claude
+    affiliation: "Université de Montréal"
+preferred-citation:
+  type: conference-paper
+  title: "Adapting VerbNet to French using existing resources"
+  authors:
+    - family-names: Pradet
+      given-names: Quentin
+    - family-names: Danlos
+      given-names: Laurence
+    - family-names: de Chalendar
+      given-names: Gaël
+  collection-title: "Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14)"
+  publisher:
+    name: "European Language Resources Association (ELRA)"
+  conference:
+    name: "LREC 2014"
+    city: Reykjavik
+    country: IS
+  year: 2014
+  month: 5
+  start: 1122
+  end: 1126
+  url: "https://aclanthology.org/L14-1204/"
