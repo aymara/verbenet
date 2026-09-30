@@ -17,7 +17,7 @@ Each release is available in the following forms, which all contain the same dat
 
 - **GitHub Releases**: [latest release](https://github.com/aymara/verbenet/releases/latest). It includes
   `verbenet-data-X.Y.Z.zip` (XML files, schema, JSON Lines tables) and the Python package.
-- **Zenodo**: every release is archived with a DOI.
+- **Zenodo**: every release is archived with a DOI, under [doi:10.5281/zenodo.23018909](https://doi.org/10.5281/zenodo.23018909).
 - **Python**: `pip install verbenet` (or `uv add verbenet`):
   ```python
   import verbenet
@@ -126,7 +126,9 @@ pages 1122–1126, Reykjavik, Iceland. ELRA.
 }
 ```
 
-To cite a specific version of the data, use its Zenodo DOI (see `CITATION.cff`, or *Cite this repository* on GitHub).
+To cite the data itself, use the Zenodo DOI [10.5281/zenodo.23018909](https://doi.org/10.5281/zenodo.23018909), which always resolves to the latest
+version. Each version also has its own DOI, listed on the Zenodo record (for example, 1.0.0 is
+[10.5281/zenodo.23018910](https://doi.org/10.5281/zenodo.23018910)).
 
 ## License
 

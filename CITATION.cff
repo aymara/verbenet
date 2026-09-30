@@ -6,6 +6,11 @@ version: 1.0.0
 license: CC-BY-SA-4.0
 url: "https://aymara.github.io/verbenet/"
 repository-code: "https://github.com/aymara/verbenet"
+doi: 10.5281/zenodo.23018909
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23018909
+    description: "Concept DOI of the dataset on Zenodo, which resolves to the latest version."
 abstract: >-
   Verb∋Net is a French adaptation of VerbNet. Verbs are grouped into classes that share
   thematic roles with selectional restrictions and syntactic frames; each frame has an example

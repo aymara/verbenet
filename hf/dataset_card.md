@@ -80,6 +80,8 @@ The data is also available as a Python package: `pip install verbenet`.
 }
 ```
 
+To cite the data itself, use the Zenodo DOI [10.5281/zenodo.23018909](https://doi.org/10.5281/zenodo.23018909), which always resolves to the latest version.
+
 ## License
 
 [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
